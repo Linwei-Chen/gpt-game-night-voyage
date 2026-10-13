@@ -1,0 +1,10 @@
+node_modules/
+dist/
+references/
+.playwright/
+*.log
+.DS_Store
+.venv/
+__pycache__/
+artifacts/
+.publish-venv/

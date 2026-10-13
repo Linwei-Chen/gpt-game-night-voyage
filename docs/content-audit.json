@@ -1,0 +1,24 @@
+{
+  "version": "1.0.1o-FULL",
+  "counts": {
+    "consumables": 52,
+    "vouchers": 32,
+    "decks": 15,
+    "blinds": 30,
+    "stakes": 8,
+    "tags": 24,
+    "enhancements": 8,
+    "seals": 4,
+    "editions": 5,
+    "boosters": 32,
+    "jokers": 150
+  },
+  "factCount": 3642,
+  "unresolvedFacts": 1,
+  "errors": [],
+  "limits": [
+    "未取得游戏内导出。",
+    "未取得原版录屏，原版逐帧视觉验收未通过。",
+    "数值来源审计、单元测试与完整引擎集成是不同验证层。"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "local_fact_export",
+  "name": "本地事实导出",
+  "author": ["独立游戏项目"],
+  "description": "仅本地读取数据表；按 F8 在 LÖVE 用户保存目录生成带字段路径的 JSON。",
+  "prefix": "factexport",
+  "main_file": "main.lua",
+  "version": "0.2.0",
+  "priority": 1000
+}

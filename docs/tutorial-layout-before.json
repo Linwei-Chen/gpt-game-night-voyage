@@ -1,0 +1,11 @@
+{
+  "issue": "T2：教程关闭与返回按钮的焦点边框相互覆盖",
+  "method": "加入实际几何断言后，对修复前的生产产物进行真实浏览器验证。",
+  "productionIndexSha256": "f8f6bca14f637b4a48d8982d44e3c4d28c6f6a36f1d8061ac66f428b58aa4273",
+  "command": ".venv/bin/python scripts/tutorial_verify.py",
+  "observedExitCode": 1,
+  "observedDesktopGapPx": 0.890625,
+  "requiredGapPx": 12,
+  "assertion": "scripts/tutorial_verify.py:40",
+  "result": "断言按预期失败，随后修复教程头部布局；不涉及游戏规则。"
+}

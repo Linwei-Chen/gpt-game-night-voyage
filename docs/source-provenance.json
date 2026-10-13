@@ -1,0 +1,77 @@
+{
+  "repository": "https://github.com/GladdonT/balatro-source-code",
+  "commit": "895ab3a25bc6f513fa80885eb59951bf8e76bc55",
+  "commitDate": "2025-08-06T07:04:13Z",
+  "files": [
+    {
+      "file": "game.lua",
+      "sha256": "bbc67bd3fbadd1ea3f3f0aba07ef8596118d89ff1e9758718f9e17c07a96e912",
+      "lines": 3629
+    },
+    {
+      "file": "card.lua",
+      "sha256": "5073d834e08119da9516f1795a8c3d93110669aeb409c29ad1b308e0eb0be453",
+      "lines": 4771
+    },
+    {
+      "file": "blind.lua",
+      "sha256": "0a7e5fde144da36d4ca1a96950b4bf51e3c95be55fb02764a555de53a3bd8afb",
+      "lines": 751
+    },
+    {
+      "file": "tag.lua",
+      "sha256": "42b589519d7f6e4dd14fc4628198386daae1bbc011ba4125f86eec4e1ec29fe3",
+      "lines": 595
+    },
+    {
+      "file": "back.lua",
+      "sha256": "c4d0b83f2f7a614a3b0c52c127f50290fd5f7bcad427fceb534c541ff8a4c0e1",
+      "lines": 288
+    },
+    {
+      "file": "cardarea.lua",
+      "sha256": "e995e91d5ca97a5f9bfcab7438f3b2c6f3d79782be8e89161ab6b39f0030fc87",
+      "lines": 668
+    },
+    {
+      "file": "engine/event.lua",
+      "sha256": "98d4e954397b9ddc81c6ec8eadae257960d1cc0ba10e9993f4b241c5dd15159e",
+      "lines": 195
+    },
+    {
+      "file": "functions/state_events.lua",
+      "sha256": "6c86aefb42d0323d737f87aaa84f53e42b755e72cd0bfd163b7d9cca5c0a99a9",
+      "lines": 1642
+    },
+    {
+      "file": "functions/misc_functions.lua",
+      "sha256": "c36ed54d8ab441be994a9afc5d38b8ac530f3b93995dfed424ec11f02e633198",
+      "lines": 2022
+    },
+    {
+      "file": "functions/common_events.lua",
+      "sha256": "522ea0810101de1004685e13e7ed05a750b4e115e5231dca2cbc97aeb8c3e5fc",
+      "lines": 2745
+    },
+    {
+      "file": "functions/UI_definitions.lua",
+      "sha256": "e41dcdb24fb66faeb9e3809ea3e4252716d61836ef152677e39245a28fca6eb8",
+      "lines": 6436
+    },
+    {
+      "file": "functions/button_callbacks.lua",
+      "sha256": "c88a74ca3a8fa8ace0ce46ad10a97238f347c292842c9164d11136fe9952c101",
+      "lines": 3203
+    },
+    {
+      "file": "globals.lua",
+      "sha256": "e39b5bf91b907c593d72735dc8119aff891bd67ee6e4560254e8ee0a3824d546",
+      "lines": 522
+    },
+    {
+      "file": "version.jkr",
+      "sha256": "a0525225e93bc81acd291aa4661e6648c8f3591ff34761bb3bee5319a766aaa3",
+      "lines": 3
+    }
+  ]
+}

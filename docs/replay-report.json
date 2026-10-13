@@ -1,0 +1,37 @@
+{
+  "method": "公开动作重放；每步核对金币、伙伴、关卡、分数和目标；最终存档逐字符一致",
+  "originalGameComparison": false,
+  "seed": "NIGHT-VERIFY-0",
+  "checks": [
+    {
+      "checkpoint": "none",
+      "passed": true,
+      "steps": 203,
+      "plays": 59,
+      "restores": 0,
+      "outcome": "won",
+      "ante": 8,
+      "round": 24
+    },
+    {
+      "checkpoint": "middle",
+      "passed": true,
+      "steps": 203,
+      "plays": 59,
+      "restores": 1,
+      "outcome": "won",
+      "ante": 8,
+      "round": 24
+    },
+    {
+      "checkpoint": "every",
+      "passed": true,
+      "steps": 203,
+      "plays": 59,
+      "restores": 203,
+      "outcome": "won",
+      "ante": 8,
+      "round": 24
+    }
+  ]
+}

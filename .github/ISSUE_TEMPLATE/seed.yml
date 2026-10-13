@@ -1,0 +1,21 @@
+name: 分享种子与策略
+description: 分享你的牌组、伙伴组合和航程成绩。
+title: "[种子] "
+body:
+  - type: input
+    id: seed
+    attributes:
+      label: 种子
+    validations:
+      required: true
+  - type: input
+    id: setup
+    attributes:
+      label: 起始牌组与难度
+  - type: textarea
+    id: strategy
+    attributes:
+      label: 玩法、伙伴组合与成绩
+      description: 欢迎附截图或介绍关键决策。
+    validations:
+      required: true

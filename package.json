@@ -1,0 +1,35 @@
+{
+  "name": "night-voyage",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "content": "tsx scripts/gen-content.ts",
+    "audit": "tsx scripts/audit.ts",
+    "verify:run": "tsx scripts/replay.ts",
+    "verify:facts": "tsx scripts/verify-facts.ts",
+    "preview": "vite preview --host 127.0.0.1 --port 53428 --strictPort"
+  },
+  "dependencies": {
+    "pixi.js": "^8.14.3"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.0",
+    "@types/node": "^22.18.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "vite": "^7.1.9",
+    "vitest": "^5.0.4"
+  },
+  "license": "MIT",
+  "description": "星筹夜航：GPT 6.1 制作小游戏测试，内置详细教程的浏览器纸牌策略游戏",
+  "homepage": "https://linwei-chen.github.io/gpt-game-night-voyage/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Linwei-Chen/gpt-game-night-voyage.git"
+  }
+}

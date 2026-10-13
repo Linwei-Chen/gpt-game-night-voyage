@@ -1,0 +1,953 @@
+{
+  "version": "1.0.1o-FULL",
+  "sourceCommit": "895ab3a25bc6f513fa80885eb59951bf8e76bc55",
+  "facts": [
+    {
+      "id": "hand.flushFive",
+      "subject": "牌型基础分与每级增量：Flush Five",
+      "value": {
+        "order": 1,
+        "mult": 16,
+        "chips": 160,
+        "level": 1,
+        "l_mult": 3,
+        "l_chips": 50,
+        "handType": "flushFive",
+        "hidden": true
+      },
+      "source": "references/source/game.lua:2002",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "hand.flushHouse",
+      "subject": "牌型基础分与每级增量：Flush House",
+      "value": {
+        "order": 2,
+        "mult": 14,
+        "chips": 140,
+        "level": 1,
+        "l_mult": 4,
+        "l_chips": 40,
+        "handType": "flushHouse",
+        "hidden": true
+      },
+      "source": "references/source/game.lua:2003",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "hand.fiveOfAKind",
+      "subject": "牌型基础分与每级增量：Five of a Kind",
+      "value": {
+        "order": 3,
+        "mult": 12,
+        "chips": 120,
+        "level": 1,
+        "l_mult": 3,
+        "l_chips": 35,
+        "handType": "fiveOfAKind",
+        "hidden": true
+      },
+      "source": "references/source/game.lua:2004",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "hand.straightFlush",
+      "subject": "牌型基础分与每级增量：Straight Flush",
+      "value": {
+        "order": 4,
+        "mult": 8,
+        "chips": 100,
+        "level": 1,
+        "l_mult": 4,
+        "l_chips": 40,
+        "handType": "straightFlush",
+        "hidden": false
+      },
+      "source": "references/source/game.lua:2005",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "hand.fourOfAKind",
+      "subject": "牌型基础分与每级增量：Four of a Kind",
+      "value": {
+        "order": 5,
+        "mult": 7,
+        "chips": 60,
+        "level": 1,
+        "l_mult": 3,
+        "l_chips": 30,
+        "handType": "fourOfAKind",
+        "hidden": false
+      },
+      "source": "references/source/game.lua:2006",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "hand.fullHouse",
+      "subject": "牌型基础分与每级增量：Full House",
+      "value": {
+        "order": 6,
+        "mult": 4,
+        "chips": 40,
+        "level": 1,
+        "l_mult": 2,
+        "l_chips": 25,
+        "handType": "fullHouse",
+        "hidden": false
+      },
+      "source": "references/source/game.lua:2007",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "hand.flush",
+      "subject": "牌型基础分与每级增量：Flush",
+      "value": {
+        "order": 7,
+        "mult": 4,
+        "chips": 35,
+        "level": 1,
+        "l_mult": 2,
+        "l_chips": 15,
+        "handType": "flush",
+        "hidden": false
+      },
+      "source": "references/source/game.lua:2008",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "hand.straight",
+      "subject": "牌型基础分与每级增量：Straight",
+      "value": {
+        "order": 8,
+        "mult": 4,
+        "chips": 30,
+        "level": 1,
+        "l_mult": 3,
+        "l_chips": 30,
+        "handType": "straight",
+        "hidden": false
+      },
+      "source": "references/source/game.lua:2009",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "hand.threeOfAKind",
+      "subject": "牌型基础分与每级增量：Three of a Kind",
+      "value": {
+        "order": 9,
+        "mult": 3,
+        "chips": 30,
+        "level": 1,
+        "l_mult": 2,
+        "l_chips": 20,
+        "handType": "threeOfAKind",
+        "hidden": false
+      },
+      "source": "references/source/game.lua:2010",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "hand.twoPair",
+      "subject": "牌型基础分与每级增量：Two Pair",
+      "value": {
+        "order": 10,
+        "mult": 2,
+        "chips": 20,
+        "level": 1,
+        "l_mult": 1,
+        "l_chips": 20,
+        "handType": "twoPair",
+        "hidden": false
+      },
+      "source": "references/source/game.lua:2011",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "hand.pair",
+      "subject": "牌型基础分与每级增量：Pair",
+      "value": {
+        "order": 11,
+        "mult": 2,
+        "chips": 10,
+        "level": 1,
+        "l_mult": 1,
+        "l_chips": 15,
+        "handType": "pair",
+        "hidden": false
+      },
+      "source": "references/source/game.lua:2012",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "hand.highCard",
+      "subject": "牌型基础分与每级增量：High Card",
+      "value": {
+        "order": 12,
+        "mult": 1,
+        "chips": 5,
+        "level": 1,
+        "l_mult": 1,
+        "l_chips": 10,
+        "handType": "highCard",
+        "hidden": false
+      },
+      "source": "references/source/game.lua:2013",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "hand.levelFormula",
+      "subject": "牌型升级公式",
+      "value": {
+        "level": "max(0, level + amount)",
+        "chips": "max(0, s_chips + l_chips × (level − 1))",
+        "mult": "max(1, s_mult + l_mult × (level − 1))"
+      },
+      "source": "references/source/functions/common_events.lua:464-468",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "rank.chips",
+      "subject": "扑克点数筹码",
+      "value": {
+        "2..10": "rank",
+        "11..13": 10,
+        "14": 11
+      },
+      "source": "references/source/card.lua:122-134",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "rank.highTie",
+      "subject": "高牌相同点数按内部 nominal 区分",
+      "value": {
+        "faceOffsets": {
+          "11": 0.1,
+          "12": 0.2,
+          "13": 0.3,
+          "14": 0.4
+        },
+        "suits": {
+          "diamonds": 0.01,
+          "clubs": 0.02,
+          "hearts": 0.03,
+          "spades": 0.04
+        }
+      },
+      "source": "references/source/card.lua:131-141; references/source/card.lua:950-954",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "poker.priority",
+      "subject": "牌型强弱优先级",
+      "value": [
+        "flushFive",
+        "flushHouse",
+        "fiveOfAKind",
+        "straightFlush",
+        "fourOfAKind",
+        "fullHouse",
+        "flush",
+        "straight",
+        "threeOfAKind",
+        "twoPair",
+        "pair",
+        "highCard"
+      ],
+      "source": "references/source/functions/state_events.lua:544-555",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "poker.hidden",
+      "subject": "三种隐藏牌型条件",
+      "value": {
+        "flushFive": "5 cards same rank + flush",
+        "flushHouse": "3 cards same rank and 2 cards another rank + flush",
+        "fiveOfAKind": "5 cards same rank"
+      },
+      "source": "references/source/functions/misc_functions.lua:404-425",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "poker.subTypes",
+      "subject": "高重数牌型也被 pair/three/four 小丑识别",
+      "value": {
+        "fiveOfAKind": [
+          "fourOfAKind",
+          "threeOfAKind",
+          "pair"
+        ],
+        "fourOfAKind": [
+          "threeOfAKind",
+          "pair"
+        ],
+        "threeOfAKind": [
+          "pair"
+        ],
+        "fullHouse": [
+          "twoPair"
+        ]
+      },
+      "source": "references/source/functions/misc_functions.lua:479-517",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "poker.fourFingers",
+      "subject": "四张顺子/同花门槛",
+      "value": 4,
+      "source": "references/source/functions/misc_functions.lua:524-551",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "poker.shortcut",
+      "subject": "顺子允许间隔",
+      "value": "连续存在的两个点数之间最多缺1个点数；不允许首尾绕回",
+      "source": "references/source/functions/misc_functions.lua:565-585",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "poker.straightFlushUnion",
+      "subject": "四指顺子同花组合",
+      "value": "顺子与同花各自满足门槛即可，计分集合为二者并集",
+      "source": "references/source/functions/misc_functions.lua:428-442",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "poker.stone",
+      "subject": "石头牌牌型与计分",
+      "value": "不参与点数/花色配对；无条件加入计分牌集合",
+      "source": "references/source/card.lua:957-962; references/source/card.lua:4064-4068; references/source/functions/state_events.lua:580-600",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "poker.wild",
+      "subject": "万能花色与减益",
+      "value": "未减益万能牌可代表任意花色；减益后只保留底牌花色供牌型识别",
+      "source": "references/source/card.lua:4064-4087",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "poker.smeared",
+      "subject": "红黑颜色合并",
+      "value": "hearts与diamonds合并；clubs与spades合并",
+      "source": "references/source/card.lua:4072-4085",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "card.bonus",
+      "subject": "增强或版本数值：bonus",
+      "value": {
+        "chips": 30
+      },
+      "source": "references/source/game.lua:648",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "card.mult",
+      "subject": "增强或版本数值：mult",
+      "value": {
+        "mult": 4
+      },
+      "source": "references/source/game.lua:649",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "card.glass",
+      "subject": "增强或版本数值：glass",
+      "value": {
+        "xmult": 2,
+        "breakDenominator": 4
+      },
+      "source": "references/source/game.lua:651",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "card.steel",
+      "subject": "增强或版本数值：steel",
+      "value": {
+        "heldXmult": 1.5
+      },
+      "source": "references/source/game.lua:652",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "card.stone",
+      "subject": "增强或版本数值：stone",
+      "value": {
+        "chips": 50
+      },
+      "source": "references/source/game.lua:653",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "card.gold",
+      "subject": "增强或版本数值：gold",
+      "value": {
+        "roundEndMoney": 3
+      },
+      "source": "references/source/game.lua:654",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "card.lucky",
+      "subject": "增强或版本数值：lucky",
+      "value": {
+        "mult": 20,
+        "money": 20
+      },
+      "source": "references/source/game.lua:655",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "card.foil",
+      "subject": "增强或版本数值：foil",
+      "value": {
+        "chips": 50
+      },
+      "source": "references/source/game.lua:659",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "card.holo",
+      "subject": "增强或版本数值：holo",
+      "value": {
+        "mult": 10
+      },
+      "source": "references/source/game.lua:660",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "card.polychrome",
+      "subject": "增强或版本数值：polychrome",
+      "value": {
+        "xmult": 1.5
+      },
+      "source": "references/source/game.lua:661",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "card.luckyMultProbability",
+      "subject": "幸运+倍率概率",
+      "value": "normal / 5",
+      "source": "references/source/card.lua:984-995",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "card.luckyMoneyProbability",
+      "subject": "幸运金钱概率",
+      "value": "normal / 15",
+      "source": "references/source/card.lua:1068-1083",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "card.goldSeal",
+      "subject": "金封金钱",
+      "value": 3,
+      "source": "references/source/card.lua:1071-1073",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "card.redSeal",
+      "subject": "红封额外触发次数",
+      "value": 1,
+      "source": "references/source/card.lua:2242-2249",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "card.heldSealGate",
+      "subject": "手牌红封重复门槛",
+      "value": "该手牌必须有至少一个手中效果；钢铁或者小丑产生手中效果",
+      "source": "references/source/functions/state_events.lua:798-829",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "card.debuff",
+      "subject": "减益牌计分",
+      "value": "计分仍保留牌型，但出牌卡筹码/增强/版本/小丑逐卡触发均不执行",
+      "source": "references/source/functions/state_events.lua:650-665; references/source/card.lua:976-1017",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "scoring.pipeline",
+      "subject": "计分阶段顺序",
+      "value": [
+        "before",
+        "blindModify",
+        "playedCards",
+        "heldCards",
+        "jokerMain",
+        "destroyCards",
+        "finalize",
+        "after"
+      ],
+      "source": "references/source/functions/state_events.lua:628-641,648,784,877,950,1049,1068",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "scoring.cardOrder",
+      "subject": "出牌与每卡效果顺序",
+      "value": "计分卡按左到右；每次先卡 chips→mult→money→xmult→edition，再逐小丑由左到右执行 individual",
+      "source": "references/source/functions/state_events.lua:600; references/source/functions/state_events.lua:692-777",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "scoring.retrigger",
+      "subject": "出牌重触发队列",
+      "value": "原触发一次 + 红封 + 每个小丑声明的重复次数；每次重跑卡与小丑individual",
+      "source": "references/source/functions/state_events.lua:666-698",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "scoring.jokerEdition",
+      "subject": "小丑版本触发位置",
+      "value": "foil/holo在main前；otherJoker在main后；polychrome在otherJoker后",
+      "source": "references/source/functions/state_events.lua:880-940",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "scoring.final",
+      "subject": "最后计分公式",
+      "value": "floor(chips × mult)；after阶段发生在最终分数加入之后",
+      "source": "references/source/functions/state_events.lua:1049; references/source/functions/state_events.lua:1068-1070",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "scoring.chipCap",
+      "subject": "筹码金钱上限规则",
+      "value": "min(chips, max(dollars,0))；每次mod_chips时执行",
+      "source": "references/source/functions/misc_functions.lua:684-688",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "rng.pseudohash",
+      "subject": "seed哈希公式",
+      "value": {
+        "initial": 1,
+        "iteration": "h = ((1.1239285023 / h) × byte(str,i) × π + π × i) mod 1; i从UTF-8字节末尾到开头"
+      },
+      "source": "references/source/functions/misc_functions.lua:279-285",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "rng.keyState",
+      "subject": "独立key伪随机状态公式",
+      "value": {
+        "initial": "pseudohash(key + seed)",
+        "advance": "abs(round13((2.134453429141 + state × 1.72431234) mod 1))",
+        "seed": "(state + pseudohash(seed)) / 2"
+      },
+      "source": "references/source/functions/misc_functions.lua:298-312",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "rng.luaJit",
+      "subject": "每次随机数生成",
+      "value": "将pseudoseed结果传给LuaJIT math.randomseed；然后math.random() 或math.random(min,max)",
+      "source": "references/source/functions/misc_functions.lua:315-320",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "rng.tausworthe",
+      "subject": "LuaJIT TW223开源参数",
+      "value": {
+        "stateBits": 64,
+        "parameters": [
+          [
+            63,
+            31,
+            18
+          ],
+          [
+            58,
+            19,
+            28
+          ],
+          [
+            55,
+            24,
+            7
+          ],
+          [
+            47,
+            21,
+            8
+          ]
+        ],
+        "mantissaBits": 52
+      },
+      "source": "references/source/luajit_lj_prng.c:35-60",
+      "confidence": "中（开源LuaJIT v2.1；原游戏内核版本尚未核验）"
+    },
+    {
+      "id": "rng.luaSeed",
+      "subject": "LuaJIT浮点seed参数",
+      "value": {
+        "stateCount": 4,
+        "seedMultiplier": "π",
+        "seedAddend": "e",
+        "warmupSteps": 10,
+        "minimumStateBits": [
+          1,
+          6,
+          9,
+          17
+        ]
+      },
+      "source": "references/source/luajit_lib_math.c:114-127",
+      "confidence": "中（开源LuaJIT v2.1；原游戏内核版本尚未核验）"
+    },
+    {
+      "id": "rng.shuffle",
+      "subject": "洗牌规则",
+      "value": "Fisher–Yates逆序；一轮洗牌只调用一次math.randomseed，后续连续抽数",
+      "source": "references/source/functions/misc_functions.lua:206-216",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "juice.initialHighlight",
+      "subject": "计分牌高亮等待",
+      "value": 0.2,
+      "source": "references/source/functions/state_events.lua:601-604",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "juice.triggerPitch",
+      "subject": "触发音高进度",
+      "value": {
+        "initial": 0.3,
+        "increment": 0.08
+      },
+      "source": "references/source/functions/state_events.lua:607-608",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "juice.phasePause",
+      "subject": "计分阶段等待",
+      "value": {
+        "beforeCards": 0.4,
+        "beforeHeld": 0.3,
+        "scoreAnnounce": 0.4,
+        "scoreAdd": 0.5,
+        "afterScore": 0.3
+      },
+      "source": "references/source/functions/state_events.lua:620,782,1030,1050,1066",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "probability.normal",
+      "subject": "基础概率分子",
+      "value": 1,
+      "source": "references/source/game.lua:1890-1891",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "scoring.plasma",
+      "subject": "均衡组终算平衡",
+      "value": "chips = mult = floor((chips + mult) / 2)",
+      "source": "references/source/back.lua:128-131",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "rng.oracle.vectors",
+      "subject": "真实LuaJIT运行对照向量：vectors",
+      "value": [
+        {
+          "seed": "TRACEABLE",
+          "hash": 0.8621351357196545,
+          "keys": [
+            "shop",
+            "shop",
+            "pack",
+            "deck",
+            "pack",
+            "lucky_mult",
+            "lucky_money",
+            "glass",
+            "boss"
+          ],
+          "values": [
+            0.5938684394075084,
+            0.8536718065003059,
+            0.01835476527096902,
+            0.3242978853181018,
+            0.5300946517742071,
+            0.6766648541736058,
+            0.18480367713266488,
+            0.5779157814003237,
+            0.840637166200146
+          ],
+          "shuffle": [
+            5,
+            4,
+            6,
+            1,
+            3,
+            10,
+            9,
+            7,
+            2,
+            8
+          ]
+        },
+        {
+          "seed": "AAAAAAAA",
+          "hash": 0.43257138351543745,
+          "keys": [
+            "shop",
+            "shop",
+            "pack",
+            "deck",
+            "pack",
+            "lucky_mult",
+            "lucky_money",
+            "glass",
+            "boss"
+          ],
+          "values": [
+            0.4069714710849561,
+            0.43557434130180495,
+            0.28534682112477006,
+            0.24172578777179,
+            0.49435405256170717,
+            0.28427756769681145,
+            0.049230979681164966,
+            0.28991879595214076,
+            0.5863984305229646
+          ],
+          "shuffle": [
+            4,
+            1,
+            3,
+            7,
+            2,
+            6,
+            9,
+            10,
+            8,
+            5
+          ]
+        },
+        {
+          "seed": "HELLOWORLD",
+          "hash": 0.9770937623111422,
+          "keys": [
+            "shop",
+            "shop",
+            "pack",
+            "deck",
+            "pack",
+            "lucky_mult",
+            "lucky_money",
+            "glass",
+            "boss"
+          ],
+          "values": [
+            0.008527550136065098,
+            0.19830845108364636,
+            0.6648424269338709,
+            0.460473995072574,
+            0.8260002402920421,
+            0.9271831800623871,
+            0.3723462815159655,
+            0.025147788379757507,
+            0.5770913738939261
+          ],
+          "shuffle": [
+            9,
+            7,
+            1,
+            4,
+            8,
+            5,
+            6,
+            10,
+            2,
+            3
+          ]
+        },
+        {
+          "seed": "SEED1234",
+          "hash": 0.5272275331462879,
+          "keys": [
+            "shop",
+            "shop",
+            "pack",
+            "deck",
+            "pack",
+            "lucky_mult",
+            "lucky_money",
+            "glass",
+            "boss"
+          ],
+          "values": [
+            0.011646248144308036,
+            0.7559032663482006,
+            0.45742435920371705,
+            0.6553539287106074,
+            0.3600124670931768,
+            0.17517949090875296,
+            0.3151892539539476,
+            0.7059395544734708,
+            0.8313843364002373
+          ],
+          "shuffle": [
+            4,
+            2,
+            1,
+            3,
+            6,
+            10,
+            5,
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "seed": "中文种子",
+          "hash": 0.8916183412875398,
+          "keys": [
+            "shop",
+            "shop",
+            "pack",
+            "deck",
+            "pack",
+            "lucky_mult",
+            "lucky_money",
+            "glass",
+            "boss"
+          ],
+          "values": [
+            0.13748702684781988,
+            0.6951482068582024,
+            0.7657813228852046,
+            0.5226067321783865,
+            0.316044690987334,
+            0.9749126165773387,
+            0.045631791901441066,
+            0.11406900072996229,
+            0.28155707284458864
+          ],
+          "shuffle": [
+            2,
+            5,
+            6,
+            1,
+            3,
+            8,
+            10,
+            9,
+            4,
+            7
+          ]
+        }
+      ],
+      "source": "references/rng-oracle.json.vectors; references/source/functions/misc_functions.lua:279-320",
+      "confidence": "高（LuaJIT 运行时已实测；未原版游戏内差分）"
+    },
+    {
+      "id": "rng.oracle.numericSeeds",
+      "subject": "真实LuaJIT运行对照向量：numericSeeds",
+      "value": [
+        {
+          "seed": 0,
+          "random": 0.794206292431241
+        },
+        {
+          "seed": 1,
+          "random": 0.3238105623786367
+        },
+        {
+          "seed": 0.5,
+          "random": 0.09657393438653461
+        },
+        {
+          "seed": 0.123456789,
+          "random": 0.7991842333777264
+        },
+        {
+          "seed": 12345,
+          "random": 0.35882823880566006
+        }
+      ],
+      "source": "references/rng-oracle.json.numericSeeds; references/source/functions/misc_functions.lua:279-320",
+      "confidence": "高（LuaJIT 运行时已实测；未原版游戏内差分）"
+    },
+    {
+      "id": "rng.fusedSeed",
+      "subject": "本机LuaJIT种子初始化采用一次舍入融合乘加",
+      "value": {
+        "floatMode": "fused",
+        "instruction": "fmadd",
+        "separateMode": "非融合运行时应选separate；未核验原版平台"
+      },
+      "source": "references/luajit/lib-math-disassembly.txt:221-230; references/source/luajit_lib_math.c:122",
+      "confidence": "高（本机编译产物已核验；原游戏平台TBD）"
+    },
+    {
+      "id": "deck.prototypeOrder",
+      "subject": "标准牌组初始创建顺序",
+      "value": {
+        "suits": [
+          "clubs",
+          "diamonds",
+          "hearts",
+          "spades"
+        ],
+        "ranks": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          14,
+          11,
+          13,
+          12,
+          10
+        ],
+        "sort": "按花色字母与点数字母组合字典序；C/D/H/S × 2..9/A/J/K/Q/T"
+      },
+      "source": "references/source/game.lua:2340-2357; references/source/game.lua:2367-2372",
+      "confidence": "高（参考源码；未游戏内差分）"
+    },
+    {
+      "id": "poker.oracle.sampleAudit",
+      "subject": "固定样本Lua原函数与独立牌型集合判定差分",
+      "value": {
+        "sampleCount": 10000,
+        "mismatchCount": 0,
+        "coverage": [
+          "1至5张",
+          "四指",
+          "捷径",
+          "涂抹",
+          "Splash",
+          "万能",
+          "石头",
+          "减益"
+        ],
+        "checks": [
+          "最强牌型",
+          "所有包含牌型",
+          "按出牌顺序的计分牌id"
+        ]
+      },
+      "source": "references/poker-oracle.lua; references/poker-oracle.json; references/poker-diff.json.cases/.mismatches",
+      "confidence": "高（真实Lua参考函数差分已执行；不是原版游戏内差分）"
+    }
+  ],
+  "limitations": [
+    "未运行原版游戏进行差分；社区公开参考源码只能作为静态证据。",
+    "LuaJIT v2.1公式核验不等于已核验原版内核版本与全部seed轨迹。",
+    "已与固定提交LuaJIT的5组seed、45次带键随机、5个洗牌和5个数值seed严格对照；该版本ARM编译使用FMA，尚不能推定原游戏其他平台采用同样浮点模式。"
+  ],
+  "rngOracle": {
+    "runtime": "LuaJIT 2.1.1788856981",
+    "luaJitCommit": "c6ffc141a8762b41703f9287d63d93622a13dd8f",
+    "script": "references/rng-oracle.lua",
+    "json": "references/rng-oracle.json"
+  }
+}

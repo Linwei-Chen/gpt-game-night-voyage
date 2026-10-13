@@ -1,0 +1,2356 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-13T05:03:34.861107+08:00",
+  "project": ".",
+  "referenceVersion": "1.0.1o-FULL",
+  "sourceCommit": "895ab3a25bc6f513fa80885eb59951bf8e76bc55",
+  "status": "mapping_complete_current_tests_passed",
+  "allOriginalGameAcceptancePassed": false,
+  "purpose": "对计分/牌型/RNG域的62条事实逐条映射有效断言，区分独立手写期望、外部Lua输出、同源内部比较和未覆盖；不将有限测试视为原版全绿验收。",
+  "sourcePolicy": "本轮只读本项目独立代码/测试/事实和references中的poker-diff.json、rng-oracle.json输出；未打开原版Lua源码、Lua脚本、原版资源或他人clone。",
+  "factCount": 62,
+  "coverageCounters": {
+    "partially_asserted": 17,
+    "literal_scenarios_asserted": 33,
+    "oracle_independently_matched": 8,
+    "unasserted": 3,
+    "prior_reference_sample_report": 1
+  },
+  "evidenceTypeFactCounters": {
+    "external_lua_output_golden": 9,
+    "internal_consistency": 1,
+    "internal_repeatability": 1,
+    "literal_boundary": 5,
+    "literal_golden": 47,
+    "literal_registry_scenario": 1,
+    "literal_run_scenario": 3,
+    "literal_scenario": 2,
+    "metadata_internal_consistency": 12,
+    "prior_reference_report_read": 7
+  },
+  "statusMeaning": {
+    "literal_scenarios_asserted": "事实的主要值或行为在独立字面量场景中验证；不表示全部条件空间已穷尽，细节见unverifiedScope。",
+    "partially_asserted": "已验证部分字段/分支，其余项目明确保留；牌型表中的数值已经独立验证，但原始order/level字段未逐条直接验证。",
+    "oracle_independently_matched": "本轮独立TypeScript实现与既有真实Lua运行输出严格相等，仅覆盖列出的固定样本。",
+    "prior_reference_sample_report": "仅核对先前的Lua差分报告，未在本轮重新执行，也没有历史执行时的实现哈希。",
+    "unasserted": "本域尚无对应独立断言；不能把旁支UI常量测试当作该事实验收。"
+  },
+  "testRun": {
+    "baseline": {
+      "command": "npm test -- tests/poker.test.ts tests/scoring.test.ts tests/rng.test.ts tests/game.test.ts",
+      "observedPassed": 140,
+      "observedFailed": 0,
+      "scope": "追加测试前的既有四文件。"
+    },
+    "testsFirstRun": {
+      "command": "npm test -- tests/poker.test.ts tests/scoring.test.ts tests/rng.test.ts tests/game.test.ts tests/timing.test.ts",
+      "observedPassed": 196,
+      "observedFailed": 1,
+      "observedTotal": 197,
+      "failure": "tests/game.test.ts:203，非有限数存档恢复Infinity实得null。"
+    },
+    "afterSerializerFix": {
+      "command": "npm test -- tests/game.test.ts",
+      "observedPassed": 43,
+      "observedFailed": 0,
+      "scope": "主代理修复数值标记转换后，只重跑受到影响的整局文件。"
+    },
+    "currentEffectivePassed": 197,
+    "currentEffectiveFailed": 0,
+    "interpretation": "未修改的四文件154项来自首次新增测试运行，整局43项来自修复后复验；197是组合结果，不声称修复后重复了五文件全部调用。",
+    "strictTypes": {
+      "command": "./node_modules/.bin/tsc --noEmit",
+      "exitCode": 0
+    },
+    "registryAssertionsNotRunInThisInvocation": [
+      "tests/jokers.test.ts：四指/概率计策/Misprint向量。该文件的既有运行可见docs/jokers-fact-assertions.json。"
+    ],
+    "testCountByFile": {
+      "tests/poker.test.ts": 60,
+      "tests/scoring.test.ts": 73,
+      "tests/rng.test.ts": 15,
+      "tests/game.test.ts": 43,
+      "tests/timing.test.ts": 6
+    },
+    "testCountByFileBasis": "参数表展开数量与两次运行总数一致；game的43项为修复后输出直接观察。"
+  },
+  "changes": {
+    "ownedFiles": [
+      "tests/poker.test.ts",
+      "tests/scoring.test.ts",
+      "tests/game.test.ts",
+      "tests/timing.test.ts",
+      "docs/core-fact-assertions.json"
+    ],
+    "addedTestCount": 57,
+    "srcChangedByThisAgent": false,
+    "externalFix": {
+      "owner": "root",
+      "file": "src/core/run-engine.ts",
+      "lines": [
+        351,
+        359,
+        362
+      ],
+      "behaviour": "序列化用专用对象标记Infinity/-Infinity/NaN，恢复时转回数值。",
+      "regression": {
+        "file": "tests/game.test.ts",
+        "line": 199,
+        "name": "存档恢复保留Infinity",
+        "type": "literal_golden"
+      }
+    }
+  },
+  "artifactHashes": {
+    "data/evidence-scoring.json": "d3bcb5a73a1a848169c2085a6e91f5b9e199c2b577d1531bd89320700a51a900",
+    "data/evidence-ui.json": "62aec6471e81b6ed45face724a464fc5b1d02d1210c4648b78d078a03460bde6",
+    "data/jokers.json": "52f9817de53e2c22b02043c3c206446af1ef25a31509c8b3eeacb8986c2f037f",
+    "data/systems-verified.json": "ed28d1ffa43e52104e777fe6125c2efb0b64e911fa51bf11bbc5a9ffd61ef3b2",
+    "src/core/cards.ts": "0a5e21b987ed6bee4b87980ec8aa916ed342fc77be5bff9c4b08730a2ef5e36f",
+    "src/core/poker.ts": "e2f44b1288ac216cf8e7ec7950ce6630ec79e3d4b27ece10c47a540ffa24461f",
+    "src/core/scoring.ts": "6ca9d97092de7752854d70565bc0a096c640e61510adf964cea508d88831c26a",
+    "src/core/rng.ts": "c5fe0e4b7e0b5b37d87c0f42e251ddb8ebb3ba668cec3b27345c0e72a7b8afb6",
+    "src/core/run-engine.ts": "d0911e6828ad33402e0c5de2053ff735f675d141a702a848c3af075e4a2e7e1f",
+    "src/content/jokers.ts": "3207262cb3b3f64dbb6e79131ce5713dea4cf36c4906d6ac671d8be5b51194d2",
+    "src/content/systems-runtime.ts": "e9d2a17dd38e3497992276f9ec327c429d4a1b6f35c9f9ee811c8c2e06f84314",
+    "src/render/timing.ts": "1a17ba7bc3f3d40a4beab1d16a86cdfd4a29e81b64bf8cbd231f1dc20fa7bfb9",
+    "tests/poker.test.ts": "d95e98f59e39a3fae7fff20fe539ade302caaf33332048c28591f1a09557aa88",
+    "tests/scoring.test.ts": "5daf0ee2e4c7245e4119858bfee943f3aeddd2d736e705c8e5fa4b18fcb5eb7d",
+    "tests/rng.test.ts": "80aa1146169175fbfc6560a84837c268793993f1911194cb7370f7635a2fb747",
+    "tests/game.test.ts": "db4ce0166cd9290afe769abe98198f85465710a1eb3eb99e59e3af455e5e027f",
+    "tests/timing.test.ts": "bfca2db482fb078e8f76b51f1b1bdd59979c71eee0a175f8c6dd249db427eed4",
+    "tests/jokers.test.ts": "a044c8edaea11bbf498ea79f153ff45817c6060a091bac83c23d8f13cade3e4e",
+    "references/rng-oracle.json": "182312a6210c852e171ceae6811a306d1bfba15d01c5fcfc487cc66e2e7fb7c9",
+    "references/poker-diff.json": "e7b0117d560231fbca9fb6521aa9ac153b1a835e3fd6ae35d3f839541fa0cd48"
+  },
+  "rngEvidenceScope": {
+    "runtime": "LuaJIT 2.1.1788856981",
+    "luaJitCommit": "c6ffc141a8762b41703f9287d63d93622a13dd8f",
+    "seedCount": 5,
+    "hashCount": 5,
+    "keyedDrawCount": 45,
+    "shuffleCount": 5,
+    "shuffleLength": 10,
+    "numericSeedCount": 5,
+    "numericSeeds": [
+      0,
+      1,
+      0.5,
+      0.123456789,
+      12345
+    ],
+    "verifiedFloatMode": "fused",
+    "separateModeOracleVerified": false,
+    "luaReexecutedThisAudit": false,
+    "originalGameEnginePlatformVerified": false,
+    "originalGameGlobalSeedTrajectoryVerified": false,
+    "excludedPaths": [
+      "特殊key=seed",
+      "predict_seed",
+      "含sortId对象的洗牌排序",
+      "对象候选元素排序",
+      "任意整数范围边界",
+      "完整原版商店/盲注/卡包调用次序"
+    ]
+  },
+  "implementationReview": [
+    {
+      "file": "src/core/scoring.ts",
+      "line": 225,
+      "subject": "heldConsumableEffects",
+      "conclusion": "所有joker/main及consumeables之后、均衡之前；整局score=361且trace明确断言次序。",
+      "assertion": {
+        "file": "tests/game.test.ts",
+        "line": 191,
+        "name": "伙伴主结算→两张持有星图",
+        "type": "literal_golden"
+      }
+    },
+    {
+      "file": "src/core/scoring.ts",
+      "line": 207,
+      "subject": "Sixth Sense残余事件",
+      "conclusion": "destroyCard以外的spawn事件保留到events；core和整局删除6并生成spectral都已回归。",
+      "assertions": [
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 71,
+          "name": "单张6销毁时保留幻灵",
+          "type": "literal_golden"
+        },
+        {
+          "file": "tests/game.test.ts",
+          "line": 28,
+          "name": "单张六点销毁后",
+          "type": "literal_golden"
+        }
+      ]
+    }
+  ],
+  "floatingPointBoundary": {
+    "probe": "合成高牌A场景，伙伴main提供有限xmult=1e308；只读临时执行，不落测试文件。",
+    "observed": "chips=16，mult=1e308，score=Infinity。",
+    "beforeFix": "roundScore=Infinity经原生JSON.stringify存档变为null；lastScore原本就不进入存档。",
+    "afterFix": "专用数值标记的Infinity/-Infinity/NaN round trip回归通过。",
+    "scopeLimit": "此探针只说明本实现双精度范围，不证明该合成倍率是常规局可达，也不证明原版极限值行为一致；超过安全整数精度及双精度可表示范围的原版差分仍TBD。"
+  },
+  "globalLimits": [
+    "未取得原版游戏内导出、可运行原版或原版录屏；静态事实来源的正确性仍需独立交叉核验。",
+    "独立字面量期望依据本地fact-table采集事实；能发现实现与数据的共同误改，不能排除来源采集自身错误。",
+    "同源HAND_VALUES与evidence JSON相等的原有用例明确归类为内部一致性；本轮已另加十二牌型数值和完整牌组顺序的手写表。",
+    "现有10,000组扑克Lua差分只保留简化报告；本轮未重新运行，报告未记录历史实现哈希，不能宣称当前代码重新差分完成。",
+    "RNG只在记录的LuaJIT运行时和向量范围验证；原版平台、FMA选项、原版全局seed调用轨迹及separate模式仍未验收。",
+    "普通双精度计分可出现安全整数精度损失和Infinity；原版在极端范围的结果、表现与保存行为TBD，不声称任意大数完全一致。",
+    "三条juice事实仍无对应时序断言；650/750毫秒与计分音高属于额外UI事实，不能替代逐帧录屏和视觉/听感审查。",
+    "测试为代表性有效场景与边界，不是所有卡牌/小丑/牌组/盲注组合的穷尽证明；最终1:1验收仍由项目级报告判断。"
+  ],
+  "facts": [
+    {
+      "factId": "hand.flushFive",
+      "subject": "牌型基础分与每级增量：Flush Five",
+      "source": "references/source/game.lua:2002",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "partially_asserted",
+      "assertions": [
+        {
+          "file": "tests/poker.test.ts",
+          "line": 60,
+          "name": "flushFive：独立字面量基础/增量/等级3/等级0/隐藏标志",
+          "type": "literal_golden",
+          "dataLine": 46
+        },
+        {
+          "file": "tests/poker.test.ts",
+          "line": 10,
+          "name": "hand.flushFive：同源证据与运行时定义相等",
+          "type": "metadata_internal_consistency"
+        }
+      ],
+      "verifiedScope": "基础筹码、倍率、每级增量和隐藏标志使用手写字面量；等级0、1、3的结果另有独立字面量，不从JSON生成期望。",
+      "unverifiedScope": [
+        "原始采集字段order和level没有逐条直接断言；完整运行时优先级另见poker.priority。",
+        "没有游戏内独立导出；手写期望仍依据已采集事实，不能发现事实来源自身的错误。"
+      ],
+      "fieldCoverage": {
+        "chips": "独立字面量断言",
+        "mult": "独立字面量断言",
+        "l_chips": "独立字面量断言",
+        "l_mult": "独立字面量断言",
+        "hidden": "独立字面量断言",
+        "handType": "用独立字面量类型键核验运行时定义",
+        "order": "未逐条检查原始order字段；另有完整HAND_PRIORITY独立断言",
+        "level": "用运行时等级1、0、3核验数值；未检查采集对象的原始level字段"
+      }
+    },
+    {
+      "factId": "hand.flushHouse",
+      "subject": "牌型基础分与每级增量：Flush House",
+      "source": "references/source/game.lua:2003",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "partially_asserted",
+      "assertions": [
+        {
+          "file": "tests/poker.test.ts",
+          "line": 60,
+          "name": "flushHouse：独立字面量基础/增量/等级3/等级0/隐藏标志",
+          "type": "literal_golden",
+          "dataLine": 47
+        },
+        {
+          "file": "tests/poker.test.ts",
+          "line": 10,
+          "name": "hand.flushHouse：同源证据与运行时定义相等",
+          "type": "metadata_internal_consistency"
+        }
+      ],
+      "verifiedScope": "基础筹码、倍率、每级增量和隐藏标志使用手写字面量；等级0、1、3的结果另有独立字面量，不从JSON生成期望。",
+      "unverifiedScope": [
+        "原始采集字段order和level没有逐条直接断言；完整运行时优先级另见poker.priority。",
+        "没有游戏内独立导出；手写期望仍依据已采集事实，不能发现事实来源自身的错误。"
+      ],
+      "fieldCoverage": {
+        "chips": "独立字面量断言",
+        "mult": "独立字面量断言",
+        "l_chips": "独立字面量断言",
+        "l_mult": "独立字面量断言",
+        "hidden": "独立字面量断言",
+        "handType": "用独立字面量类型键核验运行时定义",
+        "order": "未逐条检查原始order字段；另有完整HAND_PRIORITY独立断言",
+        "level": "用运行时等级1、0、3核验数值；未检查采集对象的原始level字段"
+      }
+    },
+    {
+      "factId": "hand.fiveOfAKind",
+      "subject": "牌型基础分与每级增量：Five of a Kind",
+      "source": "references/source/game.lua:2004",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "partially_asserted",
+      "assertions": [
+        {
+          "file": "tests/poker.test.ts",
+          "line": 60,
+          "name": "fiveOfAKind：独立字面量基础/增量/等级3/等级0/隐藏标志",
+          "type": "literal_golden",
+          "dataLine": 48
+        },
+        {
+          "file": "tests/poker.test.ts",
+          "line": 10,
+          "name": "hand.fiveOfAKind：同源证据与运行时定义相等",
+          "type": "metadata_internal_consistency"
+        }
+      ],
+      "verifiedScope": "基础筹码、倍率、每级增量和隐藏标志使用手写字面量；等级0、1、3的结果另有独立字面量，不从JSON生成期望。",
+      "unverifiedScope": [
+        "原始采集字段order和level没有逐条直接断言；完整运行时优先级另见poker.priority。",
+        "没有游戏内独立导出；手写期望仍依据已采集事实，不能发现事实来源自身的错误。"
+      ],
+      "fieldCoverage": {
+        "chips": "独立字面量断言",
+        "mult": "独立字面量断言",
+        "l_chips": "独立字面量断言",
+        "l_mult": "独立字面量断言",
+        "hidden": "独立字面量断言",
+        "handType": "用独立字面量类型键核验运行时定义",
+        "order": "未逐条检查原始order字段；另有完整HAND_PRIORITY独立断言",
+        "level": "用运行时等级1、0、3核验数值；未检查采集对象的原始level字段"
+      }
+    },
+    {
+      "factId": "hand.straightFlush",
+      "subject": "牌型基础分与每级增量：Straight Flush",
+      "source": "references/source/game.lua:2005",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "partially_asserted",
+      "assertions": [
+        {
+          "file": "tests/poker.test.ts",
+          "line": 60,
+          "name": "straightFlush：独立字面量基础/增量/等级3/等级0/隐藏标志",
+          "type": "literal_golden",
+          "dataLine": 49
+        },
+        {
+          "file": "tests/poker.test.ts",
+          "line": 10,
+          "name": "hand.straightFlush：同源证据与运行时定义相等",
+          "type": "metadata_internal_consistency"
+        }
+      ],
+      "verifiedScope": "基础筹码、倍率、每级增量和隐藏标志使用手写字面量；等级0、1、3的结果另有独立字面量，不从JSON生成期望。",
+      "unverifiedScope": [
+        "原始采集字段order和level没有逐条直接断言；完整运行时优先级另见poker.priority。",
+        "没有游戏内独立导出；手写期望仍依据已采集事实，不能发现事实来源自身的错误。"
+      ],
+      "fieldCoverage": {
+        "chips": "独立字面量断言",
+        "mult": "独立字面量断言",
+        "l_chips": "独立字面量断言",
+        "l_mult": "独立字面量断言",
+        "hidden": "独立字面量断言",
+        "handType": "用独立字面量类型键核验运行时定义",
+        "order": "未逐条检查原始order字段；另有完整HAND_PRIORITY独立断言",
+        "level": "用运行时等级1、0、3核验数值；未检查采集对象的原始level字段"
+      }
+    },
+    {
+      "factId": "hand.fourOfAKind",
+      "subject": "牌型基础分与每级增量：Four of a Kind",
+      "source": "references/source/game.lua:2006",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "partially_asserted",
+      "assertions": [
+        {
+          "file": "tests/poker.test.ts",
+          "line": 60,
+          "name": "fourOfAKind：独立字面量基础/增量/等级3/等级0/隐藏标志",
+          "type": "literal_golden",
+          "dataLine": 50
+        },
+        {
+          "file": "tests/poker.test.ts",
+          "line": 10,
+          "name": "hand.fourOfAKind：同源证据与运行时定义相等",
+          "type": "metadata_internal_consistency"
+        }
+      ],
+      "verifiedScope": "基础筹码、倍率、每级增量和隐藏标志使用手写字面量；等级0、1、3的结果另有独立字面量，不从JSON生成期望。",
+      "unverifiedScope": [
+        "原始采集字段order和level没有逐条直接断言；完整运行时优先级另见poker.priority。",
+        "没有游戏内独立导出；手写期望仍依据已采集事实，不能发现事实来源自身的错误。"
+      ],
+      "fieldCoverage": {
+        "chips": "独立字面量断言",
+        "mult": "独立字面量断言",
+        "l_chips": "独立字面量断言",
+        "l_mult": "独立字面量断言",
+        "hidden": "独立字面量断言",
+        "handType": "用独立字面量类型键核验运行时定义",
+        "order": "未逐条检查原始order字段；另有完整HAND_PRIORITY独立断言",
+        "level": "用运行时等级1、0、3核验数值；未检查采集对象的原始level字段"
+      }
+    },
+    {
+      "factId": "hand.fullHouse",
+      "subject": "牌型基础分与每级增量：Full House",
+      "source": "references/source/game.lua:2007",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "partially_asserted",
+      "assertions": [
+        {
+          "file": "tests/poker.test.ts",
+          "line": 60,
+          "name": "fullHouse：独立字面量基础/增量/等级3/等级0/隐藏标志",
+          "type": "literal_golden",
+          "dataLine": 51
+        },
+        {
+          "file": "tests/poker.test.ts",
+          "line": 10,
+          "name": "hand.fullHouse：同源证据与运行时定义相等",
+          "type": "metadata_internal_consistency"
+        }
+      ],
+      "verifiedScope": "基础筹码、倍率、每级增量和隐藏标志使用手写字面量；等级0、1、3的结果另有独立字面量，不从JSON生成期望。",
+      "unverifiedScope": [
+        "原始采集字段order和level没有逐条直接断言；完整运行时优先级另见poker.priority。",
+        "没有游戏内独立导出；手写期望仍依据已采集事实，不能发现事实来源自身的错误。"
+      ],
+      "fieldCoverage": {
+        "chips": "独立字面量断言",
+        "mult": "独立字面量断言",
+        "l_chips": "独立字面量断言",
+        "l_mult": "独立字面量断言",
+        "hidden": "独立字面量断言",
+        "handType": "用独立字面量类型键核验运行时定义",
+        "order": "未逐条检查原始order字段；另有完整HAND_PRIORITY独立断言",
+        "level": "用运行时等级1、0、3核验数值；未检查采集对象的原始level字段"
+      }
+    },
+    {
+      "factId": "hand.flush",
+      "subject": "牌型基础分与每级增量：Flush",
+      "source": "references/source/game.lua:2008",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "partially_asserted",
+      "assertions": [
+        {
+          "file": "tests/poker.test.ts",
+          "line": 60,
+          "name": "flush：独立字面量基础/增量/等级3/等级0/隐藏标志",
+          "type": "literal_golden",
+          "dataLine": 52
+        },
+        {
+          "file": "tests/poker.test.ts",
+          "line": 10,
+          "name": "hand.flush：同源证据与运行时定义相等",
+          "type": "metadata_internal_consistency"
+        }
+      ],
+      "verifiedScope": "基础筹码、倍率、每级增量和隐藏标志使用手写字面量；等级0、1、3的结果另有独立字面量，不从JSON生成期望。",
+      "unverifiedScope": [
+        "原始采集字段order和level没有逐条直接断言；完整运行时优先级另见poker.priority。",
+        "没有游戏内独立导出；手写期望仍依据已采集事实，不能发现事实来源自身的错误。"
+      ],
+      "fieldCoverage": {
+        "chips": "独立字面量断言",
+        "mult": "独立字面量断言",
+        "l_chips": "独立字面量断言",
+        "l_mult": "独立字面量断言",
+        "hidden": "独立字面量断言",
+        "handType": "用独立字面量类型键核验运行时定义",
+        "order": "未逐条检查原始order字段；另有完整HAND_PRIORITY独立断言",
+        "level": "用运行时等级1、0、3核验数值；未检查采集对象的原始level字段"
+      }
+    },
+    {
+      "factId": "hand.straight",
+      "subject": "牌型基础分与每级增量：Straight",
+      "source": "references/source/game.lua:2009",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "partially_asserted",
+      "assertions": [
+        {
+          "file": "tests/poker.test.ts",
+          "line": 60,
+          "name": "straight：独立字面量基础/增量/等级3/等级0/隐藏标志",
+          "type": "literal_golden",
+          "dataLine": 53
+        },
+        {
+          "file": "tests/poker.test.ts",
+          "line": 10,
+          "name": "hand.straight：同源证据与运行时定义相等",
+          "type": "metadata_internal_consistency"
+        }
+      ],
+      "verifiedScope": "基础筹码、倍率、每级增量和隐藏标志使用手写字面量；等级0、1、3的结果另有独立字面量，不从JSON生成期望。",
+      "unverifiedScope": [
+        "原始采集字段order和level没有逐条直接断言；完整运行时优先级另见poker.priority。",
+        "没有游戏内独立导出；手写期望仍依据已采集事实，不能发现事实来源自身的错误。"
+      ],
+      "fieldCoverage": {
+        "chips": "独立字面量断言",
+        "mult": "独立字面量断言",
+        "l_chips": "独立字面量断言",
+        "l_mult": "独立字面量断言",
+        "hidden": "独立字面量断言",
+        "handType": "用独立字面量类型键核验运行时定义",
+        "order": "未逐条检查原始order字段；另有完整HAND_PRIORITY独立断言",
+        "level": "用运行时等级1、0、3核验数值；未检查采集对象的原始level字段"
+      }
+    },
+    {
+      "factId": "hand.threeOfAKind",
+      "subject": "牌型基础分与每级增量：Three of a Kind",
+      "source": "references/source/game.lua:2010",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "partially_asserted",
+      "assertions": [
+        {
+          "file": "tests/poker.test.ts",
+          "line": 60,
+          "name": "threeOfAKind：独立字面量基础/增量/等级3/等级0/隐藏标志",
+          "type": "literal_golden",
+          "dataLine": 54
+        },
+        {
+          "file": "tests/poker.test.ts",
+          "line": 10,
+          "name": "hand.threeOfAKind：同源证据与运行时定义相等",
+          "type": "metadata_internal_consistency"
+        }
+      ],
+      "verifiedScope": "基础筹码、倍率、每级增量和隐藏标志使用手写字面量；等级0、1、3的结果另有独立字面量，不从JSON生成期望。",
+      "unverifiedScope": [
+        "原始采集字段order和level没有逐条直接断言；完整运行时优先级另见poker.priority。",
+        "没有游戏内独立导出；手写期望仍依据已采集事实，不能发现事实来源自身的错误。"
+      ],
+      "fieldCoverage": {
+        "chips": "独立字面量断言",
+        "mult": "独立字面量断言",
+        "l_chips": "独立字面量断言",
+        "l_mult": "独立字面量断言",
+        "hidden": "独立字面量断言",
+        "handType": "用独立字面量类型键核验运行时定义",
+        "order": "未逐条检查原始order字段；另有完整HAND_PRIORITY独立断言",
+        "level": "用运行时等级1、0、3核验数值；未检查采集对象的原始level字段"
+      }
+    },
+    {
+      "factId": "hand.twoPair",
+      "subject": "牌型基础分与每级增量：Two Pair",
+      "source": "references/source/game.lua:2011",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "partially_asserted",
+      "assertions": [
+        {
+          "file": "tests/poker.test.ts",
+          "line": 60,
+          "name": "twoPair：独立字面量基础/增量/等级3/等级0/隐藏标志",
+          "type": "literal_golden",
+          "dataLine": 55
+        },
+        {
+          "file": "tests/poker.test.ts",
+          "line": 10,
+          "name": "hand.twoPair：同源证据与运行时定义相等",
+          "type": "metadata_internal_consistency"
+        }
+      ],
+      "verifiedScope": "基础筹码、倍率、每级增量和隐藏标志使用手写字面量；等级0、1、3的结果另有独立字面量，不从JSON生成期望。",
+      "unverifiedScope": [
+        "原始采集字段order和level没有逐条直接断言；完整运行时优先级另见poker.priority。",
+        "没有游戏内独立导出；手写期望仍依据已采集事实，不能发现事实来源自身的错误。"
+      ],
+      "fieldCoverage": {
+        "chips": "独立字面量断言",
+        "mult": "独立字面量断言",
+        "l_chips": "独立字面量断言",
+        "l_mult": "独立字面量断言",
+        "hidden": "独立字面量断言",
+        "handType": "用独立字面量类型键核验运行时定义",
+        "order": "未逐条检查原始order字段；另有完整HAND_PRIORITY独立断言",
+        "level": "用运行时等级1、0、3核验数值；未检查采集对象的原始level字段"
+      }
+    },
+    {
+      "factId": "hand.pair",
+      "subject": "牌型基础分与每级增量：Pair",
+      "source": "references/source/game.lua:2012",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "partially_asserted",
+      "assertions": [
+        {
+          "file": "tests/poker.test.ts",
+          "line": 60,
+          "name": "pair：独立字面量基础/增量/等级3/等级0/隐藏标志",
+          "type": "literal_golden",
+          "dataLine": 56
+        },
+        {
+          "file": "tests/poker.test.ts",
+          "line": 10,
+          "name": "hand.pair：同源证据与运行时定义相等",
+          "type": "metadata_internal_consistency"
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 31,
+          "name": "02 对10：(10+10+10)×2",
+          "type": "literal_golden",
+          "dataLine": 14
+        }
+      ],
+      "verifiedScope": "基础筹码、倍率、每级增量和隐藏标志使用手写字面量；等级0、1、3的结果另有独立字面量，不从JSON生成期望。",
+      "unverifiedScope": [
+        "原始采集字段order和level没有逐条直接断言；完整运行时优先级另见poker.priority。",
+        "没有游戏内独立导出；手写期望仍依据已采集事实，不能发现事实来源自身的错误。"
+      ],
+      "fieldCoverage": {
+        "chips": "独立字面量断言",
+        "mult": "独立字面量断言",
+        "l_chips": "独立字面量断言",
+        "l_mult": "独立字面量断言",
+        "hidden": "独立字面量断言",
+        "handType": "用独立字面量类型键核验运行时定义",
+        "order": "未逐条检查原始order字段；另有完整HAND_PRIORITY独立断言",
+        "level": "用运行时等级1、0、3核验数值；未检查采集对象的原始level字段"
+      }
+    },
+    {
+      "factId": "hand.highCard",
+      "subject": "牌型基础分与每级增量：High Card",
+      "source": "references/source/game.lua:2013",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "partially_asserted",
+      "assertions": [
+        {
+          "file": "tests/poker.test.ts",
+          "line": 60,
+          "name": "highCard：独立字面量基础/增量/等级3/等级0/隐藏标志",
+          "type": "literal_golden",
+          "dataLine": 57
+        },
+        {
+          "file": "tests/poker.test.ts",
+          "line": 10,
+          "name": "hand.highCard：同源证据与运行时定义相等",
+          "type": "metadata_internal_consistency"
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 31,
+          "name": "01 高牌A：(5+11)×1",
+          "type": "literal_golden",
+          "dataLine": 13
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 36,
+          "name": "before升级影响本手基础分",
+          "type": "literal_golden"
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 65,
+          "name": "Space Joker在before升级",
+          "type": "literal_golden"
+        }
+      ],
+      "verifiedScope": "基础筹码、倍率、每级增量和隐藏标志使用手写字面量；等级0、1、3的结果另有独立字面量，不从JSON生成期望。",
+      "unverifiedScope": [
+        "原始采集字段order和level没有逐条直接断言；完整运行时优先级另见poker.priority。",
+        "没有游戏内独立导出；手写期望仍依据已采集事实，不能发现事实来源自身的错误。"
+      ],
+      "fieldCoverage": {
+        "chips": "独立字面量断言",
+        "mult": "独立字面量断言",
+        "l_chips": "独立字面量断言",
+        "l_mult": "独立字面量断言",
+        "hidden": "独立字面量断言",
+        "handType": "用独立字面量类型键核验运行时定义",
+        "order": "未逐条检查原始order字段；另有完整HAND_PRIORITY独立断言",
+        "level": "用运行时等级1、0、3核验数值；未检查采集对象的原始level字段"
+      }
+    },
+    {
+      "factId": "hand.levelFormula",
+      "subject": "牌型升级公式",
+      "source": "references/source/functions/common_events.lua:464-468",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "partially_asserted",
+      "assertions": [
+        {
+          "file": "tests/poker.test.ts",
+          "line": 60,
+          "name": "十二牌型等级0/1/3的独立结果表",
+          "type": "literal_golden"
+        },
+        {
+          "file": "tests/poker.test.ts",
+          "line": 12,
+          "name": "降到等级零时",
+          "type": "literal_golden"
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 36,
+          "name": "before升级影响本手基础分",
+          "type": "literal_golden"
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 65,
+          "name": "Space Joker在before升级",
+          "type": "literal_golden"
+        }
+      ],
+      "verifiedScope": "十二牌型基础值、等级3增量、等级0的筹码/倍率下限；before升一级本手立即使用新基础值。",
+      "unverifiedScope": [
+        "level=max(0,level+amount)中的负amount和跨零降级没有独立操作测试；已测的是等级0最终值。",
+        "全部等级和超大等级精度未穷尽。"
+      ]
+    },
+    {
+      "factId": "rank.chips",
+      "subject": "扑克点数筹码",
+      "source": "references/source/card.lua:122-134",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "literal_scenarios_asserted",
+      "assertions": [
+        {
+          "file": "tests/poker.test.ts",
+          "line": 69,
+          "name": "2至A每个点数的筹码",
+          "type": "literal_golden"
+        },
+        {
+          "file": "tests/poker.test.ts",
+          "line": 37,
+          "name": "JQK为10筹码",
+          "type": "literal_golden"
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 31,
+          "name": "01 高牌A：(5+11)×1",
+          "type": "literal_golden",
+          "dataLine": 13
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 31,
+          "name": "02 对10：(10+10+10)×2",
+          "type": "literal_golden",
+          "dataLine": 14
+        }
+      ],
+      "verifiedScope": "2至14各点数的筹码逐项等于独立字面量；J/Q/K为10，A为11。",
+      "unverifiedScope": [
+        "无原版游戏内运行对照。"
+      ]
+    },
+    {
+      "factId": "rank.highTie",
+      "subject": "高牌相同点数按内部 nominal 区分",
+      "source": "references/source/card.lua:131-141; references/source/card.lua:950-954",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "partially_asserted",
+      "assertions": [
+        {
+          "file": "tests/poker.test.ts",
+          "line": 31,
+          "name": "同点数高牌选择较大的内部花色nominal",
+          "type": "literal_golden"
+        },
+        {
+          "file": "references/poker-diff.json",
+          "jsonPointers": [
+            "/cases",
+            "/mismatches"
+          ],
+          "name": "既有10,000组Lua牌型差分报告读取",
+          "type": "prior_reference_report_read",
+          "automatedTest": false,
+          "rerunInThisAudit": false
+        }
+      ],
+      "verifiedScope": "同点数A在方块/黑桃之间选择黑桃的相对结果有独立断言；既有样本报告还比较了最终计分卡id。",
+      "unverifiedScope": [
+        "faceOffsets的0.1/0.2/0.3/0.4和四花色0.01至0.04绝对值没有独立断言。",
+        "uniqueVal和原始花色扰动不是该事实的全部可验证范围；未逐项验证所有同点数排列。"
+      ]
+    },
+    {
+      "factId": "poker.priority",
+      "subject": "牌型强弱优先级",
+      "source": "references/source/functions/state_events.lua:544-555",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "literal_scenarios_asserted",
+      "assertions": [
+        {
+          "file": "tests/poker.test.ts",
+          "line": 66,
+          "name": "牌型优先级完整按独立字面量排序",
+          "type": "literal_golden"
+        },
+        {
+          "file": "tests/poker.test.ts",
+          "line": 16,
+          "name": "十二牌型独立构牌识别",
+          "type": "literal_scenario",
+          "dataLine": 15
+        },
+        {
+          "file": "references/poker-diff.json",
+          "jsonPointers": [
+            "/cases",
+            "/mismatches"
+          ],
+          "name": "既有10,000组Lua牌型差分报告读取",
+          "type": "prior_reference_report_read",
+          "automatedTest": false,
+          "rerunInThisAudit": false
+        }
+      ],
+      "verifiedScope": "运行时完整12项优先级等于独立字面量；代表性各牌型识别及五条/葫芦重叠场景通过。",
+      "unverifiedScope": [
+        "不是所有牌型重叠组合的穷尽证明；既有Lua报告本轮未重新执行。"
+      ]
+    },
+    {
+      "factId": "poker.hidden",
+      "subject": "三种隐藏牌型条件",
+      "source": "references/source/functions/misc_functions.lua:404-425",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "literal_scenarios_asserted",
+      "assertions": [
+        {
+          "file": "tests/poker.test.ts",
+          "line": 16,
+          "name": "五条、同花葫芦、同花五条的独立构牌场景",
+          "type": "literal_scenario",
+          "dataLine": 15
+        },
+        {
+          "file": "tests/poker.test.ts",
+          "line": 60,
+          "name": "三隐藏牌型hidden=true，其余false",
+          "type": "literal_golden"
+        },
+        {
+          "file": "tests/game.test.ts",
+          "line": 139,
+          "name": "可见牌型包括尚未出过的基础牌型",
+          "type": "literal_golden"
+        },
+        {
+          "file": "references/poker-diff.json",
+          "jsonPointers": [
+            "/cases",
+            "/mismatches"
+          ],
+          "name": "既有10,000组Lua牌型差分报告读取",
+          "type": "prior_reference_report_read",
+          "automatedTest": false,
+          "rerunInThisAudit": false
+        }
+      ],
+      "verifiedScope": "三个隐藏牌型条件的代表性5张组合与隐藏标志；可见基础牌型9种及未出同花五条不显示。",
+      "unverifiedScope": [
+        "全部隐藏牌型的首次发现/解锁/显示全流程没有原版差分。"
+      ]
+    },
+    {
+      "factId": "poker.subTypes",
+      "subject": "高重数牌型也被 pair/three/four 小丑识别",
+      "source": "references/source/functions/misc_functions.lua:479-517",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "partially_asserted",
+      "assertions": [
+        {
+          "file": "tests/poker.test.ts",
+          "line": 27,
+          "name": "五条满足对子/三条/四条",
+          "type": "literal_golden"
+        },
+        {
+          "file": "tests/poker.test.ts",
+          "line": 28,
+          "name": "葫芦同时满足两对/对子/三条",
+          "type": "literal_golden"
+        },
+        {
+          "file": "references/poker-diff.json",
+          "jsonPointers": [
+            "/cases",
+            "/mismatches"
+          ],
+          "name": "既有10,000组Lua牌型差分报告读取",
+          "type": "prior_reference_report_read",
+          "automatedTest": false,
+          "rerunInThisAudit": false
+        }
+      ],
+      "verifiedScope": "五条包含四条、三条、对子且不包含两对；葫芦包含两对、三条、对子。",
+      "unverifiedScope": [
+        "普通四条→三条/对子和普通三条→对子没有各自专用的allTypes字面量断言；既有Lua样本报告覆盖部分分支，但未在本轮重新执行。"
+      ]
+    },
+    {
+      "factId": "poker.fourFingers",
+      "subject": "四张顺子/同花门槛",
+      "source": "references/source/functions/misc_functions.lua:524-551",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "literal_scenarios_asserted",
+      "assertions": [
+        {
+          "file": "tests/poker.test.ts",
+          "line": 20,
+          "name": "四指的顺子与同花可以用不同四张组成",
+          "type": "literal_golden"
+        },
+        {
+          "file": "tests/poker.test.ts",
+          "line": 23,
+          "name": "四指顺子可包含重复点数",
+          "type": "literal_golden"
+        },
+        {
+          "file": "tests/jokers.test.ts",
+          "line": 34,
+          "name": "四指被动规则值4",
+          "type": "literal_registry_scenario"
+        }
+      ],
+      "verifiedScope": "顺子与同花门槛4、不同四张可组合、重复点数的全部实例进入计分集合；注册器被动值4有字面量用例。",
+      "unverifiedScope": [
+        "四指与全部牌型/增强组合未穷尽；伙伴注册器测试不在本轮五文件调用中。"
+      ]
+    },
+    {
+      "factId": "poker.shortcut",
+      "subject": "顺子允许间隔",
+      "source": "references/source/functions/misc_functions.lua:565-585",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "literal_scenarios_asserted",
+      "assertions": [
+        {
+          "file": "tests/poker.test.ts",
+          "line": 21,
+          "name": "捷径每个间隙允许少一个点数",
+          "type": "literal_golden"
+        },
+        {
+          "file": "tests/poker.test.ts",
+          "line": 22,
+          "name": "捷径不能跳过连续两个点数",
+          "type": "literal_golden"
+        },
+        {
+          "file": "tests/poker.test.ts",
+          "line": 17,
+          "name": "A可在A2345",
+          "type": "literal_golden"
+        },
+        {
+          "file": "tests/poker.test.ts",
+          "line": 18,
+          "name": "QKA23不能绕回",
+          "type": "literal_golden"
+        },
+        {
+          "file": "references/poker-diff.json",
+          "jsonPointers": [
+            "/cases",
+            "/mismatches"
+          ],
+          "name": "既有10,000组Lua牌型差分报告读取",
+          "type": "prior_reference_report_read",
+          "automatedTest": false,
+          "rerunInThisAudit": false
+        }
+      ],
+      "verifiedScope": "间隔最多缺1张的正例、缺2张反例，以及A低端顺子与不绕回反例。",
+      "unverifiedScope": [
+        "全部点数序列与四指组合未穷尽。"
+      ]
+    },
+    {
+      "factId": "poker.straightFlushUnion",
+      "subject": "四指顺子同花组合",
+      "source": "references/source/functions/misc_functions.lua:428-442",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "literal_scenarios_asserted",
+      "assertions": [
+        {
+          "file": "tests/poker.test.ts",
+          "line": 20,
+          "name": "四指的顺子与同花可以用不同四张组成",
+          "type": "literal_golden"
+        }
+      ],
+      "verifiedScope": "顺子和同花各用不同四张时，最强牌型为同花顺且计分集合为5张并集。",
+      "unverifiedScope": [
+        "更多排列及通配花色组合未逐一验证。"
+      ]
+    },
+    {
+      "factId": "poker.stone",
+      "subject": "石头牌牌型与计分",
+      "source": "references/source/card.lua:957-962; references/source/card.lua:4064-4068; references/source/functions/state_events.lua:580-600",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "literal_scenarios_asserted",
+      "assertions": [
+        {
+          "file": "tests/poker.test.ts",
+          "line": 24,
+          "name": "石头牌加入计分但不构成对子",
+          "type": "literal_golden"
+        },
+        {
+          "file": "tests/poker.test.ts",
+          "line": 25,
+          "name": "仅石头牌仍返回高牌",
+          "type": "literal_golden"
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 31,
+          "name": "14 石头追加计分：(5+11+50)×1",
+          "type": "literal_golden",
+          "dataLine": 26
+        }
+      ],
+      "verifiedScope": "石头不组成对子，仍加入计分；全石头手为高牌且所有石头计分；加入石头的手算分66。",
+      "unverifiedScope": [
+        "石头与全部隐藏牌型/被动规则组合未穷尽。"
+      ]
+    },
+    {
+      "factId": "poker.wild",
+      "subject": "万能花色与减益",
+      "source": "references/source/card.lua:4064-4087",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "literal_scenarios_asserted",
+      "assertions": [
+        {
+          "file": "tests/poker.test.ts",
+          "line": 29,
+          "name": "减益万能牌失去通配花色",
+          "type": "literal_golden"
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 67,
+          "name": "Blackboard花色检查",
+          "type": "literal_golden"
+        }
+      ],
+      "verifiedScope": "万能牌未减益时补齐同花；减益后只按底花色判牌型；黑板也按减益/未减益花色分支区分。",
+      "unverifiedScope": [
+        "全部花色排列未穷尽。"
+      ]
+    },
+    {
+      "factId": "poker.smeared",
+      "subject": "红黑颜色合并",
+      "source": "references/source/card.lua:4072-4085",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "partially_asserted",
+      "assertions": [
+        {
+          "file": "tests/poker.test.ts",
+          "line": 30,
+          "name": "涂抹规则合并红色",
+          "type": "literal_golden"
+        },
+        {
+          "file": "references/poker-diff.json",
+          "jsonPointers": [
+            "/cases",
+            "/mismatches"
+          ],
+          "name": "既有10,000组Lua牌型差分报告读取",
+          "type": "prior_reference_report_read",
+          "automatedTest": false,
+          "rerunInThisAudit": false
+        }
+      ],
+      "verifiedScope": "红桃与方块合并为同花有专用独立场景。",
+      "unverifiedScope": [
+        "梅花与黑桃合并没有专用字面量场景，只有既有Lua采样报告；报告未在本轮重跑。"
+      ]
+    },
+    {
+      "factId": "card.bonus",
+      "subject": "增强或版本数值：bonus",
+      "source": "references/source/game.lua:648",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "literal_scenarios_asserted",
+      "assertions": [
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 31,
+          "name": "03 Bonus+Mult：(10+2+30+2)×(2+4)",
+          "type": "literal_golden",
+          "dataLine": 15
+        }
+      ],
+      "verifiedScope": "增强筹码+30由手算44筹码、6倍率、264分直接检验。",
+      "unverifiedScope": [
+        "重复和全部版本组合未穷尽。"
+      ]
+    },
+    {
+      "factId": "card.mult",
+      "subject": "增强或版本数值：mult",
+      "source": "references/source/game.lua:649",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "literal_scenarios_asserted",
+      "assertions": [
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 31,
+          "name": "03 Bonus+Mult：(10+2+30+2)×(2+4)",
+          "type": "literal_golden",
+          "dataLine": 15
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 31,
+          "name": "04 左+4再玻璃×2：(10+2+2)×((2+4)×2)",
+          "type": "literal_golden",
+          "dataLine": 16
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 31,
+          "name": "05 左玻璃×2再+4：(10+2+2)×(2×2+4)",
+          "type": "literal_golden",
+          "dataLine": 17
+        }
+      ],
+      "verifiedScope": "增强倍率+4及与玻璃乘法的左右顺序由独立手算验证。",
+      "unverifiedScope": [
+        "全部牌型/版本组合未穷尽。"
+      ]
+    },
+    {
+      "factId": "card.glass",
+      "subject": "增强或版本数值：glass",
+      "source": "references/source/game.lua:651",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "literal_scenarios_asserted",
+      "assertions": [
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 31,
+          "name": "04 左+4再玻璃×2：(10+2+2)×((2+4)×2)",
+          "type": "literal_golden",
+          "dataLine": 16
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 31,
+          "name": "05 左玻璃×2再+4：(10+2+2)×(2×2+4)",
+          "type": "literal_golden",
+          "dataLine": 17
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 31,
+          "name": "06 红封玻璃A：(5+11+11)×(1×2×2)",
+          "type": "literal_golden",
+          "dataLine": 18
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 40,
+          "name": "玻璃破碎每手每卡一次",
+          "type": "literal_golden"
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 117,
+          "name": "玻璃默认1/4和分子2/4：阈值下、等于、上各一例",
+          "type": "literal_boundary",
+          "dataLine": 116
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 58,
+          "name": "Hack与红封共同重复玻璃",
+          "type": "literal_golden"
+        }
+      ],
+      "verifiedScope": "×2及多次重触发；每卡每手只抽一次碎裂；1/4和2/4两种分子的精确阈值严格小于。",
+      "unverifiedScope": [
+        "其他概率分子、无效分子和全部特殊销毁联动未穷尽。"
+      ]
+    },
+    {
+      "factId": "card.steel",
+      "subject": "增强或版本数值：steel",
+      "source": "references/source/game.lua:652",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "literal_scenarios_asserted",
+      "assertions": [
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 31,
+          "name": "07 手牌钢铁+红封：(5+11)×(1.5²)",
+          "type": "literal_golden",
+          "dataLine": 19
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 31,
+          "name": "08 钢铁+红封+Mime：16×1.5³",
+          "type": "literal_golden",
+          "dataLine": 20
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 56,
+          "name": "实际Mime+红封钢铁King+Baron",
+          "type": "literal_golden"
+        }
+      ],
+      "verifiedScope": "手中×1.5，红封/Mime重触发分别重复钢铁，并与Baron叠乘。",
+      "unverifiedScope": [
+        "全部手中效果顺序和减益组合未穷尽。"
+      ]
+    },
+    {
+      "factId": "card.stone",
+      "subject": "增强或版本数值：stone",
+      "source": "references/source/game.lua:653",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "literal_scenarios_asserted",
+      "assertions": [
+        {
+          "file": "tests/poker.test.ts",
+          "line": 37,
+          "name": "JQK为10筹码",
+          "type": "literal_golden"
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 31,
+          "name": "14 石头追加计分：(5+11+50)×1",
+          "type": "literal_golden",
+          "dataLine": 26
+        }
+      ],
+      "verifiedScope": "石头50加永久7为57，不叠加底牌点数；手算高牌加石头66分。",
+      "unverifiedScope": [
+        "所有永久筹码增长/复制组合未穷尽。"
+      ]
+    },
+    {
+      "factId": "card.gold",
+      "subject": "增强或版本数值：gold",
+      "source": "references/source/game.lua:654",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "literal_scenarios_asserted",
+      "assertions": [
+        {
+          "file": "tests/game.test.ts",
+          "line": 183,
+          "name": "金牌普通/红封/Mime/红封+Mime/减益/已出牌六场景",
+          "type": "literal_run_scenario",
+          "dataLine": 175
+        }
+      ],
+      "verifiedScope": "通过公开出牌动作赢关，扣除正常关卡收入后，金牌奖励分别3、6、6、9、0、0；覆盖只给剩余未减益手牌。",
+      "unverifiedScope": [
+        "全部回合末小丑、蓝封、救场和不同难度联动未穷尽。"
+      ]
+    },
+    {
+      "factId": "card.lucky",
+      "subject": "增强或版本数值：lucky",
+      "source": "references/source/game.lua:655",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "literal_scenarios_asserted",
+      "assertions": [
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 39,
+          "name": "金封逐次给3",
+          "type": "literal_golden"
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 63,
+          "name": "Lucky Cat每次Lucky",
+          "type": "literal_golden"
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 64,
+          "name": "幸运金钱当场进入余额",
+          "type": "literal_golden"
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 106,
+          "name": "幸运倍率成功+20、失败+0，默认与分子2的阈值",
+          "type": "literal_boundary"
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 111,
+          "name": "幸运金钱成功+20、失败+0，默认与分子2的阈值",
+          "type": "literal_boundary"
+        }
+      ],
+      "verifiedScope": "倍率+20、金钱+20、两个独立key、重触发累计40金，以及幸运猫只成长一次。",
+      "unverifiedScope": [
+        "概率参数另见两项概率事实；全局随机调用轨迹未与原版对照。"
+      ]
+    },
+    {
+      "factId": "card.foil",
+      "subject": "增强或版本数值：foil",
+      "source": "references/source/game.lua:659",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "literal_scenarios_asserted",
+      "assertions": [
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 76,
+          "name": "出牌闪箔独立增加50筹码",
+          "type": "literal_golden"
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 79,
+          "name": "伙伴闪箔在main前增加50",
+          "type": "literal_golden"
+        }
+      ],
+      "verifiedScope": "纸牌闪箔+50得到66分；纸牌和伙伴各+50得到116筹码，伙伴版本在main+4前。",
+      "unverifiedScope": [
+        "全部版本混合/减益和购买后整局变化未穷尽。"
+      ]
+    },
+    {
+      "factId": "card.holo",
+      "subject": "增强或版本数值：holo",
+      "source": "references/source/game.lua:660",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "literal_scenarios_asserted",
+      "assertions": [
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 31,
+          "name": "11 全息Blackboard先+10再×3→+4：16×37",
+          "type": "literal_golden",
+          "dataLine": 23
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 54,
+          "name": "全息小丑版本在main前",
+          "type": "literal_golden"
+        }
+      ],
+      "verifiedScope": "+10倍率且在main之前；棒球在main之后的实际注册器联动有手算792分。",
+      "unverifiedScope": [
+        "全息纸牌计分没有单独专用场景；全量组合未穷尽。"
+      ]
+    },
+    {
+      "factId": "card.polychrome",
+      "subject": "增强或版本数值：polychrome",
+      "source": "references/source/game.lua:661",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "literal_scenarios_asserted",
+      "assertions": [
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 31,
+          "name": "12 多彩Blackboard先×3再×1.5→+4：16×8.5",
+          "type": "literal_golden",
+          "dataLine": 24
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 31,
+          "name": "15 玻璃多彩A先×2×1.5再Scholar+4：(5+11+20)×7",
+          "type": "literal_golden",
+          "dataLine": 27
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 55,
+          "name": "多彩小丑版本在棒球之后",
+          "type": "literal_golden"
+        }
+      ],
+      "verifiedScope": "×1.5；纸牌版本先于逐卡小丑，伙伴版本在otherJoker后；实际trace验证。",
+      "unverifiedScope": [
+        "全部复制和版本混合组合未穷尽。"
+      ]
+    },
+    {
+      "factId": "card.luckyMultProbability",
+      "subject": "幸运+倍率概率",
+      "source": "references/source/card.lua:984-995",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "literal_scenarios_asserted",
+      "assertions": [
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 106,
+          "name": "默认1/5与2/5的严格小于三侧阈值",
+          "type": "literal_boundary",
+          "dataLine": 103
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 39,
+          "name": "金封逐次给3",
+          "type": "literal_golden"
+        }
+      ],
+      "verifiedScope": "默认分子1时阈值0.2、显式分子2时阈值0.4，各测试下方、等于、上方；随机key=lucky_mult。",
+      "unverifiedScope": [
+        "分子来源优先级、其他分子和原版全局RNG轨迹未完整差分。"
+      ]
+    },
+    {
+      "factId": "card.luckyMoneyProbability",
+      "subject": "幸运金钱概率",
+      "source": "references/source/card.lua:1068-1083",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "literal_scenarios_asserted",
+      "assertions": [
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 111,
+          "name": "默认1/15与2/15的严格小于三侧阈值",
+          "type": "literal_boundary",
+          "dataLine": 103
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 39,
+          "name": "金封逐次给3",
+          "type": "literal_golden"
+        }
+      ],
+      "verifiedScope": "默认分子1/15与显式分子2/15，各测试下方、等于、上方；money使用独立key。",
+      "unverifiedScope": [
+        "其他分子和原版全局RNG轨迹未完整差分。"
+      ]
+    },
+    {
+      "factId": "card.goldSeal",
+      "subject": "金封金钱",
+      "source": "references/source/card.lua:1071-1073",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "literal_scenarios_asserted",
+      "assertions": [
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 39,
+          "name": "金封逐次给3",
+          "type": "literal_golden"
+        }
+      ],
+      "verifiedScope": "单次计分金封奖励3有独立字面量断言。",
+      "unverifiedScope": [
+        "金封本身带额外重触发的金钱累计没有专用断言。"
+      ]
+    },
+    {
+      "factId": "card.redSeal",
+      "subject": "红封额外触发次数",
+      "source": "references/source/card.lua:2242-2249",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "literal_scenarios_asserted",
+      "assertions": [
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 31,
+          "name": "06 红封玻璃A：(5+11+11)×(1×2×2)",
+          "type": "literal_golden",
+          "dataLine": 18
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 31,
+          "name": "07 手牌钢铁+红封：(5+11)×(1.5²)",
+          "type": "literal_golden",
+          "dataLine": 19
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 31,
+          "name": "08 钢铁+红封+Mime：16×1.5³",
+          "type": "literal_golden",
+          "dataLine": 20
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 31,
+          "name": "16 重触发同时重复Scholar：(5+11+20+11+20)×((1+4)+4)",
+          "type": "literal_golden",
+          "dataLine": 28
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 34,
+          "name": "重复触发trace逐卡",
+          "type": "literal_golden"
+        },
+        {
+          "file": "tests/game.test.ts",
+          "line": 183,
+          "name": "红封使回合末金牌多触发一次",
+          "type": "literal_run_scenario"
+        }
+      ],
+      "verifiedScope": "原触发外再触发1次；出牌、手中、金牌回合末及真实伙伴联动均有独立数字或次序。",
+      "unverifiedScope": [
+        "全部封印/卡种组合未穷尽。"
+      ]
+    },
+    {
+      "factId": "card.heldSealGate",
+      "subject": "手牌红封重复门槛",
+      "source": "references/source/functions/state_events.lua:798-829",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "literal_scenarios_asserted",
+      "assertions": [
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 35,
+          "name": "手牌普通卡的红封不产生",
+          "type": "literal_golden"
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 56,
+          "name": "实际Mime+红封钢铁King+Baron",
+          "type": "literal_golden"
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 122,
+          "name": "没有钢铁增强时，真实Baron",
+          "type": "literal_golden"
+        }
+      ],
+      "verifiedScope": "无手中效果不触发红封/Mime；钢铁手中效果和无钢铁但有Baron效果均打开门槛。",
+      "unverifiedScope": [
+        "全部手中效果种类和减益复制组合未穷尽。"
+      ]
+    },
+    {
+      "factId": "card.debuff",
+      "subject": "减益牌计分",
+      "source": "references/source/functions/state_events.lua:650-665; references/source/card.lua:976-1017",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "literal_scenarios_asserted",
+      "assertions": [
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 31,
+          "name": "13 减益A保留对子：(10+11)×2",
+          "type": "literal_golden",
+          "dataLine": 25
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 42,
+          "name": "减益出牌不触发任何逐卡小丑",
+          "type": "literal_golden"
+        },
+        {
+          "file": "tests/poker.test.ts",
+          "line": 38,
+          "name": "减益卡不触发花色",
+          "type": "literal_golden"
+        },
+        {
+          "file": "tests/game.test.ts",
+          "line": 183,
+          "name": "减益金牌回合末不领奖",
+          "type": "literal_run_scenario"
+        }
+      ],
+      "verifiedScope": "减益牌仍能组成对子，跳过出牌筹码与逐卡小丑；减益花色语义和金牌回合末分支通过。",
+      "unverifiedScope": [
+        "增强/版本/封印全部交叉组合尚无逐项场景。"
+      ]
+    },
+    {
+      "factId": "scoring.pipeline",
+      "subject": "计分阶段顺序",
+      "source": "references/source/functions/state_events.lua:628-641,648,784,877,950,1049,1068",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "literal_scenarios_asserted",
+      "assertions": [
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 125,
+          "name": "before→盲注修改→逐牌",
+          "type": "literal_golden"
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 36,
+          "name": "before升级影响本手基础分",
+          "type": "literal_golden"
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 66,
+          "name": "Glass Joker碎裂发生于main之后",
+          "type": "literal_golden"
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 38,
+          "name": "after不能修改",
+          "type": "literal_golden"
+        },
+        {
+          "file": "tests/game.test.ts",
+          "line": 191,
+          "name": "伙伴主结算→两张持有星图",
+          "type": "literal_golden"
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 71,
+          "name": "单张6销毁时保留幻灵",
+          "type": "literal_golden"
+        },
+        {
+          "file": "tests/game.test.ts",
+          "line": 28,
+          "name": "单张六点销毁后",
+          "type": "literal_golden"
+        }
+      ],
+      "verifiedScope": "完整钩子阶段序列与trace逐项断言；before升级、本手修改、销毁成长和after冻结；星图在所有伙伴之后、均衡之前；Sixth Sense非销毁生成事件保留并进入整局。",
+      "unverifiedScope": [
+        "不是原版所有钩子/异步事件的穷尽差分；封锁/救场等更多分支由项目级验收处理。"
+      ]
+    },
+    {
+      "factId": "scoring.cardOrder",
+      "subject": "出牌与每卡效果顺序",
+      "source": "references/source/functions/state_events.lua:600; references/source/functions/state_events.lua:692-777",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "literal_scenarios_asserted",
+      "assertions": [
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 31,
+          "name": "04 左+4再玻璃×2：(10+2+2)×((2+4)×2)",
+          "type": "literal_golden",
+          "dataLine": 16
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 31,
+          "name": "05 左玻璃×2再+4：(10+2+2)×(2×2+4)",
+          "type": "literal_golden",
+          "dataLine": 17
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 31,
+          "name": "09 Joker+4→Blackboard×3：16×15",
+          "type": "literal_golden",
+          "dataLine": 21
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 31,
+          "name": "10 Blackboard×3→Joker+4：16×7",
+          "type": "literal_golden",
+          "dataLine": 22
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 31,
+          "name": "15 玻璃多彩A先×2×1.5再Scholar+4：(5+11+20)×7",
+          "type": "literal_golden",
+          "dataLine": 27
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 31,
+          "name": "16 重触发同时重复Scholar：(5+11+20+11+20)×((1+4)+4)",
+          "type": "literal_golden",
+          "dataLine": 28
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 34,
+          "name": "重复触发trace逐卡",
+          "type": "literal_golden"
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 64,
+          "name": "幸运金钱当场进入余额",
+          "type": "literal_golden"
+        }
+      ],
+      "verifiedScope": "左右换位改变加乘结果；重触发逐卡不抢先后牌；纸牌版本先于逐卡小丑；钱立即更新供主结算读取。",
+      "unverifiedScope": [
+        "chips→mult→money→xmult→edition整条五种自有效果的混合手尚无单个覆盖全部元素的trace断言；更多组合未穷尽。"
+      ]
+    },
+    {
+      "factId": "scoring.retrigger",
+      "subject": "出牌重触发队列",
+      "source": "references/source/functions/state_events.lua:666-698",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "literal_scenarios_asserted",
+      "assertions": [
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 31,
+          "name": "06 红封玻璃A：(5+11+11)×(1×2×2)",
+          "type": "literal_golden",
+          "dataLine": 18
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 31,
+          "name": "07 手牌钢铁+红封：(5+11)×(1.5²)",
+          "type": "literal_golden",
+          "dataLine": 19
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 31,
+          "name": "08 钢铁+红封+Mime：16×1.5³",
+          "type": "literal_golden",
+          "dataLine": 20
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 31,
+          "name": "16 重触发同时重复Scholar：(5+11+20+11+20)×((1+4)+4)",
+          "type": "literal_golden",
+          "dataLine": 28
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 56,
+          "name": "实际Mime+红封钢铁",
+          "type": "literal_golden"
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 57,
+          "name": "Hanging Chad重复2次",
+          "type": "literal_golden"
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 58,
+          "name": "Hack与红封共同",
+          "type": "literal_golden"
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 59,
+          "name": "Blueprint复制Scholar",
+          "type": "literal_golden"
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 122,
+          "name": "没有钢铁增强时，真实Baron",
+          "type": "literal_golden"
+        }
+      ],
+      "verifiedScope": "红封1次、Mime、Chad2次、Hack和复制逐卡效果的真实手算联动；每次重跑卡与individual。",
+      "unverifiedScope": [
+        "多个同类重复源、异常amount和全部触发来源未穷尽。"
+      ]
+    },
+    {
+      "factId": "scoring.jokerEdition",
+      "subject": "小丑版本触发位置",
+      "source": "references/source/functions/state_events.lua:880-940",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "literal_scenarios_asserted",
+      "assertions": [
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 31,
+          "name": "11 全息Blackboard先+10再×3→+4：16×37",
+          "type": "literal_golden",
+          "dataLine": 23
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 31,
+          "name": "12 多彩Blackboard先×3再×1.5→+4：16×8.5",
+          "type": "literal_golden",
+          "dataLine": 24
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 43,
+          "name": "otherJoker在当前main后",
+          "type": "literal_golden"
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 55,
+          "name": "多彩小丑版本在棒球之后",
+          "type": "literal_golden"
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 79,
+          "name": "伙伴闪箔在main前增加50",
+          "type": "literal_golden"
+        }
+      ],
+      "verifiedScope": "foil/holo在main前，otherJoker在main后，polychrome在otherJoker后；相应数字和trace有独立断言。",
+      "unverifiedScope": [
+        "全部版本/减益/复制组合未穷尽。"
+      ]
+    },
+    {
+      "factId": "scoring.final",
+      "subject": "最后计分公式",
+      "source": "references/source/functions/state_events.lua:1049; references/source/functions/state_events.lua:1068-1070",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "literal_scenarios_asserted",
+      "assertions": [
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 38,
+          "name": "after不能修改已结算分数",
+          "type": "literal_golden"
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 56,
+          "name": "实际Mime+红封钢铁King",
+          "type": "literal_golden"
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 63,
+          "name": "Lucky Cat每次Lucky",
+          "type": "literal_golden"
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 125,
+          "name": "before→盲注修改→逐牌",
+          "type": "literal_golden"
+        },
+        {
+          "file": "tests/game.test.ts",
+          "line": 199,
+          "name": "存档恢复保留Infinity",
+          "type": "literal_golden"
+        }
+      ],
+      "verifiedScope": "182.25向下取整182，1660.5向下取整1660；after事件不改变冻结的chips/mult/score。存档非有限数边界已独立回归。",
+      "unverifiedScope": [
+        "超过安全整数的精度与超出双精度可表示范围时的原版计分、显示、保存行为TBD；本报告不声称任意大数一致。"
+      ]
+    },
+    {
+      "factId": "scoring.chipCap",
+      "subject": "筹码金钱上限规则",
+      "source": "references/source/functions/misc_functions.lua:684-688",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "literal_scenarios_asserted",
+      "assertions": [
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 84,
+          "name": "筹码上限余额%s",
+          "type": "literal_golden"
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 89,
+          "name": "截断丢失的筹码不因余额增加恢复",
+          "type": "literal_golden"
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 95,
+          "name": "盲注修改、筹码倍率交换及最终修改",
+          "type": "literal_golden"
+        }
+      ],
+      "verifiedScope": "负/零/3/12余额截断基础和逐卡值；丢失筹码不因余额增加恢复；之后增量、盲注修改、swap与终算修改均应用上限。",
+      "unverifiedScope": [
+        "全部限制牌组与均衡、负筹码事件、其他伙伴的组合未穷尽。"
+      ]
+    },
+    {
+      "factId": "rng.pseudohash",
+      "subject": "seed哈希公式",
+      "source": "references/source/functions/misc_functions.lua:279-285",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "oracle_independently_matched",
+      "assertions": [
+        {
+          "file": "tests/rng.test.ts",
+          "line": 16,
+          "name": "原始哈希、独立key序列和洗牌",
+          "type": "external_lua_output_golden"
+        }
+      ],
+      "verifiedScope": "五个独立Lua输出哈希严格相等，含UTF-8中文种子；实现期望不是由TypeScript生成。",
+      "unverifiedScope": [
+        "只验证固定五种输入；空串、所有字节和舍入边界未穷尽。"
+      ]
+    },
+    {
+      "factId": "rng.keyState",
+      "subject": "独立key伪随机状态公式",
+      "source": "references/source/functions/misc_functions.lua:298-312",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "oracle_independently_matched",
+      "assertions": [
+        {
+          "file": "tests/rng.test.ts",
+          "line": 16,
+          "name": "原始哈希、独立key序列和洗牌",
+          "type": "external_lua_output_golden"
+        },
+        {
+          "file": "tests/rng.test.ts",
+          "line": 4,
+          "name": "本实现快照重放",
+          "type": "internal_repeatability"
+        },
+        {
+          "file": "tests/rng.test.ts",
+          "line": 5,
+          "name": "本实现流隔离",
+          "type": "internal_repeatability"
+        }
+      ],
+      "verifiedScope": "每个种子9次带键输出，含重复shop/pack，五组共45次严格匹配Lua；快照和key隔离只是附加内部性质。",
+      "unverifiedScope": [
+        "13位舍入精确边界、特殊key=seed、predict_seed路径未对照；原版完整随机调用次序未对照。"
+      ]
+    },
+    {
+      "factId": "rng.luaJit",
+      "subject": "每次随机数生成",
+      "source": "references/source/functions/misc_functions.lua:315-320",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "oracle_independently_matched",
+      "assertions": [
+        {
+          "file": "tests/rng.test.ts",
+          "line": 16,
+          "name": "原始哈希、独立key序列和洗牌",
+          "type": "external_lua_output_golden"
+        },
+        {
+          "file": "tests/rng.test.ts",
+          "line": 17,
+          "name": "底层TW223初始浮点seed",
+          "type": "external_lua_output_golden"
+        },
+        {
+          "file": "tests/jokers.test.ts",
+          "line": 228,
+          "name": "Misprint的MISPRINT种子五个整数与Lua输出匹配",
+          "type": "external_lua_output_golden"
+        }
+      ],
+      "verifiedScope": "五组带键随机与五个直接数值种子输出严格匹配本地固定LuaJIT；Misprint另有五个整数的外部golden测试。",
+      "unverifiedScope": [
+        "Misprint伙伴测试未在本轮五文件调用中重新运行；可追溯到伙伴域测试报告。",
+        "原版实际LuaJIT版本/平台编译、整数全部边界、对象候选排序和完整seed路径未核验。"
+      ]
+    },
+    {
+      "factId": "rng.tausworthe",
+      "subject": "LuaJIT TW223开源参数",
+      "source": "references/source/luajit_lj_prng.c:35-60",
+      "sourceConfidence": "中（开源LuaJIT v2.1；原游戏内核版本尚未核验）",
+      "status": "oracle_independently_matched",
+      "assertions": [
+        {
+          "file": "tests/rng.test.ts",
+          "line": 16,
+          "name": "原始哈希、独立key序列和洗牌",
+          "type": "external_lua_output_golden"
+        },
+        {
+          "file": "tests/rng.test.ts",
+          "line": 17,
+          "name": "底层TW223初始浮点seed",
+          "type": "external_lua_output_golden"
+        }
+      ],
+      "verifiedScope": "64位TW223、52位尾数等算法参数由独立Lua输出间接验证：五个直接种子和45次带键值。",
+      "unverifiedScope": [
+        "算法常数没有单独导出成逐字段断言；有限向量不证明所有状态和浮点输入一致。"
+      ]
+    },
+    {
+      "factId": "rng.luaSeed",
+      "subject": "LuaJIT浮点seed参数",
+      "source": "references/source/luajit_lib_math.c:114-127",
+      "sourceConfidence": "中（开源LuaJIT v2.1；原游戏内核版本尚未核验）",
+      "status": "oracle_independently_matched",
+      "assertions": [
+        {
+          "file": "tests/rng.test.ts",
+          "line": 16,
+          "name": "原始哈希、独立key序列和洗牌",
+          "type": "external_lua_output_golden"
+        },
+        {
+          "file": "tests/rng.test.ts",
+          "line": 17,
+          "name": "底层TW223初始浮点seed",
+          "type": "external_lua_output_golden"
+        }
+      ],
+      "verifiedScope": "四状态初始化、π/e递推、warmup10的共同输出在固定运行时向量上匹配。",
+      "unverifiedScope": [
+        "不是全部状态/种子的穷尽验证；原版平台FMA方式未知，separate模式没有独立oracle回归。"
+      ]
+    },
+    {
+      "factId": "rng.shuffle",
+      "subject": "洗牌规则",
+      "source": "references/source/functions/misc_functions.lua:206-216",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "oracle_independently_matched",
+      "assertions": [
+        {
+          "file": "tests/rng.test.ts",
+          "line": 16,
+          "name": "原始哈希、独立key序列和洗牌",
+          "type": "external_lua_output_golden"
+        },
+        {
+          "file": "tests/rng.test.ts",
+          "line": 6,
+          "name": "数组守恒/调用方不变",
+          "type": "internal_consistency"
+        }
+      ],
+      "verifiedScope": "五种种子各一个10元素洗牌排列与外部Lua结果相同；一次初始化、连续抽样的实际结果匹配。",
+      "unverifiedScope": [
+        "含sortId对象的排序支路、更多长度、元素对象候选次序未做外部对照。"
+      ]
+    },
+    {
+      "factId": "juice.initialHighlight",
+      "subject": "计分牌高亮等待",
+      "source": "references/source/functions/state_events.lua:601-604",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "unasserted",
+      "assertions": [],
+      "verifiedScope": "已有静态出处；本轮没有对应的独立实现时序断言。",
+      "unverifiedScope": [
+        "未取得原版录屏；没有逐帧/音效对照。",
+        "tests/timing.test.ts验证UI-002至UI-005的650/750毫秒和0.8至1.0音高；这些是另一组事实，不能替代本项等待或初始音高进度。"
+      ]
+    },
+    {
+      "factId": "juice.triggerPitch",
+      "subject": "触发音高进度",
+      "source": "references/source/functions/state_events.lua:607-608",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "unasserted",
+      "assertions": [],
+      "verifiedScope": "已有静态出处；本轮没有对应的独立实现时序断言。",
+      "unverifiedScope": [
+        "未取得原版录屏；没有逐帧/音效对照。",
+        "tests/timing.test.ts验证UI-002至UI-005的650/750毫秒和0.8至1.0音高；这些是另一组事实，不能替代本项等待或初始音高进度。"
+      ]
+    },
+    {
+      "factId": "juice.phasePause",
+      "subject": "计分阶段等待",
+      "source": "references/source/functions/state_events.lua:620,782,1030,1050,1066",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "unasserted",
+      "assertions": [],
+      "verifiedScope": "已有静态出处；本轮没有对应的独立实现时序断言。",
+      "unverifiedScope": [
+        "未取得原版录屏；没有逐帧/音效对照。",
+        "tests/timing.test.ts验证UI-002至UI-005的650/750毫秒和0.8至1.0音高；这些是另一组事实，不能替代本项等待或初始音高进度。"
+      ]
+    },
+    {
+      "factId": "probability.normal",
+      "subject": "基础概率分子",
+      "source": "references/source/game.lua:1890-1891",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "literal_scenarios_asserted",
+      "assertions": [
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 106,
+          "name": "默认概率分子1的1/5边界",
+          "type": "literal_boundary"
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 111,
+          "name": "默认概率分子1的1/15边界",
+          "type": "literal_boundary"
+        },
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 117,
+          "name": "默认概率分子1的1/4边界",
+          "type": "literal_boundary"
+        }
+      ],
+      "verifiedScope": "scoreHand未指定probabilityNormal时按1/5、1/15、1/4精确阈值；显式分子2按双倍阈值。",
+      "unverifiedScope": [
+        "真实整局所有概率来源优先级、两个Oops到纸牌概率的组合路径未逐项验收；伙伴域另有概率计策测试。"
+      ]
+    },
+    {
+      "factId": "scoring.plasma",
+      "subject": "均衡组终算平衡",
+      "source": "references/source/back.lua:128-131",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "literal_scenarios_asserted",
+      "assertions": [
+        {
+          "file": "tests/scoring.test.ts",
+          "line": 37,
+          "name": "均衡组终算先向下取整再平方",
+          "type": "literal_golden"
+        },
+        {
+          "file": "tests/game.test.ts",
+          "line": 135,
+          "name": "持有星球在伙伴阶段后参与倍率",
+          "type": "literal_golden"
+        },
+        {
+          "file": "tests/game.test.ts",
+          "line": 191,
+          "name": "伙伴主结算→两张持有星图",
+          "type": "literal_golden"
+        }
+      ],
+      "verifiedScope": "16与1先平均向下取整为8，再平方64；两星图对子得到225；加基础伙伴后得到361，证明星图和main先于平衡。",
+      "unverifiedScope": [
+        "均衡与其他终算修改、筹码上限及超大数的完整组合未穷尽。"
+      ]
+    },
+    {
+      "factId": "rng.oracle.vectors",
+      "subject": "真实LuaJIT运行对照向量：vectors",
+      "source": "references/rng-oracle.json.vectors; references/source/functions/misc_functions.lua:279-320",
+      "sourceConfidence": "高（LuaJIT 运行时已实测；未原版游戏内差分）",
+      "status": "oracle_independently_matched",
+      "assertions": [
+        {
+          "file": "tests/rng.test.ts",
+          "line": 16,
+          "name": "原始哈希、独立key序列和洗牌",
+          "type": "external_lua_output_golden"
+        }
+      ],
+      "verifiedScope": "全部五个外部向量：五哈希、45个带键值、五个10元素排列严格匹配；本轮读取的rng-oracle.json.vectors与事实夹具完全相等。",
+      "unverifiedScope": [
+        "本轮复用了已生成的Lua输出数据，未重新执行Lua脚本；不是原版游戏内完整轨迹。"
+      ]
+    },
+    {
+      "factId": "rng.oracle.numericSeeds",
+      "subject": "真实LuaJIT运行对照向量：numericSeeds",
+      "source": "references/rng-oracle.json.numericSeeds; references/source/functions/misc_functions.lua:279-320",
+      "sourceConfidence": "高（LuaJIT 运行时已实测；未原版游戏内差分）",
+      "status": "oracle_independently_matched",
+      "assertions": [
+        {
+          "file": "tests/rng.test.ts",
+          "line": 17,
+          "name": "底层TW223初始浮点seed",
+          "type": "external_lua_output_golden"
+        }
+      ],
+      "verifiedScope": "数值种子0、1、0.5、0.123456789、12345的五个输出全部严格匹配；本轮核对oracle文件与夹具相等。",
+      "unverifiedScope": [
+        "本轮没有重编译LuaJIT或重新生成输出；未证明原版内核和其他编译平台行为。"
+      ]
+    },
+    {
+      "factId": "rng.fusedSeed",
+      "subject": "本机LuaJIT种子初始化采用一次舍入融合乘加",
+      "source": "references/luajit/lib-math-disassembly.txt:221-230; references/source/luajit_lib_math.c:122",
+      "sourceConfidence": "高（本机编译产物已核验；原游戏平台TBD）",
+      "status": "partially_asserted",
+      "assertions": [
+        {
+          "file": "tests/rng.test.ts",
+          "line": 16,
+          "name": "原始哈希、独立key序列和洗牌",
+          "type": "external_lua_output_golden"
+        },
+        {
+          "file": "tests/rng.test.ts",
+          "line": 17,
+          "name": "底层TW223初始浮点seed",
+          "type": "external_lua_output_golden"
+        }
+      ],
+      "verifiedScope": "独立实现默认fused模式匹配本机固定LuaJIT向量，包含对舍入方式敏感的12345数值种子。",
+      "unverifiedScope": [
+        "instruction=fmadd来自先前编译产物证据，本轮未重新打开或生成反汇编。",
+        "原版平台及其融合乘加方式TBD；separate模式没有oracle回归。"
+      ]
+    },
+    {
+      "factId": "deck.prototypeOrder",
+      "subject": "标准牌组初始创建顺序",
+      "source": "references/source/game.lua:2340-2357; references/source/game.lua:2367-2372",
+      "sourceConfidence": "高（参考源码；未游戏内差分）",
+      "status": "literal_scenarios_asserted",
+      "assertions": [
+        {
+          "file": "tests/poker.test.ts",
+          "line": 72,
+          "name": "标准牌组的完整52张顺序",
+          "type": "literal_golden"
+        },
+        {
+          "file": "tests/poker.test.ts",
+          "line": 35,
+          "name": "牌组含52张互异",
+          "type": "literal_golden"
+        },
+        {
+          "file": "tests/poker.test.ts",
+          "line": 36,
+          "name": "标准牌组创建顺序与源prototype",
+          "type": "literal_golden"
+        }
+      ],
+      "verifiedScope": "四花色×13点数的完整52张顺序与手写字面量表相同；52张且id互异；包含A/J/K/Q/T特殊字母顺序。",
+      "unverifiedScope": [
+        "特殊牌组变换后的洗牌和完整原版seed轨迹另行验收。"
+      ]
+    },
+    {
+      "factId": "poker.oracle.sampleAudit",
+      "subject": "固定样本Lua原函数与独立牌型集合判定差分",
+      "source": "references/poker-oracle.lua; references/poker-oracle.json; references/poker-diff.json.cases/.mismatches",
+      "sourceConfidence": "高（真实Lua参考函数差分已执行；不是原版游戏内差分）",
+      "status": "prior_reference_sample_report",
+      "assertions": [
+        {
+          "file": "references/poker-diff.json",
+          "jsonPointers": [
+            "/cases",
+            "/mismatches"
+          ],
+          "name": "既有10,000组Lua牌型差分报告读取",
+          "type": "prior_reference_report_read",
+          "automatedTest": false,
+          "rerunInThisAudit": false
+        }
+      ],
+      "verifiedScope": "读取既有报告：cases=10000，mismatches=[]；采集事实声明比较最强牌型、所有包含牌型、按出牌顺序的计分牌id。",
+      "unverifiedScope": [
+        "本轮未运行Lua牌型差分；该简化报告不包含执行时间、代码哈希或逐样本输入输出。",
+        "只能确认历史记录的样本结果，不能将其表述为当前代码重新差分零误差；不验证数值计分，也不是穷尽组合。"
+      ]
+    }
+  ],
+  "extraUiFactAssertions": [
+    {
+      "factId": "UI-002",
+      "source": "references/source/functions/common_events.lua:805",
+      "status": "literal_scenarios_asserted",
+      "assertions": [
+        {
+          "file": "tests/timing.test.ts",
+          "line": 6,
+          "name": "逐牌弹出650毫秒",
+          "type": "literal_golden"
+        }
+      ],
+      "verifiedScope": "逐牌弹出650毫秒",
+      "unverifiedScope": [
+        "只验证已采集的常量换算，不是动画录屏或音效听感验收。"
+      ]
+    },
+    {
+      "factId": "UI-003",
+      "source": "references/source/functions/common_events.lua:805",
+      "status": "partially_asserted",
+      "assertions": [
+        {
+          "file": "tests/timing.test.ts",
+          "line": 6,
+          "name": "逐牌弹出650毫秒",
+          "type": "literal_golden"
+        }
+      ],
+      "verifiedScope": "筹码弹出最终时长750毫秒",
+      "unverifiedScope": [
+        "只验证已采集的常量换算，不是动画录屏或音效听感验收。",
+        "本用例只检验0.6×1.25的最终乘积，不能分别证明每个因子。"
+      ]
+    },
+    {
+      "factId": "UI-004",
+      "source": "references/source/functions/common_events.lua:878",
+      "status": "partially_asserted",
+      "assertions": [
+        {
+          "file": "tests/timing.test.ts",
+          "line": 6,
+          "name": "逐牌弹出650毫秒",
+          "type": "literal_golden"
+        }
+      ],
+      "verifiedScope": "筹码弹出最终时长750毫秒",
+      "unverifiedScope": [
+        "只验证已采集的常量换算，不是动画录屏或音效听感验收。",
+        "本用例只检验0.6×1.25的最终乘积，不能分别证明每个因子。"
+      ]
+    },
+    {
+      "factId": "UI-005",
+      "source": "references/source/functions/common_events.lua:892",
+      "status": "literal_scenarios_asserted",
+      "assertions": [
+        {
+          "file": "tests/timing.test.ts",
+          "line": 9,
+          "name": "进度%s的音高",
+          "type": "literal_golden"
+        }
+      ],
+      "verifiedScope": "五个进度点0/0.25/0.5/0.75/1的音高0.8/0.85/0.9/0.95/1",
+      "unverifiedScope": [
+        "只验证已采集的常量换算，不是动画录屏或音效听感验收。"
+      ]
+    }
+  ]
+}

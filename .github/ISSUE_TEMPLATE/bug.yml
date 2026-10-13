@@ -1,0 +1,27 @@
+name: 游玩问题
+description: 帮助我们复现计分、操作、教程或存档问题。
+title: "[问题] "
+labels: [bug]
+body:
+  - type: textarea
+    id: steps
+    attributes:
+      label: 怎样复现
+      description: 请包含种子、牌组、难度、当前阶段和操作顺序。
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望与实际结果
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: 设备和浏览器
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 截图或导出存档
+      description: 可拖入截图和游戏存档JSON；不要上传密码、个人信息或原版游戏资源。

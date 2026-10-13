@@ -1,0 +1,53 @@
+name: 游戏检查与浏览器验证
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: check-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - name: 游戏测试
+        run: npm test -- --reporter=default --reporter=json --outputFile=artifacts/tests.json
+      - name: 类型与生产构建
+        run: npm run build
+      - name: 内容与事实审计
+        run: |
+          npm run audit
+          npm run verify:facts
+      - name: 保存恢复重放
+        run: npm run verify:run
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: tools/browser-requirements.txt
+      - run: python -m pip install -r tools/browser-requirements.txt
+      - run: python -m playwright install --with-deps chromium
+      - name: GitHub Pages子路径教程与完整实战
+        run: python scripts/pages_verify.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: game-verification
+          path: |
+            artifacts/tests.json
+            docs/content-audit.json
+            docs/fact-assertion-audit.json
+            docs/replay-report.json
+            docs/pages-browser-report.json
+            docs/tutorial-browser-report.json
+            docs/browser-report.json
+            docs/screenshots/

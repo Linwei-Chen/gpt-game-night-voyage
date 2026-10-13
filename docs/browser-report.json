@@ -1,0 +1,238 @@
+{
+  "method": "Chrome真实按钮与卡面操作；状态只读；未注入游戏函数或改写存档",
+  "url": "http://127.0.0.1:51692/gpt-game-night-voyage/",
+  "browser": "155.0.8059.40",
+  "errors": [],
+  "consoleErrors": [],
+  "checks": [
+    {
+      "name": "手机手牌中心及边界",
+      "cards": [
+        {
+          "id": "hearts-11",
+          "title": "红心 J",
+          "inside": true,
+          "centerHit": true,
+          "width": 55.28571319580078,
+          "height": 68.142822265625
+        },
+        {
+          "id": "hearts-14",
+          "title": "红心 A",
+          "inside": true,
+          "centerHit": true,
+          "width": 55.28570556640625,
+          "height": 68.142822265625
+        },
+        {
+          "id": "clubs-2",
+          "title": "黑桃 2",
+          "inside": true,
+          "centerHit": true,
+          "width": 55.28572082519531,
+          "height": 68.142822265625
+        },
+        {
+          "id": "hearts-13",
+          "title": "红心 K",
+          "inside": true,
+          "centerHit": true,
+          "width": 55.28570556640625,
+          "height": 68.142822265625
+        },
+        {
+          "id": "spades-7",
+          "title": "黑桃 7",
+          "inside": true,
+          "centerHit": true,
+          "width": 55.28571319580078,
+          "height": 68.142822265625
+        },
+        {
+          "id": "spades-13",
+          "title": "黑桃 K",
+          "inside": true,
+          "centerHit": true,
+          "width": 55.28570556640625,
+          "height": 68.142822265625
+        },
+        {
+          "id": "diamonds-8",
+          "title": "红心 8",
+          "inside": true,
+          "centerHit": true,
+          "width": 55.28572082519531,
+          "height": 68.142822265625
+        },
+        {
+          "id": "hearts-12",
+          "title": "红心 Q",
+          "inside": true,
+          "centerHit": true,
+          "width": 55.28570556640625,
+          "height": 68.142822265625
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "name": "桌面商店中心及边界",
+      "cards": [
+        {
+          "id": "offer-1",
+          "title": "进阶，改造，价格3",
+          "inside": true,
+          "centerHit": true,
+          "width": 110,
+          "height": 152
+        },
+        {
+          "id": "offer-2",
+          "title": "曜尺，稀有，价格9",
+          "inside": true,
+          "centerHit": true,
+          "width": 110,
+          "height": 152
+        },
+        {
+          "id": "voucher-5",
+          "title": "加赛许可，本局升级，价格10",
+          "inside": true,
+          "centerHit": true,
+          "width": 110,
+          "height": 152
+        },
+        {
+          "id": "pack-3",
+          "title": "伙伴小包 1，2 选 1，价格4",
+          "inside": true,
+          "centerHit": true,
+          "width": 88,
+          "height": 138
+        },
+        {
+          "id": "pack-4",
+          "title": "纸牌双选包 2，5 选 2，价格8",
+          "inside": true,
+          "centerHit": true,
+          "width": 88,
+          "height": 138
+        },
+        {
+          "id": "clubs-2",
+          "title": "黑桃 2",
+          "inside": true,
+          "centerHit": true,
+          "width": 99,
+          "height": 146
+        },
+        {
+          "id": "spades-7",
+          "title": "黑桃 7",
+          "inside": true,
+          "centerHit": true,
+          "width": 99,
+          "height": 146
+        },
+        {
+          "id": "spades-13",
+          "title": "黑桃 K",
+          "inside": true,
+          "centerHit": true,
+          "width": 99,
+          "height": 146
+        }
+      ]
+    },
+    {
+      "name": "整局中途刷新恢复",
+      "step": 101,
+      "passed": true
+    },
+    {
+      "name": "手机商店中心及边界",
+      "cards": [
+        {
+          "id": "joker-41",
+          "title": "碧瓷，常见",
+          "inside": true,
+          "centerHit": true,
+          "width": 43.71428680419922,
+          "height": 57.857147216796875
+        },
+        {
+          "id": "partner-copy-3-29",
+          "title": "碧瓷，常见",
+          "inside": true,
+          "centerHit": true,
+          "width": 43.71427917480469,
+          "height": 57.857147216796875
+        },
+        {
+          "id": "joker-57",
+          "title": "黛锁，常见",
+          "inside": true,
+          "centerHit": true,
+          "width": 43.71429443359375,
+          "height": 57.857147216796875
+        },
+        {
+          "id": "joker-63",
+          "title": "银桥，常见",
+          "inside": true,
+          "centerHit": true,
+          "width": 43.714263916015625,
+          "height": 57.857147216796875
+        },
+        {
+          "id": "joker-85",
+          "title": "绯尺，常见",
+          "inside": true,
+          "centerHit": true,
+          "width": 43.71429443359375,
+          "height": 57.857147216796875
+        },
+        {
+          "id": "offer-82",
+          "title": "银箔，常见，价格5",
+          "inside": true,
+          "centerHit": true,
+          "width": 55.28570556640625,
+          "height": 72
+        },
+        {
+          "id": "pack-84",
+          "title": "异术小包 2，3 选 1，价格4",
+          "inside": true,
+          "centerHit": true,
+          "width": 57.857147216796875,
+          "height": 51.42852783203125
+        }
+      ]
+    },
+    {
+      "name": "获胜后继续同局进入第九段",
+      "passed": true,
+      "target": 110000
+    },
+    {
+      "name": "203次真实界面操作至八段获胜",
+      "passed": true,
+      "actions": 203,
+      "refreshed": true,
+      "mobileDuringRun": true
+    },
+    {
+      "name": "手牌排序与左右顺序",
+      "passed": true
+    },
+    {
+      "name": "图鉴全部11类别数量",
+      "passed": true
+    },
+    {
+      "name": "存档导出",
+      "passed": true
+    }
+  ]
+}

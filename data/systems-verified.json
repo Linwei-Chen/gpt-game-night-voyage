@@ -1,0 +1,7235 @@
+{
+  "stakes": [
+    {
+      "sourceKey": "stake_white",
+      "name": "难度 1",
+      "kind": "stake",
+      "order": 1,
+      "sourceRefs": [
+        "references/source/game.lua:253",
+        "references/source/game.lua:2050-2059"
+      ],
+      "unlocked": true,
+      "stake_level": 1,
+      "effects": [
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "set",
+          "field": "stake",
+          "value": 1
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "沿用基础规则。",
+      "effectFactRefs": [
+        "system.stake_white.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "stake_red",
+      "name": "难度 2",
+      "kind": "stake",
+      "order": 2,
+      "sourceRefs": [
+        "references/source/game.lua:254",
+        "references/source/game.lua:2050-2059"
+      ],
+      "unlocked": false,
+      "stake_level": 2,
+      "effects": [
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "set",
+          "field": "stake",
+          "value": 2
+        },
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "set",
+          "field": "noSmallBlindReward",
+          "value": true
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "小关不发过关奖励。",
+      "effectFactRefs": [
+        "system.stake_red.effects.0",
+        "system.stake_red.effects.1"
+      ]
+    },
+    {
+      "sourceKey": "stake_green",
+      "name": "难度 3",
+      "kind": "stake",
+      "order": 3,
+      "sourceRefs": [
+        "references/source/game.lua:255",
+        "references/source/game.lua:2050-2059"
+      ],
+      "unlocked": false,
+      "stake_level": 3,
+      "effects": [
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "set",
+          "field": "stake",
+          "value": 3
+        },
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "set",
+          "field": "noSmallBlindReward",
+          "value": true
+        },
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "set",
+          "field": "scaling",
+          "value": 2
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "小关不发过关奖励；第1至8首注基础目标依次为300,900,2600,8000,20000,36000,60000,100000。",
+      "effectFactRefs": [
+        "system.stake_green.effects.0",
+        "system.stake_green.effects.1",
+        "system.stake_green.effects.2"
+      ]
+    },
+    {
+      "sourceKey": "stake_black",
+      "name": "难度 4",
+      "kind": "stake",
+      "order": 4,
+      "sourceRefs": [
+        "references/source/game.lua:256",
+        "references/source/game.lua:2050-2059"
+      ],
+      "unlocked": false,
+      "stake_level": 4,
+      "effects": [
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "set",
+          "field": "stake",
+          "value": 4
+        },
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "set",
+          "field": "noSmallBlindReward",
+          "value": true
+        },
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "set",
+          "field": "scaling",
+          "value": 2
+        },
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "set",
+          "field": "eternalsEnabled",
+          "value": true
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "小关不发过关奖励；第1至8首注基础目标依次为300,900,2600,8000,20000,36000,60000,100000；商店和伙伴包可出现永恒伙伴，不能出售或销毁。",
+      "effectFactRefs": [
+        "system.stake_black.effects.0",
+        "system.stake_black.effects.1",
+        "system.stake_black.effects.2",
+        "system.stake_black.effects.3"
+      ]
+    },
+    {
+      "sourceKey": "stake_blue",
+      "name": "难度 5",
+      "kind": "stake",
+      "order": 5,
+      "sourceRefs": [
+        "references/source/game.lua:257",
+        "references/source/game.lua:2050-2059"
+      ],
+      "unlocked": false,
+      "stake_level": 5,
+      "effects": [
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "set",
+          "field": "stake",
+          "value": 5
+        },
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "set",
+          "field": "noSmallBlindReward",
+          "value": true
+        },
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "set",
+          "field": "scaling",
+          "value": 2
+        },
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "set",
+          "field": "eternalsEnabled",
+          "value": true
+        },
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "add",
+          "field": "discards",
+          "value": -1
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "小关不发过关奖励；第1至8首注基础目标依次为300,900,2600,8000,20000,36000,60000,100000；商店和伙伴包可出现永恒伙伴，不能出售或销毁；每轮弃牌次数-1。",
+      "effectFactRefs": [
+        "system.stake_blue.effects.0",
+        "system.stake_blue.effects.1",
+        "system.stake_blue.effects.2",
+        "system.stake_blue.effects.3",
+        "system.stake_blue.effects.4"
+      ]
+    },
+    {
+      "sourceKey": "stake_purple",
+      "name": "难度 6",
+      "kind": "stake",
+      "order": 6,
+      "sourceRefs": [
+        "references/source/game.lua:258",
+        "references/source/game.lua:2050-2059"
+      ],
+      "unlocked": false,
+      "stake_level": 6,
+      "effects": [
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "set",
+          "field": "stake",
+          "value": 6
+        },
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "set",
+          "field": "noSmallBlindReward",
+          "value": true
+        },
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "set",
+          "field": "scaling",
+          "value": 3
+        },
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "set",
+          "field": "eternalsEnabled",
+          "value": true
+        },
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "add",
+          "field": "discards",
+          "value": -1
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "小关不发过关奖励；第1至8首注基础目标依次为300,1000,3200,9000,25000,60000,110000,200000；商店和伙伴包可出现永恒伙伴，不能出售或销毁；每轮弃牌次数-1。",
+      "effectFactRefs": [
+        "system.stake_purple.effects.0",
+        "system.stake_purple.effects.1",
+        "system.stake_purple.effects.2",
+        "system.stake_purple.effects.3",
+        "system.stake_purple.effects.4"
+      ]
+    },
+    {
+      "sourceKey": "stake_orange",
+      "name": "难度 7",
+      "kind": "stake",
+      "order": 7,
+      "sourceRefs": [
+        "references/source/game.lua:259",
+        "references/source/game.lua:2050-2059"
+      ],
+      "unlocked": false,
+      "stake_level": 7,
+      "effects": [
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "set",
+          "field": "stake",
+          "value": 7
+        },
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "set",
+          "field": "noSmallBlindReward",
+          "value": true
+        },
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "set",
+          "field": "scaling",
+          "value": 3
+        },
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "set",
+          "field": "eternalsEnabled",
+          "value": true
+        },
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "add",
+          "field": "discards",
+          "value": -1
+        },
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "set",
+          "field": "perishablesEnabled",
+          "value": true
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "小关不发过关奖励；第1至8首注基础目标依次为300,1000,3200,9000,25000,60000,110000,200000；商店和伙伴包可出现永恒伙伴，不能出售或销毁；每轮弃牌次数-1；可出现短期伙伴，5轮后永久静默。",
+      "effectFactRefs": [
+        "system.stake_orange.effects.0",
+        "system.stake_orange.effects.1",
+        "system.stake_orange.effects.2",
+        "system.stake_orange.effects.3",
+        "system.stake_orange.effects.4",
+        "system.stake_orange.effects.5"
+      ]
+    },
+    {
+      "sourceKey": "stake_gold",
+      "name": "难度 8",
+      "kind": "stake",
+      "order": 8,
+      "sourceRefs": [
+        "references/source/game.lua:260",
+        "references/source/game.lua:2050-2059"
+      ],
+      "unlocked": false,
+      "stake_level": 8,
+      "effects": [
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "set",
+          "field": "stake",
+          "value": 8
+        },
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "set",
+          "field": "noSmallBlindReward",
+          "value": true
+        },
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "set",
+          "field": "scaling",
+          "value": 3
+        },
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "set",
+          "field": "eternalsEnabled",
+          "value": true
+        },
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "add",
+          "field": "discards",
+          "value": -1
+        },
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "set",
+          "field": "perishablesEnabled",
+          "value": true
+        },
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "set",
+          "field": "rentalsEnabled",
+          "value": true
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "小关不发过关奖励；第1至8首注基础目标依次为300,1000,3200,9000,25000,60000,110000,200000；商店和伙伴包可出现永恒伙伴，不能出售或销毁；每轮弃牌次数-1；可出现短期伙伴，5轮后永久静默；可出现租赁伙伴，购买价1金币，每轮扣3金币。",
+      "effectFactRefs": [
+        "system.stake_gold.effects.0",
+        "system.stake_gold.effects.1",
+        "system.stake_gold.effects.2",
+        "system.stake_gold.effects.3",
+        "system.stake_gold.effects.4",
+        "system.stake_gold.effects.5",
+        "system.stake_gold.effects.6"
+      ]
+    }
+  ],
+  "editions": [
+    {
+      "sourceKey": "e_base",
+      "name": "素面",
+      "kind": "edition",
+      "order": 1,
+      "sourceRefs": [
+        "references/source/game.lua:658",
+        "references/source/card.lua:390-427"
+      ],
+      "unlocked": true,
+      "config": {},
+      "effects": [
+        {
+          "trigger": "score",
+          "condition": {},
+          "action": "scoringEdition",
+          "kind": "base",
+          "config": {}
+        }
+      ],
+      "implementation": "字段与生成已实现；牌上触发由计分域另验",
+      "description": "基础版本，无额外修正。",
+      "effectFactRefs": [
+        "system.e_base.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "e_foil",
+      "name": "银纹",
+      "kind": "edition",
+      "order": 2,
+      "sourceRefs": [
+        "references/source/game.lua:659",
+        "references/source/card.lua:390-427"
+      ],
+      "unlocked": true,
+      "config": {
+        "extra": 50
+      },
+      "effects": [
+        {
+          "trigger": "score",
+          "condition": {},
+          "action": "scoringEdition",
+          "kind": "foil",
+          "config": {
+            "extra": 50
+          }
+        }
+      ],
+      "implementation": "字段与生成已实现；牌上触发由计分域另验",
+      "description": "提供+50筹码。",
+      "effectFactRefs": [
+        "system.e_foil.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "e_holo",
+      "name": "幻纹",
+      "kind": "edition",
+      "order": 3,
+      "sourceRefs": [
+        "references/source/game.lua:660",
+        "references/source/card.lua:390-427"
+      ],
+      "unlocked": true,
+      "config": {
+        "extra": 10
+      },
+      "effects": [
+        {
+          "trigger": "score",
+          "condition": {},
+          "action": "scoringEdition",
+          "kind": "holo",
+          "config": {
+            "extra": 10
+          }
+        }
+      ],
+      "implementation": "字段与生成已实现；牌上触发由计分域另验",
+      "description": "提供+10倍率。",
+      "effectFactRefs": [
+        "system.e_holo.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "e_polychrome",
+      "name": "虹纹",
+      "kind": "edition",
+      "order": 4,
+      "sourceRefs": [
+        "references/source/game.lua:661",
+        "references/source/card.lua:390-427"
+      ],
+      "unlocked": true,
+      "config": {
+        "extra": 1.5
+      },
+      "effects": [
+        {
+          "trigger": "score",
+          "condition": {},
+          "action": "scoringEdition",
+          "kind": "polychrome",
+          "config": {
+            "extra": 1.5
+          }
+        }
+      ],
+      "implementation": "字段与生成已实现；牌上触发由计分域另验",
+      "description": "倍率×1.5。",
+      "effectFactRefs": [
+        "system.e_polychrome.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "e_negative",
+      "name": "空域",
+      "kind": "edition",
+      "order": 5,
+      "sourceRefs": [
+        "references/source/game.lua:662",
+        "references/source/card.lua:390-427"
+      ],
+      "unlocked": true,
+      "config": {
+        "extra": 1
+      },
+      "effects": [
+        {
+          "trigger": "score",
+          "condition": {},
+          "action": "scoringEdition",
+          "kind": "negative",
+          "config": {
+            "extra": 1
+          }
+        }
+      ],
+      "implementation": "字段与生成已实现；牌上触发由计分域另验",
+      "description": "增加1个对应持有位置；出售或移除后回收该位置。",
+      "effectFactRefs": [
+        "system.e_negative.effects.0"
+      ]
+    }
+  ],
+  "consumables": [
+    {
+      "sourceKey": "c_fool",
+      "name": "回声",
+      "kind": "tarot",
+      "order": 1,
+      "sourceRefs": [
+        "references/source/game.lua:533",
+        "references/source/card.lua:1091-1590"
+      ],
+      "cost": 3,
+      "config": {},
+      "effects": [
+        {
+          "trigger": "consume",
+          "condition": {},
+          "action": "copyLastConsumable"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "在有空道具位置时生成上次使用的占卜或星图；上次使用此物品时不能复现。",
+      "effectFactRefs": [
+        "system.c_fool.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "c_mercury",
+      "name": "双子航线",
+      "kind": "planet",
+      "order": 1,
+      "sourceRefs": [
+        "references/source/game.lua:557",
+        "references/source/card.lua:1091-1590"
+      ],
+      "cost": 3,
+      "freq": 1,
+      "config": {
+        "hand_type": "Pair"
+      },
+      "handType": "pair",
+      "effects": [
+        {
+          "trigger": "consume",
+          "condition": {},
+          "action": "upgradeHand",
+          "hand": "pair",
+          "amount": 1
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "一对升1级。",
+      "effectFactRefs": [
+        "system.c_mercury.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "c_familiar",
+      "name": "三面新生",
+      "kind": "spectral",
+      "order": 1,
+      "sourceRefs": [
+        "references/source/game.lua:571",
+        "references/source/card.lua:1091-1590"
+      ],
+      "cost": 4,
+      "config": {
+        "remove_card": true,
+        "extra": 3
+      },
+      "effects": [
+        {
+          "trigger": "consume",
+          "condition": {
+            "handMin": 2
+          },
+          "action": "removeRandom",
+          "count": 1
+        },
+        {
+          "trigger": "consume",
+          "condition": {},
+          "action": "spawnPlayingCards",
+          "count": 3,
+          "ranks": [
+            11,
+            12,
+            13
+          ],
+          "enhanced": true,
+          "excludeEnhancements": [
+            "stone"
+          ]
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "须持有至少2张手牌。随机销毁至多1张手牌；向牌组和手牌加入3张随机花色的J/Q/K，均带随机强化（排除磐石）。",
+      "effectFactRefs": [
+        "system.c_familiar.effects.0",
+        "system.c_familiar.effects.1"
+      ]
+    },
+    {
+      "sourceKey": "c_magician",
+      "name": "吉签",
+      "kind": "tarot",
+      "order": 2,
+      "sourceRefs": [
+        "references/source/game.lua:534",
+        "references/source/card.lua:1091-1590"
+      ],
+      "cost": 3,
+      "config": {
+        "mod_conv": "m_lucky",
+        "max_highlighted": 2
+      },
+      "effects": [
+        {
+          "trigger": "consume",
+          "condition": {
+            "selectedMin": 1,
+            "selectedMax": 2
+          },
+          "action": "selectedSet",
+          "field": "enhancement",
+          "value": "lucky"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "选择1至2张手牌。将所选牌强化为吉签。",
+      "effectFactRefs": [
+        "system.c_magician.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "c_venus",
+      "name": "三影航线",
+      "kind": "planet",
+      "order": 2,
+      "sourceRefs": [
+        "references/source/game.lua:558",
+        "references/source/card.lua:1091-1590"
+      ],
+      "cost": 3,
+      "freq": 1,
+      "config": {
+        "hand_type": "Three of a Kind"
+      },
+      "handType": "threeOfAKind",
+      "effects": [
+        {
+          "trigger": "consume",
+          "condition": {},
+          "action": "upgradeHand",
+          "hand": "threeOfAKind",
+          "amount": 1
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "三条升1级。",
+      "effectFactRefs": [
+        "system.c_venus.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "c_grim",
+      "name": "双尖新生",
+      "kind": "spectral",
+      "order": 2,
+      "sourceRefs": [
+        "references/source/game.lua:572",
+        "references/source/card.lua:1091-1590"
+      ],
+      "cost": 4,
+      "config": {
+        "remove_card": true,
+        "extra": 2
+      },
+      "effects": [
+        {
+          "trigger": "consume",
+          "condition": {
+            "handMin": 2
+          },
+          "action": "removeRandom",
+          "count": 1
+        },
+        {
+          "trigger": "consume",
+          "condition": {},
+          "action": "spawnPlayingCards",
+          "count": 2,
+          "ranks": [
+            14
+          ],
+          "enhanced": true,
+          "excludeEnhancements": [
+            "stone"
+          ]
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "须持有至少2张手牌。随机销毁至多1张手牌；向牌组和手牌加入2张随机花色的A，均带随机强化（排除磐石）。",
+      "effectFactRefs": [
+        "system.c_grim.effects.0",
+        "system.c_grim.effects.1"
+      ]
+    },
+    {
+      "sourceKey": "c_high_priestess",
+      "name": "观星双笺",
+      "kind": "tarot",
+      "order": 3,
+      "sourceRefs": [
+        "references/source/game.lua:535",
+        "references/source/card.lua:1091-1590"
+      ],
+      "cost": 3,
+      "config": {
+        "planets": 2
+      },
+      "effects": [
+        {
+          "trigger": "consume",
+          "condition": {},
+          "action": "spawnConsumables",
+          "kind": "planet",
+          "count": 2
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "生成至多2件随机星图，数量受空道具位置限制。",
+      "effectFactRefs": [
+        "system.c_high_priestess.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "c_earth",
+      "name": "满座航线",
+      "kind": "planet",
+      "order": 3,
+      "sourceRefs": [
+        "references/source/game.lua:559",
+        "references/source/card.lua:1091-1590"
+      ],
+      "cost": 3,
+      "freq": 1,
+      "config": {
+        "hand_type": "Full House"
+      },
+      "handType": "fullHouse",
+      "effects": [
+        {
+          "trigger": "consume",
+          "condition": {},
+          "action": "upgradeHand",
+          "hand": "fullHouse",
+          "amount": 1
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "葫芦升1级。",
+      "effectFactRefs": [
+        "system.c_earth.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "c_incantation",
+      "name": "四数新生",
+      "kind": "spectral",
+      "order": 3,
+      "sourceRefs": [
+        "references/source/game.lua:573",
+        "references/source/card.lua:1091-1590"
+      ],
+      "cost": 4,
+      "config": {
+        "remove_card": true,
+        "extra": 4
+      },
+      "effects": [
+        {
+          "trigger": "consume",
+          "condition": {
+            "handMin": 2
+          },
+          "action": "removeRandom",
+          "count": 1
+        },
+        {
+          "trigger": "consume",
+          "condition": {},
+          "action": "spawnPlayingCards",
+          "count": 4,
+          "ranks": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "enhanced": true,
+          "excludeEnhancements": [
+            "stone"
+          ]
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "须持有至少2张手牌。随机销毁至多1张手牌；向牌组和手牌加入4张随机花色的2/3/4/5/6/7/8/9/10，均带随机强化（排除磐石）。",
+      "effectFactRefs": [
+        "system.c_incantation.effects.0",
+        "system.c_incantation.effects.1"
+      ]
+    },
+    {
+      "sourceKey": "c_empress",
+      "name": "添势",
+      "kind": "tarot",
+      "order": 4,
+      "sourceRefs": [
+        "references/source/game.lua:536",
+        "references/source/card.lua:1091-1590"
+      ],
+      "cost": 3,
+      "config": {
+        "mod_conv": "m_mult",
+        "max_highlighted": 2
+      },
+      "effects": [
+        {
+          "trigger": "consume",
+          "condition": {
+            "selectedMin": 1,
+            "selectedMax": 2
+          },
+          "action": "selectedSet",
+          "field": "enhancement",
+          "value": "mult"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "选择1至2张手牌。将所选牌强化为升势。",
+      "effectFactRefs": [
+        "system.c_empress.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "c_mars",
+      "name": "四棱航线",
+      "kind": "planet",
+      "order": 4,
+      "sourceRefs": [
+        "references/source/game.lua:560",
+        "references/source/card.lua:1091-1590"
+      ],
+      "cost": 3,
+      "freq": 1,
+      "config": {
+        "hand_type": "Four of a Kind"
+      },
+      "handType": "fourOfAKind",
+      "effects": [
+        {
+          "trigger": "consume",
+          "condition": {},
+          "action": "upgradeHand",
+          "hand": "fourOfAKind",
+          "amount": 1
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "四条升1级。",
+      "effectFactRefs": [
+        "system.c_mars.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "c_talisman",
+      "name": "金色印记",
+      "kind": "spectral",
+      "order": 4,
+      "sourceRefs": [
+        "references/source/game.lua:574",
+        "references/source/card.lua:1091-1590"
+      ],
+      "cost": 4,
+      "config": {
+        "extra": "Gold",
+        "max_highlighted": 1
+      },
+      "effects": [
+        {
+          "trigger": "consume",
+          "condition": {
+            "selectedMin": 1,
+            "selectedMax": 1
+          },
+          "action": "selectedSet",
+          "field": "seal",
+          "value": "gold"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "选择1张手牌。将所选牌印上金印。",
+      "effectFactRefs": [
+        "system.c_talisman.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "c_emperor",
+      "name": "异术双笺",
+      "kind": "tarot",
+      "order": 5,
+      "sourceRefs": [
+        "references/source/game.lua:537",
+        "references/source/card.lua:1091-1590"
+      ],
+      "cost": 3,
+      "config": {
+        "tarots": 2
+      },
+      "effects": [
+        {
+          "trigger": "consume",
+          "condition": {},
+          "action": "spawnConsumables",
+          "kind": "tarot",
+          "count": 2
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "生成至多2件随机占卜，数量受空道具位置限制。",
+      "effectFactRefs": [
+        "system.c_emperor.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "c_jupiter",
+      "name": "同色航线",
+      "kind": "planet",
+      "order": 5,
+      "sourceRefs": [
+        "references/source/game.lua:561",
+        "references/source/card.lua:1091-1590"
+      ],
+      "cost": 3,
+      "freq": 1,
+      "config": {
+        "hand_type": "Flush"
+      },
+      "handType": "flush",
+      "effects": [
+        {
+          "trigger": "consume",
+          "condition": {},
+          "action": "upgradeHand",
+          "hand": "flush",
+          "amount": 1
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "同花升1级。",
+      "effectFactRefs": [
+        "system.c_jupiter.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "c_aura",
+      "name": "霓染",
+      "kind": "spectral",
+      "order": 5,
+      "sourceRefs": [
+        "references/source/game.lua:575",
+        "references/source/card.lua:1091-1590"
+      ],
+      "cost": 4,
+      "config": {},
+      "effects": [
+        {
+          "trigger": "consume",
+          "condition": {
+            "selectedMin": 1,
+            "selectedMax": 1,
+            "selectedEditionless": true
+          },
+          "action": "selectedEdition",
+          "edition": "random"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "选择1张手牌；所选牌须没有版本。给所选牌随机附加银纹、幻纹或虹纹版本，使用保证版分布。",
+      "effectFactRefs": [
+        "system.c_aura.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "c_heirophant",
+      "name": "添筹",
+      "kind": "tarot",
+      "order": 6,
+      "sourceRefs": [
+        "references/source/game.lua:538",
+        "references/source/card.lua:1091-1590"
+      ],
+      "cost": 3,
+      "config": {
+        "mod_conv": "m_bonus",
+        "max_highlighted": 2
+      },
+      "effects": [
+        {
+          "trigger": "consume",
+          "condition": {
+            "selectedMin": 1,
+            "selectedMax": 2
+          },
+          "action": "selectedSet",
+          "field": "enhancement",
+          "value": "bonus"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "选择1至2张手牌。将所选牌强化为盈筹。",
+      "effectFactRefs": [
+        "system.c_heirophant.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "c_saturn",
+      "name": "连续航线",
+      "kind": "planet",
+      "order": 6,
+      "sourceRefs": [
+        "references/source/game.lua:562",
+        "references/source/card.lua:1091-1590"
+      ],
+      "cost": 3,
+      "freq": 1,
+      "config": {
+        "hand_type": "Straight"
+      },
+      "handType": "straight",
+      "effects": [
+        {
+          "trigger": "consume",
+          "condition": {},
+          "action": "upgradeHand",
+          "hand": "straight",
+          "amount": 1
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "顺子升1级。",
+      "effectFactRefs": [
+        "system.c_saturn.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "c_wraith",
+      "name": "高阶换约",
+      "kind": "spectral",
+      "order": 6,
+      "sourceRefs": [
+        "references/source/game.lua:576",
+        "references/source/card.lua:1091-1590"
+      ],
+      "cost": 4,
+      "config": {},
+      "effects": [
+        {
+          "trigger": "consume",
+          "condition": {
+            "freeJokerSlot": true
+          },
+          "action": "spawnJoker",
+          "rarity": 3
+        },
+        {
+          "trigger": "consume",
+          "condition": {},
+          "action": "set",
+          "field": "dollars",
+          "value": 0
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "须有空伙伴位置。生成1名稀有伙伴；金币变为0。",
+      "effectFactRefs": [
+        "system.c_wraith.effects.0",
+        "system.c_wraith.effects.1"
+      ]
+    },
+    {
+      "sourceKey": "c_lovers",
+      "name": "万色",
+      "kind": "tarot",
+      "order": 7,
+      "sourceRefs": [
+        "references/source/game.lua:539",
+        "references/source/card.lua:1091-1590"
+      ],
+      "cost": 3,
+      "config": {
+        "mod_conv": "m_wild",
+        "max_highlighted": 1
+      },
+      "effects": [
+        {
+          "trigger": "consume",
+          "condition": {
+            "selectedMin": 1,
+            "selectedMax": 1
+          },
+          "action": "selectedSet",
+          "field": "enhancement",
+          "value": "wild"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "选择1张手牌。将所选牌强化为全色。",
+      "effectFactRefs": [
+        "system.c_lovers.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "c_uranus",
+      "name": "双双航线",
+      "kind": "planet",
+      "order": 7,
+      "sourceRefs": [
+        "references/source/game.lua:563",
+        "references/source/card.lua:1091-1590"
+      ],
+      "cost": 3,
+      "freq": 1,
+      "config": {
+        "hand_type": "Two Pair"
+      },
+      "handType": "twoPair",
+      "effects": [
+        {
+          "trigger": "consume",
+          "condition": {},
+          "action": "upgradeHand",
+          "hand": "twoPair",
+          "amount": 1
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "两对升1级。",
+      "effectFactRefs": [
+        "system.c_uranus.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "c_sigil",
+      "name": "一色",
+      "kind": "spectral",
+      "order": 7,
+      "sourceRefs": [
+        "references/source/game.lua:577",
+        "references/source/card.lua:1091-1590"
+      ],
+      "cost": 4,
+      "config": {},
+      "effects": [
+        {
+          "trigger": "consume",
+          "condition": {
+            "handMin": 2
+          },
+          "action": "randomizeAllSuit"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "须持有至少2张手牌。将所有手牌改为同一种随机花色。",
+      "effectFactRefs": [
+        "system.c_sigil.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "c_chariot",
+      "name": "冷铸",
+      "kind": "tarot",
+      "order": 8,
+      "sourceRefs": [
+        "references/source/game.lua:540",
+        "references/source/card.lua:1091-1590"
+      ],
+      "cost": 3,
+      "config": {
+        "mod_conv": "m_steel",
+        "max_highlighted": 1
+      },
+      "effects": [
+        {
+          "trigger": "consume",
+          "condition": {
+            "selectedMin": 1,
+            "selectedMax": 1
+          },
+          "action": "selectedSet",
+          "field": "enhancement",
+          "value": "steel"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "选择1张手牌。将所选牌强化为冷铸。",
+      "effectFactRefs": [
+        "system.c_chariot.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "c_neptune",
+      "name": "虹桥航线",
+      "kind": "planet",
+      "order": 8,
+      "sourceRefs": [
+        "references/source/game.lua:564",
+        "references/source/card.lua:1091-1590"
+      ],
+      "cost": 3,
+      "freq": 1,
+      "config": {
+        "hand_type": "Straight Flush"
+      },
+      "handType": "straightFlush",
+      "effects": [
+        {
+          "trigger": "consume",
+          "condition": {},
+          "action": "upgradeHand",
+          "hand": "straightFlush",
+          "amount": 1
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "同花顺升1级。",
+      "effectFactRefs": [
+        "system.c_neptune.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "c_ouija",
+      "name": "一数",
+      "kind": "spectral",
+      "order": 8,
+      "sourceRefs": [
+        "references/source/game.lua:578",
+        "references/source/card.lua:1091-1590"
+      ],
+      "cost": 4,
+      "config": {},
+      "effects": [
+        {
+          "trigger": "consume",
+          "condition": {
+            "handMin": 2
+          },
+          "action": "randomizeAllRank"
+        },
+        {
+          "trigger": "consume",
+          "condition": {},
+          "action": "add",
+          "field": "handSize",
+          "value": -1
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "须持有至少2张手牌。将所有手牌改为同一种随机点数；手牌上限-1。",
+      "effectFactRefs": [
+        "system.c_ouija.effects.0",
+        "system.c_ouija.effects.1"
+      ]
+    },
+    {
+      "sourceKey": "c_justice",
+      "name": "脆光",
+      "kind": "tarot",
+      "order": 9,
+      "sourceRefs": [
+        "references/source/game.lua:541",
+        "references/source/card.lua:1091-1590"
+      ],
+      "cost": 3,
+      "config": {
+        "mod_conv": "m_glass",
+        "max_highlighted": 1
+      },
+      "effects": [
+        {
+          "trigger": "consume",
+          "condition": {
+            "selectedMin": 1,
+            "selectedMax": 1
+          },
+          "action": "selectedSet",
+          "field": "enhancement",
+          "value": "glass"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "选择1张手牌。将所选牌强化为脆晶。",
+      "effectFactRefs": [
+        "system.c_justice.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "c_pluto",
+      "name": "孤星航线",
+      "kind": "planet",
+      "order": 9,
+      "sourceRefs": [
+        "references/source/game.lua:565",
+        "references/source/card.lua:1091-1590"
+      ],
+      "cost": 3,
+      "freq": 1,
+      "config": {
+        "hand_type": "High Card"
+      },
+      "handType": "highCard",
+      "effects": [
+        {
+          "trigger": "consume",
+          "condition": {},
+          "action": "upgradeHand",
+          "hand": "highCard",
+          "amount": 1
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "高牌升1级。",
+      "effectFactRefs": [
+        "system.c_pluto.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "c_ectoplasm",
+      "name": "增位契约",
+      "kind": "spectral",
+      "order": 9,
+      "sourceRefs": [
+        "references/source/game.lua:579",
+        "references/source/card.lua:1091-1590"
+      ],
+      "cost": 4,
+      "config": {},
+      "effects": [
+        {
+          "trigger": "consume",
+          "condition": {
+            "editionlessJoker": true
+          },
+          "action": "randomJokerEdition",
+          "edition": "negative"
+        },
+        {
+          "trigger": "consume",
+          "condition": {},
+          "action": "reduceHandEscalating"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "须有无版本的伙伴。给随机无版本伙伴附加空域；永久减少手牌上限：首次减1，每次再多减1。",
+      "effectFactRefs": [
+        "system.c_ectoplasm.effects.0",
+        "system.c_ectoplasm.effects.1"
+      ]
+    },
+    {
+      "sourceKey": "c_hermit",
+      "name": "积蓄",
+      "kind": "tarot",
+      "order": 10,
+      "sourceRefs": [
+        "references/source/game.lua:542",
+        "references/source/card.lua:1091-1590"
+      ],
+      "cost": 3,
+      "config": {
+        "extra": 20
+      },
+      "effects": [
+        {
+          "trigger": "consume",
+          "condition": {},
+          "action": "gainCappedCash",
+          "cap": 20
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "增加min(max(当前金币,0),20)金币。",
+      "effectFactRefs": [
+        "system.c_hermit.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "c_planet_x",
+      "name": "五影航线",
+      "kind": "planet",
+      "order": 10,
+      "sourceRefs": [
+        "references/source/game.lua:566",
+        "references/source/card.lua:1091-1590"
+      ],
+      "cost": 3,
+      "freq": 1,
+      "config": {
+        "hand_type": "Five of a Kind",
+        "softlock": true
+      },
+      "handType": "fiveOfAKind",
+      "effects": [
+        {
+          "trigger": "consume",
+          "condition": {},
+          "action": "upgradeHand",
+          "hand": "fiveOfAKind",
+          "amount": 1
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "五条升1级。使用过该隐藏牌型后才进入常规星图池。",
+      "effectFactRefs": [
+        "system.c_planet_x.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "c_immolate",
+      "name": "焚纸换金",
+      "kind": "spectral",
+      "order": 10,
+      "sourceRefs": [
+        "references/source/game.lua:580",
+        "references/source/card.lua:1091-1590"
+      ],
+      "cost": 4,
+      "config": {
+        "remove_card": true,
+        "extra": {
+          "destroy": 5,
+          "dollars": 20
+        }
+      },
+      "effects": [
+        {
+          "trigger": "consume",
+          "condition": {
+            "handMin": 2
+          },
+          "action": "removeRandom",
+          "count": 5
+        },
+        {
+          "trigger": "consume",
+          "condition": {},
+          "action": "add",
+          "field": "dollars",
+          "value": 20
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "须持有至少2张手牌。随机销毁至多5张手牌；金币+20。",
+      "effectFactRefs": [
+        "system.c_immolate.effects.0",
+        "system.c_immolate.effects.1"
+      ]
+    },
+    {
+      "sourceKey": "c_wheel_of_fortune",
+      "name": "光谱轮",
+      "kind": "tarot",
+      "order": 11,
+      "sourceRefs": [
+        "references/source/game.lua:543",
+        "references/source/card.lua:1091-1590"
+      ],
+      "cost": 3,
+      "config": {
+        "extra": 4
+      },
+      "effects": [
+        {
+          "trigger": "consume",
+          "condition": {
+            "editionlessJoker": true
+          },
+          "action": "randomJokerEdition",
+          "probabilityDenominator": 4,
+          "edition": "random"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "须有无版本的伙伴。以基础概率1/4给随机无版本伙伴附加银纹、幻纹或虹纹；概率受概率加成影响。",
+      "effectFactRefs": [
+        "system.c_wheel_of_fortune.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "c_ceres",
+      "name": "同色满座",
+      "kind": "planet",
+      "order": 11,
+      "sourceRefs": [
+        "references/source/game.lua:567",
+        "references/source/card.lua:1091-1590"
+      ],
+      "cost": 3,
+      "freq": 1,
+      "config": {
+        "hand_type": "Flush House",
+        "softlock": true
+      },
+      "handType": "flushHouse",
+      "effects": [
+        {
+          "trigger": "consume",
+          "condition": {},
+          "action": "upgradeHand",
+          "hand": "flushHouse",
+          "amount": 1
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "同花葫芦升1级。使用过该隐藏牌型后才进入常规星图池。",
+      "effectFactRefs": [
+        "system.c_ceres.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "c_ankh",
+      "name": "孤伴双影",
+      "kind": "spectral",
+      "order": 11,
+      "sourceRefs": [
+        "references/source/game.lua:581",
+        "references/source/card.lua:1091-1590"
+      ],
+      "cost": 4,
+      "config": {
+        "extra": 2
+      },
+      "effects": [
+        {
+          "trigger": "consume",
+          "condition": {
+            "hasJoker": true,
+            "jokerSlotsMin": 2
+          },
+          "action": "cloneOneJokerAndPrune",
+          "stripNegative": true
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "须至少持有1名伙伴；伙伴上限须至少为2。随机复制1名伙伴，销毁其余非永恒伙伴；副本会去掉空域版本。",
+      "effectFactRefs": [
+        "system.c_ankh.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "c_strength",
+      "name": "进阶",
+      "kind": "tarot",
+      "order": 12,
+      "sourceRefs": [
+        "references/source/game.lua:544",
+        "references/source/card.lua:1091-1590"
+      ],
+      "cost": 3,
+      "config": {
+        "mod_conv": "up_rank",
+        "max_highlighted": 2
+      },
+      "effects": [
+        {
+          "trigger": "consume",
+          "condition": {
+            "selectedMin": 1,
+            "selectedMax": 2
+          },
+          "action": "raiseRanks",
+          "amount": 1
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "选择1至2张手牌。所选牌各升1点，A之后回到2。",
+      "effectFactRefs": [
+        "system.c_strength.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "c_eris",
+      "name": "同色五影",
+      "kind": "planet",
+      "order": 12,
+      "sourceRefs": [
+        "references/source/game.lua:568",
+        "references/source/card.lua:1091-1590"
+      ],
+      "cost": 3,
+      "freq": 1,
+      "config": {
+        "hand_type": "Flush Five",
+        "softlock": true
+      },
+      "handType": "flushFive",
+      "effects": [
+        {
+          "trigger": "consume",
+          "condition": {},
+          "action": "upgradeHand",
+          "hand": "flushFive",
+          "amount": 1
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "同花五条升1级。使用过该隐藏牌型后才进入常规星图池。",
+      "effectFactRefs": [
+        "system.c_eris.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "c_deja_vu",
+      "name": "回放印记",
+      "kind": "spectral",
+      "order": 12,
+      "sourceRefs": [
+        "references/source/game.lua:582",
+        "references/source/card.lua:1091-1590"
+      ],
+      "cost": 4,
+      "config": {
+        "extra": "Red",
+        "max_highlighted": 1
+      },
+      "effects": [
+        {
+          "trigger": "consume",
+          "condition": {
+            "selectedMin": 1,
+            "selectedMax": 1
+          },
+          "action": "selectedSet",
+          "field": "seal",
+          "value": "red"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "选择1张手牌。将所选牌印上回印。",
+      "effectFactRefs": [
+        "system.c_deja_vu.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "c_hanged_man",
+      "name": "删章",
+      "kind": "tarot",
+      "order": 13,
+      "sourceRefs": [
+        "references/source/game.lua:545",
+        "references/source/card.lua:1091-1590"
+      ],
+      "cost": 3,
+      "config": {
+        "remove_card": true,
+        "max_highlighted": 2
+      },
+      "effects": [
+        {
+          "trigger": "consume",
+          "condition": {
+            "selectedMin": 1,
+            "selectedMax": 2
+          },
+          "action": "removeSelected"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "选择1至2张手牌。销毁所选牌。",
+      "effectFactRefs": [
+        "system.c_hanged_man.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "c_hex",
+      "name": "彩契",
+      "kind": "spectral",
+      "order": 13,
+      "sourceRefs": [
+        "references/source/game.lua:583",
+        "references/source/card.lua:1091-1590"
+      ],
+      "cost": 4,
+      "config": {
+        "extra": 2
+      },
+      "effects": [
+        {
+          "trigger": "consume",
+          "condition": {
+            "editionlessJoker": true
+          },
+          "action": "randomJokerEdition",
+          "edition": "polychrome",
+          "pruneOthers": true
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "须有无版本的伙伴。给随机无版本伙伴附加虹纹，销毁其他非永恒伙伴。",
+      "effectFactRefs": [
+        "system.c_hex.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "c_death",
+      "name": "镜写",
+      "kind": "tarot",
+      "order": 14,
+      "sourceRefs": [
+        "references/source/game.lua:546",
+        "references/source/card.lua:1091-1590"
+      ],
+      "cost": 3,
+      "config": {
+        "mod_conv": "card",
+        "max_highlighted": 2,
+        "min_highlighted": 2
+      },
+      "effects": [
+        {
+          "trigger": "consume",
+          "condition": {
+            "selectedMin": 2,
+            "selectedMax": 2
+          },
+          "action": "copyRightmost"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "选择2张手牌。用最右侧所选牌覆盖另一张所选牌的点数、花色、强化、印记和版本。",
+      "effectFactRefs": [
+        "system.c_death.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "c_trance",
+      "name": "星色印记",
+      "kind": "spectral",
+      "order": 14,
+      "sourceRefs": [
+        "references/source/game.lua:584",
+        "references/source/card.lua:1091-1590"
+      ],
+      "cost": 4,
+      "config": {
+        "extra": "Blue",
+        "max_highlighted": 1
+      },
+      "effects": [
+        {
+          "trigger": "consume",
+          "condition": {
+            "selectedMin": 1,
+            "selectedMax": 1
+          },
+          "action": "selectedSet",
+          "field": "seal",
+          "value": "blue"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "选择1张手牌。将所选牌印上星印。",
+      "effectFactRefs": [
+        "system.c_trance.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "c_temperance",
+      "name": "盘点",
+      "kind": "tarot",
+      "order": 15,
+      "sourceRefs": [
+        "references/source/game.lua:547",
+        "references/source/card.lua:1091-1590"
+      ],
+      "cost": 3,
+      "config": {
+        "extra": 50
+      },
+      "effects": [
+        {
+          "trigger": "consume",
+          "condition": {},
+          "action": "gainJokerSellTotal",
+          "cap": 50
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "增加当前伙伴售价总和对应的金币，最多50。",
+      "effectFactRefs": [
+        "system.c_temperance.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "c_medium",
+      "name": "异术印记",
+      "kind": "spectral",
+      "order": 15,
+      "sourceRefs": [
+        "references/source/game.lua:585",
+        "references/source/card.lua:1091-1590"
+      ],
+      "cost": 4,
+      "config": {
+        "extra": "Purple",
+        "max_highlighted": 1
+      },
+      "effects": [
+        {
+          "trigger": "consume",
+          "condition": {
+            "selectedMin": 1,
+            "selectedMax": 1
+          },
+          "action": "selectedSet",
+          "field": "seal",
+          "value": "purple"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "选择1张手牌。将所选牌印上术印。",
+      "effectFactRefs": [
+        "system.c_medium.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "c_devil",
+      "name": "镀金",
+      "kind": "tarot",
+      "order": 16,
+      "sourceRefs": [
+        "references/source/game.lua:548",
+        "references/source/card.lua:1091-1590"
+      ],
+      "cost": 3,
+      "config": {
+        "mod_conv": "m_gold",
+        "max_highlighted": 1
+      },
+      "effects": [
+        {
+          "trigger": "consume",
+          "condition": {
+            "selectedMin": 1,
+            "selectedMax": 1
+          },
+          "action": "selectedSet",
+          "field": "enhancement",
+          "value": "gold"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "选择1张手牌。将所选牌强化为留金。",
+      "effectFactRefs": [
+        "system.c_devil.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "c_cryptid",
+      "name": "双重镜像",
+      "kind": "spectral",
+      "order": 16,
+      "sourceRefs": [
+        "references/source/game.lua:586",
+        "references/source/card.lua:1091-1590"
+      ],
+      "cost": 4,
+      "config": {
+        "extra": 2,
+        "max_highlighted": 1
+      },
+      "effects": [
+        {
+          "trigger": "consume",
+          "condition": {
+            "selectedMin": 1,
+            "selectedMax": 1
+          },
+          "action": "cloneSelectedCards",
+          "count": 2
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "选择1张手牌。向牌组和手牌加入所选牌的2张完整副本。",
+      "effectFactRefs": [
+        "system.c_cryptid.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "c_tower",
+      "name": "磐石",
+      "kind": "tarot",
+      "order": 17,
+      "sourceRefs": [
+        "references/source/game.lua:549",
+        "references/source/card.lua:1091-1590"
+      ],
+      "cost": 3,
+      "config": {
+        "mod_conv": "m_stone",
+        "max_highlighted": 1
+      },
+      "effects": [
+        {
+          "trigger": "consume",
+          "condition": {
+            "selectedMin": 1,
+            "selectedMax": 1
+          },
+          "action": "selectedSet",
+          "field": "enhancement",
+          "value": "stone"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "选择1张手牌。将所选牌强化为磐石。",
+      "effectFactRefs": [
+        "system.c_tower.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "c_soul",
+      "name": "传奇来客",
+      "kind": "spectral",
+      "order": 17,
+      "sourceRefs": [
+        "references/source/game.lua:587",
+        "references/source/card.lua:1091-1590"
+      ],
+      "cost": 4,
+      "config": {},
+      "hidden": true,
+      "effects": [
+        {
+          "trigger": "consume",
+          "condition": {
+            "freeJokerSlot": true
+          },
+          "action": "spawnJoker",
+          "rarity": 4
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "须有空伙伴位置。生成1名传说伙伴。",
+      "effectFactRefs": [
+        "system.c_soul.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "c_star",
+      "name": "菱染",
+      "kind": "tarot",
+      "order": 18,
+      "sourceRefs": [
+        "references/source/game.lua:550",
+        "references/source/card.lua:1091-1590"
+      ],
+      "cost": 3,
+      "config": {
+        "suit_conv": "Diamonds",
+        "max_highlighted": 3
+      },
+      "effects": [
+        {
+          "trigger": "consume",
+          "condition": {
+            "selectedMin": 1,
+            "selectedMax": 3
+          },
+          "action": "selectedSet",
+          "field": "suit",
+          "value": "diamonds"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "选择1至3张手牌。将所选牌改为方块。",
+      "effectFactRefs": [
+        "system.c_star.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "c_black_hole",
+      "name": "全线进阶",
+      "kind": "spectral",
+      "order": 18,
+      "sourceRefs": [
+        "references/source/game.lua:588",
+        "references/source/card.lua:1091-1590"
+      ],
+      "cost": 4,
+      "config": {},
+      "hidden": true,
+      "effects": [
+        {
+          "trigger": "consume",
+          "condition": {},
+          "action": "upgradeAllHands",
+          "amount": 1
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "所有12种牌型各升1级，包括尚未出现的牌型。",
+      "effectFactRefs": [
+        "system.c_black_hole.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "c_moon",
+      "name": "叶染",
+      "kind": "tarot",
+      "order": 19,
+      "sourceRefs": [
+        "references/source/game.lua:551",
+        "references/source/card.lua:1091-1590"
+      ],
+      "cost": 3,
+      "config": {
+        "suit_conv": "Clubs",
+        "max_highlighted": 3
+      },
+      "effects": [
+        {
+          "trigger": "consume",
+          "condition": {
+            "selectedMin": 1,
+            "selectedMax": 3
+          },
+          "action": "selectedSet",
+          "field": "suit",
+          "value": "clubs"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "选择1至3张手牌。将所选牌改为梅花。",
+      "effectFactRefs": [
+        "system.c_moon.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "c_sun",
+      "name": "心染",
+      "kind": "tarot",
+      "order": 20,
+      "sourceRefs": [
+        "references/source/game.lua:552",
+        "references/source/card.lua:1091-1590"
+      ],
+      "cost": 3,
+      "config": {
+        "suit_conv": "Hearts",
+        "max_highlighted": 3
+      },
+      "effects": [
+        {
+          "trigger": "consume",
+          "condition": {
+            "selectedMin": 1,
+            "selectedMax": 3
+          },
+          "action": "selectedSet",
+          "field": "suit",
+          "value": "hearts"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "选择1至3张手牌。将所选牌改为红桃。",
+      "effectFactRefs": [
+        "system.c_sun.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "c_judgement",
+      "name": "新伴",
+      "kind": "tarot",
+      "order": 21,
+      "sourceRefs": [
+        "references/source/game.lua:553",
+        "references/source/card.lua:1091-1590"
+      ],
+      "cost": 3,
+      "config": {},
+      "effects": [
+        {
+          "trigger": "consume",
+          "condition": {
+            "freeJokerSlot": true
+          },
+          "action": "spawnJoker",
+          "rarity": "random"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "须有空伙伴位置。生成1名随机稀有度伙伴。",
+      "effectFactRefs": [
+        "system.c_judgement.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "c_world",
+      "name": "锋染",
+      "kind": "tarot",
+      "order": 22,
+      "sourceRefs": [
+        "references/source/game.lua:554",
+        "references/source/card.lua:1091-1590"
+      ],
+      "cost": 3,
+      "config": {
+        "suit_conv": "Spades",
+        "max_highlighted": 3
+      },
+      "effects": [
+        {
+          "trigger": "consume",
+          "condition": {
+            "selectedMin": 1,
+            "selectedMax": 3
+          },
+          "action": "selectedSet",
+          "field": "suit",
+          "value": "spades"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "选择1至3张手牌。将所选牌改为黑桃。",
+      "effectFactRefs": [
+        "system.c_world.effects.0"
+      ]
+    }
+  ],
+  "tags": [
+    {
+      "sourceKey": "tag_uncommon",
+      "name": "进阶伙伴",
+      "kind": "tag",
+      "order": 1,
+      "sourceRefs": [
+        "references/source/game.lua:225",
+        "references/source/tag.lua:118-489"
+      ],
+      "min_ante": null,
+      "config": {
+        "type": "store_joker_create"
+      },
+      "effects": [
+        {
+          "trigger": "store_joker_create",
+          "condition": {},
+          "action": "shopJoker",
+          "rarity": 2,
+          "free": true
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "下次商店生成1名精良伙伴，购买免费；版本和难度贴签正常判定。",
+      "effectFactRefs": [
+        "system.tag_uncommon.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "tag_rare",
+      "name": "珍贵伙伴",
+      "kind": "tag",
+      "order": 2,
+      "sourceRefs": [
+        "references/source/game.lua:226",
+        "references/source/tag.lua:118-489"
+      ],
+      "min_ante": null,
+      "config": {
+        "type": "store_joker_create",
+        "odds": 3
+      },
+      "requires": "j_blueprint",
+      "effects": [
+        {
+          "trigger": "store_joker_create",
+          "condition": {},
+          "action": "shopJoker",
+          "rarity": 3,
+          "free": true
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "下次商店生成1名稀有伙伴，购买免费；版本和难度贴签正常判定。",
+      "effectFactRefs": [
+        "system.tag_rare.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "tag_negative",
+      "name": "空域伙伴",
+      "kind": "tag",
+      "order": 3,
+      "sourceRefs": [
+        "references/source/game.lua:227",
+        "references/source/tag.lua:118-489"
+      ],
+      "min_ante": 2,
+      "config": {
+        "type": "store_joker_modify",
+        "edition": "negative",
+        "odds": 5
+      },
+      "requires": "e_negative",
+      "effects": [
+        {
+          "trigger": "store_joker_modify",
+          "condition": {},
+          "action": "shopEdition",
+          "edition": "negative",
+          "free": true
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "下次商店给首名无版本伙伴附加空域版本，购买免费。第2首注起进入候选。",
+      "effectFactRefs": [
+        "system.tag_negative.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "tag_foil",
+      "name": "银纹伙伴",
+      "kind": "tag",
+      "order": 4,
+      "sourceRefs": [
+        "references/source/game.lua:228",
+        "references/source/tag.lua:118-489"
+      ],
+      "min_ante": null,
+      "config": {
+        "type": "store_joker_modify",
+        "edition": "foil",
+        "odds": 2
+      },
+      "requires": "e_foil",
+      "effects": [
+        {
+          "trigger": "store_joker_modify",
+          "condition": {},
+          "action": "shopEdition",
+          "edition": "foil",
+          "free": true
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "下次商店给首名无版本伙伴附加银纹版本，购买免费。",
+      "effectFactRefs": [
+        "system.tag_foil.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "tag_holo",
+      "name": "幻纹伙伴",
+      "kind": "tag",
+      "order": 5,
+      "sourceRefs": [
+        "references/source/game.lua:229",
+        "references/source/tag.lua:118-489"
+      ],
+      "min_ante": null,
+      "config": {
+        "type": "store_joker_modify",
+        "edition": "holo",
+        "odds": 3
+      },
+      "requires": "e_holo",
+      "effects": [
+        {
+          "trigger": "store_joker_modify",
+          "condition": {},
+          "action": "shopEdition",
+          "edition": "holo",
+          "free": true
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "下次商店给首名无版本伙伴附加幻纹版本，购买免费。",
+      "effectFactRefs": [
+        "system.tag_holo.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "tag_polychrome",
+      "name": "虹纹伙伴",
+      "kind": "tag",
+      "order": 6,
+      "sourceRefs": [
+        "references/source/game.lua:230",
+        "references/source/tag.lua:118-489"
+      ],
+      "min_ante": null,
+      "config": {
+        "type": "store_joker_modify",
+        "edition": "polychrome",
+        "odds": 4
+      },
+      "requires": "e_polychrome",
+      "effects": [
+        {
+          "trigger": "store_joker_modify",
+          "condition": {},
+          "action": "shopEdition",
+          "edition": "polychrome",
+          "free": true
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "下次商店给首名无版本伙伴附加虹纹版本，购买免费。",
+      "effectFactRefs": [
+        "system.tag_polychrome.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "tag_investment",
+      "name": "到期分红",
+      "kind": "tag",
+      "order": 7,
+      "sourceRefs": [
+        "references/source/game.lua:231",
+        "references/source/tag.lua:118-489"
+      ],
+      "min_ante": null,
+      "config": {
+        "type": "eval",
+        "dollars": 25
+      },
+      "effects": [
+        {
+          "trigger": "eval",
+          "condition": {
+            "bossDefeated": true
+          },
+          "action": "add",
+          "field": "dollars",
+          "value": 25
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "击败守关后获得25金币。",
+      "effectFactRefs": [
+        "system.tag_investment.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "tag_voucher",
+      "name": "额外凭单",
+      "kind": "tag",
+      "order": 8,
+      "sourceRefs": [
+        "references/source/game.lua:232",
+        "references/source/tag.lua:118-489"
+      ],
+      "min_ante": null,
+      "config": {
+        "type": "voucher_add"
+      },
+      "effects": [
+        {
+          "trigger": "voucher_add",
+          "condition": {},
+          "action": "extraVoucher"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "下次商店增加1件可购买的凭单，不自动兑换。",
+      "effectFactRefs": [
+        "system.tag_voucher.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "tag_boss",
+      "name": "换个守关",
+      "kind": "tag",
+      "order": 9,
+      "sourceRefs": [
+        "references/source/game.lua:233",
+        "references/source/tag.lua:118-489"
+      ],
+      "min_ante": null,
+      "config": {
+        "type": "new_blind_choice"
+      },
+      "effects": [
+        {
+          "trigger": "new_blind_choice",
+          "condition": {},
+          "action": "rerollBoss"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "到下一个关卡选择时免费重选当前守关。",
+      "effectFactRefs": [
+        "system.tag_boss.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "tag_standard",
+      "name": "纸牌赠包",
+      "kind": "tag",
+      "order": 10,
+      "sourceRefs": [
+        "references/source/game.lua:234",
+        "references/source/tag.lua:118-489"
+      ],
+      "min_ante": 2,
+      "config": {
+        "type": "new_blind_choice"
+      },
+      "effects": [
+        {
+          "trigger": "new_blind_choice",
+          "condition": {},
+          "action": "freePack",
+          "sourceKey": "p_standard_mega_1"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "进入下一个关卡选择时免费打开1个纸牌双选包 1。第2首注起进入候选。",
+      "effectFactRefs": [
+        "system.tag_standard.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "tag_charm",
+      "name": "异术赠包",
+      "kind": "tag",
+      "order": 11,
+      "sourceRefs": [
+        "references/source/game.lua:235",
+        "references/source/tag.lua:118-489"
+      ],
+      "min_ante": null,
+      "config": {
+        "type": "new_blind_choice"
+      },
+      "effects": [
+        {
+          "trigger": "new_blind_choice",
+          "condition": {},
+          "action": "freePack",
+          "sourceKey": "p_arcana_mega_1",
+          "sourceKeys": [
+            "p_arcana_mega_1",
+            "p_arcana_mega_2"
+          ]
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "进入下一个关卡选择时免费打开1个异术双选包 1。",
+      "effectFactRefs": [
+        "system.tag_charm.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "tag_meteor",
+      "name": "星图赠包",
+      "kind": "tag",
+      "order": 12,
+      "sourceRefs": [
+        "references/source/game.lua:236",
+        "references/source/tag.lua:118-489"
+      ],
+      "min_ante": 2,
+      "config": {
+        "type": "new_blind_choice"
+      },
+      "effects": [
+        {
+          "trigger": "new_blind_choice",
+          "condition": {},
+          "action": "freePack",
+          "sourceKey": "p_celestial_mega_1",
+          "sourceKeys": [
+            "p_celestial_mega_1",
+            "p_celestial_mega_2"
+          ]
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "进入下一个关卡选择时免费打开1个星图双选包 1。第2首注起进入候选。",
+      "effectFactRefs": [
+        "system.tag_meteor.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "tag_buffoon",
+      "name": "伙伴赠包",
+      "kind": "tag",
+      "order": 13,
+      "sourceRefs": [
+        "references/source/game.lua:237",
+        "references/source/tag.lua:118-489"
+      ],
+      "min_ante": 2,
+      "config": {
+        "type": "new_blind_choice"
+      },
+      "effects": [
+        {
+          "trigger": "new_blind_choice",
+          "condition": {},
+          "action": "freePack",
+          "sourceKey": "p_buffoon_mega_1"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "进入下一个关卡选择时免费打开1个伙伴双选包 1。第2首注起进入候选。",
+      "effectFactRefs": [
+        "system.tag_buffoon.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "tag_handy",
+      "name": "出牌补贴",
+      "kind": "tag",
+      "order": 14,
+      "sourceRefs": [
+        "references/source/game.lua:238",
+        "references/source/tag.lua:118-489"
+      ],
+      "min_ante": 2,
+      "config": {
+        "type": "immediate",
+        "dollars_per_hand": 1
+      },
+      "effects": [
+        {
+          "trigger": "immediate",
+          "condition": {},
+          "action": "gainFromCounter",
+          "field": "handsPlayed",
+          "multiplier": 1
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "立即获得整局已出牌次数×1金币。第2首注起进入候选。",
+      "effectFactRefs": [
+        "system.tag_handy.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "tag_garbage",
+      "name": "弃牌补贴",
+      "kind": "tag",
+      "order": 15,
+      "sourceRefs": [
+        "references/source/game.lua:239",
+        "references/source/tag.lua:118-489"
+      ],
+      "min_ante": 2,
+      "config": {
+        "type": "immediate",
+        "dollars_per_discard": 1
+      },
+      "effects": [
+        {
+          "trigger": "immediate",
+          "condition": {},
+          "action": "gainFromCounter",
+          "field": "unusedDiscards",
+          "multiplier": 1
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "立即获得累计未用弃牌次数×1金币。第2首注起进入候选。",
+      "effectFactRefs": [
+        "system.tag_garbage.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "tag_ethereal",
+      "name": "异域赠包",
+      "kind": "tag",
+      "order": 16,
+      "sourceRefs": [
+        "references/source/game.lua:240",
+        "references/source/tag.lua:118-489"
+      ],
+      "min_ante": 2,
+      "config": {
+        "type": "new_blind_choice"
+      },
+      "effects": [
+        {
+          "trigger": "new_blind_choice",
+          "condition": {},
+          "action": "freePack",
+          "sourceKey": "p_spectral_normal_1"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "进入下一个关卡选择时免费打开1个异域小包 1。第2首注起进入候选。",
+      "effectFactRefs": [
+        "system.tag_ethereal.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "tag_coupon",
+      "name": "免费采购",
+      "kind": "tag",
+      "order": 17,
+      "sourceRefs": [
+        "references/source/game.lua:241",
+        "references/source/tag.lua:118-489"
+      ],
+      "min_ante": null,
+      "config": {
+        "type": "shop_final_pass"
+      },
+      "effects": [
+        {
+          "trigger": "shop_final_pass",
+          "condition": {},
+          "action": "shopFree"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "下一家商店现有伙伴、道具、纸牌和卡包免费；凭单照常付费；同类凭签每家只兑换1枚。",
+      "effectFactRefs": [
+        "system.tag_coupon.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "tag_double",
+      "name": "复签",
+      "kind": "tag",
+      "order": 18,
+      "sourceRefs": [
+        "references/source/game.lua:242",
+        "references/source/tag.lua:118-489"
+      ],
+      "min_ante": null,
+      "config": {
+        "type": "tag_add"
+      },
+      "effects": [
+        {
+          "trigger": "tag_add",
+          "condition": {
+            "notDoubleTag": true
+          },
+          "action": "doubleNextTag"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "复制下次取得的1枚非复签凭签；定向升级的牌型也一起复制。",
+      "effectFactRefs": [
+        "system.tag_double.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "tag_juggle",
+      "name": "宽手一轮",
+      "kind": "tag",
+      "order": 19,
+      "sourceRefs": [
+        "references/source/game.lua:243",
+        "references/source/tag.lua:118-489"
+      ],
+      "min_ante": null,
+      "config": {
+        "type": "round_start_bonus",
+        "h_size": 3
+      },
+      "effects": [
+        {
+          "trigger": "round_start_bonus",
+          "condition": {},
+          "action": "add",
+          "field": "handSize",
+          "value": 3
+        },
+        {
+          "trigger": "round_start_bonus",
+          "condition": {},
+          "action": "add",
+          "field": "temporaryHandSize",
+          "value": 3
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "下轮手牌上限临时+3，该轮结束后移除。",
+      "effectFactRefs": [
+        "system.tag_juggle.effects.0",
+        "system.tag_juggle.effects.1"
+      ]
+    },
+    {
+      "sourceKey": "tag_d_six",
+      "name": "重选特惠",
+      "kind": "tag",
+      "order": 20,
+      "sourceRefs": [
+        "references/source/game.lua:244",
+        "references/source/tag.lua:118-489"
+      ],
+      "min_ante": null,
+      "config": {
+        "type": "shop_start"
+      },
+      "effects": [
+        {
+          "trigger": "shop_start",
+          "condition": {},
+          "action": "set",
+          "field": "temporaryRerollBase",
+          "value": 0
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "下次商店重掷从0金币开始，每次付费重掷再加1；同类凭签每家只兑换1枚。",
+      "effectFactRefs": [
+        "system.tag_d_six.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "tag_top_up",
+      "name": "双伴来访",
+      "kind": "tag",
+      "order": 21,
+      "sourceRefs": [
+        "references/source/game.lua:245",
+        "references/source/tag.lua:118-489"
+      ],
+      "min_ante": 2,
+      "config": {
+        "type": "immediate",
+        "spawn_jokers": 2
+      },
+      "effects": [
+        {
+          "trigger": "immediate",
+          "condition": {},
+          "action": "spawnJoker",
+          "count": 2,
+          "rarity": 1
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "立即生成至多2名普通伙伴，受空位限制。第2首注起进入候选。",
+      "effectFactRefs": [
+        "system.tag_top_up.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "tag_skip",
+      "name": "跳过补贴",
+      "kind": "tag",
+      "order": 22,
+      "sourceRefs": [
+        "references/source/game.lua:246",
+        "references/source/tag.lua:118-489"
+      ],
+      "min_ante": null,
+      "config": {
+        "type": "immediate",
+        "skip_bonus": 5
+      },
+      "effects": [
+        {
+          "trigger": "immediate",
+          "condition": {},
+          "action": "gainFromCounter",
+          "field": "skips",
+          "multiplier": 5
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "立即获得本局已跳过关卡次数×5金币。",
+      "effectFactRefs": [
+        "system.tag_skip.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "tag_orbital",
+      "name": "航线升级",
+      "kind": "tag",
+      "order": 23,
+      "sourceRefs": [
+        "references/source/game.lua:247",
+        "references/source/tag.lua:118-489"
+      ],
+      "min_ante": 2,
+      "config": {
+        "type": "immediate",
+        "levels": 3
+      },
+      "effects": [
+        {
+          "trigger": "immediate",
+          "condition": {},
+          "action": "upgradeOrbital",
+          "amount": 3
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "立即将预先指定的可见牌型升3级。第2首注起进入候选。",
+      "effectFactRefs": [
+        "system.tag_orbital.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "tag_economy",
+      "name": "积蓄翻倍",
+      "kind": "tag",
+      "order": 24,
+      "sourceRefs": [
+        "references/source/game.lua:248",
+        "references/source/tag.lua:118-489"
+      ],
+      "min_ante": null,
+      "config": {
+        "type": "immediate",
+        "max": 40
+      },
+      "effects": [
+        {
+          "trigger": "immediate",
+          "condition": {},
+          "action": "gainCappedCash",
+          "cap": 40
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "立即增加min(max(当前金币,0),40)金币。",
+      "effectFactRefs": [
+        "system.tag_economy.effects.0"
+      ]
+    }
+  ],
+  "vouchers": [
+    {
+      "sourceKey": "v_overstock_norm",
+      "name": "扩展货架",
+      "kind": "voucher",
+      "order": 1,
+      "sourceRefs": [
+        "references/source/game.lua:592",
+        "references/source/card.lua:1880-1973; references/source/card.lua:1731-1743; references/source/functions/UI_definitions.lua:742-798"
+      ],
+      "unlocked": true,
+      "available": true,
+      "cost": 10,
+      "config": {},
+      "effects": [
+        {
+          "trigger": "redeem",
+          "condition": {},
+          "action": "add",
+          "field": "shopSlots",
+          "value": 1
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "兑换后：货架商品位置+1。",
+      "effectFactRefs": [
+        "system.v_overstock_norm.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "v_overstock_plus",
+      "name": "扩展货架Ⅱ",
+      "kind": "voucher",
+      "order": 2,
+      "sourceRefs": [
+        "references/source/game.lua:609",
+        "references/source/card.lua:1880-1973; references/source/card.lua:1731-1743; references/source/functions/UI_definitions.lua:742-798"
+      ],
+      "unlocked": false,
+      "available": true,
+      "cost": 10,
+      "config": {},
+      "requires": [
+        "v_overstock_norm"
+      ],
+      "unlock_condition": {
+        "type": "c_shop_dollars_spent",
+        "extra": 2500
+      },
+      "effects": [
+        {
+          "trigger": "redeem",
+          "condition": {},
+          "action": "add",
+          "field": "shopSlots",
+          "value": 1
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "兑换后：货架商品位置+1。前置：扩展货架。",
+      "effectFactRefs": [
+        "system.v_overstock_plus.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "v_clearance_sale",
+      "name": "优惠采购",
+      "kind": "voucher",
+      "order": 3,
+      "sourceRefs": [
+        "references/source/game.lua:593",
+        "references/source/card.lua:1880-1973; references/source/card.lua:1731-1743; references/source/functions/UI_definitions.lua:742-798"
+      ],
+      "unlocked": true,
+      "available": true,
+      "cost": 10,
+      "config": {
+        "extra": 25
+      },
+      "effects": [
+        {
+          "trigger": "redeem",
+          "condition": {},
+          "action": "set",
+          "field": "discountPercent",
+          "value": 25
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "兑换后：商店商品价格减25%，向下取整且最低1金币。",
+      "effectFactRefs": [
+        "system.v_clearance_sale.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "v_liquidation",
+      "name": "优惠采购Ⅱ",
+      "kind": "voucher",
+      "order": 4,
+      "sourceRefs": [
+        "references/source/game.lua:610",
+        "references/source/card.lua:1880-1973; references/source/card.lua:1731-1743; references/source/functions/UI_definitions.lua:742-798"
+      ],
+      "unlocked": false,
+      "available": true,
+      "cost": 10,
+      "config": {
+        "extra": 50
+      },
+      "requires": [
+        "v_clearance_sale"
+      ],
+      "unlock_condition": {
+        "type": "run_redeem",
+        "extra": 10
+      },
+      "effects": [
+        {
+          "trigger": "redeem",
+          "condition": {},
+          "action": "set",
+          "field": "discountPercent",
+          "value": 50
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "兑换后：商店商品价格减50%，向下取整且最低1金币。前置：优惠采购。",
+      "effectFactRefs": [
+        "system.v_liquidation.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "v_hone",
+      "name": "光泽筛选",
+      "kind": "voucher",
+      "order": 5,
+      "sourceRefs": [
+        "references/source/game.lua:594",
+        "references/source/card.lua:1880-1973; references/source/card.lua:1731-1743; references/source/functions/UI_definitions.lua:742-798"
+      ],
+      "unlocked": true,
+      "available": true,
+      "cost": 10,
+      "config": {
+        "extra": 2
+      },
+      "effects": [
+        {
+          "trigger": "redeem",
+          "condition": {},
+          "action": "set",
+          "field": "editionRate",
+          "value": 2
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "兑换后：普通出现判定中的银纹、幻纹、虹纹累积阈值乘2；空域概率不受此加成影响。",
+      "effectFactRefs": [
+        "system.v_hone.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "v_glow_up",
+      "name": "光泽筛选Ⅱ",
+      "kind": "voucher",
+      "order": 6,
+      "sourceRefs": [
+        "references/source/game.lua:611",
+        "references/source/card.lua:1880-1973; references/source/card.lua:1731-1743; references/source/functions/UI_definitions.lua:742-798"
+      ],
+      "unlocked": false,
+      "available": true,
+      "cost": 10,
+      "config": {
+        "extra": 4
+      },
+      "requires": [
+        "v_hone"
+      ],
+      "unlock_condition": {
+        "type": "have_edition",
+        "extra": 5
+      },
+      "effects": [
+        {
+          "trigger": "redeem",
+          "condition": {},
+          "action": "set",
+          "field": "editionRate",
+          "value": 4
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "兑换后：普通出现判定中的银纹、幻纹、虹纹累积阈值乘4；空域概率不受此加成影响。前置：光泽筛选。",
+      "effectFactRefs": [
+        "system.v_glow_up.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "v_reroll_surplus",
+      "name": "重选折扣",
+      "kind": "voucher",
+      "order": 7,
+      "sourceRefs": [
+        "references/source/game.lua:595",
+        "references/source/card.lua:1880-1973; references/source/card.lua:1731-1743; references/source/functions/UI_definitions.lua:742-798"
+      ],
+      "unlocked": true,
+      "available": true,
+      "cost": 10,
+      "config": {
+        "extra": 2
+      },
+      "effects": [
+        {
+          "trigger": "redeem",
+          "condition": {},
+          "action": "add",
+          "field": "rerollBaseCost",
+          "value": -2
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "兑换后：商店重掷基础价-2。",
+      "effectFactRefs": [
+        "system.v_reroll_surplus.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "v_reroll_glut",
+      "name": "重选折扣Ⅱ",
+      "kind": "voucher",
+      "order": 8,
+      "sourceRefs": [
+        "references/source/game.lua:612",
+        "references/source/card.lua:1880-1973; references/source/card.lua:1731-1743; references/source/functions/UI_definitions.lua:742-798"
+      ],
+      "unlocked": false,
+      "available": true,
+      "cost": 10,
+      "config": {
+        "extra": 2
+      },
+      "requires": [
+        "v_reroll_surplus"
+      ],
+      "unlock_condition": {
+        "type": "c_shop_rerolls",
+        "extra": 100
+      },
+      "effects": [
+        {
+          "trigger": "redeem",
+          "condition": {},
+          "action": "add",
+          "field": "rerollBaseCost",
+          "value": -2
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "兑换后：商店重掷基础价-2。前置：重选折扣。",
+      "effectFactRefs": [
+        "system.v_reroll_glut.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "v_crystal_ball",
+      "name": "备用匣",
+      "kind": "voucher",
+      "order": 9,
+      "sourceRefs": [
+        "references/source/game.lua:596",
+        "references/source/card.lua:1880-1973; references/source/card.lua:1731-1743; references/source/functions/UI_definitions.lua:742-798"
+      ],
+      "unlocked": true,
+      "available": true,
+      "cost": 10,
+      "config": {
+        "extra": 3
+      },
+      "effects": [
+        {
+          "trigger": "redeem",
+          "condition": {},
+          "action": "add",
+          "field": "consumableSlots",
+          "value": 1
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "兑换后：道具位置+1。",
+      "effectFactRefs": [
+        "system.v_crystal_ball.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "v_omen_globe",
+      "name": "跨界匣",
+      "kind": "voucher",
+      "order": 10,
+      "sourceRefs": [
+        "references/source/game.lua:613",
+        "references/source/card.lua:1880-1973; references/source/card.lua:1731-1743; references/source/functions/UI_definitions.lua:742-798"
+      ],
+      "unlocked": false,
+      "available": true,
+      "cost": 10,
+      "config": {
+        "extra": 4
+      },
+      "requires": [
+        "v_crystal_ball"
+      ],
+      "unlock_condition": {
+        "type": "c_tarot_reading_used",
+        "extra": 25
+      },
+      "effects": [
+        {
+          "trigger": "redeem",
+          "condition": {},
+          "action": "set",
+          "field": "omenGlobe",
+          "value": true
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "兑换后：占卜包内每件物品有20%概率改为异域物品。前置：备用匣。",
+      "effectFactRefs": [
+        "system.v_omen_globe.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "v_telescope",
+      "name": "定向观测",
+      "kind": "voucher",
+      "order": 11,
+      "sourceRefs": [
+        "references/source/game.lua:597",
+        "references/source/card.lua:1880-1973; references/source/card.lua:1731-1743; references/source/functions/UI_definitions.lua:742-798"
+      ],
+      "unlocked": true,
+      "available": true,
+      "cost": 10,
+      "config": {
+        "extra": 3
+      },
+      "effects": [
+        {
+          "trigger": "redeem",
+          "condition": {},
+          "action": "set",
+          "field": "telescope",
+          "value": true
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "兑换后：星图包第一张固定为使用次数最多的可见牌型；并列按牌型顺序选取。",
+      "effectFactRefs": [
+        "system.v_telescope.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "v_observatory",
+      "name": "观测增幅",
+      "kind": "voucher",
+      "order": 12,
+      "sourceRefs": [
+        "references/source/game.lua:614",
+        "references/source/card.lua:1880-1973; references/source/card.lua:1731-1743; references/source/functions/UI_definitions.lua:742-798"
+      ],
+      "unlocked": false,
+      "available": true,
+      "cost": 10,
+      "config": {
+        "extra": 1.5
+      },
+      "requires": [
+        "v_telescope"
+      ],
+      "unlock_condition": {
+        "type": "c_planetarium_used",
+        "extra": 25
+      },
+      "effects": [
+        {
+          "trigger": "redeem",
+          "condition": {},
+          "action": "set",
+          "field": "observatory",
+          "value": true
+        },
+        {
+          "trigger": "jokerMainConsumable",
+          "condition": {
+            "matchingPlanet": true,
+            "notDebuffed": true
+          },
+          "action": "observatoryXMult",
+          "factor": 1.5
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "兑换后：计分时，每张持有的对应牌型星图分别将倍率乘1.5，星图不消耗。前置：定向观测。",
+      "effectFactRefs": [
+        "system.v_observatory.effects.0",
+        "system.v_observatory.effects.1"
+      ]
+    },
+    {
+      "sourceKey": "v_grabber",
+      "name": "加赛许可",
+      "kind": "voucher",
+      "order": 13,
+      "sourceRefs": [
+        "references/source/game.lua:598",
+        "references/source/card.lua:1880-1973; references/source/card.lua:1731-1743; references/source/functions/UI_definitions.lua:742-798"
+      ],
+      "unlocked": true,
+      "available": true,
+      "cost": 10,
+      "config": {
+        "extra": 1
+      },
+      "effects": [
+        {
+          "trigger": "redeem",
+          "condition": {},
+          "action": "add",
+          "field": "hands",
+          "value": 1
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "兑换后：每轮出牌次数+1。",
+      "effectFactRefs": [
+        "system.v_grabber.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "v_nacho_tong",
+      "name": "加赛许可Ⅱ",
+      "kind": "voucher",
+      "order": 14,
+      "sourceRefs": [
+        "references/source/game.lua:615",
+        "references/source/card.lua:1880-1973; references/source/card.lua:1731-1743; references/source/functions/UI_definitions.lua:742-798"
+      ],
+      "unlocked": false,
+      "available": true,
+      "cost": 10,
+      "config": {
+        "extra": 1
+      },
+      "requires": [
+        "v_grabber"
+      ],
+      "unlock_condition": {
+        "type": "c_cards_played",
+        "extra": 2500
+      },
+      "effects": [
+        {
+          "trigger": "redeem",
+          "condition": {},
+          "action": "add",
+          "field": "hands",
+          "value": 1
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "兑换后：每轮出牌次数+1。前置：加赛许可。",
+      "effectFactRefs": [
+        "system.v_nacho_tong.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "v_wasteful",
+      "name": "换牌许可",
+      "kind": "voucher",
+      "order": 15,
+      "sourceRefs": [
+        "references/source/game.lua:599",
+        "references/source/card.lua:1880-1973; references/source/card.lua:1731-1743; references/source/functions/UI_definitions.lua:742-798"
+      ],
+      "unlocked": true,
+      "available": true,
+      "cost": 10,
+      "config": {
+        "extra": 1
+      },
+      "effects": [
+        {
+          "trigger": "redeem",
+          "condition": {},
+          "action": "add",
+          "field": "discards",
+          "value": 1
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "兑换后：每轮弃牌次数+1。",
+      "effectFactRefs": [
+        "system.v_wasteful.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "v_recyclomancy",
+      "name": "换牌许可Ⅱ",
+      "kind": "voucher",
+      "order": 16,
+      "sourceRefs": [
+        "references/source/game.lua:616",
+        "references/source/card.lua:1880-1973; references/source/card.lua:1731-1743; references/source/functions/UI_definitions.lua:742-798"
+      ],
+      "unlocked": false,
+      "available": true,
+      "cost": 10,
+      "config": {
+        "extra": 1
+      },
+      "requires": [
+        "v_wasteful"
+      ],
+      "unlock_condition": {
+        "type": "c_cards_discarded",
+        "extra": 2500
+      },
+      "effects": [
+        {
+          "trigger": "redeem",
+          "condition": {},
+          "action": "add",
+          "field": "discards",
+          "value": 1
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "兑换后：每轮弃牌次数+1。前置：换牌许可。",
+      "effectFactRefs": [
+        "system.v_recyclomancy.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "v_tarot_merchant",
+      "name": "异术进货",
+      "kind": "voucher",
+      "order": 17,
+      "sourceRefs": [
+        "references/source/game.lua:600",
+        "references/source/card.lua:1880-1973; references/source/card.lua:1731-1743; references/source/functions/UI_definitions.lua:742-798"
+      ],
+      "unlocked": true,
+      "available": true,
+      "cost": 10,
+      "config": {
+        "extra": 2.4,
+        "extra_disp": 2
+      },
+      "effects": [
+        {
+          "trigger": "redeem",
+          "condition": {},
+          "action": "set",
+          "field": "tarotRate",
+          "value": 9.6
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "兑换后：占卜的商店生成权重变为9.6，覆盖前一级凭单。",
+      "effectFactRefs": [
+        "system.v_tarot_merchant.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "v_tarot_tycoon",
+      "name": "异术进货Ⅱ",
+      "kind": "voucher",
+      "order": 18,
+      "sourceRefs": [
+        "references/source/game.lua:617",
+        "references/source/card.lua:1880-1973; references/source/card.lua:1731-1743; references/source/functions/UI_definitions.lua:742-798"
+      ],
+      "unlocked": false,
+      "available": true,
+      "cost": 10,
+      "config": {
+        "extra": 8.0,
+        "extra_disp": 4
+      },
+      "requires": [
+        "v_tarot_merchant"
+      ],
+      "unlock_condition": {
+        "type": "c_tarots_bought",
+        "extra": 50
+      },
+      "effects": [
+        {
+          "trigger": "redeem",
+          "condition": {},
+          "action": "set",
+          "field": "tarotRate",
+          "value": 32
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "兑换后：占卜的商店生成权重变为32，覆盖前一级凭单。前置：异术进货。",
+      "effectFactRefs": [
+        "system.v_tarot_tycoon.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "v_planet_merchant",
+      "name": "星图进货",
+      "kind": "voucher",
+      "order": 19,
+      "sourceRefs": [
+        "references/source/game.lua:601",
+        "references/source/card.lua:1880-1973; references/source/card.lua:1731-1743; references/source/functions/UI_definitions.lua:742-798"
+      ],
+      "unlocked": true,
+      "available": true,
+      "cost": 10,
+      "config": {
+        "extra": 2.4,
+        "extra_disp": 2
+      },
+      "effects": [
+        {
+          "trigger": "redeem",
+          "condition": {},
+          "action": "set",
+          "field": "planetRate",
+          "value": 9.6
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "兑换后：星图的商店生成权重变为9.6，覆盖前一级凭单。",
+      "effectFactRefs": [
+        "system.v_planet_merchant.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "v_planet_tycoon",
+      "name": "星图进货Ⅱ",
+      "kind": "voucher",
+      "order": 20,
+      "sourceRefs": [
+        "references/source/game.lua:618",
+        "references/source/card.lua:1880-1973; references/source/card.lua:1731-1743; references/source/functions/UI_definitions.lua:742-798"
+      ],
+      "unlocked": false,
+      "available": true,
+      "cost": 10,
+      "config": {
+        "extra": 8.0,
+        "extra_disp": 4
+      },
+      "requires": [
+        "v_planet_merchant"
+      ],
+      "unlock_condition": {
+        "type": "c_planets_bought",
+        "extra": 50
+      },
+      "effects": [
+        {
+          "trigger": "redeem",
+          "condition": {},
+          "action": "set",
+          "field": "planetRate",
+          "value": 32
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "兑换后：星图的商店生成权重变为32，覆盖前一级凭单。前置：星图进货。",
+      "effectFactRefs": [
+        "system.v_planet_tycoon.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "v_seed_money",
+      "name": "储蓄扩容",
+      "kind": "voucher",
+      "order": 21,
+      "sourceRefs": [
+        "references/source/game.lua:602",
+        "references/source/card.lua:1880-1973; references/source/card.lua:1731-1743; references/source/functions/UI_definitions.lua:742-798"
+      ],
+      "unlocked": true,
+      "available": true,
+      "cost": 10,
+      "config": {
+        "extra": 50
+      },
+      "effects": [
+        {
+          "trigger": "redeem",
+          "condition": {},
+          "action": "set",
+          "field": "interestCap",
+          "value": 50
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "兑换后：利息本金上限变为50金币；每5金币获得1金币基础利息。",
+      "effectFactRefs": [
+        "system.v_seed_money.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "v_money_tree",
+      "name": "储蓄扩容Ⅱ",
+      "kind": "voucher",
+      "order": 22,
+      "sourceRefs": [
+        "references/source/game.lua:619",
+        "references/source/card.lua:1880-1973; references/source/card.lua:1731-1743; references/source/functions/UI_definitions.lua:742-798"
+      ],
+      "unlocked": false,
+      "available": true,
+      "cost": 10,
+      "config": {
+        "extra": 100
+      },
+      "requires": [
+        "v_seed_money"
+      ],
+      "unlock_condition": {
+        "type": "interest_streak",
+        "extra": 10
+      },
+      "effects": [
+        {
+          "trigger": "redeem",
+          "condition": {},
+          "action": "set",
+          "field": "interestCap",
+          "value": 100
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "兑换后：利息本金上限变为100金币；每5金币获得1金币基础利息。前置：储蓄扩容。",
+      "effectFactRefs": [
+        "system.v_money_tree.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "v_blank",
+      "name": "空白凭单",
+      "kind": "voucher",
+      "order": 23,
+      "sourceRefs": [
+        "references/source/game.lua:603",
+        "references/source/card.lua:1880-1973; references/source/card.lua:1731-1743; references/source/functions/UI_definitions.lua:742-798"
+      ],
+      "unlocked": true,
+      "available": true,
+      "cost": 10,
+      "config": {
+        "extra": 5
+      },
+      "effects": [
+        {
+          "trigger": "redeem",
+          "condition": {},
+          "action": "add",
+          "field": "blankRedeems",
+          "value": 1
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "兑换后：空白凭单兑换记录+1。",
+      "effectFactRefs": [
+        "system.v_blank.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "v_antimatter",
+      "name": "伙伴扩容",
+      "kind": "voucher",
+      "order": 24,
+      "sourceRefs": [
+        "references/source/game.lua:620",
+        "references/source/card.lua:1880-1973; references/source/card.lua:1731-1743; references/source/functions/UI_definitions.lua:742-798"
+      ],
+      "unlocked": false,
+      "available": true,
+      "cost": 10,
+      "config": {
+        "extra": 15
+      },
+      "requires": [
+        "v_blank"
+      ],
+      "unlock_condition": {
+        "type": "blank_redeems",
+        "extra": 10
+      },
+      "effects": [
+        {
+          "trigger": "redeem",
+          "condition": {},
+          "action": "add",
+          "field": "jokerSlots",
+          "value": 1
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "兑换后：伙伴位置+1。前置：空白凭单。",
+      "effectFactRefs": [
+        "system.v_antimatter.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "v_magic_trick",
+      "name": "纸牌进货",
+      "kind": "voucher",
+      "order": 25,
+      "sourceRefs": [
+        "references/source/game.lua:604",
+        "references/source/card.lua:1880-1973; references/source/card.lua:1731-1743; references/source/functions/UI_definitions.lua:742-798"
+      ],
+      "unlocked": true,
+      "available": true,
+      "cost": 10,
+      "config": {
+        "extra": 4
+      },
+      "effects": [
+        {
+          "trigger": "redeem",
+          "condition": {},
+          "action": "set",
+          "field": "playingCardRate",
+          "value": 4
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "兑换后：纸牌进入商店，生成权重为4。",
+      "effectFactRefs": [
+        "system.v_magic_trick.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "v_illusion",
+      "name": "精装进货",
+      "kind": "voucher",
+      "order": 26,
+      "sourceRefs": [
+        "references/source/game.lua:621",
+        "references/source/card.lua:1880-1973; references/source/card.lua:1731-1743; references/source/functions/UI_definitions.lua:742-798"
+      ],
+      "unlocked": false,
+      "available": true,
+      "cost": 10,
+      "config": {
+        "extra": 4
+      },
+      "requires": [
+        "v_magic_trick"
+      ],
+      "unlock_condition": {
+        "type": "c_playing_cards_bought",
+        "extra": 20
+      },
+      "effects": [
+        {
+          "trigger": "redeem",
+          "condition": {},
+          "action": "set",
+          "field": "playingCardRate",
+          "value": 4
+        },
+        {
+          "trigger": "redeem",
+          "condition": {},
+          "action": "set",
+          "field": "illusion",
+          "value": true
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "兑换后：纸牌进入商店，生成权重为4；商店纸牌独立判定：强化命中率为50%，附加版本命中率为20%；命中版本后银纹/幻纹/虹纹比例为50%/35%/15%。前置：纸牌进货。",
+      "effectFactRefs": [
+        "system.v_illusion.effects.0",
+        "system.v_illusion.effects.1"
+      ]
+    },
+    {
+      "sourceKey": "v_hieroglyph",
+      "name": "回溯出牌",
+      "kind": "voucher",
+      "order": 27,
+      "sourceRefs": [
+        "references/source/game.lua:605",
+        "references/source/card.lua:1880-1973; references/source/card.lua:1731-1743; references/source/functions/UI_definitions.lua:742-798"
+      ],
+      "unlocked": true,
+      "available": true,
+      "cost": 10,
+      "config": {
+        "extra": 1
+      },
+      "effects": [
+        {
+          "trigger": "redeem",
+          "condition": {},
+          "action": "add",
+          "field": "ante",
+          "value": -1
+        },
+        {
+          "trigger": "redeem",
+          "condition": {},
+          "action": "add",
+          "field": "blindAnte",
+          "value": -1
+        },
+        {
+          "trigger": "redeem",
+          "condition": {},
+          "action": "add",
+          "field": "hands",
+          "value": -1
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "兑换后：首注-1；目标分数对应首注-1；每轮出牌次数-1。",
+      "effectFactRefs": [
+        "system.v_hieroglyph.effects.0",
+        "system.v_hieroglyph.effects.1",
+        "system.v_hieroglyph.effects.2"
+      ]
+    },
+    {
+      "sourceKey": "v_petroglyph",
+      "name": "回溯弃牌",
+      "kind": "voucher",
+      "order": 28,
+      "sourceRefs": [
+        "references/source/game.lua:622",
+        "references/source/card.lua:1880-1973; references/source/card.lua:1731-1743; references/source/functions/UI_definitions.lua:742-798"
+      ],
+      "unlocked": false,
+      "available": true,
+      "cost": 10,
+      "config": {
+        "extra": 1
+      },
+      "requires": [
+        "v_hieroglyph"
+      ],
+      "unlock_condition": {
+        "type": "ante_up",
+        "ante": 12,
+        "extra": 12
+      },
+      "effects": [
+        {
+          "trigger": "redeem",
+          "condition": {},
+          "action": "add",
+          "field": "ante",
+          "value": -1
+        },
+        {
+          "trigger": "redeem",
+          "condition": {},
+          "action": "add",
+          "field": "blindAnte",
+          "value": -1
+        },
+        {
+          "trigger": "redeem",
+          "condition": {},
+          "action": "add",
+          "field": "discards",
+          "value": -1
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "兑换后：首注-1；目标分数对应首注-1；每轮弃牌次数-1。前置：回溯出牌。",
+      "effectFactRefs": [
+        "system.v_petroglyph.effects.0",
+        "system.v_petroglyph.effects.1",
+        "system.v_petroglyph.effects.2"
+      ]
+    },
+    {
+      "sourceKey": "v_directors_cut",
+      "name": "重排关卡",
+      "kind": "voucher",
+      "order": 29,
+      "sourceRefs": [
+        "references/source/game.lua:606",
+        "references/source/card.lua:1880-1973; references/source/card.lua:1731-1743; references/source/functions/UI_definitions.lua:742-798"
+      ],
+      "unlocked": true,
+      "available": true,
+      "cost": 10,
+      "config": {
+        "extra": 10
+      },
+      "effects": [
+        {
+          "trigger": "redeem",
+          "condition": {},
+          "action": "set",
+          "field": "bossRerollsAllowed",
+          "value": 1
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "兑换后：每次花10金币重选守关，每首注最多1次。",
+      "effectFactRefs": [
+        "system.v_directors_cut.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "v_retcon",
+      "name": "重排关卡Ⅱ",
+      "kind": "voucher",
+      "order": 30,
+      "sourceRefs": [
+        "references/source/game.lua:623",
+        "references/source/card.lua:1880-1973; references/source/card.lua:1731-1743; references/source/functions/UI_definitions.lua:742-798"
+      ],
+      "unlocked": false,
+      "available": true,
+      "cost": 10,
+      "config": {
+        "extra": 10
+      },
+      "requires": [
+        "v_directors_cut"
+      ],
+      "unlock_condition": {
+        "type": "blind_discoveries",
+        "extra": 25
+      },
+      "effects": [
+        {
+          "trigger": "redeem",
+          "condition": {},
+          "action": "set",
+          "field": "bossRerollsAllowed",
+          "value": -1
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "兑换后：每次花10金币重选守关，次数不限。前置：重排关卡。",
+      "effectFactRefs": [
+        "system.v_retcon.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "v_paint_brush",
+      "name": "宽手许可",
+      "kind": "voucher",
+      "order": 31,
+      "sourceRefs": [
+        "references/source/game.lua:607",
+        "references/source/card.lua:1880-1973; references/source/card.lua:1731-1743; references/source/functions/UI_definitions.lua:742-798"
+      ],
+      "unlocked": true,
+      "available": true,
+      "cost": 10,
+      "config": {
+        "extra": 1
+      },
+      "effects": [
+        {
+          "trigger": "redeem",
+          "condition": {},
+          "action": "add",
+          "field": "handSize",
+          "value": 1
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "兑换后：手牌上限+1。",
+      "effectFactRefs": [
+        "system.v_paint_brush.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "v_palette",
+      "name": "宽手许可Ⅱ",
+      "kind": "voucher",
+      "order": 32,
+      "sourceRefs": [
+        "references/source/game.lua:624",
+        "references/source/card.lua:1880-1973; references/source/card.lua:1731-1743; references/source/functions/UI_definitions.lua:742-798"
+      ],
+      "unlocked": false,
+      "available": true,
+      "cost": 10,
+      "config": {
+        "extra": 1
+      },
+      "requires": [
+        "v_paint_brush"
+      ],
+      "unlock_condition": {
+        "type": "min_hand_size",
+        "extra": 5
+      },
+      "effects": [
+        {
+          "trigger": "redeem",
+          "condition": {},
+          "action": "add",
+          "field": "handSize",
+          "value": 1
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "兑换后：手牌上限+1。前置：宽手许可。",
+      "effectFactRefs": [
+        "system.v_palette.effects.0"
+      ]
+    }
+  ],
+  "enhancements": [
+    {
+      "sourceKey": "m_bonus",
+      "name": "盈筹",
+      "kind": "enhanced",
+      "order": 2,
+      "sourceRefs": [
+        "references/source/game.lua:648",
+        "references/source/card.lua:968-1087; references/source/functions/state_events.lua:961"
+      ],
+      "max": 500,
+      "config": {
+        "bonus": 30
+      },
+      "effects": [
+        {
+          "trigger": "cardOrHeld",
+          "condition": {},
+          "action": "scoringEnhancement",
+          "kind": "bonus",
+          "config": {
+            "bonus": 30
+          }
+        }
+      ],
+      "implementation": "字段与生成已实现；牌上触发由计分域另验",
+      "description": "参与计分时额外+30筹码。",
+      "effectFactRefs": [
+        "system.m_bonus.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "m_mult",
+      "name": "升势",
+      "kind": "enhanced",
+      "order": 3,
+      "sourceRefs": [
+        "references/source/game.lua:649",
+        "references/source/card.lua:968-1087; references/source/functions/state_events.lua:961"
+      ],
+      "max": 500,
+      "config": {
+        "mult": 4
+      },
+      "effects": [
+        {
+          "trigger": "cardOrHeld",
+          "condition": {},
+          "action": "scoringEnhancement",
+          "kind": "mult",
+          "config": {
+            "mult": 4
+          }
+        }
+      ],
+      "implementation": "字段与生成已实现；牌上触发由计分域另验",
+      "description": "参与计分时+4倍率。",
+      "effectFactRefs": [
+        "system.m_mult.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "m_wild",
+      "name": "全色",
+      "kind": "enhanced",
+      "order": 4,
+      "sourceRefs": [
+        "references/source/game.lua:650",
+        "references/source/card.lua:968-1087; references/source/functions/state_events.lua:961"
+      ],
+      "max": 500,
+      "config": {},
+      "effects": [
+        {
+          "trigger": "cardOrHeld",
+          "condition": {},
+          "action": "scoringEnhancement",
+          "kind": "wild",
+          "config": {}
+        }
+      ],
+      "implementation": "字段与生成已实现；牌上触发由计分域另验",
+      "description": "视为全部花色；静默时失效，仍保留原花色。",
+      "effectFactRefs": [
+        "system.m_wild.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "m_glass",
+      "name": "脆晶",
+      "kind": "enhanced",
+      "order": 5,
+      "sourceRefs": [
+        "references/source/game.lua:651",
+        "references/source/card.lua:968-1087; references/source/functions/state_events.lua:961"
+      ],
+      "max": 500,
+      "config": {
+        "Xmult": 2,
+        "extra": 4
+      },
+      "effects": [
+        {
+          "trigger": "cardOrHeld",
+          "condition": {},
+          "action": "scoringEnhancement",
+          "kind": "glass",
+          "config": {
+            "Xmult": 2,
+            "extra": 4
+          }
+        }
+      ],
+      "implementation": "字段与生成已实现；牌上触发由计分域另验",
+      "description": "参与计分时倍率×2；结算后以基础概率1/4破碎，概率受概率加成影响。",
+      "effectFactRefs": [
+        "system.m_glass.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "m_steel",
+      "name": "冷铸",
+      "kind": "enhanced",
+      "order": 6,
+      "sourceRefs": [
+        "references/source/game.lua:652",
+        "references/source/card.lua:968-1087; references/source/functions/state_events.lua:961"
+      ],
+      "max": 500,
+      "config": {
+        "h_x_mult": 1.5
+      },
+      "effects": [
+        {
+          "trigger": "cardOrHeld",
+          "condition": {},
+          "action": "scoringEnhancement",
+          "kind": "steel",
+          "config": {
+            "h_x_mult": 1.5
+          }
+        }
+      ],
+      "implementation": "字段与生成已实现；牌上触发由计分域另验",
+      "description": "留在手牌时倍率×1.5，可被手牌重触发再次结算。",
+      "effectFactRefs": [
+        "system.m_steel.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "m_stone",
+      "name": "磐石",
+      "kind": "enhanced",
+      "order": 7,
+      "sourceRefs": [
+        "references/source/game.lua:653",
+        "references/source/card.lua:968-1087; references/source/functions/state_events.lua:961"
+      ],
+      "max": 500,
+      "config": {
+        "bonus": 50
+      },
+      "effects": [
+        {
+          "trigger": "cardOrHeld",
+          "condition": {},
+          "action": "scoringEnhancement",
+          "kind": "stone",
+          "config": {
+            "bonus": 50
+          }
+        }
+      ],
+      "implementation": "字段与生成已实现；牌上触发由计分域另验",
+      "description": "忽略点数和花色，出牌时固定提供50筹码并加入计分牌。",
+      "effectFactRefs": [
+        "system.m_stone.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "m_gold",
+      "name": "留金",
+      "kind": "enhanced",
+      "order": 8,
+      "sourceRefs": [
+        "references/source/game.lua:654",
+        "references/source/card.lua:968-1087; references/source/functions/state_events.lua:961"
+      ],
+      "max": 500,
+      "config": {
+        "h_dollars": 3
+      },
+      "effects": [
+        {
+          "trigger": "cardOrHeld",
+          "condition": {},
+          "action": "scoringEnhancement",
+          "kind": "gold",
+          "config": {
+            "h_dollars": 3
+          }
+        }
+      ],
+      "implementation": "字段与生成已实现；牌上触发由计分域另验",
+      "description": "回合结束仍留在手牌时获得3金币。",
+      "effectFactRefs": [
+        "system.m_gold.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "m_lucky",
+      "name": "吉签",
+      "kind": "enhanced",
+      "order": 9,
+      "sourceRefs": [
+        "references/source/game.lua:655",
+        "references/source/card.lua:968-1087; references/source/functions/state_events.lua:961"
+      ],
+      "max": 500,
+      "config": {
+        "mult": 20,
+        "p_dollars": 20
+      },
+      "effects": [
+        {
+          "trigger": "cardOrHeld",
+          "condition": {},
+          "action": "scoringEnhancement",
+          "kind": "lucky",
+          "config": {
+            "mult": 20,
+            "p_dollars": 20
+          },
+          "probabilityDenominators": {
+            "mult": 5,
+            "dollars": 15
+          }
+        }
+      ],
+      "implementation": "字段与生成已实现；牌上触发由计分域另验",
+      "description": "参与计分时，两次独立基础概率判定：1/5获得+20倍率，1/15获得20金币；概率受概率加成影响。",
+      "effectFactRefs": [
+        "system.m_lucky.effects.0"
+      ]
+    }
+  ],
+  "boosters": [
+    {
+      "sourceKey": "p_arcana_normal_1",
+      "name": "异术小包 1",
+      "kind": "Arcana",
+      "order": 1,
+      "sourceRefs": [
+        "references/source/game.lua:665",
+        "references/source/card.lua:1725-1778"
+      ],
+      "weight": 1,
+      "cost": 4,
+      "config": {
+        "extra": 3,
+        "choose": 1
+      },
+      "packKind": "arcana",
+      "size": 3,
+      "choose": 1,
+      "effects": [
+        {
+          "trigger": "open",
+          "condition": {},
+          "action": "openPack",
+          "size": 3,
+          "choose": 1,
+          "packKind": "arcana"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "打开后展示3件占卜，最多选择1件。所选占卜或异域立即使用。",
+      "effectFactRefs": [
+        "system.p_arcana_normal_1.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "p_arcana_normal_2",
+      "name": "异术小包 2",
+      "kind": "Arcana",
+      "order": 2,
+      "sourceRefs": [
+        "references/source/game.lua:666",
+        "references/source/card.lua:1725-1778"
+      ],
+      "weight": 1,
+      "cost": 4,
+      "config": {
+        "extra": 3,
+        "choose": 1
+      },
+      "packKind": "arcana",
+      "size": 3,
+      "choose": 1,
+      "effects": [
+        {
+          "trigger": "open",
+          "condition": {},
+          "action": "openPack",
+          "size": 3,
+          "choose": 1,
+          "packKind": "arcana"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "打开后展示3件占卜，最多选择1件。所选占卜或异域立即使用。",
+      "effectFactRefs": [
+        "system.p_arcana_normal_2.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "p_arcana_normal_3",
+      "name": "异术小包 3",
+      "kind": "Arcana",
+      "order": 3,
+      "sourceRefs": [
+        "references/source/game.lua:667",
+        "references/source/card.lua:1725-1778"
+      ],
+      "weight": 1,
+      "cost": 4,
+      "config": {
+        "extra": 3,
+        "choose": 1
+      },
+      "packKind": "arcana",
+      "size": 3,
+      "choose": 1,
+      "effects": [
+        {
+          "trigger": "open",
+          "condition": {},
+          "action": "openPack",
+          "size": 3,
+          "choose": 1,
+          "packKind": "arcana"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "打开后展示3件占卜，最多选择1件。所选占卜或异域立即使用。",
+      "effectFactRefs": [
+        "system.p_arcana_normal_3.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "p_arcana_normal_4",
+      "name": "异术小包 4",
+      "kind": "Arcana",
+      "order": 4,
+      "sourceRefs": [
+        "references/source/game.lua:668",
+        "references/source/card.lua:1725-1778"
+      ],
+      "weight": 1,
+      "cost": 4,
+      "config": {
+        "extra": 3,
+        "choose": 1
+      },
+      "packKind": "arcana",
+      "size": 3,
+      "choose": 1,
+      "effects": [
+        {
+          "trigger": "open",
+          "condition": {},
+          "action": "openPack",
+          "size": 3,
+          "choose": 1,
+          "packKind": "arcana"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "打开后展示3件占卜，最多选择1件。所选占卜或异域立即使用。",
+      "effectFactRefs": [
+        "system.p_arcana_normal_4.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "p_arcana_jumbo_1",
+      "name": "异术大包 1",
+      "kind": "Arcana",
+      "order": 5,
+      "sourceRefs": [
+        "references/source/game.lua:669",
+        "references/source/card.lua:1725-1778"
+      ],
+      "weight": 1,
+      "cost": 6,
+      "config": {
+        "extra": 5,
+        "choose": 1
+      },
+      "packKind": "arcana",
+      "size": 5,
+      "choose": 1,
+      "effects": [
+        {
+          "trigger": "open",
+          "condition": {},
+          "action": "openPack",
+          "size": 5,
+          "choose": 1,
+          "packKind": "arcana"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "打开后展示5件占卜，最多选择1件。所选占卜或异域立即使用。",
+      "effectFactRefs": [
+        "system.p_arcana_jumbo_1.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "p_arcana_jumbo_2",
+      "name": "异术大包 2",
+      "kind": "Arcana",
+      "order": 6,
+      "sourceRefs": [
+        "references/source/game.lua:670",
+        "references/source/card.lua:1725-1778"
+      ],
+      "weight": 1,
+      "cost": 6,
+      "config": {
+        "extra": 5,
+        "choose": 1
+      },
+      "packKind": "arcana",
+      "size": 5,
+      "choose": 1,
+      "effects": [
+        {
+          "trigger": "open",
+          "condition": {},
+          "action": "openPack",
+          "size": 5,
+          "choose": 1,
+          "packKind": "arcana"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "打开后展示5件占卜，最多选择1件。所选占卜或异域立即使用。",
+      "effectFactRefs": [
+        "system.p_arcana_jumbo_2.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "p_arcana_mega_1",
+      "name": "异术双选包 1",
+      "kind": "Arcana",
+      "order": 7,
+      "sourceRefs": [
+        "references/source/game.lua:671",
+        "references/source/card.lua:1725-1778"
+      ],
+      "weight": 0.25,
+      "cost": 8,
+      "config": {
+        "extra": 5,
+        "choose": 2
+      },
+      "packKind": "arcana",
+      "size": 5,
+      "choose": 2,
+      "effects": [
+        {
+          "trigger": "open",
+          "condition": {},
+          "action": "openPack",
+          "size": 5,
+          "choose": 2,
+          "packKind": "arcana"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "打开后展示5件占卜，最多选择2件。所选占卜或异域立即使用。",
+      "effectFactRefs": [
+        "system.p_arcana_mega_1.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "p_arcana_mega_2",
+      "name": "异术双选包 2",
+      "kind": "Arcana",
+      "order": 8,
+      "sourceRefs": [
+        "references/source/game.lua:672",
+        "references/source/card.lua:1725-1778"
+      ],
+      "weight": 0.25,
+      "cost": 8,
+      "config": {
+        "extra": 5,
+        "choose": 2
+      },
+      "packKind": "arcana",
+      "size": 5,
+      "choose": 2,
+      "effects": [
+        {
+          "trigger": "open",
+          "condition": {},
+          "action": "openPack",
+          "size": 5,
+          "choose": 2,
+          "packKind": "arcana"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "打开后展示5件占卜，最多选择2件。所选占卜或异域立即使用。",
+      "effectFactRefs": [
+        "system.p_arcana_mega_2.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "p_celestial_normal_1",
+      "name": "星图小包 1",
+      "kind": "Celestial",
+      "order": 9,
+      "sourceRefs": [
+        "references/source/game.lua:673",
+        "references/source/card.lua:1725-1778"
+      ],
+      "weight": 1,
+      "cost": 4,
+      "config": {
+        "extra": 3,
+        "choose": 1
+      },
+      "packKind": "celestial",
+      "size": 3,
+      "choose": 1,
+      "effects": [
+        {
+          "trigger": "open",
+          "condition": {},
+          "action": "openPack",
+          "size": 3,
+          "choose": 1,
+          "packKind": "celestial"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "打开后展示3件星图，最多选择1件。所选星图立即升级对应牌型。",
+      "effectFactRefs": [
+        "system.p_celestial_normal_1.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "p_celestial_normal_2",
+      "name": "星图小包 2",
+      "kind": "Celestial",
+      "order": 10,
+      "sourceRefs": [
+        "references/source/game.lua:674",
+        "references/source/card.lua:1725-1778"
+      ],
+      "weight": 1,
+      "cost": 4,
+      "config": {
+        "extra": 3,
+        "choose": 1
+      },
+      "packKind": "celestial",
+      "size": 3,
+      "choose": 1,
+      "effects": [
+        {
+          "trigger": "open",
+          "condition": {},
+          "action": "openPack",
+          "size": 3,
+          "choose": 1,
+          "packKind": "celestial"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "打开后展示3件星图，最多选择1件。所选星图立即升级对应牌型。",
+      "effectFactRefs": [
+        "system.p_celestial_normal_2.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "p_celestial_normal_3",
+      "name": "星图小包 3",
+      "kind": "Celestial",
+      "order": 11,
+      "sourceRefs": [
+        "references/source/game.lua:675",
+        "references/source/card.lua:1725-1778"
+      ],
+      "weight": 1,
+      "cost": 4,
+      "config": {
+        "extra": 3,
+        "choose": 1
+      },
+      "packKind": "celestial",
+      "size": 3,
+      "choose": 1,
+      "effects": [
+        {
+          "trigger": "open",
+          "condition": {},
+          "action": "openPack",
+          "size": 3,
+          "choose": 1,
+          "packKind": "celestial"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "打开后展示3件星图，最多选择1件。所选星图立即升级对应牌型。",
+      "effectFactRefs": [
+        "system.p_celestial_normal_3.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "p_celestial_normal_4",
+      "name": "星图小包 4",
+      "kind": "Celestial",
+      "order": 12,
+      "sourceRefs": [
+        "references/source/game.lua:676",
+        "references/source/card.lua:1725-1778"
+      ],
+      "weight": 1,
+      "cost": 4,
+      "config": {
+        "extra": 3,
+        "choose": 1
+      },
+      "packKind": "celestial",
+      "size": 3,
+      "choose": 1,
+      "effects": [
+        {
+          "trigger": "open",
+          "condition": {},
+          "action": "openPack",
+          "size": 3,
+          "choose": 1,
+          "packKind": "celestial"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "打开后展示3件星图，最多选择1件。所选星图立即升级对应牌型。",
+      "effectFactRefs": [
+        "system.p_celestial_normal_4.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "p_celestial_jumbo_1",
+      "name": "星图大包 1",
+      "kind": "Celestial",
+      "order": 13,
+      "sourceRefs": [
+        "references/source/game.lua:677",
+        "references/source/card.lua:1725-1778"
+      ],
+      "weight": 1,
+      "cost": 6,
+      "config": {
+        "extra": 5,
+        "choose": 1
+      },
+      "packKind": "celestial",
+      "size": 5,
+      "choose": 1,
+      "effects": [
+        {
+          "trigger": "open",
+          "condition": {},
+          "action": "openPack",
+          "size": 5,
+          "choose": 1,
+          "packKind": "celestial"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "打开后展示5件星图，最多选择1件。所选星图立即升级对应牌型。",
+      "effectFactRefs": [
+        "system.p_celestial_jumbo_1.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "p_celestial_jumbo_2",
+      "name": "星图大包 2",
+      "kind": "Celestial",
+      "order": 14,
+      "sourceRefs": [
+        "references/source/game.lua:678",
+        "references/source/card.lua:1725-1778"
+      ],
+      "weight": 1,
+      "cost": 6,
+      "config": {
+        "extra": 5,
+        "choose": 1
+      },
+      "packKind": "celestial",
+      "size": 5,
+      "choose": 1,
+      "effects": [
+        {
+          "trigger": "open",
+          "condition": {},
+          "action": "openPack",
+          "size": 5,
+          "choose": 1,
+          "packKind": "celestial"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "打开后展示5件星图，最多选择1件。所选星图立即升级对应牌型。",
+      "effectFactRefs": [
+        "system.p_celestial_jumbo_2.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "p_celestial_mega_1",
+      "name": "星图双选包 1",
+      "kind": "Celestial",
+      "order": 15,
+      "sourceRefs": [
+        "references/source/game.lua:679",
+        "references/source/card.lua:1725-1778"
+      ],
+      "weight": 0.25,
+      "cost": 8,
+      "config": {
+        "extra": 5,
+        "choose": 2
+      },
+      "packKind": "celestial",
+      "size": 5,
+      "choose": 2,
+      "effects": [
+        {
+          "trigger": "open",
+          "condition": {},
+          "action": "openPack",
+          "size": 5,
+          "choose": 2,
+          "packKind": "celestial"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "打开后展示5件星图，最多选择2件。所选星图立即升级对应牌型。",
+      "effectFactRefs": [
+        "system.p_celestial_mega_1.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "p_celestial_mega_2",
+      "name": "星图双选包 2",
+      "kind": "Celestial",
+      "order": 16,
+      "sourceRefs": [
+        "references/source/game.lua:680",
+        "references/source/card.lua:1725-1778"
+      ],
+      "weight": 0.25,
+      "cost": 8,
+      "config": {
+        "extra": 5,
+        "choose": 2
+      },
+      "packKind": "celestial",
+      "size": 5,
+      "choose": 2,
+      "effects": [
+        {
+          "trigger": "open",
+          "condition": {},
+          "action": "openPack",
+          "size": 5,
+          "choose": 2,
+          "packKind": "celestial"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "打开后展示5件星图，最多选择2件。所选星图立即升级对应牌型。",
+      "effectFactRefs": [
+        "system.p_celestial_mega_2.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "p_standard_normal_1",
+      "name": "纸牌小包 1",
+      "kind": "Standard",
+      "order": 17,
+      "sourceRefs": [
+        "references/source/game.lua:685",
+        "references/source/card.lua:1725-1778"
+      ],
+      "weight": 1,
+      "cost": 4,
+      "config": {
+        "extra": 3,
+        "choose": 1
+      },
+      "packKind": "standard",
+      "size": 3,
+      "choose": 1,
+      "effects": [
+        {
+          "trigger": "open",
+          "condition": {},
+          "action": "openPack",
+          "size": 3,
+          "choose": 1,
+          "packKind": "standard"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "打开后展示3件纸牌，最多选择1件。所选牌加入牌组。",
+      "effectFactRefs": [
+        "system.p_standard_normal_1.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "p_standard_normal_2",
+      "name": "纸牌小包 2",
+      "kind": "Standard",
+      "order": 18,
+      "sourceRefs": [
+        "references/source/game.lua:686",
+        "references/source/card.lua:1725-1778"
+      ],
+      "weight": 1,
+      "cost": 4,
+      "config": {
+        "extra": 3,
+        "choose": 1
+      },
+      "packKind": "standard",
+      "size": 3,
+      "choose": 1,
+      "effects": [
+        {
+          "trigger": "open",
+          "condition": {},
+          "action": "openPack",
+          "size": 3,
+          "choose": 1,
+          "packKind": "standard"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "打开后展示3件纸牌，最多选择1件。所选牌加入牌组。",
+      "effectFactRefs": [
+        "system.p_standard_normal_2.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "p_standard_normal_3",
+      "name": "纸牌小包 3",
+      "kind": "Standard",
+      "order": 19,
+      "sourceRefs": [
+        "references/source/game.lua:687",
+        "references/source/card.lua:1725-1778"
+      ],
+      "weight": 1,
+      "cost": 4,
+      "config": {
+        "extra": 3,
+        "choose": 1
+      },
+      "packKind": "standard",
+      "size": 3,
+      "choose": 1,
+      "effects": [
+        {
+          "trigger": "open",
+          "condition": {},
+          "action": "openPack",
+          "size": 3,
+          "choose": 1,
+          "packKind": "standard"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "打开后展示3件纸牌，最多选择1件。所选牌加入牌组。",
+      "effectFactRefs": [
+        "system.p_standard_normal_3.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "p_standard_normal_4",
+      "name": "纸牌小包 4",
+      "kind": "Standard",
+      "order": 20,
+      "sourceRefs": [
+        "references/source/game.lua:688",
+        "references/source/card.lua:1725-1778"
+      ],
+      "weight": 1,
+      "cost": 4,
+      "config": {
+        "extra": 3,
+        "choose": 1
+      },
+      "packKind": "standard",
+      "size": 3,
+      "choose": 1,
+      "effects": [
+        {
+          "trigger": "open",
+          "condition": {},
+          "action": "openPack",
+          "size": 3,
+          "choose": 1,
+          "packKind": "standard"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "打开后展示3件纸牌，最多选择1件。所选牌加入牌组。",
+      "effectFactRefs": [
+        "system.p_standard_normal_4.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "p_standard_jumbo_1",
+      "name": "纸牌大包 1",
+      "kind": "Standard",
+      "order": 21,
+      "sourceRefs": [
+        "references/source/game.lua:689",
+        "references/source/card.lua:1725-1778"
+      ],
+      "weight": 1,
+      "cost": 6,
+      "config": {
+        "extra": 5,
+        "choose": 1
+      },
+      "packKind": "standard",
+      "size": 5,
+      "choose": 1,
+      "effects": [
+        {
+          "trigger": "open",
+          "condition": {},
+          "action": "openPack",
+          "size": 5,
+          "choose": 1,
+          "packKind": "standard"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "打开后展示5件纸牌，最多选择1件。所选牌加入牌组。",
+      "effectFactRefs": [
+        "system.p_standard_jumbo_1.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "p_standard_jumbo_2",
+      "name": "纸牌大包 2",
+      "kind": "Standard",
+      "order": 22,
+      "sourceRefs": [
+        "references/source/game.lua:690",
+        "references/source/card.lua:1725-1778"
+      ],
+      "weight": 1,
+      "cost": 6,
+      "config": {
+        "extra": 5,
+        "choose": 1
+      },
+      "packKind": "standard",
+      "size": 5,
+      "choose": 1,
+      "effects": [
+        {
+          "trigger": "open",
+          "condition": {},
+          "action": "openPack",
+          "size": 5,
+          "choose": 1,
+          "packKind": "standard"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "打开后展示5件纸牌，最多选择1件。所选牌加入牌组。",
+      "effectFactRefs": [
+        "system.p_standard_jumbo_2.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "p_standard_mega_1",
+      "name": "纸牌双选包 1",
+      "kind": "Standard",
+      "order": 23,
+      "sourceRefs": [
+        "references/source/game.lua:691",
+        "references/source/card.lua:1725-1778"
+      ],
+      "weight": 0.25,
+      "cost": 8,
+      "config": {
+        "extra": 5,
+        "choose": 2
+      },
+      "packKind": "standard",
+      "size": 5,
+      "choose": 2,
+      "effects": [
+        {
+          "trigger": "open",
+          "condition": {},
+          "action": "openPack",
+          "size": 5,
+          "choose": 2,
+          "packKind": "standard"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "打开后展示5件纸牌，最多选择2件。所选牌加入牌组。",
+      "effectFactRefs": [
+        "system.p_standard_mega_1.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "p_standard_mega_2",
+      "name": "纸牌双选包 2",
+      "kind": "Standard",
+      "order": 24,
+      "sourceRefs": [
+        "references/source/game.lua:692",
+        "references/source/card.lua:1725-1778"
+      ],
+      "weight": 0.25,
+      "cost": 8,
+      "config": {
+        "extra": 5,
+        "choose": 2
+      },
+      "packKind": "standard",
+      "size": 5,
+      "choose": 2,
+      "effects": [
+        {
+          "trigger": "open",
+          "condition": {},
+          "action": "openPack",
+          "size": 5,
+          "choose": 2,
+          "packKind": "standard"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "打开后展示5件纸牌，最多选择2件。所选牌加入牌组。",
+      "effectFactRefs": [
+        "system.p_standard_mega_2.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "p_buffoon_normal_1",
+      "name": "伙伴小包 1",
+      "kind": "Buffoon",
+      "order": 25,
+      "sourceRefs": [
+        "references/source/game.lua:693",
+        "references/source/card.lua:1725-1778"
+      ],
+      "weight": 0.6,
+      "cost": 4,
+      "config": {
+        "extra": 2,
+        "choose": 1
+      },
+      "packKind": "buffoon",
+      "size": 2,
+      "choose": 1,
+      "effects": [
+        {
+          "trigger": "open",
+          "condition": {},
+          "action": "openPack",
+          "size": 2,
+          "choose": 1,
+          "packKind": "buffoon"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "打开后展示2件伙伴，最多选择1件。所选伙伴加入持有区，须有空位；空域版本自带位置。",
+      "effectFactRefs": [
+        "system.p_buffoon_normal_1.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "p_buffoon_normal_2",
+      "name": "伙伴小包 2",
+      "kind": "Buffoon",
+      "order": 26,
+      "sourceRefs": [
+        "references/source/game.lua:694",
+        "references/source/card.lua:1725-1778"
+      ],
+      "weight": 0.6,
+      "cost": 4,
+      "config": {
+        "extra": 2,
+        "choose": 1
+      },
+      "packKind": "buffoon",
+      "size": 2,
+      "choose": 1,
+      "effects": [
+        {
+          "trigger": "open",
+          "condition": {},
+          "action": "openPack",
+          "size": 2,
+          "choose": 1,
+          "packKind": "buffoon"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "打开后展示2件伙伴，最多选择1件。所选伙伴加入持有区，须有空位；空域版本自带位置。",
+      "effectFactRefs": [
+        "system.p_buffoon_normal_2.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "p_buffoon_jumbo_1",
+      "name": "伙伴大包 1",
+      "kind": "Buffoon",
+      "order": 27,
+      "sourceRefs": [
+        "references/source/game.lua:695",
+        "references/source/card.lua:1725-1778"
+      ],
+      "weight": 0.6,
+      "cost": 6,
+      "config": {
+        "extra": 4,
+        "choose": 1
+      },
+      "packKind": "buffoon",
+      "size": 4,
+      "choose": 1,
+      "effects": [
+        {
+          "trigger": "open",
+          "condition": {},
+          "action": "openPack",
+          "size": 4,
+          "choose": 1,
+          "packKind": "buffoon"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "打开后展示4件伙伴，最多选择1件。所选伙伴加入持有区，须有空位；空域版本自带位置。",
+      "effectFactRefs": [
+        "system.p_buffoon_jumbo_1.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "p_buffoon_mega_1",
+      "name": "伙伴双选包 1",
+      "kind": "Buffoon",
+      "order": 28,
+      "sourceRefs": [
+        "references/source/game.lua:696",
+        "references/source/card.lua:1725-1778"
+      ],
+      "weight": 0.15,
+      "cost": 8,
+      "config": {
+        "extra": 4,
+        "choose": 2
+      },
+      "packKind": "buffoon",
+      "size": 4,
+      "choose": 2,
+      "effects": [
+        {
+          "trigger": "open",
+          "condition": {},
+          "action": "openPack",
+          "size": 4,
+          "choose": 2,
+          "packKind": "buffoon"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "打开后展示4件伙伴，最多选择2件。所选伙伴加入持有区，须有空位；空域版本自带位置。",
+      "effectFactRefs": [
+        "system.p_buffoon_mega_1.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "p_spectral_normal_1",
+      "name": "异域小包 1",
+      "kind": "Spectral",
+      "order": 29,
+      "sourceRefs": [
+        "references/source/game.lua:681",
+        "references/source/card.lua:1725-1778"
+      ],
+      "weight": 0.3,
+      "cost": 4,
+      "config": {
+        "extra": 2,
+        "choose": 1
+      },
+      "packKind": "spectral",
+      "size": 2,
+      "choose": 1,
+      "effects": [
+        {
+          "trigger": "open",
+          "condition": {},
+          "action": "openPack",
+          "size": 2,
+          "choose": 1,
+          "packKind": "spectral"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "打开后展示2件异域，最多选择1件。所选占卜或异域立即使用。",
+      "effectFactRefs": [
+        "system.p_spectral_normal_1.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "p_spectral_normal_2",
+      "name": "异域小包 2",
+      "kind": "Spectral",
+      "order": 30,
+      "sourceRefs": [
+        "references/source/game.lua:682",
+        "references/source/card.lua:1725-1778"
+      ],
+      "weight": 0.3,
+      "cost": 4,
+      "config": {
+        "extra": 2,
+        "choose": 1
+      },
+      "packKind": "spectral",
+      "size": 2,
+      "choose": 1,
+      "effects": [
+        {
+          "trigger": "open",
+          "condition": {},
+          "action": "openPack",
+          "size": 2,
+          "choose": 1,
+          "packKind": "spectral"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "打开后展示2件异域，最多选择1件。所选占卜或异域立即使用。",
+      "effectFactRefs": [
+        "system.p_spectral_normal_2.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "p_spectral_jumbo_1",
+      "name": "异域大包 1",
+      "kind": "Spectral",
+      "order": 31,
+      "sourceRefs": [
+        "references/source/game.lua:683",
+        "references/source/card.lua:1725-1778"
+      ],
+      "weight": 0.3,
+      "cost": 6,
+      "config": {
+        "extra": 4,
+        "choose": 1
+      },
+      "packKind": "spectral",
+      "size": 4,
+      "choose": 1,
+      "effects": [
+        {
+          "trigger": "open",
+          "condition": {},
+          "action": "openPack",
+          "size": 4,
+          "choose": 1,
+          "packKind": "spectral"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "打开后展示4件异域，最多选择1件。所选占卜或异域立即使用。",
+      "effectFactRefs": [
+        "system.p_spectral_jumbo_1.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "p_spectral_mega_1",
+      "name": "异域双选包 1",
+      "kind": "Spectral",
+      "order": 32,
+      "sourceRefs": [
+        "references/source/game.lua:684",
+        "references/source/card.lua:1725-1778"
+      ],
+      "weight": 0.07,
+      "cost": 8,
+      "config": {
+        "extra": 4,
+        "choose": 2
+      },
+      "packKind": "spectral",
+      "size": 4,
+      "choose": 2,
+      "effects": [
+        {
+          "trigger": "open",
+          "condition": {},
+          "action": "openPack",
+          "size": 4,
+          "choose": 2,
+          "packKind": "spectral"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "打开后展示4件异域，最多选择2件。所选占卜或异域立即使用。",
+      "effectFactRefs": [
+        "system.p_spectral_mega_1.effects.0"
+      ]
+    }
+  ],
+  "decks": [
+    {
+      "sourceKey": "b_red",
+      "name": "换牌组",
+      "kind": "back",
+      "order": 1,
+      "sourceRefs": [
+        "references/source/game.lua:628",
+        "references/source/back.lua:108-173,174-278"
+      ],
+      "stake": 1,
+      "unlocked": true,
+      "config": {
+        "discards": 1
+      },
+      "effects": [
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "add",
+          "field": "discards",
+          "value": 1
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "每轮弃牌次数+1。",
+      "effectFactRefs": [
+        "system.b_red.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "b_blue",
+      "name": "加赛组",
+      "kind": "back",
+      "order": 2,
+      "sourceRefs": [
+        "references/source/game.lua:629",
+        "references/source/back.lua:108-173,174-278"
+      ],
+      "stake": 1,
+      "unlocked": false,
+      "config": {
+        "hands": 1
+      },
+      "unlock_condition": {
+        "type": "discover_amount",
+        "amount": 20
+      },
+      "effects": [
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "add",
+          "field": "hands",
+          "value": 1
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "每轮出牌次数+1。",
+      "effectFactRefs": [
+        "system.b_blue.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "b_yellow",
+      "name": "储金组",
+      "kind": "back",
+      "order": 3,
+      "sourceRefs": [
+        "references/source/game.lua:630",
+        "references/source/back.lua:108-173,174-278"
+      ],
+      "stake": 1,
+      "unlocked": false,
+      "config": {
+        "dollars": 10
+      },
+      "unlock_condition": {
+        "type": "discover_amount",
+        "amount": 50
+      },
+      "effects": [
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "add",
+          "field": "dollars",
+          "value": 10
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "金币+10。",
+      "effectFactRefs": [
+        "system.b_yellow.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "b_green",
+      "name": "勤俭组",
+      "kind": "back",
+      "order": 4,
+      "sourceRefs": [
+        "references/source/game.lua:631",
+        "references/source/back.lua:108-173,174-278"
+      ],
+      "stake": 1,
+      "unlocked": false,
+      "config": {
+        "extra_hand_bonus": 2,
+        "extra_discard_bonus": 1,
+        "no_interest": true
+      },
+      "unlock_condition": {
+        "type": "discover_amount",
+        "amount": 75
+      },
+      "effects": [
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "set",
+          "field": "moneyPerHand",
+          "value": 2
+        },
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "set",
+          "field": "moneyPerDiscard",
+          "value": 1
+        },
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "set",
+          "field": "noInterest",
+          "value": true
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "结算时每次未用出牌获得2金币；结算时每次未用弃牌获得1金币；不发放利息。",
+      "effectFactRefs": [
+        "system.b_green.effects.0",
+        "system.b_green.effects.1",
+        "system.b_green.effects.2"
+      ]
+    },
+    {
+      "sourceKey": "b_black",
+      "name": "增伴组",
+      "kind": "back",
+      "order": 5,
+      "sourceRefs": [
+        "references/source/game.lua:632",
+        "references/source/back.lua:108-173,174-278"
+      ],
+      "stake": 1,
+      "unlocked": false,
+      "config": {
+        "hands": -1,
+        "joker_slot": 1
+      },
+      "unlock_condition": {
+        "type": "discover_amount",
+        "amount": 100
+      },
+      "effects": [
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "add",
+          "field": "hands",
+          "value": -1
+        },
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "add",
+          "field": "jokerSlots",
+          "value": 1
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "每轮出牌次数-1；伙伴位置+1。",
+      "effectFactRefs": [
+        "system.b_black.effects.0",
+        "system.b_black.effects.1"
+      ]
+    },
+    {
+      "sourceKey": "b_magic",
+      "name": "回声组",
+      "kind": "back",
+      "order": 6,
+      "sourceRefs": [
+        "references/source/game.lua:633",
+        "references/source/back.lua:108-173,174-278"
+      ],
+      "stake": 1,
+      "unlocked": false,
+      "config": {
+        "voucher": "v_crystal_ball",
+        "consumables": [
+          "c_fool",
+          "c_fool"
+        ]
+      },
+      "unlock_condition": {
+        "type": "win_deck",
+        "deck": "b_red"
+      },
+      "effects": [
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "redeemVoucher",
+          "sourceKey": "v_crystal_ball"
+        },
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "addConsumables",
+          "keys": [
+            "c_fool",
+            "c_fool"
+          ]
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "开局持有备用匣；开局带回声、回声。",
+      "effectFactRefs": [
+        "system.b_magic.effects.0",
+        "system.b_magic.effects.1"
+      ]
+    },
+    {
+      "sourceKey": "b_nebula",
+      "name": "观测组",
+      "kind": "back",
+      "order": 7,
+      "sourceRefs": [
+        "references/source/game.lua:634",
+        "references/source/back.lua:108-173,174-278"
+      ],
+      "stake": 1,
+      "unlocked": false,
+      "config": {
+        "voucher": "v_telescope",
+        "consumable_slot": -1
+      },
+      "unlock_condition": {
+        "type": "win_deck",
+        "deck": "b_blue"
+      },
+      "effects": [
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "add",
+          "field": "consumableSlots",
+          "value": -1
+        },
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "redeemVoucher",
+          "sourceKey": "v_telescope"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "道具位置-1；开局持有定向观测。",
+      "effectFactRefs": [
+        "system.b_nebula.effects.0",
+        "system.b_nebula.effects.1"
+      ]
+    },
+    {
+      "sourceKey": "b_ghost",
+      "name": "异域组",
+      "kind": "back",
+      "order": 8,
+      "sourceRefs": [
+        "references/source/game.lua:635",
+        "references/source/back.lua:108-173,174-278"
+      ],
+      "stake": 1,
+      "unlocked": false,
+      "config": {
+        "spectral_rate": 2,
+        "consumables": [
+          "c_hex"
+        ]
+      },
+      "unlock_condition": {
+        "type": "win_deck",
+        "deck": "b_yellow"
+      },
+      "effects": [
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "set",
+          "field": "spectralRate",
+          "value": 2
+        },
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "addConsumables",
+          "keys": [
+            "c_hex"
+          ]
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "异域物品进入商店，生成权重为2；开局带彩契。",
+      "effectFactRefs": [
+        "system.b_ghost.effects.0",
+        "system.b_ghost.effects.1"
+      ]
+    },
+    {
+      "sourceKey": "b_abandoned",
+      "name": "数字组",
+      "kind": "back",
+      "order": 9,
+      "sourceRefs": [
+        "references/source/game.lua:636",
+        "references/source/back.lua:108-173,174-278"
+      ],
+      "stake": 1,
+      "unlocked": false,
+      "config": {
+        "remove_faces": true
+      },
+      "unlock_condition": {
+        "type": "win_deck",
+        "deck": "b_green"
+      },
+      "effects": [
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "removeFaces"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "牌组不含J、Q、K，共40张。",
+      "effectFactRefs": [
+        "system.b_abandoned.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "b_checkered",
+      "name": "双色组",
+      "kind": "back",
+      "order": 10,
+      "sourceRefs": [
+        "references/source/game.lua:637",
+        "references/source/back.lua:108-173,174-278"
+      ],
+      "stake": 1,
+      "unlocked": false,
+      "config": {},
+      "unlock_condition": {
+        "type": "win_deck",
+        "deck": "b_black"
+      },
+      "effects": [
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "mapSuits",
+          "mapping": {
+            "clubs": "spades",
+            "diamonds": "hearts"
+          }
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "梅花改为黑桃，方块改为红桃；开局只保留红桃和黑桃。",
+      "effectFactRefs": [
+        "system.b_checkered.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "b_zodiac",
+      "name": "商旅组",
+      "kind": "back",
+      "order": 11,
+      "sourceRefs": [
+        "references/source/game.lua:638",
+        "references/source/back.lua:108-173,174-278"
+      ],
+      "stake": 1,
+      "unlocked": false,
+      "config": {
+        "vouchers": [
+          "v_tarot_merchant",
+          "v_planet_merchant",
+          "v_overstock_norm"
+        ]
+      },
+      "unlock_condition": {
+        "type": "win_stake",
+        "stake": 2
+      },
+      "effects": [
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "redeemVoucher",
+          "sourceKey": "v_tarot_merchant"
+        },
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "redeemVoucher",
+          "sourceKey": "v_planet_merchant"
+        },
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "redeemVoucher",
+          "sourceKey": "v_overstock_norm"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "开局持有异术进货；开局持有星图进货；开局持有扩展货架。",
+      "effectFactRefs": [
+        "system.b_zodiac.effects.0",
+        "system.b_zodiac.effects.1",
+        "system.b_zodiac.effects.2"
+      ]
+    },
+    {
+      "sourceKey": "b_painted",
+      "name": "宽手组",
+      "kind": "back",
+      "order": 12,
+      "sourceRefs": [
+        "references/source/game.lua:639",
+        "references/source/back.lua:108-173,174-278"
+      ],
+      "stake": 1,
+      "unlocked": false,
+      "config": {
+        "hand_size": 2,
+        "joker_slot": -1
+      },
+      "unlock_condition": {
+        "type": "win_stake",
+        "stake": 3
+      },
+      "effects": [
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "add",
+          "field": "jokerSlots",
+          "value": -1
+        },
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "add",
+          "field": "handSize",
+          "value": 2
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "伙伴位置-1；手牌上限+2。",
+      "effectFactRefs": [
+        "system.b_painted.effects.0",
+        "system.b_painted.effects.1"
+      ]
+    },
+    {
+      "sourceKey": "b_anaglyph",
+      "name": "复签组",
+      "kind": "back",
+      "order": 13,
+      "sourceRefs": [
+        "references/source/game.lua:640",
+        "references/source/back.lua:108-173,174-278"
+      ],
+      "stake": 1,
+      "unlocked": false,
+      "config": {},
+      "unlock_condition": {
+        "type": "win_stake",
+        "stake": 4
+      },
+      "effects": [
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "set",
+          "field": "bossDoubleTag",
+          "value": true
+        },
+        {
+          "trigger": "bossDefeated",
+          "condition": {},
+          "action": "addTag",
+          "sourceKey": "tag_double"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "每次击败守关后获得1枚复签。",
+      "effectFactRefs": [
+        "system.b_anaglyph.effects.0",
+        "system.b_anaglyph.effects.1"
+      ]
+    },
+    {
+      "sourceKey": "b_plasma",
+      "name": "均衡组",
+      "kind": "back",
+      "order": 14,
+      "sourceRefs": [
+        "references/source/game.lua:641",
+        "references/source/back.lua:108-173,174-278"
+      ],
+      "stake": 1,
+      "unlocked": false,
+      "config": {
+        "ante_scaling": 2
+      },
+      "unlock_condition": {
+        "type": "win_stake",
+        "stake": 5
+      },
+      "effects": [
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "set",
+          "field": "anteScaling",
+          "value": 2
+        },
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "set",
+          "field": "balancedScoring",
+          "value": true
+        },
+        {
+          "trigger": "finalScore",
+          "condition": {},
+          "action": "balanceChipsMult",
+          "formula": "floor((chips+mult)/2)^2"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "所有关卡目标筹码乘2；最终得分为floor((筹码+倍率)/2)²。",
+      "effectFactRefs": [
+        "system.b_plasma.effects.0",
+        "system.b_plasma.effects.1",
+        "system.b_plasma.effects.2"
+      ]
+    },
+    {
+      "sourceKey": "b_erratic",
+      "name": "随机组",
+      "kind": "back",
+      "order": 15,
+      "sourceRefs": [
+        "references/source/game.lua:642",
+        "references/source/back.lua:108-173,174-278"
+      ],
+      "stake": 1,
+      "unlocked": false,
+      "config": {
+        "randomize_rank_suit": true
+      },
+      "unlock_condition": {
+        "type": "win_stake",
+        "stake": 7
+      },
+      "effects": [
+        {
+          "trigger": "runStart",
+          "condition": {},
+          "action": "randomizeDeck"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "开局每张牌独立随机点数和花色，保留52张。",
+      "effectFactRefs": [
+        "system.b_erratic.effects.0"
+      ]
+    }
+  ],
+  "blinds": [
+    {
+      "sourceKey": "bl_small",
+      "name": "前哨",
+      "kind": "blind",
+      "order": 1,
+      "sourceRefs": [
+        "references/source/game.lua:264",
+        "references/source/blind.lua:157-224,468-662; references/source/functions/state_events.lua:363-369"
+      ],
+      "defeated": false,
+      "dollars": 3,
+      "mult": 1,
+      "debuff": {},
+      "effects": [
+        {
+          "trigger": "start",
+          "condition": {},
+          "action": "none"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "常规小关，无额外限制。目标=首注基础筹码×1；过关基础奖励3金币。",
+      "effectFactRefs": [
+        "system.bl_small.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "bl_big",
+      "name": "中门",
+      "kind": "blind",
+      "order": 2,
+      "sourceRefs": [
+        "references/source/game.lua:265",
+        "references/source/blind.lua:157-224,468-662; references/source/functions/state_events.lua:363-369"
+      ],
+      "defeated": false,
+      "dollars": 4,
+      "mult": 1.5,
+      "debuff": {},
+      "effects": [
+        {
+          "trigger": "start",
+          "condition": {},
+          "action": "none"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "常规大关，无额外限制。目标=首注基础筹码×1.5；过关基础奖励4金币。",
+      "effectFactRefs": [
+        "system.bl_big.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "bl_hook",
+      "name": "抽离",
+      "kind": "boss",
+      "order": 3,
+      "sourceRefs": [
+        "references/source/game.lua:267",
+        "references/source/blind.lua:157-224,468-662; references/source/functions/state_events.lua:363-369"
+      ],
+      "defeated": false,
+      "dollars": 5,
+      "mult": 2,
+      "debuff": {},
+      "boss": {
+        "min": 1,
+        "max": 10
+      },
+      "effects": [
+        {
+          "trigger": "beforeHand",
+          "condition": {},
+          "action": "discardRandomHand",
+          "count": 2
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "每次出牌前，随机强制弃掉至多2张留下的手牌，不扣弃牌次数。目标=首注基础筹码×2；过关基础奖励5金币。",
+      "effectFactRefs": [
+        "system.bl_hook.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "bl_ox",
+      "name": "归零",
+      "kind": "boss",
+      "order": 4,
+      "sourceRefs": [
+        "references/source/game.lua:266",
+        "references/source/blind.lua:157-224,468-662; references/source/functions/state_events.lua:363-369"
+      ],
+      "defeated": false,
+      "dollars": 5,
+      "mult": 2,
+      "debuff": {},
+      "boss": {
+        "min": 6,
+        "max": 10
+      },
+      "effects": [
+        {
+          "trigger": "beforeHand",
+          "condition": {
+            "mostPlayedHand": true
+          },
+          "action": "zeroCash"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "使用本轮开始时记录的最常用牌型出牌，会将金币清零。目标=首注基础筹码×2；过关基础奖励5金币。",
+      "effectFactRefs": [
+        "system.bl_ox.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "bl_house",
+      "name": "暗幕",
+      "kind": "boss",
+      "order": 5,
+      "sourceRefs": [
+        "references/source/game.lua:274",
+        "references/source/blind.lua:157-224,468-662; references/source/functions/state_events.lua:363-369"
+      ],
+      "defeated": false,
+      "dollars": 5,
+      "mult": 2,
+      "debuff": {},
+      "boss": {
+        "min": 2,
+        "max": 10
+      },
+      "effects": [
+        {
+          "trigger": "draw",
+          "condition": {
+            "firstDraw": true
+          },
+          "action": "hideDrawn"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "本轮首次抽到的手牌背面朝上。目标=首注基础筹码×2；过关基础奖励5金币。",
+      "effectFactRefs": [
+        "system.bl_house.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "bl_wall",
+      "name": "高墙",
+      "kind": "boss",
+      "order": 6,
+      "sourceRefs": [
+        "references/source/game.lua:273",
+        "references/source/blind.lua:157-224,468-662; references/source/functions/state_events.lua:363-369"
+      ],
+      "defeated": false,
+      "dollars": 5,
+      "mult": 4,
+      "debuff": {},
+      "boss": {
+        "min": 2,
+        "max": 10
+      },
+      "effects": [
+        {
+          "trigger": "start",
+          "condition": {},
+          "action": "requirementMultiplier",
+          "value": 4
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "目标筹码提高到首注基础值的4倍。目标=首注基础筹码×4；过关基础奖励5金币。",
+      "effectFactRefs": [
+        "system.bl_wall.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "bl_wheel",
+      "name": "遮掩",
+      "kind": "boss",
+      "order": 7,
+      "sourceRefs": [
+        "references/source/game.lua:278",
+        "references/source/blind.lua:157-224,468-662; references/source/functions/state_events.lua:363-369"
+      ],
+      "defeated": false,
+      "dollars": 5,
+      "mult": 2,
+      "debuff": {},
+      "boss": {
+        "min": 2,
+        "max": 10
+      },
+      "effects": [
+        {
+          "trigger": "draw",
+          "condition": {},
+          "action": "randomHide",
+          "probabilityDenominator": 7
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "每张抽到的牌以基础概率1/7背面朝上；概率受概率加成影响。目标=首注基础筹码×2；过关基础奖励5金币。",
+      "effectFactRefs": [
+        "system.bl_wheel.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "bl_arm",
+      "name": "降级",
+      "kind": "boss",
+      "order": 8,
+      "sourceRefs": [
+        "references/source/game.lua:279",
+        "references/source/blind.lua:157-224,468-662; references/source/functions/state_events.lua:363-369"
+      ],
+      "defeated": false,
+      "dollars": 5,
+      "mult": 2,
+      "debuff": {},
+      "boss": {
+        "min": 2,
+        "max": 10
+      },
+      "effects": [
+        {
+          "trigger": "beforeHand",
+          "condition": {},
+          "action": "downgradeHand",
+          "minLevel": 1,
+          "amount": 1
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "每次出牌将对应牌型降1级，最低保留1级。目标=首注基础筹码×2；过关基础奖励5金币。",
+      "effectFactRefs": [
+        "system.bl_arm.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "bl_club",
+      "name": "叶禁",
+      "kind": "boss",
+      "order": 9,
+      "sourceRefs": [
+        "references/source/game.lua:270",
+        "references/source/blind.lua:157-224,468-662; references/source/functions/state_events.lua:363-369"
+      ],
+      "defeated": false,
+      "dollars": 5,
+      "mult": 2,
+      "debuff": {
+        "suit": "Clubs"
+      },
+      "boss": {
+        "min": 1,
+        "max": 10
+      },
+      "effects": [
+        {
+          "trigger": "cardDebuff",
+          "condition": {},
+          "action": "debuffSuit",
+          "suit": "clubs"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "梅花牌静默，不提供牌上的筹码、强化、版本和印记效果。目标=首注基础筹码×2；过关基础奖励5金币。",
+      "effectFactRefs": [
+        "system.bl_club.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "bl_fish",
+      "name": "暗流",
+      "kind": "boss",
+      "order": 10,
+      "sourceRefs": [
+        "references/source/game.lua:269",
+        "references/source/blind.lua:157-224,468-662; references/source/functions/state_events.lua:363-369"
+      ],
+      "defeated": false,
+      "dollars": 5,
+      "mult": 2,
+      "debuff": {},
+      "boss": {
+        "min": 2,
+        "max": 10
+      },
+      "effects": [
+        {
+          "trigger": "beforeHand",
+          "condition": {},
+          "action": "prepareFish"
+        },
+        {
+          "trigger": "draw",
+          "condition": {
+            "fishPrepped": true
+          },
+          "action": "hideDrawn"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "每次出牌后补入的牌背面朝上；普通弃牌补入时不遮牌。目标=首注基础筹码×2；过关基础奖励5金币。",
+      "effectFactRefs": [
+        "system.bl_fish.effects.0",
+        "system.bl_fish.effects.1"
+      ]
+    },
+    {
+      "sourceKey": "bl_psychic",
+      "name": "满额",
+      "kind": "boss",
+      "order": 11,
+      "sourceRefs": [
+        "references/source/game.lua:280",
+        "references/source/blind.lua:157-224,468-662; references/source/functions/state_events.lua:363-369"
+      ],
+      "defeated": false,
+      "dollars": 5,
+      "mult": 2,
+      "debuff": {
+        "h_size_ge": 5
+      },
+      "boss": {
+        "min": 1,
+        "max": 10
+      },
+      "effects": [
+        {
+          "trigger": "beforeHand",
+          "condition": {},
+          "action": "requireCardCount",
+          "minimum": 5
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "每次必须出满5张，否则此次得分为0，仍消耗出牌次数。目标=首注基础筹码×2；过关基础奖励5金币。",
+      "effectFactRefs": [
+        "system.bl_psychic.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "bl_goad",
+      "name": "锋禁",
+      "kind": "boss",
+      "order": 12,
+      "sourceRefs": [
+        "references/source/game.lua:281",
+        "references/source/blind.lua:157-224,468-662; references/source/functions/state_events.lua:363-369"
+      ],
+      "defeated": false,
+      "dollars": 5,
+      "mult": 2,
+      "debuff": {
+        "suit": "Spades"
+      },
+      "boss": {
+        "min": 1,
+        "max": 10
+      },
+      "effects": [
+        {
+          "trigger": "cardDebuff",
+          "condition": {},
+          "action": "debuffSuit",
+          "suit": "spades"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "黑桃牌静默，不提供牌上的筹码、强化、版本和印记效果。目标=首注基础筹码×2；过关基础奖励5金币。",
+      "effectFactRefs": [
+        "system.bl_goad.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "bl_water",
+      "name": "无回头",
+      "kind": "boss",
+      "order": 13,
+      "sourceRefs": [
+        "references/source/game.lua:282",
+        "references/source/blind.lua:157-224,468-662; references/source/functions/state_events.lua:363-369"
+      ],
+      "defeated": false,
+      "dollars": 5,
+      "mult": 2,
+      "debuff": {},
+      "boss": {
+        "min": 2,
+        "max": 10
+      },
+      "effects": [
+        {
+          "trigger": "start",
+          "condition": {},
+          "action": "set",
+          "field": "discards",
+          "value": 0
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "本轮弃牌次数变为0。目标=首注基础筹码×2；过关基础奖励5金币。",
+      "effectFactRefs": [
+        "system.bl_water.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "bl_window",
+      "name": "菱禁",
+      "kind": "boss",
+      "order": 14,
+      "sourceRefs": [
+        "references/source/game.lua:289",
+        "references/source/blind.lua:157-224,468-662; references/source/functions/state_events.lua:363-369"
+      ],
+      "defeated": false,
+      "dollars": 5,
+      "mult": 2,
+      "debuff": {
+        "suit": "Diamonds"
+      },
+      "boss": {
+        "min": 1,
+        "max": 10
+      },
+      "effects": [
+        {
+          "trigger": "cardDebuff",
+          "condition": {},
+          "action": "debuffSuit",
+          "suit": "diamonds"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "方块牌静默，不提供牌上的筹码、强化、版本和印记效果。目标=首注基础筹码×2；过关基础奖励5金币。",
+      "effectFactRefs": [
+        "system.bl_window.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "bl_manacle",
+      "name": "窄握",
+      "kind": "boss",
+      "order": 15,
+      "sourceRefs": [
+        "references/source/game.lua:271",
+        "references/source/blind.lua:157-224,468-662; references/source/functions/state_events.lua:363-369"
+      ],
+      "defeated": false,
+      "dollars": 5,
+      "mult": 2,
+      "debuff": {},
+      "boss": {
+        "min": 1,
+        "max": 10
+      },
+      "effects": [
+        {
+          "trigger": "start",
+          "condition": {},
+          "action": "add",
+          "field": "handSize",
+          "value": -1
+        },
+        {
+          "trigger": "end",
+          "condition": {},
+          "action": "add",
+          "field": "handSize",
+          "value": 1
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "本轮手牌上限减1，结束或禁用后归还1。目标=首注基础筹码×2；过关基础奖励5金币。",
+      "effectFactRefs": [
+        "system.bl_manacle.effects.0",
+        "system.bl_manacle.effects.1"
+      ]
+    },
+    {
+      "sourceKey": "bl_eye",
+      "name": "不重演",
+      "kind": "boss",
+      "order": 16,
+      "sourceRefs": [
+        "references/source/game.lua:283",
+        "references/source/blind.lua:157-224,468-662; references/source/functions/state_events.lua:363-369"
+      ],
+      "defeated": false,
+      "dollars": 5,
+      "mult": 2,
+      "debuff": {},
+      "boss": {
+        "min": 3,
+        "max": 10
+      },
+      "effects": [
+        {
+          "trigger": "beforeHand",
+          "condition": {},
+          "action": "requireUnusedHand"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "本轮已用过的牌型再次出牌得0分，仍消耗出牌次数。目标=首注基础筹码×2；过关基础奖励5金币。",
+      "effectFactRefs": [
+        "system.bl_eye.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "bl_mouth",
+      "name": "单轨",
+      "kind": "boss",
+      "order": 17,
+      "sourceRefs": [
+        "references/source/game.lua:268",
+        "references/source/blind.lua:157-224,468-662; references/source/functions/state_events.lua:363-369"
+      ],
+      "defeated": false,
+      "dollars": 5,
+      "mult": 2,
+      "debuff": {},
+      "boss": {
+        "min": 2,
+        "max": 10
+      },
+      "effects": [
+        {
+          "trigger": "beforeHand",
+          "condition": {},
+          "action": "requireSameHand"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "本轮只能继续使用首次出牌的牌型；其他牌型得0分，仍消耗出牌次数。目标=首注基础筹码×2；过关基础奖励5金币。",
+      "effectFactRefs": [
+        "system.bl_mouth.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "bl_plant",
+      "name": "面禁",
+      "kind": "boss",
+      "order": 18,
+      "sourceRefs": [
+        "references/source/game.lua:284",
+        "references/source/blind.lua:157-224,468-662; references/source/functions/state_events.lua:363-369"
+      ],
+      "defeated": false,
+      "dollars": 5,
+      "mult": 2,
+      "debuff": {
+        "is_face": "face"
+      },
+      "boss": {
+        "min": 4,
+        "max": 10
+      },
+      "effects": [
+        {
+          "trigger": "cardDebuff",
+          "condition": {},
+          "action": "debuffFaces"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "人物牌J、Q、K静默，受视为人物牌效果影响。目标=首注基础筹码×2；过关基础奖励5金币。",
+      "effectFactRefs": [
+        "system.bl_plant.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "bl_serpent",
+      "name": "限流",
+      "kind": "boss",
+      "order": 19,
+      "sourceRefs": [
+        "references/source/game.lua:290",
+        "references/source/blind.lua:157-224,468-662; references/source/functions/state_events.lua:363-369"
+      ],
+      "defeated": false,
+      "dollars": 5,
+      "mult": 2,
+      "debuff": {},
+      "boss": {
+        "min": 5,
+        "max": 10
+      },
+      "effects": [
+        {
+          "trigger": "afterHand",
+          "condition": {},
+          "action": "limitDraw",
+          "count": 3
+        },
+        {
+          "trigger": "afterDiscard",
+          "condition": {},
+          "action": "limitDraw",
+          "count": 3
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "每次出牌或弃牌后固定抽至多3张，数量受剩余牌库限制。目标=首注基础筹码×2；过关基础奖励5金币。",
+      "effectFactRefs": [
+        "system.bl_serpent.effects.0",
+        "system.bl_serpent.effects.1"
+      ]
+    },
+    {
+      "sourceKey": "bl_pillar",
+      "name": "旧迹",
+      "kind": "boss",
+      "order": 20,
+      "sourceRefs": [
+        "references/source/game.lua:291",
+        "references/source/blind.lua:157-224,468-662; references/source/functions/state_events.lua:363-369"
+      ],
+      "defeated": false,
+      "dollars": 5,
+      "mult": 2,
+      "debuff": {},
+      "boss": {
+        "min": 1,
+        "max": 10
+      },
+      "effects": [
+        {
+          "trigger": "cardDebuff",
+          "condition": {},
+          "action": "debuffPlayedThisAnte"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "本首注此前出过的牌静默。目标=首注基础筹码×2；过关基础奖励5金币。",
+      "effectFactRefs": [
+        "system.bl_pillar.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "bl_needle",
+      "name": "孤注",
+      "kind": "boss",
+      "order": 21,
+      "sourceRefs": [
+        "references/source/game.lua:285",
+        "references/source/blind.lua:157-224,468-662; references/source/functions/state_events.lua:363-369"
+      ],
+      "defeated": false,
+      "dollars": 5,
+      "mult": 1,
+      "debuff": {},
+      "boss": {
+        "min": 2,
+        "max": 10
+      },
+      "effects": [
+        {
+          "trigger": "start",
+          "condition": {},
+          "action": "set",
+          "field": "hands",
+          "value": 1
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "本轮只可出牌1次。目标=首注基础筹码×1；过关基础奖励5金币。",
+      "effectFactRefs": [
+        "system.bl_needle.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "bl_head",
+      "name": "心禁",
+      "kind": "boss",
+      "order": 22,
+      "sourceRefs": [
+        "references/source/game.lua:286",
+        "references/source/blind.lua:157-224,468-662; references/source/functions/state_events.lua:363-369"
+      ],
+      "defeated": false,
+      "dollars": 5,
+      "mult": 2,
+      "debuff": {
+        "suit": "Hearts"
+      },
+      "boss": {
+        "min": 1,
+        "max": 10
+      },
+      "effects": [
+        {
+          "trigger": "cardDebuff",
+          "condition": {},
+          "action": "debuffSuit",
+          "suit": "hearts"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "红桃牌静默，不提供牌上的筹码、强化、版本和印记效果。目标=首注基础筹码×2；过关基础奖励5金币。",
+      "effectFactRefs": [
+        "system.bl_head.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "bl_tooth",
+      "name": "过路费",
+      "kind": "boss",
+      "order": 23,
+      "sourceRefs": [
+        "references/source/game.lua:272",
+        "references/source/blind.lua:157-224,468-662; references/source/functions/state_events.lua:363-369"
+      ],
+      "defeated": false,
+      "dollars": 5,
+      "mult": 2,
+      "debuff": {},
+      "boss": {
+        "min": 3,
+        "max": 10
+      },
+      "effects": [
+        {
+          "trigger": "beforeHand",
+          "condition": {},
+          "action": "chargePlayedCards",
+          "perCard": 1
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "每出1张牌扣1金币，即使它没有参与计分。目标=首注基础筹码×2；过关基础奖励5金币。",
+      "effectFactRefs": [
+        "system.bl_tooth.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "bl_flint",
+      "name": "减半",
+      "kind": "boss",
+      "order": 24,
+      "sourceRefs": [
+        "references/source/game.lua:292",
+        "references/source/blind.lua:157-224,468-662; references/source/functions/state_events.lua:363-369"
+      ],
+      "defeated": false,
+      "dollars": 5,
+      "mult": 2,
+      "debuff": {},
+      "boss": {
+        "min": 2,
+        "max": 10
+      },
+      "effects": [
+        {
+          "trigger": "beforeHand",
+          "condition": {},
+          "action": "halveBase",
+          "chipMinimum": 0,
+          "multMinimum": 1,
+          "roundOffset": 0.5
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "牌型基础筹码和基础倍率各减半后四舍五入；筹码最低0，倍率最低1。目标=首注基础筹码×2；过关基础奖励5金币。",
+      "effectFactRefs": [
+        "system.bl_flint.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "bl_mark",
+      "name": "蒙面",
+      "kind": "boss",
+      "order": 25,
+      "sourceRefs": [
+        "references/source/game.lua:275",
+        "references/source/blind.lua:157-224,468-662; references/source/functions/state_events.lua:363-369"
+      ],
+      "defeated": false,
+      "dollars": 5,
+      "mult": 2,
+      "debuff": {},
+      "boss": {
+        "min": 2,
+        "max": 10
+      },
+      "effects": [
+        {
+          "trigger": "draw",
+          "condition": {},
+          "action": "hideFaces"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "每张抽到的人物牌背面朝上，受视为人物牌效果影响。目标=首注基础筹码×2；过关基础奖励5金币。",
+      "effectFactRefs": [
+        "system.bl_mark.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "bl_final_acorn",
+      "name": "乱序",
+      "kind": "boss",
+      "order": 26,
+      "sourceRefs": [
+        "references/source/game.lua:293",
+        "references/source/blind.lua:157-224,468-662; references/source/functions/state_events.lua:363-369"
+      ],
+      "defeated": false,
+      "dollars": 8,
+      "mult": 2,
+      "debuff": {},
+      "boss": {
+        "showdown": true,
+        "min": 10,
+        "max": 10
+      },
+      "effects": [
+        {
+          "trigger": "start",
+          "condition": {},
+          "action": "hideShuffleJokers",
+          "shuffleCount": 3
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "开始时所有伙伴背面朝上，再将顺序随机重排3次。目标=首注基础筹码×2；过关基础奖励8金币。",
+      "effectFactRefs": [
+        "system.bl_final_acorn.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "bl_final_leaf",
+      "name": "封印",
+      "kind": "boss",
+      "order": 27,
+      "sourceRefs": [
+        "references/source/game.lua:287",
+        "references/source/blind.lua:157-224,468-662; references/source/functions/state_events.lua:363-369"
+      ],
+      "defeated": false,
+      "dollars": 8,
+      "mult": 2,
+      "debuff": {},
+      "boss": {
+        "showdown": true,
+        "min": 10,
+        "max": 10
+      },
+      "effects": [
+        {
+          "trigger": "cardDebuff",
+          "condition": {},
+          "action": "debuffAll"
+        },
+        {
+          "trigger": "jokerSold",
+          "condition": {},
+          "action": "disableBlind"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "所有纸牌静默；出售任意1名伙伴后解除本关限制。目标=首注基础筹码×2；过关基础奖励8金币。",
+      "effectFactRefs": [
+        "system.bl_final_leaf.effects.0",
+        "system.bl_final_leaf.effects.1"
+      ]
+    },
+    {
+      "sourceKey": "bl_final_vessel",
+      "name": "高塔",
+      "kind": "boss",
+      "order": 28,
+      "sourceRefs": [
+        "references/source/game.lua:288",
+        "references/source/blind.lua:157-224,468-662; references/source/functions/state_events.lua:363-369"
+      ],
+      "defeated": false,
+      "dollars": 8,
+      "mult": 6,
+      "debuff": {},
+      "boss": {
+        "showdown": true,
+        "min": 10,
+        "max": 10
+      },
+      "effects": [
+        {
+          "trigger": "start",
+          "condition": {},
+          "action": "requirementMultiplier",
+          "value": 6
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "目标筹码提高到首注基础值的6倍。目标=首注基础筹码×6；过关基础奖励8金币。",
+      "effectFactRefs": [
+        "system.bl_final_vessel.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "bl_final_heart",
+      "name": "静默",
+      "kind": "boss",
+      "order": 29,
+      "sourceRefs": [
+        "references/source/game.lua:294",
+        "references/source/blind.lua:157-224,468-662; references/source/functions/state_events.lua:363-369"
+      ],
+      "defeated": false,
+      "dollars": 8,
+      "mult": 2,
+      "debuff": {},
+      "boss": {
+        "showdown": true,
+        "min": 10,
+        "max": 10
+      },
+      "effects": [
+        {
+          "trigger": "draw",
+          "condition": {
+            "heartPrepped": true
+          },
+          "action": "debuffRandomJoker",
+          "avoidPrevious": true
+        },
+        {
+          "trigger": "beforeHand",
+          "condition": {},
+          "action": "prepareHeart"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "起手与每次出牌后的补牌时随机静默1名伙伴；轮换避开仍静默的伙伴，已耗尽的短期伙伴不会恢复。目标=首注基础筹码×2；过关基础奖励8金币。",
+      "effectFactRefs": [
+        "system.bl_final_heart.effects.0",
+        "system.bl_final_heart.effects.1"
+      ]
+    },
+    {
+      "sourceKey": "bl_final_bell",
+      "name": "指定席",
+      "kind": "boss",
+      "order": 30,
+      "sourceRefs": [
+        "references/source/game.lua:277",
+        "references/source/blind.lua:157-224,468-662; references/source/functions/state_events.lua:363-369"
+      ],
+      "defeated": false,
+      "dollars": 8,
+      "mult": 2,
+      "debuff": {},
+      "boss": {
+        "showdown": true,
+        "min": 10,
+        "max": 10
+      },
+      "effects": [
+        {
+          "trigger": "draw",
+          "condition": {},
+          "action": "forceSelection"
+        }
+      ],
+      "implementation": "已实现独立系统入口",
+      "description": "随机1张手牌必须被选中；它离开手牌后重新指定。目标=首注基础筹码×2；过关基础奖励8金币。",
+      "effectFactRefs": [
+        "system.bl_final_bell.effects.0"
+      ]
+    }
+  ],
+  "seals": [
+    {
+      "sourceKey": "Gold",
+      "name": "金印",
+      "kind": "seal",
+      "order": 1,
+      "sourceRefs": [
+        "references/source/game.lua:219",
+        "references/source/card.lua:1040-1064,1071-1072,2245-2275"
+      ],
+      "effects": [
+        {
+          "trigger": "card",
+          "condition": {},
+          "action": "sealEffect",
+          "seal": "gold",
+          "dollars": 3
+        }
+      ],
+      "implementation": "字段与生成已实现；牌上触发由计分域另验",
+      "description": "参与计分时获得3金币。",
+      "effectFactRefs": [
+        "system.Gold.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "Red",
+      "name": "回印",
+      "kind": "seal",
+      "order": 2,
+      "sourceRefs": [
+        "references/source/game.lua:220",
+        "references/source/card.lua:1040-1064,1071-1072,2245-2275"
+      ],
+      "effects": [
+        {
+          "trigger": "retrigger",
+          "condition": {},
+          "action": "sealEffect",
+          "seal": "red",
+          "repetitions": 1
+        }
+      ],
+      "implementation": "字段与生成已实现；牌上触发由计分域另验",
+      "description": "该牌的出牌或手牌效果额外结算1次；没有对应效果时不会凭空得分。",
+      "effectFactRefs": [
+        "system.Red.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "Blue",
+      "name": "星印",
+      "kind": "seal",
+      "order": 3,
+      "sourceRefs": [
+        "references/source/game.lua:221",
+        "references/source/card.lua:1040-1064,1071-1072,2245-2275"
+      ],
+      "effects": [
+        {
+          "trigger": "roundEnd",
+          "condition": {},
+          "action": "sealEffect",
+          "seal": "blue",
+          "count": 1
+        }
+      ],
+      "implementation": "字段与生成已实现；牌上触发由计分域另验",
+      "description": "回合结束仍在手牌时，在空道具位置生成最后使用牌型对应的1张星图。",
+      "effectFactRefs": [
+        "system.Blue.effects.0"
+      ]
+    },
+    {
+      "sourceKey": "Purple",
+      "name": "术印",
+      "kind": "seal",
+      "order": 4,
+      "sourceRefs": [
+        "references/source/game.lua:222",
+        "references/source/card.lua:1040-1064,1071-1072,2245-2275"
+      ],
+      "effects": [
+        {
+          "trigger": "discard",
+          "condition": {},
+          "action": "sealEffect",
+          "seal": "purple",
+          "count": 1
+        }
+      ],
+      "implementation": "字段与生成已实现；牌上触发由计分域另验",
+      "description": "弃掉该牌时，在空道具位置生成1件随机占卜。",
+      "effectFactRefs": [
+        "system.Purple.effects.0"
+      ]
+    }
+  ],
+  "version": {
+    "game": "1.0.1o-FULL",
+    "commit": "895ab3a25bc6f513fa80885eb59951bf8e76bc55",
+    "sourceConfidence": "社区源码，非游戏内 dump"
+  },
+  "starting": {
+    "dollars": 4,
+    "handSize": 8,
+    "discards": 3,
+    "hands": 4,
+    "rerollBaseCost": 5,
+    "jokerSlots": 5,
+    "anteScaling": 1,
+    "consumableSlots": 2,
+    "deckSize": 52,
+    "winAnte": 8,
+    "probabilityNormal": 1
+  },
+  "shop": {
+    "jokerSlots": 2,
+    "voucherSlots": 1,
+    "boosterSlots": 2,
+    "weights": {
+      "joker": 20,
+      "tarot": 4,
+      "planet": 4,
+      "spectral": 0,
+      "playingCard": 0
+    },
+    "editionRate": 1,
+    "firstPackBuffoon": true,
+    "rarityThresholds": {
+      "uncommon": 0.7,
+      "rare": 0.95
+    },
+    "editionCumulative": {
+      "negative": 0.003,
+      "polychrome": 0.006,
+      "holo": 0.02,
+      "foil": 0.04
+    },
+    "guaranteedEditionMultiplier": 25,
+    "stickers": {
+      "eternalThreshold": 0.7,
+      "perishableLow": 0.4,
+      "perishableHigh": 0.7,
+      "rentalThreshold": 0.7
+    },
+    "packRules": {
+      "arcanaSpectralThreshold": 0.8,
+      "standardEnhancedThreshold": 0.6,
+      "standardEditionModifier": 2,
+      "standardSealThreshold": 0.8,
+      "standardSealThresholds": {
+        "red": 0.75,
+        "blue": 0.5,
+        "gold": 0.25,
+        "purple": 0
+      },
+      "hiddenReplacementThreshold": 0.997,
+      "illusionEnhancedThreshold": 0.6,
+      "illusionEditionThreshold": 0.8,
+      "illusionEditionThresholds": {
+        "polychrome": 0.85,
+        "holo": 0.5,
+        "foil": 0
+      }
+    },
+    "poolRules": {
+      "hiddenPlanetRequiresPlayedHand": true,
+      "uniqueOwnedExceptShowman": true,
+      "voucherRequiresAllPrerequisites": true,
+      "hiddenConsumersNotInNormalPool": true,
+      "fallback": {
+        "tarot": "c_strength",
+        "planet": "c_pluto",
+        "spectral": "c_incantation",
+        "voucher": "v_blank",
+        "tag": "tag_handy",
+        "joker": "j_joker"
+      }
+    },
+    "categoryOrder": [
+      "joker",
+      "tarot",
+      "planet",
+      "playingCard",
+      "spectral"
+    ]
+  },
+  "economy": {
+    "interestCap": 25,
+    "interestAmount": 1,
+    "interestUnit": 5,
+    "sellDivisor": 2,
+    "sellMinimum": 1,
+    "minimumPrice": 1,
+    "priceRoundOffset": 0.5,
+    "editionSurcharges": {
+      "foil": 2,
+      "holo": 3,
+      "polychrome": 5,
+      "negative": 5
+    },
+    "moneyPerHand": 1,
+    "moneyPerDiscard": 0,
+    "rentalPurchase": 1,
+    "rentalPerRound": 3,
+    "perishableRounds": 5,
+    "rerollIncrement": 1,
+    "bossRerollCost": 10,
+    "perishableExpiresAt": 0
+  },
+  "anteCurves": {
+    "1": [
+      300,
+      800,
+      2000,
+      5000,
+      11000,
+      20000,
+      35000,
+      50000
+    ],
+    "2": [
+      300,
+      900,
+      2600,
+      8000,
+      20000,
+      36000,
+      60000,
+      100000
+    ],
+    "3": [
+      300,
+      1000,
+      3200,
+      9000,
+      25000,
+      60000,
+      110000,
+      200000
+    ],
+    "belowOne": 100,
+    "endless": {
+      "k": 0.75,
+      "base": 1.6,
+      "powerIncrement": 0.2,
+      "afterAnte": 8,
+      "formula": "c = ante - 8; d = 1 + 0.2*c; raw = floor(A8*(1.6+(0.75*c)^d)^c); raw - raw % 10^floor(log10(raw)-1)"
+    }
+  },
+  "playingCardCost": 1,
+  "mechanics": {
+    "jokerStickers": {
+      "areas": [
+        "shop",
+        "pack"
+      ],
+      "eternalThreshold": 0.7,
+      "perishableLow": 0.4,
+      "perishableHigh": 0.7,
+      "rentalThreshold": 0.7,
+      "eternalPerishableSharedRoll": true,
+      "perishableRounds": 5
+    },
+    "duplicatePolicy": {
+      "occupiedAreas": [
+        "ownedJokers",
+        "ownedConsumables",
+        "shop",
+        "pack"
+      ],
+      "allowWithActiveShowman": true,
+      "allowWithDebuffedShowman": false
+    },
+    "observatoryOrder": {
+      "stage": "afterJokerMainBeforeDeckFinal",
+      "perCard": true,
+      "consumes": false
+    },
+    "orbitalSelection": {
+      "time": "blindChoicePreview",
+      "visibleOnly": true,
+      "cache": "anteAndBlind",
+      "rngKey": "orbital"
+    },
+    "perishableDebuff": {
+      "expiresAt": 0,
+      "persistsAfterBlindEnd": true,
+      "persistsAfterBlindDisable": true
+    },
+    "roundTemporaryHandSize": {
+      "expiresAt": "roundEnd",
+      "sourceField": "temporaryHandSize",
+      "preservePermanentChanges": true
+    }
+  }
+}

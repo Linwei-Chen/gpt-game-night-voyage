@@ -1,0 +1,7308 @@
+{
+  "url": "http://127.0.0.1:53428/",
+  "started": "2026-10-13T02:44:27.049765+00:00",
+  "hashes_before": {
+    "src/ui/tutorial-model.ts": "9073e7dd3077d98073275720ba156c771973103f8549c96175e0a51fe586a5c5",
+    "src/ui/tutorial.ts": "18acfbe63c23baff604f0027ad9e786282a08a23cce75e16cf6e24b3c17651d8",
+    "src/independent-main.ts": "5942de7b2321b21defb0c38758e5bd52777c77952ba71230030066433ed8e0d6",
+    "src/original-style.css": "2e0cdc59653ee1aaa67091d55c157d21434ae236369d1cb8f03cdcf7821670eb",
+    "tests/tutorial.test.ts": "40f7ba3cb3e599bf89a50860e8bc7f225bc6dc8d4c0e6884832008f496650e55",
+    "data/facts.json": "a81865b3ab74a3ef277c33241668e6e4dd22d01a3c8f30a5bd0c4f0b6aee615d",
+    "data/systems-verified.json": "ed28d1ffa43e52104e777fe6125c2efb0b64e911fa51bf11bbc5a9ffd61ef3b2",
+    "data/jokers.json": "52f9817de53e2c22b02043c3c206446af1ef25a31509c8b3eeacb8986c2f037f",
+    "src/core/scoring.ts": "6ca9d97092de7752854d70565bc0a096c640e61510adf964cea508d88831c26a",
+    "src/core/economy-runtime.ts": "38c267ecb46f1ce9a4affe4d559545807d5e1b9722299834db2f874a5deaa2ca",
+    "dist/index.html": "f8f6bca14f637b4a48d8982d44e3c4d28c6f6a36f1d8061ac66f428b58aa4273"
+  },
+  "viewports": [
+    {
+      "name": "desktop",
+      "mobile": false,
+      "checks": [
+        {
+          "name": "首次自动展示第一课",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "第一课上一课禁用",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "首次教程不创建正式航程",
+          "passed": true,
+          "data": {
+            "state": "null",
+            "save": null,
+            "prefs": "{\"muted\":true,\"reducedMotion\":true}"
+          }
+        },
+        {
+          "name": "首次退出目标为开局",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "顺序导航 goal",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "标题与导航同步 goal",
+          "passed": true,
+          "data": {
+            "title": "先学会怎样过关",
+            "select": "先学会怎样过关"
+          }
+        },
+        {
+          "name": "课程序号 goal",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "文章无横向溢出 goal",
+          "passed": true,
+          "data": {
+            "article": {
+              "width": 706,
+              "scrollWidth": 706,
+              "height": 542,
+              "scrollHeight": 542
+            },
+            "dialog": {
+              "left": 230,
+              "right": 1210,
+              "top": 121,
+              "bottom": 879
+            },
+            "shell": {
+              "left": 261,
+              "right": 1179,
+              "top": 150,
+              "bottom": 850
+            },
+            "viewport": {
+              "width": 1440,
+              "height": 1000
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "弹窗处于视口内 goal",
+          "passed": true,
+          "data": {
+            "left": 230,
+            "right": 1210,
+            "top": 121,
+            "bottom": 879
+          }
+        },
+        {
+          "name": "页脚与退出可点击 goal",
+          "passed": true,
+          "data": [
+            {
+              "id": "tutorial-exit",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-prev",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-next",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "close-modal",
+              "visible": true,
+              "hit": true
+            }
+          ]
+        },
+        {
+          "name": "顺序导航 table",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "标题与导航同步 table",
+          "passed": true,
+          "data": {
+            "title": "看懂牌桌",
+            "select": "看懂牌桌"
+          }
+        },
+        {
+          "name": "课程序号 table",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "文章无横向溢出 table",
+          "passed": true,
+          "data": {
+            "article": {
+              "width": 706,
+              "scrollWidth": 706,
+              "height": 542,
+              "scrollHeight": 620
+            },
+            "dialog": {
+              "left": 230,
+              "right": 1210,
+              "top": 121,
+              "bottom": 879
+            },
+            "shell": {
+              "left": 261,
+              "right": 1179,
+              "top": 150,
+              "bottom": 850
+            },
+            "viewport": {
+              "width": 1440,
+              "height": 1000
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "弹窗处于视口内 table",
+          "passed": true,
+          "data": {
+            "left": 230,
+            "right": 1210,
+            "top": 121,
+            "bottom": 879
+          }
+        },
+        {
+          "name": "页脚与退出可点击 table",
+          "passed": true,
+          "data": [
+            {
+              "id": "tutorial-exit",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-prev",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-next",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "close-modal",
+              "visible": true,
+              "hit": true
+            }
+          ]
+        },
+        {
+          "name": "长文在文章区滚动 table",
+          "passed": true,
+          "data": {
+            "top": 78,
+            "height": 542,
+            "total": 620
+          }
+        },
+        {
+          "name": "文章无横向溢出 table 滚动后",
+          "passed": true,
+          "data": {
+            "article": {
+              "width": 706,
+              "scrollWidth": 706,
+              "height": 542,
+              "scrollHeight": 620
+            },
+            "dialog": {
+              "left": 230,
+              "right": 1210,
+              "top": 121,
+              "bottom": 879
+            },
+            "shell": {
+              "left": 261,
+              "right": 1179,
+              "top": 150,
+              "bottom": 850
+            },
+            "viewport": {
+              "width": 1440,
+              "height": 1000
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "弹窗处于视口内 table 滚动后",
+          "passed": true,
+          "data": {
+            "left": 230,
+            "right": 1210,
+            "top": 121,
+            "bottom": 879
+          }
+        },
+        {
+          "name": "页脚与退出可点击 table 滚动后",
+          "passed": true,
+          "data": [
+            {
+              "id": "tutorial-exit",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-prev",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-next",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "close-modal",
+              "visible": true,
+              "hit": true
+            }
+          ]
+        },
+        {
+          "name": "顺序导航 hands",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "标题与导航同步 hands",
+          "passed": true,
+          "data": {
+            "title": "认牌与牌型",
+            "select": "认牌与牌型"
+          }
+        },
+        {
+          "name": "课程序号 hands",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "文章无横向溢出 hands",
+          "passed": true,
+          "data": {
+            "article": {
+              "width": 706,
+              "scrollWidth": 706,
+              "height": 542,
+              "scrollHeight": 895
+            },
+            "dialog": {
+              "left": 230,
+              "right": 1210,
+              "top": 121,
+              "bottom": 879
+            },
+            "shell": {
+              "left": 261,
+              "right": 1179,
+              "top": 150,
+              "bottom": 850
+            },
+            "viewport": {
+              "width": 1440,
+              "height": 1000
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "弹窗处于视口内 hands",
+          "passed": true,
+          "data": {
+            "left": 230,
+            "right": 1210,
+            "top": 121,
+            "bottom": 879
+          }
+        },
+        {
+          "name": "页脚与退出可点击 hands",
+          "passed": true,
+          "data": [
+            {
+              "id": "tutorial-exit",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-prev",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-next",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "close-modal",
+              "visible": true,
+              "hit": true
+            }
+          ]
+        },
+        {
+          "name": "长文在文章区滚动 hands",
+          "passed": true,
+          "data": {
+            "top": 353,
+            "height": 542,
+            "total": 895
+          }
+        },
+        {
+          "name": "文章无横向溢出 hands 滚动后",
+          "passed": true,
+          "data": {
+            "article": {
+              "width": 706,
+              "scrollWidth": 706,
+              "height": 542,
+              "scrollHeight": 895
+            },
+            "dialog": {
+              "left": 230,
+              "right": 1210,
+              "top": 121,
+              "bottom": 879
+            },
+            "shell": {
+              "left": 261,
+              "right": 1179,
+              "top": 150,
+              "bottom": 850
+            },
+            "viewport": {
+              "width": 1440,
+              "height": 1000
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "弹窗处于视口内 hands 滚动后",
+          "passed": true,
+          "data": {
+            "left": 230,
+            "right": 1210,
+            "top": 121,
+            "bottom": 879
+          }
+        },
+        {
+          "name": "页脚与退出可点击 hands 滚动后",
+          "passed": true,
+          "data": [
+            {
+              "id": "tutorial-exit",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-prev",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-next",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "close-modal",
+              "visible": true,
+              "hit": true
+            }
+          ]
+        },
+        {
+          "name": "顺序导航 practice",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "标题与导航同步 practice",
+          "passed": true,
+          "data": {
+            "title": "亲手选出一个对子",
+            "select": "亲手选出一个对子"
+          }
+        },
+        {
+          "name": "课程序号 practice",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "文章无横向溢出 practice",
+          "passed": true,
+          "data": {
+            "article": {
+              "width": 706,
+              "scrollWidth": 706,
+              "height": 542,
+              "scrollHeight": 542
+            },
+            "dialog": {
+              "left": 230,
+              "right": 1210,
+              "top": 121,
+              "bottom": 879
+            },
+            "shell": {
+              "left": 261,
+              "right": 1179,
+              "top": 150,
+              "bottom": 850
+            },
+            "viewport": {
+              "width": 1440,
+              "height": 1000
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "弹窗处于视口内 practice",
+          "passed": true,
+          "data": {
+            "left": 230,
+            "right": 1210,
+            "top": 121,
+            "bottom": 879
+          }
+        },
+        {
+          "name": "页脚与退出可点击 practice",
+          "passed": true,
+          "data": [
+            {
+              "id": "tutorial-exit",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-prev",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-next",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "close-modal",
+              "visible": true,
+              "hit": true
+            }
+          ]
+        },
+        {
+          "name": "顺序导航 scoring",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "标题与导航同步 scoring",
+          "passed": true,
+          "data": {
+            "title": "分数是怎么来的",
+            "select": "分数是怎么来的"
+          }
+        },
+        {
+          "name": "课程序号 scoring",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "文章无横向溢出 scoring",
+          "passed": true,
+          "data": {
+            "article": {
+              "width": 706,
+              "scrollWidth": 706,
+              "height": 542,
+              "scrollHeight": 829
+            },
+            "dialog": {
+              "left": 230,
+              "right": 1210,
+              "top": 121,
+              "bottom": 879
+            },
+            "shell": {
+              "left": 261,
+              "right": 1179,
+              "top": 150,
+              "bottom": 850
+            },
+            "viewport": {
+              "width": 1440,
+              "height": 1000
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "弹窗处于视口内 scoring",
+          "passed": true,
+          "data": {
+            "left": 230,
+            "right": 1210,
+            "top": 121,
+            "bottom": 879
+          }
+        },
+        {
+          "name": "页脚与退出可点击 scoring",
+          "passed": true,
+          "data": [
+            {
+              "id": "tutorial-exit",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-prev",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-next",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "close-modal",
+              "visible": true,
+              "hit": true
+            }
+          ]
+        },
+        {
+          "name": "长文在文章区滚动 scoring",
+          "passed": true,
+          "data": {
+            "top": 287,
+            "height": 542,
+            "total": 829
+          }
+        },
+        {
+          "name": "文章无横向溢出 scoring 滚动后",
+          "passed": true,
+          "data": {
+            "article": {
+              "width": 706,
+              "scrollWidth": 706,
+              "height": 542,
+              "scrollHeight": 829
+            },
+            "dialog": {
+              "left": 230,
+              "right": 1210,
+              "top": 121,
+              "bottom": 879
+            },
+            "shell": {
+              "left": 261,
+              "right": 1179,
+              "top": 150,
+              "bottom": 850
+            },
+            "viewport": {
+              "width": 1440,
+              "height": 1000
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "弹窗处于视口内 scoring 滚动后",
+          "passed": true,
+          "data": {
+            "left": 230,
+            "right": 1210,
+            "top": 121,
+            "bottom": 879
+          }
+        },
+        {
+          "name": "页脚与退出可点击 scoring 滚动后",
+          "passed": true,
+          "data": [
+            {
+              "id": "tutorial-exit",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-prev",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-next",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "close-modal",
+              "visible": true,
+              "hit": true
+            }
+          ]
+        },
+        {
+          "name": "顺序导航 turns",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "标题与导航同步 turns",
+          "passed": true,
+          "data": {
+            "title": "出牌还是弃牌",
+            "select": "出牌还是弃牌"
+          }
+        },
+        {
+          "name": "课程序号 turns",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "文章无横向溢出 turns",
+          "passed": true,
+          "data": {
+            "article": {
+              "width": 706,
+              "scrollWidth": 706,
+              "height": 542,
+              "scrollHeight": 679
+            },
+            "dialog": {
+              "left": 230,
+              "right": 1210,
+              "top": 121,
+              "bottom": 879
+            },
+            "shell": {
+              "left": 261,
+              "right": 1179,
+              "top": 150,
+              "bottom": 850
+            },
+            "viewport": {
+              "width": 1440,
+              "height": 1000
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "弹窗处于视口内 turns",
+          "passed": true,
+          "data": {
+            "left": 230,
+            "right": 1210,
+            "top": 121,
+            "bottom": 879
+          }
+        },
+        {
+          "name": "页脚与退出可点击 turns",
+          "passed": true,
+          "data": [
+            {
+              "id": "tutorial-exit",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-prev",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-next",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "close-modal",
+              "visible": true,
+              "hit": true
+            }
+          ]
+        },
+        {
+          "name": "长文在文章区滚动 turns",
+          "passed": true,
+          "data": {
+            "top": 137,
+            "height": 542,
+            "total": 679
+          }
+        },
+        {
+          "name": "文章无横向溢出 turns 滚动后",
+          "passed": true,
+          "data": {
+            "article": {
+              "width": 706,
+              "scrollWidth": 706,
+              "height": 542,
+              "scrollHeight": 679
+            },
+            "dialog": {
+              "left": 230,
+              "right": 1210,
+              "top": 121,
+              "bottom": 879
+            },
+            "shell": {
+              "left": 261,
+              "right": 1179,
+              "top": 150,
+              "bottom": 850
+            },
+            "viewport": {
+              "width": 1440,
+              "height": 1000
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "弹窗处于视口内 turns 滚动后",
+          "passed": true,
+          "data": {
+            "left": 230,
+            "right": 1210,
+            "top": 121,
+            "bottom": 879
+          }
+        },
+        {
+          "name": "页脚与退出可点击 turns 滚动后",
+          "passed": true,
+          "data": [
+            {
+              "id": "tutorial-exit",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-prev",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-next",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "close-modal",
+              "visible": true,
+              "hit": true
+            }
+          ]
+        },
+        {
+          "name": "顺序导航 partners",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "标题与导航同步 partners",
+          "passed": true,
+          "data": {
+            "title": "伙伴与结算顺序",
+            "select": "伙伴与结算顺序"
+          }
+        },
+        {
+          "name": "课程序号 partners",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "文章无横向溢出 partners",
+          "passed": true,
+          "data": {
+            "article": {
+              "width": 706,
+              "scrollWidth": 706,
+              "height": 542,
+              "scrollHeight": 997
+            },
+            "dialog": {
+              "left": 230,
+              "right": 1210,
+              "top": 121,
+              "bottom": 879
+            },
+            "shell": {
+              "left": 261,
+              "right": 1179,
+              "top": 150,
+              "bottom": 850
+            },
+            "viewport": {
+              "width": 1440,
+              "height": 1000
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "弹窗处于视口内 partners",
+          "passed": true,
+          "data": {
+            "left": 230,
+            "right": 1210,
+            "top": 121,
+            "bottom": 879
+          }
+        },
+        {
+          "name": "页脚与退出可点击 partners",
+          "passed": true,
+          "data": [
+            {
+              "id": "tutorial-exit",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-prev",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-next",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "close-modal",
+              "visible": true,
+              "hit": true
+            }
+          ]
+        },
+        {
+          "name": "长文在文章区滚动 partners",
+          "passed": true,
+          "data": {
+            "top": 455,
+            "height": 542,
+            "total": 997
+          }
+        },
+        {
+          "name": "文章无横向溢出 partners 滚动后",
+          "passed": true,
+          "data": {
+            "article": {
+              "width": 706,
+              "scrollWidth": 706,
+              "height": 542,
+              "scrollHeight": 997
+            },
+            "dialog": {
+              "left": 230,
+              "right": 1210,
+              "top": 121,
+              "bottom": 879
+            },
+            "shell": {
+              "left": 261,
+              "right": 1179,
+              "top": 150,
+              "bottom": 850
+            },
+            "viewport": {
+              "width": 1440,
+              "height": 1000
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "弹窗处于视口内 partners 滚动后",
+          "passed": true,
+          "data": {
+            "left": 230,
+            "right": 1210,
+            "top": 121,
+            "bottom": 879
+          }
+        },
+        {
+          "name": "页脚与退出可点击 partners 滚动后",
+          "passed": true,
+          "data": [
+            {
+              "id": "tutorial-exit",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-prev",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-next",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "close-modal",
+              "visible": true,
+              "hit": true
+            }
+          ]
+        },
+        {
+          "name": "顺序导航 tools",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "标题与导航同步 tools",
+          "passed": true,
+          "data": {
+            "title": "升级与改造纸牌",
+            "select": "升级与改造纸牌"
+          }
+        },
+        {
+          "name": "课程序号 tools",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "文章无横向溢出 tools",
+          "passed": true,
+          "data": {
+            "article": {
+              "width": 706,
+              "scrollWidth": 706,
+              "height": 542,
+              "scrollHeight": 765
+            },
+            "dialog": {
+              "left": 230,
+              "right": 1210,
+              "top": 121,
+              "bottom": 879
+            },
+            "shell": {
+              "left": 261,
+              "right": 1179,
+              "top": 150,
+              "bottom": 850
+            },
+            "viewport": {
+              "width": 1440,
+              "height": 1000
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "弹窗处于视口内 tools",
+          "passed": true,
+          "data": {
+            "left": 230,
+            "right": 1210,
+            "top": 121,
+            "bottom": 879
+          }
+        },
+        {
+          "name": "页脚与退出可点击 tools",
+          "passed": true,
+          "data": [
+            {
+              "id": "tutorial-exit",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-prev",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-next",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "close-modal",
+              "visible": true,
+              "hit": true
+            }
+          ]
+        },
+        {
+          "name": "长文在文章区滚动 tools",
+          "passed": true,
+          "data": {
+            "top": 223,
+            "height": 542,
+            "total": 765
+          }
+        },
+        {
+          "name": "文章无横向溢出 tools 滚动后",
+          "passed": true,
+          "data": {
+            "article": {
+              "width": 706,
+              "scrollWidth": 706,
+              "height": 542,
+              "scrollHeight": 765
+            },
+            "dialog": {
+              "left": 230,
+              "right": 1210,
+              "top": 121,
+              "bottom": 879
+            },
+            "shell": {
+              "left": 261,
+              "right": 1179,
+              "top": 150,
+              "bottom": 850
+            },
+            "viewport": {
+              "width": 1440,
+              "height": 1000
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "弹窗处于视口内 tools 滚动后",
+          "passed": true,
+          "data": {
+            "left": 230,
+            "right": 1210,
+            "top": 121,
+            "bottom": 879
+          }
+        },
+        {
+          "name": "页脚与退出可点击 tools 滚动后",
+          "passed": true,
+          "data": [
+            {
+              "id": "tutorial-exit",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-prev",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-next",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "close-modal",
+              "visible": true,
+              "hit": true
+            }
+          ]
+        },
+        {
+          "name": "顺序导航 shop",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "标题与导航同步 shop",
+          "passed": true,
+          "data": {
+            "title": "商店、金币与利息",
+            "select": "商店、金币与利息"
+          }
+        },
+        {
+          "name": "课程序号 shop",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "文章无横向溢出 shop",
+          "passed": true,
+          "data": {
+            "article": {
+              "width": 706,
+              "scrollWidth": 706,
+              "height": 542,
+              "scrollHeight": 806
+            },
+            "dialog": {
+              "left": 230,
+              "right": 1210,
+              "top": 121,
+              "bottom": 879
+            },
+            "shell": {
+              "left": 261,
+              "right": 1179,
+              "top": 150,
+              "bottom": 850
+            },
+            "viewport": {
+              "width": 1440,
+              "height": 1000
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "弹窗处于视口内 shop",
+          "passed": true,
+          "data": {
+            "left": 230,
+            "right": 1210,
+            "top": 121,
+            "bottom": 879
+          }
+        },
+        {
+          "name": "页脚与退出可点击 shop",
+          "passed": true,
+          "data": [
+            {
+              "id": "tutorial-exit",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-prev",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-next",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "close-modal",
+              "visible": true,
+              "hit": true
+            }
+          ]
+        },
+        {
+          "name": "长文在文章区滚动 shop",
+          "passed": true,
+          "data": {
+            "top": 264,
+            "height": 542,
+            "total": 806
+          }
+        },
+        {
+          "name": "文章无横向溢出 shop 滚动后",
+          "passed": true,
+          "data": {
+            "article": {
+              "width": 706,
+              "scrollWidth": 706,
+              "height": 542,
+              "scrollHeight": 806
+            },
+            "dialog": {
+              "left": 230,
+              "right": 1210,
+              "top": 121,
+              "bottom": 879
+            },
+            "shell": {
+              "left": 261,
+              "right": 1179,
+              "top": 150,
+              "bottom": 850
+            },
+            "viewport": {
+              "width": 1440,
+              "height": 1000
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "弹窗处于视口内 shop 滚动后",
+          "passed": true,
+          "data": {
+            "left": 230,
+            "right": 1210,
+            "top": 121,
+            "bottom": 879
+          }
+        },
+        {
+          "name": "页脚与退出可点击 shop 滚动后",
+          "passed": true,
+          "data": [
+            {
+              "id": "tutorial-exit",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-prev",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-next",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "close-modal",
+              "visible": true,
+              "hit": true
+            }
+          ]
+        },
+        {
+          "name": "顺序导航 route",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "标题与导航同步 route",
+          "passed": true,
+          "data": {
+            "title": "关卡与完整航程",
+            "select": "关卡与完整航程"
+          }
+        },
+        {
+          "name": "课程序号 route",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "文章无横向溢出 route",
+          "passed": true,
+          "data": {
+            "article": {
+              "width": 706,
+              "scrollWidth": 706,
+              "height": 542,
+              "scrollHeight": 696
+            },
+            "dialog": {
+              "left": 230,
+              "right": 1210,
+              "top": 121,
+              "bottom": 879
+            },
+            "shell": {
+              "left": 261,
+              "right": 1179,
+              "top": 150,
+              "bottom": 850
+            },
+            "viewport": {
+              "width": 1440,
+              "height": 1000
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "弹窗处于视口内 route",
+          "passed": true,
+          "data": {
+            "left": 230,
+            "right": 1210,
+            "top": 121,
+            "bottom": 879
+          }
+        },
+        {
+          "name": "页脚与退出可点击 route",
+          "passed": true,
+          "data": [
+            {
+              "id": "tutorial-exit",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-prev",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-next",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "close-modal",
+              "visible": true,
+              "hit": true
+            }
+          ]
+        },
+        {
+          "name": "长文在文章区滚动 route",
+          "passed": true,
+          "data": {
+            "top": 153,
+            "height": 542,
+            "total": 696
+          }
+        },
+        {
+          "name": "文章无横向溢出 route 滚动后",
+          "passed": true,
+          "data": {
+            "article": {
+              "width": 706,
+              "scrollWidth": 706,
+              "height": 542,
+              "scrollHeight": 696
+            },
+            "dialog": {
+              "left": 230,
+              "right": 1210,
+              "top": 121,
+              "bottom": 879
+            },
+            "shell": {
+              "left": 261,
+              "right": 1179,
+              "top": 150,
+              "bottom": 850
+            },
+            "viewport": {
+              "width": 1440,
+              "height": 1000
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "弹窗处于视口内 route 滚动后",
+          "passed": true,
+          "data": {
+            "left": 230,
+            "right": 1210,
+            "top": 121,
+            "bottom": 879
+          }
+        },
+        {
+          "name": "页脚与退出可点击 route 滚动后",
+          "passed": true,
+          "data": [
+            {
+              "id": "tutorial-exit",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-prev",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-next",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "close-modal",
+              "visible": true,
+              "hit": true
+            }
+          ]
+        },
+        {
+          "name": "顺序导航 controls",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "标题与导航同步 controls",
+          "passed": true,
+          "data": {
+            "title": "操作速查",
+            "select": "操作速查"
+          }
+        },
+        {
+          "name": "课程序号 controls",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "文章无横向溢出 controls",
+          "passed": true,
+          "data": {
+            "article": {
+              "width": 706,
+              "scrollWidth": 706,
+              "height": 542,
+              "scrollHeight": 758
+            },
+            "dialog": {
+              "left": 230,
+              "right": 1210,
+              "top": 121,
+              "bottom": 879
+            },
+            "shell": {
+              "left": 261,
+              "right": 1179,
+              "top": 150,
+              "bottom": 850
+            },
+            "viewport": {
+              "width": 1440,
+              "height": 1000
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "弹窗处于视口内 controls",
+          "passed": true,
+          "data": {
+            "left": 230,
+            "right": 1210,
+            "top": 121,
+            "bottom": 879
+          }
+        },
+        {
+          "name": "页脚与退出可点击 controls",
+          "passed": true,
+          "data": [
+            {
+              "id": "tutorial-exit",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-prev",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-next",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "close-modal",
+              "visible": true,
+              "hit": true
+            }
+          ]
+        },
+        {
+          "name": "长文在文章区滚动 controls",
+          "passed": true,
+          "data": {
+            "top": 215,
+            "height": 542,
+            "total": 758
+          }
+        },
+        {
+          "name": "文章无横向溢出 controls 滚动后",
+          "passed": true,
+          "data": {
+            "article": {
+              "width": 706,
+              "scrollWidth": 706,
+              "height": 542,
+              "scrollHeight": 758
+            },
+            "dialog": {
+              "left": 230,
+              "right": 1210,
+              "top": 121,
+              "bottom": 879
+            },
+            "shell": {
+              "left": 261,
+              "right": 1179,
+              "top": 150,
+              "bottom": 850
+            },
+            "viewport": {
+              "width": 1440,
+              "height": 1000
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "弹窗处于视口内 controls 滚动后",
+          "passed": true,
+          "data": {
+            "left": 230,
+            "right": 1210,
+            "top": 121,
+            "bottom": 879
+          }
+        },
+        {
+          "name": "页脚与退出可点击 controls 滚动后",
+          "passed": true,
+          "data": [
+            {
+              "id": "tutorial-exit",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-prev",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-next",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "close-modal",
+              "visible": true,
+              "hit": true
+            }
+          ]
+        },
+        {
+          "name": "顺序导航 questions",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "标题与导航同步 questions",
+          "passed": true,
+          "data": {
+            "title": "遇到问题怎么办",
+            "select": "遇到问题怎么办"
+          }
+        },
+        {
+          "name": "课程序号 questions",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "文章无横向溢出 questions",
+          "passed": true,
+          "data": {
+            "article": {
+              "width": 706,
+              "scrollWidth": 706,
+              "height": 542,
+              "scrollHeight": 604
+            },
+            "dialog": {
+              "left": 230,
+              "right": 1210,
+              "top": 121,
+              "bottom": 879
+            },
+            "shell": {
+              "left": 261,
+              "right": 1179,
+              "top": 150,
+              "bottom": 850
+            },
+            "viewport": {
+              "width": 1440,
+              "height": 1000
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "弹窗处于视口内 questions",
+          "passed": true,
+          "data": {
+            "left": 230,
+            "right": 1210,
+            "top": 121,
+            "bottom": 879
+          }
+        },
+        {
+          "name": "页脚与退出可点击 questions",
+          "passed": true,
+          "data": [
+            {
+              "id": "tutorial-exit",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-prev",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-next",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "close-modal",
+              "visible": true,
+              "hit": true
+            }
+          ]
+        },
+        {
+          "name": "长文在文章区滚动 questions",
+          "passed": true,
+          "data": {
+            "top": 62,
+            "height": 542,
+            "total": 604
+          }
+        },
+        {
+          "name": "文章无横向溢出 questions 滚动后",
+          "passed": true,
+          "data": {
+            "article": {
+              "width": 706,
+              "scrollWidth": 706,
+              "height": 542,
+              "scrollHeight": 604
+            },
+            "dialog": {
+              "left": 230,
+              "right": 1210,
+              "top": 121,
+              "bottom": 879
+            },
+            "shell": {
+              "left": 261,
+              "right": 1179,
+              "top": 150,
+              "bottom": 850
+            },
+            "viewport": {
+              "width": 1440,
+              "height": 1000
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "弹窗处于视口内 questions 滚动后",
+          "passed": true,
+          "data": {
+            "left": 230,
+            "right": 1210,
+            "top": 121,
+            "bottom": 879
+          }
+        },
+        {
+          "name": "页脚与退出可点击 questions 滚动后",
+          "passed": true,
+          "data": [
+            {
+              "id": "tutorial-exit",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-prev",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-next",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "close-modal",
+              "visible": true,
+              "hit": true
+            }
+          ]
+        },
+        {
+          "name": "反向导航 controls",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "反向导航 route",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "反向导航 shop",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "反向导航 tools",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "反向导航 partners",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "反向导航 turns",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "反向导航 scoring",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "反向导航 practice",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "反向导航 hands",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "反向导航 table",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "反向导航 goal",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "章节跳转 hands",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "九种普通牌型",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "三种隐藏牌型",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "牌型折叠说明可读 1",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "牌型折叠说明可读 2",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "牌型折叠说明可读 3",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "牌型折叠说明可读 4",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "牌型折叠说明可读 5",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "牌型折叠说明可读 6",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "牌型折叠说明可读 7",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "牌型折叠说明可读 8",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "牌型折叠说明可读 9",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "牌型折叠说明可读 10",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "牌型折叠说明可读 11",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "牌型折叠说明可读 12",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "章节跳转 tools",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "强化/印记/版本查阅 1",
+          "passed": true,
+          "data": 8
+        },
+        {
+          "name": "查阅末项可滚动到 1",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "强化/印记/版本查阅 2",
+          "passed": true,
+          "data": 4
+        },
+        {
+          "name": "查阅末项可滚动到 2",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "强化/印记/版本查阅 3",
+          "passed": true,
+          "data": 4
+        },
+        {
+          "name": "查阅末项可滚动到 3",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "首次阅读及导航不创建存档",
+          "passed": true,
+          "data": {
+            "state": true,
+            "save": true,
+            "prefs": true
+          }
+        },
+        {
+          "name": "开局选择在 Escape 返回后保留",
+          "passed": true,
+          "data": {
+            "seed": "REVIEW-desktop",
+            "deck": "b_blue",
+            "stake": "2"
+          }
+        },
+        {
+          "name": "Escape 从教程返回开局弹窗",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "T1 真实航程退出目标修复",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "T1 当前阶段入口出现",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "当前阶段入口跳到次数章节",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "文章无横向溢出 playing 当前阶段",
+          "passed": true,
+          "data": {
+            "article": {
+              "width": 706,
+              "scrollWidth": 706,
+              "height": 508,
+              "scrollHeight": 679
+            },
+            "dialog": {
+              "left": 230,
+              "right": 1210,
+              "top": 121,
+              "bottom": 879
+            },
+            "shell": {
+              "left": 261,
+              "right": 1179,
+              "top": 150,
+              "bottom": 850
+            },
+            "viewport": {
+              "width": 1440,
+              "height": 1000
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-current",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "弹窗处于视口内 playing 当前阶段",
+          "passed": true,
+          "data": {
+            "left": 230,
+            "right": 1210,
+            "top": 121,
+            "bottom": 879
+          }
+        },
+        {
+          "name": "页脚与退出可点击 playing 当前阶段",
+          "passed": true,
+          "data": [
+            {
+              "id": "tutorial-exit",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-prev",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-next",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "close-modal",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-current",
+              "visible": true,
+              "hit": true
+            }
+          ]
+        },
+        {
+          "name": "章节跳转 goal",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "首页练习捷径",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "无选择练习按钮禁用",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "练习纸牌选中状态",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "重复点击取消练习选择",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "练习得分 56",
+          "passed": true,
+          "data": "56"
+        },
+        {
+          "name": "对子计分集合为两张 9",
+          "passed": true,
+          "data": "对子成立！两张 9 都参与计分。\n\n本手牌型：对子\n28\n筹码\n×\n2\n倍率\n=\n56\n本手分数\n\n真正计分的是：黑桃 9、红心 9。"
+        },
+        {
+          "name": "练习得分 56",
+          "passed": true,
+          "data": "56"
+        },
+        {
+          "name": "附带 K 的解释反馈",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "文章无横向溢出 playing 练习结果",
+          "passed": true,
+          "data": {
+            "article": {
+              "width": 706,
+              "scrollWidth": 706,
+              "height": 508,
+              "scrollHeight": 690
+            },
+            "dialog": {
+              "left": 230,
+              "right": 1210,
+              "top": 121,
+              "bottom": 879
+            },
+            "shell": {
+              "left": 261,
+              "right": 1179,
+              "top": 150,
+              "bottom": 850
+            },
+            "viewport": {
+              "width": 1440,
+              "height": 1000
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-current",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "弹窗处于视口内 playing 练习结果",
+          "passed": true,
+          "data": {
+            "left": 230,
+            "right": 1210,
+            "top": 121,
+            "bottom": 879
+          }
+        },
+        {
+          "name": "页脚与退出可点击 playing 练习结果",
+          "passed": true,
+          "data": [
+            {
+              "id": "tutorial-exit",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-prev",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-next",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "close-modal",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-current",
+              "visible": true,
+              "hit": true
+            }
+          ]
+        },
+        {
+          "name": "练习重置清空选择",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "练习得分 15",
+          "passed": true,
+          "data": "15"
+        },
+        {
+          "name": "练习得分 56",
+          "passed": true,
+          "data": "56"
+        },
+        {
+          "name": "练习通过进度",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "章节跳转 partners",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "伙伴原顺序 504",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "交换伙伴顺序 280",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "再次交换恢复 504",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "章节跳转 shop",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "现金滑块 Home 到零",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "现金滑块右键递增",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "现金滑块 End 到上限",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "利息边界 0",
+          "passed": true,
+          "data": {
+            "cash": "$0",
+            "interest": "$0"
+          }
+        },
+        {
+          "name": "利息边界 4",
+          "passed": true,
+          "data": {
+            "cash": "$4",
+            "interest": "$0"
+          }
+        },
+        {
+          "name": "利息边界 5",
+          "passed": true,
+          "data": {
+            "cash": "$5",
+            "interest": "$1"
+          }
+        },
+        {
+          "name": "利息边界 9",
+          "passed": true,
+          "data": {
+            "cash": "$9",
+            "interest": "$1"
+          }
+        },
+        {
+          "name": "利息边界 10",
+          "passed": true,
+          "data": {
+            "cash": "$10",
+            "interest": "$2"
+          }
+        },
+        {
+          "name": "利息边界 24",
+          "passed": true,
+          "data": {
+            "cash": "$24",
+            "interest": "$4"
+          }
+        },
+        {
+          "name": "利息边界 25",
+          "passed": true,
+          "data": {
+            "cash": "$25",
+            "interest": "$5"
+          }
+        },
+        {
+          "name": "利息边界 50",
+          "passed": true,
+          "data": {
+            "cash": "$50",
+            "interest": "$5"
+          }
+        },
+        {
+          "name": "章节跳转 practice",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "教程练习、滑块和游戏快捷键不修改正式状态",
+          "passed": true,
+          "data": {
+            "state": true,
+            "save": true,
+            "prefs": true
+          }
+        },
+        {
+          "name": "T1 教程退出直接返回正式牌桌",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "退出按钮返回保留原航程",
+          "passed": true,
+          "data": {
+            "state": true,
+            "save": true,
+            "prefs": true
+          }
+        },
+        {
+          "name": "X 关闭教程",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "X 返回保留原航程",
+          "passed": true,
+          "data": {
+            "state": true,
+            "save": true,
+            "prefs": true
+          }
+        },
+        {
+          "name": "Escape 关闭教程",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "Escape 返回保留原航程",
+          "passed": true,
+          "data": {
+            "state": true,
+            "save": true,
+            "prefs": true
+          }
+        },
+        {
+          "name": "章节跳转 questions",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "最后一课 关闭教程",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "最后一课 返回保留原航程",
+          "passed": true,
+          "data": {
+            "state": true,
+            "save": true,
+            "prefs": true
+          }
+        },
+        {
+          "name": "教程章节与练习进度保存",
+          "passed": true,
+          "data": {
+            "seen": true,
+            "chapter": "questions",
+            "practicePassed": true
+          }
+        },
+        {
+          "name": "刷新不强制重开首次教程",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "刷新保留正式存档",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "继续航程恢复原状态和存档",
+          "passed": true,
+          "data": {
+            "state": true,
+            "save": true,
+            "prefs": true
+          }
+        },
+        {
+          "name": "重新打开恢复教程章节",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "重新打开恢复练习通过进度",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "恢复教程退出仍保留航程",
+          "passed": true,
+          "data": {
+            "state": true,
+            "save": true,
+            "prefs": true
+          }
+        },
+        {
+          "name": "无浏览器运行异常",
+          "passed": true,
+          "data": []
+        },
+        {
+          "name": "无浏览器控制台错误",
+          "passed": true,
+          "data": []
+        }
+      ],
+      "page_errors": [],
+      "console_errors": [],
+      "screenshots": [
+        "/tmp/tutorial-review-final-desktop-first.png",
+        "/tmp/tutorial-review-final-desktop-practice.png",
+        "/tmp/tutorial-review-final-desktop-partners.png"
+      ],
+      "chapters": [
+        {
+          "id": "goal",
+          "title": "先学会怎样过关",
+          "geometry": {
+            "article": {
+              "width": 706,
+              "scrollWidth": 706,
+              "height": 542,
+              "scrollHeight": 542
+            },
+            "dialog": {
+              "left": 230,
+              "right": 1210,
+              "top": 121,
+              "bottom": 879
+            },
+            "shell": {
+              "left": 261,
+              "right": 1179,
+              "top": 150,
+              "bottom": 850
+            },
+            "viewport": {
+              "width": 1440,
+              "height": 1000
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "table",
+          "title": "看懂牌桌",
+          "geometry": {
+            "article": {
+              "width": 706,
+              "scrollWidth": 706,
+              "height": 542,
+              "scrollHeight": 620
+            },
+            "dialog": {
+              "left": 230,
+              "right": 1210,
+              "top": 121,
+              "bottom": 879
+            },
+            "shell": {
+              "left": 261,
+              "right": 1179,
+              "top": 150,
+              "bottom": 850
+            },
+            "viewport": {
+              "width": 1440,
+              "height": 1000
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "hands",
+          "title": "认牌与牌型",
+          "geometry": {
+            "article": {
+              "width": 706,
+              "scrollWidth": 706,
+              "height": 542,
+              "scrollHeight": 895
+            },
+            "dialog": {
+              "left": 230,
+              "right": 1210,
+              "top": 121,
+              "bottom": 879
+            },
+            "shell": {
+              "left": 261,
+              "right": 1179,
+              "top": 150,
+              "bottom": 850
+            },
+            "viewport": {
+              "width": 1440,
+              "height": 1000
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "practice",
+          "title": "亲手选出一个对子",
+          "geometry": {
+            "article": {
+              "width": 706,
+              "scrollWidth": 706,
+              "height": 542,
+              "scrollHeight": 542
+            },
+            "dialog": {
+              "left": 230,
+              "right": 1210,
+              "top": 121,
+              "bottom": 879
+            },
+            "shell": {
+              "left": 261,
+              "right": 1179,
+              "top": 150,
+              "bottom": 850
+            },
+            "viewport": {
+              "width": 1440,
+              "height": 1000
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "scoring",
+          "title": "分数是怎么来的",
+          "geometry": {
+            "article": {
+              "width": 706,
+              "scrollWidth": 706,
+              "height": 542,
+              "scrollHeight": 829
+            },
+            "dialog": {
+              "left": 230,
+              "right": 1210,
+              "top": 121,
+              "bottom": 879
+            },
+            "shell": {
+              "left": 261,
+              "right": 1179,
+              "top": 150,
+              "bottom": 850
+            },
+            "viewport": {
+              "width": 1440,
+              "height": 1000
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "turns",
+          "title": "出牌还是弃牌",
+          "geometry": {
+            "article": {
+              "width": 706,
+              "scrollWidth": 706,
+              "height": 542,
+              "scrollHeight": 679
+            },
+            "dialog": {
+              "left": 230,
+              "right": 1210,
+              "top": 121,
+              "bottom": 879
+            },
+            "shell": {
+              "left": 261,
+              "right": 1179,
+              "top": 150,
+              "bottom": 850
+            },
+            "viewport": {
+              "width": 1440,
+              "height": 1000
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "partners",
+          "title": "伙伴与结算顺序",
+          "geometry": {
+            "article": {
+              "width": 706,
+              "scrollWidth": 706,
+              "height": 542,
+              "scrollHeight": 997
+            },
+            "dialog": {
+              "left": 230,
+              "right": 1210,
+              "top": 121,
+              "bottom": 879
+            },
+            "shell": {
+              "left": 261,
+              "right": 1179,
+              "top": 150,
+              "bottom": 850
+            },
+            "viewport": {
+              "width": 1440,
+              "height": 1000
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "tools",
+          "title": "升级与改造纸牌",
+          "geometry": {
+            "article": {
+              "width": 706,
+              "scrollWidth": 706,
+              "height": 542,
+              "scrollHeight": 765
+            },
+            "dialog": {
+              "left": 230,
+              "right": 1210,
+              "top": 121,
+              "bottom": 879
+            },
+            "shell": {
+              "left": 261,
+              "right": 1179,
+              "top": 150,
+              "bottom": 850
+            },
+            "viewport": {
+              "width": 1440,
+              "height": 1000
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "shop",
+          "title": "商店、金币与利息",
+          "geometry": {
+            "article": {
+              "width": 706,
+              "scrollWidth": 706,
+              "height": 542,
+              "scrollHeight": 806
+            },
+            "dialog": {
+              "left": 230,
+              "right": 1210,
+              "top": 121,
+              "bottom": 879
+            },
+            "shell": {
+              "left": 261,
+              "right": 1179,
+              "top": 150,
+              "bottom": 850
+            },
+            "viewport": {
+              "width": 1440,
+              "height": 1000
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "route",
+          "title": "关卡与完整航程",
+          "geometry": {
+            "article": {
+              "width": 706,
+              "scrollWidth": 706,
+              "height": 542,
+              "scrollHeight": 696
+            },
+            "dialog": {
+              "left": 230,
+              "right": 1210,
+              "top": 121,
+              "bottom": 879
+            },
+            "shell": {
+              "left": 261,
+              "right": 1179,
+              "top": 150,
+              "bottom": 850
+            },
+            "viewport": {
+              "width": 1440,
+              "height": 1000
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "controls",
+          "title": "操作速查",
+          "geometry": {
+            "article": {
+              "width": 706,
+              "scrollWidth": 706,
+              "height": 542,
+              "scrollHeight": 758
+            },
+            "dialog": {
+              "left": 230,
+              "right": 1210,
+              "top": 121,
+              "bottom": 879
+            },
+            "shell": {
+              "left": 261,
+              "right": 1179,
+              "top": 150,
+              "bottom": 850
+            },
+            "viewport": {
+              "width": 1440,
+              "height": 1000
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "questions",
+          "title": "遇到问题怎么办",
+          "geometry": {
+            "article": {
+              "width": 706,
+              "scrollWidth": 706,
+              "height": 542,
+              "scrollHeight": 604
+            },
+            "dialog": {
+              "left": 230,
+              "right": 1210,
+              "top": 121,
+              "bottom": 879
+            },
+            "shell": {
+              "left": 261,
+              "right": 1179,
+              "top": 150,
+              "bottom": 850
+            },
+            "viewport": {
+              "width": 1440,
+              "height": 1000
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        }
+      ],
+      "formal_baseline": {
+        "phase": "playing",
+        "selected": 1,
+        "state_sha256": "d1183688432d54d61c774eb0be5489eb217c37d67652dd7fc001f42a5acc1afd",
+        "save_sha256": "d1183688432d54d61c774eb0be5489eb217c37d67652dd7fc001f42a5acc1afd",
+        "prefs": "{\"muted\":true,\"reducedMotion\":true}"
+      },
+      "completed": true,
+      "passed": true
+    },
+    {
+      "name": "mobile",
+      "mobile": true,
+      "checks": [
+        {
+          "name": "首次自动展示第一课",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "第一课上一课禁用",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "首次教程不创建正式航程",
+          "passed": true,
+          "data": {
+            "state": "null",
+            "save": null,
+            "prefs": "{\"muted\":true,\"reducedMotion\":true}"
+          }
+        },
+        {
+          "name": "首次退出目标为开局",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "顺序导航 goal",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "标题与导航同步 goal",
+          "passed": true,
+          "data": {
+            "title": "先学会怎样过关",
+            "select": "先学会怎样过关"
+          }
+        },
+        {
+          "name": "课程序号 goal",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "文章无横向溢出 goal",
+          "passed": true,
+          "data": {
+            "article": {
+              "width": 336,
+              "scrollWidth": 336,
+              "height": 520,
+              "scrollHeight": 691
+            },
+            "dialog": {
+              "left": 10,
+              "right": 380,
+              "top": 50.640625,
+              "bottom": 793.359375
+            },
+            "shell": {
+              "left": 27,
+              "right": 363,
+              "top": 75.640625,
+              "bottom": 774.359375
+            },
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "弹窗处于视口内 goal",
+          "passed": true,
+          "data": {
+            "left": 10,
+            "right": 380,
+            "top": 50.640625,
+            "bottom": 793.359375
+          }
+        },
+        {
+          "name": "页脚与退出可点击 goal",
+          "passed": true,
+          "data": [
+            {
+              "id": "tutorial-exit",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-prev",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-next",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "close-modal",
+              "visible": true,
+              "hit": true
+            }
+          ]
+        },
+        {
+          "name": "长文在文章区滚动 goal",
+          "passed": true,
+          "data": {
+            "top": 171,
+            "height": 520,
+            "total": 691
+          }
+        },
+        {
+          "name": "文章无横向溢出 goal 滚动后",
+          "passed": true,
+          "data": {
+            "article": {
+              "width": 336,
+              "scrollWidth": 336,
+              "height": 520,
+              "scrollHeight": 691
+            },
+            "dialog": {
+              "left": 10,
+              "right": 380,
+              "top": 50.640625,
+              "bottom": 793.359375
+            },
+            "shell": {
+              "left": 27,
+              "right": 363,
+              "top": 75.640625,
+              "bottom": 774.359375
+            },
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "弹窗处于视口内 goal 滚动后",
+          "passed": true,
+          "data": {
+            "left": 10,
+            "right": 380,
+            "top": 50.640625,
+            "bottom": 793.359375
+          }
+        },
+        {
+          "name": "页脚与退出可点击 goal 滚动后",
+          "passed": true,
+          "data": [
+            {
+              "id": "tutorial-exit",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-prev",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-next",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "close-modal",
+              "visible": true,
+              "hit": true
+            }
+          ]
+        },
+        {
+          "name": "顺序导航 table",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "标题与导航同步 table",
+          "passed": true,
+          "data": {
+            "title": "看懂牌桌",
+            "select": "看懂牌桌"
+          }
+        },
+        {
+          "name": "课程序号 table",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "文章无横向溢出 table",
+          "passed": true,
+          "data": {
+            "article": {
+              "width": 336,
+              "scrollWidth": 336,
+              "height": 520,
+              "scrollHeight": 739
+            },
+            "dialog": {
+              "left": 10,
+              "right": 380,
+              "top": 50.640625,
+              "bottom": 793.359375
+            },
+            "shell": {
+              "left": 27,
+              "right": 363,
+              "top": 75.640625,
+              "bottom": 774.359375
+            },
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "弹窗处于视口内 table",
+          "passed": true,
+          "data": {
+            "left": 10,
+            "right": 380,
+            "top": 50.640625,
+            "bottom": 793.359375
+          }
+        },
+        {
+          "name": "页脚与退出可点击 table",
+          "passed": true,
+          "data": [
+            {
+              "id": "tutorial-exit",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-prev",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-next",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "close-modal",
+              "visible": true,
+              "hit": true
+            }
+          ]
+        },
+        {
+          "name": "长文在文章区滚动 table",
+          "passed": true,
+          "data": {
+            "top": 219,
+            "height": 520,
+            "total": 739
+          }
+        },
+        {
+          "name": "文章无横向溢出 table 滚动后",
+          "passed": true,
+          "data": {
+            "article": {
+              "width": 336,
+              "scrollWidth": 336,
+              "height": 520,
+              "scrollHeight": 739
+            },
+            "dialog": {
+              "left": 10,
+              "right": 380,
+              "top": 50.640625,
+              "bottom": 793.359375
+            },
+            "shell": {
+              "left": 27,
+              "right": 363,
+              "top": 75.640625,
+              "bottom": 774.359375
+            },
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "弹窗处于视口内 table 滚动后",
+          "passed": true,
+          "data": {
+            "left": 10,
+            "right": 380,
+            "top": 50.640625,
+            "bottom": 793.359375
+          }
+        },
+        {
+          "name": "页脚与退出可点击 table 滚动后",
+          "passed": true,
+          "data": [
+            {
+              "id": "tutorial-exit",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-prev",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-next",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "close-modal",
+              "visible": true,
+              "hit": true
+            }
+          ]
+        },
+        {
+          "name": "顺序导航 hands",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "标题与导航同步 hands",
+          "passed": true,
+          "data": {
+            "title": "认牌与牌型",
+            "select": "认牌与牌型"
+          }
+        },
+        {
+          "name": "课程序号 hands",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "文章无横向溢出 hands",
+          "passed": true,
+          "data": {
+            "article": {
+              "width": 336,
+              "scrollWidth": 336,
+              "height": 520,
+              "scrollHeight": 997
+            },
+            "dialog": {
+              "left": 10,
+              "right": 380,
+              "top": 50.640625,
+              "bottom": 793.359375
+            },
+            "shell": {
+              "left": 27,
+              "right": 363,
+              "top": 75.640625,
+              "bottom": 774.359375
+            },
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "弹窗处于视口内 hands",
+          "passed": true,
+          "data": {
+            "left": 10,
+            "right": 380,
+            "top": 50.640625,
+            "bottom": 793.359375
+          }
+        },
+        {
+          "name": "页脚与退出可点击 hands",
+          "passed": true,
+          "data": [
+            {
+              "id": "tutorial-exit",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-prev",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-next",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "close-modal",
+              "visible": true,
+              "hit": true
+            }
+          ]
+        },
+        {
+          "name": "长文在文章区滚动 hands",
+          "passed": true,
+          "data": {
+            "top": 477,
+            "height": 520,
+            "total": 997
+          }
+        },
+        {
+          "name": "文章无横向溢出 hands 滚动后",
+          "passed": true,
+          "data": {
+            "article": {
+              "width": 336,
+              "scrollWidth": 336,
+              "height": 520,
+              "scrollHeight": 997
+            },
+            "dialog": {
+              "left": 10,
+              "right": 380,
+              "top": 50.640625,
+              "bottom": 793.359375
+            },
+            "shell": {
+              "left": 27,
+              "right": 363,
+              "top": 75.640625,
+              "bottom": 774.359375
+            },
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "弹窗处于视口内 hands 滚动后",
+          "passed": true,
+          "data": {
+            "left": 10,
+            "right": 380,
+            "top": 50.640625,
+            "bottom": 793.359375
+          }
+        },
+        {
+          "name": "页脚与退出可点击 hands 滚动后",
+          "passed": true,
+          "data": [
+            {
+              "id": "tutorial-exit",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-prev",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-next",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "close-modal",
+              "visible": true,
+              "hit": true
+            }
+          ]
+        },
+        {
+          "name": "顺序导航 practice",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "标题与导航同步 practice",
+          "passed": true,
+          "data": {
+            "title": "亲手选出一个对子",
+            "select": "亲手选出一个对子"
+          }
+        },
+        {
+          "name": "课程序号 practice",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "文章无横向溢出 practice",
+          "passed": true,
+          "data": {
+            "article": {
+              "width": 336,
+              "scrollWidth": 336,
+              "height": 520,
+              "scrollHeight": 552
+            },
+            "dialog": {
+              "left": 10,
+              "right": 380,
+              "top": 50.640625,
+              "bottom": 793.359375
+            },
+            "shell": {
+              "left": 27,
+              "right": 363,
+              "top": 75.640625,
+              "bottom": 774.359375
+            },
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "弹窗处于视口内 practice",
+          "passed": true,
+          "data": {
+            "left": 10,
+            "right": 380,
+            "top": 50.640625,
+            "bottom": 793.359375
+          }
+        },
+        {
+          "name": "页脚与退出可点击 practice",
+          "passed": true,
+          "data": [
+            {
+              "id": "tutorial-exit",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-prev",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-next",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "close-modal",
+              "visible": true,
+              "hit": true
+            }
+          ]
+        },
+        {
+          "name": "长文在文章区滚动 practice",
+          "passed": true,
+          "data": {
+            "top": 32,
+            "height": 520,
+            "total": 552
+          }
+        },
+        {
+          "name": "文章无横向溢出 practice 滚动后",
+          "passed": true,
+          "data": {
+            "article": {
+              "width": 336,
+              "scrollWidth": 336,
+              "height": 520,
+              "scrollHeight": 552
+            },
+            "dialog": {
+              "left": 10,
+              "right": 380,
+              "top": 50.640625,
+              "bottom": 793.359375
+            },
+            "shell": {
+              "left": 27,
+              "right": 363,
+              "top": 75.640625,
+              "bottom": 774.359375
+            },
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "弹窗处于视口内 practice 滚动后",
+          "passed": true,
+          "data": {
+            "left": 10,
+            "right": 380,
+            "top": 50.640625,
+            "bottom": 793.359375
+          }
+        },
+        {
+          "name": "页脚与退出可点击 practice 滚动后",
+          "passed": true,
+          "data": [
+            {
+              "id": "tutorial-exit",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-prev",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-next",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "close-modal",
+              "visible": true,
+              "hit": true
+            }
+          ]
+        },
+        {
+          "name": "顺序导航 scoring",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "标题与导航同步 scoring",
+          "passed": true,
+          "data": {
+            "title": "分数是怎么来的",
+            "select": "分数是怎么来的"
+          }
+        },
+        {
+          "name": "课程序号 scoring",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "文章无横向溢出 scoring",
+          "passed": true,
+          "data": {
+            "article": {
+              "width": 336,
+              "scrollWidth": 336,
+              "height": 520,
+              "scrollHeight": 902
+            },
+            "dialog": {
+              "left": 10,
+              "right": 380,
+              "top": 50.640625,
+              "bottom": 793.359375
+            },
+            "shell": {
+              "left": 27,
+              "right": 363,
+              "top": 75.640625,
+              "bottom": 774.359375
+            },
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "弹窗处于视口内 scoring",
+          "passed": true,
+          "data": {
+            "left": 10,
+            "right": 380,
+            "top": 50.640625,
+            "bottom": 793.359375
+          }
+        },
+        {
+          "name": "页脚与退出可点击 scoring",
+          "passed": true,
+          "data": [
+            {
+              "id": "tutorial-exit",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-prev",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-next",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "close-modal",
+              "visible": true,
+              "hit": true
+            }
+          ]
+        },
+        {
+          "name": "长文在文章区滚动 scoring",
+          "passed": true,
+          "data": {
+            "top": 382,
+            "height": 520,
+            "total": 902
+          }
+        },
+        {
+          "name": "文章无横向溢出 scoring 滚动后",
+          "passed": true,
+          "data": {
+            "article": {
+              "width": 336,
+              "scrollWidth": 336,
+              "height": 520,
+              "scrollHeight": 902
+            },
+            "dialog": {
+              "left": 10,
+              "right": 380,
+              "top": 50.640625,
+              "bottom": 793.359375
+            },
+            "shell": {
+              "left": 27,
+              "right": 363,
+              "top": 75.640625,
+              "bottom": 774.359375
+            },
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "弹窗处于视口内 scoring 滚动后",
+          "passed": true,
+          "data": {
+            "left": 10,
+            "right": 380,
+            "top": 50.640625,
+            "bottom": 793.359375
+          }
+        },
+        {
+          "name": "页脚与退出可点击 scoring 滚动后",
+          "passed": true,
+          "data": [
+            {
+              "id": "tutorial-exit",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-prev",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-next",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "close-modal",
+              "visible": true,
+              "hit": true
+            }
+          ]
+        },
+        {
+          "name": "顺序导航 turns",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "标题与导航同步 turns",
+          "passed": true,
+          "data": {
+            "title": "出牌还是弃牌",
+            "select": "出牌还是弃牌"
+          }
+        },
+        {
+          "name": "课程序号 turns",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "文章无横向溢出 turns",
+          "passed": true,
+          "data": {
+            "article": {
+              "width": 336,
+              "scrollWidth": 336,
+              "height": 520,
+              "scrollHeight": 816
+            },
+            "dialog": {
+              "left": 10,
+              "right": 380,
+              "top": 50.640625,
+              "bottom": 793.359375
+            },
+            "shell": {
+              "left": 27,
+              "right": 363,
+              "top": 75.640625,
+              "bottom": 774.359375
+            },
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "弹窗处于视口内 turns",
+          "passed": true,
+          "data": {
+            "left": 10,
+            "right": 380,
+            "top": 50.640625,
+            "bottom": 793.359375
+          }
+        },
+        {
+          "name": "页脚与退出可点击 turns",
+          "passed": true,
+          "data": [
+            {
+              "id": "tutorial-exit",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-prev",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-next",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "close-modal",
+              "visible": true,
+              "hit": true
+            }
+          ]
+        },
+        {
+          "name": "长文在文章区滚动 turns",
+          "passed": true,
+          "data": {
+            "top": 296,
+            "height": 520,
+            "total": 816
+          }
+        },
+        {
+          "name": "文章无横向溢出 turns 滚动后",
+          "passed": true,
+          "data": {
+            "article": {
+              "width": 336,
+              "scrollWidth": 336,
+              "height": 520,
+              "scrollHeight": 816
+            },
+            "dialog": {
+              "left": 10,
+              "right": 380,
+              "top": 50.640625,
+              "bottom": 793.359375
+            },
+            "shell": {
+              "left": 27,
+              "right": 363,
+              "top": 75.640625,
+              "bottom": 774.359375
+            },
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "弹窗处于视口内 turns 滚动后",
+          "passed": true,
+          "data": {
+            "left": 10,
+            "right": 380,
+            "top": 50.640625,
+            "bottom": 793.359375
+          }
+        },
+        {
+          "name": "页脚与退出可点击 turns 滚动后",
+          "passed": true,
+          "data": [
+            {
+              "id": "tutorial-exit",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-prev",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-next",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "close-modal",
+              "visible": true,
+              "hit": true
+            }
+          ]
+        },
+        {
+          "name": "顺序导航 partners",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "标题与导航同步 partners",
+          "passed": true,
+          "data": {
+            "title": "伙伴与结算顺序",
+            "select": "伙伴与结算顺序"
+          }
+        },
+        {
+          "name": "课程序号 partners",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "文章无横向溢出 partners",
+          "passed": true,
+          "data": {
+            "article": {
+              "width": 336,
+              "scrollWidth": 336,
+              "height": 520,
+              "scrollHeight": 1159
+            },
+            "dialog": {
+              "left": 10,
+              "right": 380,
+              "top": 50.640625,
+              "bottom": 793.359375
+            },
+            "shell": {
+              "left": 27,
+              "right": 363,
+              "top": 75.640625,
+              "bottom": 774.359375
+            },
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "弹窗处于视口内 partners",
+          "passed": true,
+          "data": {
+            "left": 10,
+            "right": 380,
+            "top": 50.640625,
+            "bottom": 793.359375
+          }
+        },
+        {
+          "name": "页脚与退出可点击 partners",
+          "passed": true,
+          "data": [
+            {
+              "id": "tutorial-exit",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-prev",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-next",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "close-modal",
+              "visible": true,
+              "hit": true
+            }
+          ]
+        },
+        {
+          "name": "长文在文章区滚动 partners",
+          "passed": true,
+          "data": {
+            "top": 639,
+            "height": 520,
+            "total": 1159
+          }
+        },
+        {
+          "name": "文章无横向溢出 partners 滚动后",
+          "passed": true,
+          "data": {
+            "article": {
+              "width": 336,
+              "scrollWidth": 336,
+              "height": 520,
+              "scrollHeight": 1159
+            },
+            "dialog": {
+              "left": 10,
+              "right": 380,
+              "top": 50.640625,
+              "bottom": 793.359375
+            },
+            "shell": {
+              "left": 27,
+              "right": 363,
+              "top": 75.640625,
+              "bottom": 774.359375
+            },
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "弹窗处于视口内 partners 滚动后",
+          "passed": true,
+          "data": {
+            "left": 10,
+            "right": 380,
+            "top": 50.640625,
+            "bottom": 793.359375
+          }
+        },
+        {
+          "name": "页脚与退出可点击 partners 滚动后",
+          "passed": true,
+          "data": [
+            {
+              "id": "tutorial-exit",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-prev",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-next",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "close-modal",
+              "visible": true,
+              "hit": true
+            }
+          ]
+        },
+        {
+          "name": "顺序导航 tools",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "标题与导航同步 tools",
+          "passed": true,
+          "data": {
+            "title": "升级与改造纸牌",
+            "select": "升级与改造纸牌"
+          }
+        },
+        {
+          "name": "课程序号 tools",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "文章无横向溢出 tools",
+          "passed": true,
+          "data": {
+            "article": {
+              "width": 336,
+              "scrollWidth": 336,
+              "height": 520,
+              "scrollHeight": 902
+            },
+            "dialog": {
+              "left": 10,
+              "right": 380,
+              "top": 50.640625,
+              "bottom": 793.359375
+            },
+            "shell": {
+              "left": 27,
+              "right": 363,
+              "top": 75.640625,
+              "bottom": 774.359375
+            },
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "弹窗处于视口内 tools",
+          "passed": true,
+          "data": {
+            "left": 10,
+            "right": 380,
+            "top": 50.640625,
+            "bottom": 793.359375
+          }
+        },
+        {
+          "name": "页脚与退出可点击 tools",
+          "passed": true,
+          "data": [
+            {
+              "id": "tutorial-exit",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-prev",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-next",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "close-modal",
+              "visible": true,
+              "hit": true
+            }
+          ]
+        },
+        {
+          "name": "长文在文章区滚动 tools",
+          "passed": true,
+          "data": {
+            "top": 382,
+            "height": 520,
+            "total": 902
+          }
+        },
+        {
+          "name": "文章无横向溢出 tools 滚动后",
+          "passed": true,
+          "data": {
+            "article": {
+              "width": 336,
+              "scrollWidth": 336,
+              "height": 520,
+              "scrollHeight": 902
+            },
+            "dialog": {
+              "left": 10,
+              "right": 380,
+              "top": 50.640625,
+              "bottom": 793.359375
+            },
+            "shell": {
+              "left": 27,
+              "right": 363,
+              "top": 75.640625,
+              "bottom": 774.359375
+            },
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "弹窗处于视口内 tools 滚动后",
+          "passed": true,
+          "data": {
+            "left": 10,
+            "right": 380,
+            "top": 50.640625,
+            "bottom": 793.359375
+          }
+        },
+        {
+          "name": "页脚与退出可点击 tools 滚动后",
+          "passed": true,
+          "data": [
+            {
+              "id": "tutorial-exit",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-prev",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-next",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "close-modal",
+              "visible": true,
+              "hit": true
+            }
+          ]
+        },
+        {
+          "name": "顺序导航 shop",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "标题与导航同步 shop",
+          "passed": true,
+          "data": {
+            "title": "商店、金币与利息",
+            "select": "商店、金币与利息"
+          }
+        },
+        {
+          "name": "课程序号 shop",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "文章无横向溢出 shop",
+          "passed": true,
+          "data": {
+            "article": {
+              "width": 336,
+              "scrollWidth": 336,
+              "height": 520,
+              "scrollHeight": 991
+            },
+            "dialog": {
+              "left": 10,
+              "right": 380,
+              "top": 50.640625,
+              "bottom": 793.359375
+            },
+            "shell": {
+              "left": 27,
+              "right": 363,
+              "top": 75.640625,
+              "bottom": 774.359375
+            },
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "弹窗处于视口内 shop",
+          "passed": true,
+          "data": {
+            "left": 10,
+            "right": 380,
+            "top": 50.640625,
+            "bottom": 793.359375
+          }
+        },
+        {
+          "name": "页脚与退出可点击 shop",
+          "passed": true,
+          "data": [
+            {
+              "id": "tutorial-exit",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-prev",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-next",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "close-modal",
+              "visible": true,
+              "hit": true
+            }
+          ]
+        },
+        {
+          "name": "长文在文章区滚动 shop",
+          "passed": true,
+          "data": {
+            "top": 471,
+            "height": 520,
+            "total": 991
+          }
+        },
+        {
+          "name": "文章无横向溢出 shop 滚动后",
+          "passed": true,
+          "data": {
+            "article": {
+              "width": 336,
+              "scrollWidth": 336,
+              "height": 520,
+              "scrollHeight": 991
+            },
+            "dialog": {
+              "left": 10,
+              "right": 380,
+              "top": 50.640625,
+              "bottom": 793.359375
+            },
+            "shell": {
+              "left": 27,
+              "right": 363,
+              "top": 75.640625,
+              "bottom": 774.359375
+            },
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "弹窗处于视口内 shop 滚动后",
+          "passed": true,
+          "data": {
+            "left": 10,
+            "right": 380,
+            "top": 50.640625,
+            "bottom": 793.359375
+          }
+        },
+        {
+          "name": "页脚与退出可点击 shop 滚动后",
+          "passed": true,
+          "data": [
+            {
+              "id": "tutorial-exit",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-prev",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-next",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "close-modal",
+              "visible": true,
+              "hit": true
+            }
+          ]
+        },
+        {
+          "name": "顺序导航 route",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "标题与导航同步 route",
+          "passed": true,
+          "data": {
+            "title": "关卡与完整航程",
+            "select": "关卡与完整航程"
+          }
+        },
+        {
+          "name": "课程序号 route",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "文章无横向溢出 route",
+          "passed": true,
+          "data": {
+            "article": {
+              "width": 336,
+              "scrollWidth": 336,
+              "height": 520,
+              "scrollHeight": 902
+            },
+            "dialog": {
+              "left": 10,
+              "right": 380,
+              "top": 50.640625,
+              "bottom": 793.359375
+            },
+            "shell": {
+              "left": 27,
+              "right": 363,
+              "top": 75.640625,
+              "bottom": 774.359375
+            },
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "弹窗处于视口内 route",
+          "passed": true,
+          "data": {
+            "left": 10,
+            "right": 380,
+            "top": 50.640625,
+            "bottom": 793.359375
+          }
+        },
+        {
+          "name": "页脚与退出可点击 route",
+          "passed": true,
+          "data": [
+            {
+              "id": "tutorial-exit",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-prev",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-next",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "close-modal",
+              "visible": true,
+              "hit": true
+            }
+          ]
+        },
+        {
+          "name": "长文在文章区滚动 route",
+          "passed": true,
+          "data": {
+            "top": 382,
+            "height": 520,
+            "total": 902
+          }
+        },
+        {
+          "name": "文章无横向溢出 route 滚动后",
+          "passed": true,
+          "data": {
+            "article": {
+              "width": 336,
+              "scrollWidth": 336,
+              "height": 520,
+              "scrollHeight": 902
+            },
+            "dialog": {
+              "left": 10,
+              "right": 380,
+              "top": 50.640625,
+              "bottom": 793.359375
+            },
+            "shell": {
+              "left": 27,
+              "right": 363,
+              "top": 75.640625,
+              "bottom": 774.359375
+            },
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "弹窗处于视口内 route 滚动后",
+          "passed": true,
+          "data": {
+            "left": 10,
+            "right": 380,
+            "top": 50.640625,
+            "bottom": 793.359375
+          }
+        },
+        {
+          "name": "页脚与退出可点击 route 滚动后",
+          "passed": true,
+          "data": [
+            {
+              "id": "tutorial-exit",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-prev",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-next",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "close-modal",
+              "visible": true,
+              "hit": true
+            }
+          ]
+        },
+        {
+          "name": "顺序导航 controls",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "标题与导航同步 controls",
+          "passed": true,
+          "data": {
+            "title": "操作速查",
+            "select": "操作速查"
+          }
+        },
+        {
+          "name": "课程序号 controls",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "文章无横向溢出 controls",
+          "passed": true,
+          "data": {
+            "article": {
+              "width": 336,
+              "scrollWidth": 336,
+              "height": 520,
+              "scrollHeight": 919
+            },
+            "dialog": {
+              "left": 10,
+              "right": 380,
+              "top": 50.640625,
+              "bottom": 793.359375
+            },
+            "shell": {
+              "left": 27,
+              "right": 363,
+              "top": 75.640625,
+              "bottom": 774.359375
+            },
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "弹窗处于视口内 controls",
+          "passed": true,
+          "data": {
+            "left": 10,
+            "right": 380,
+            "top": 50.640625,
+            "bottom": 793.359375
+          }
+        },
+        {
+          "name": "页脚与退出可点击 controls",
+          "passed": true,
+          "data": [
+            {
+              "id": "tutorial-exit",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-prev",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-next",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "close-modal",
+              "visible": true,
+              "hit": true
+            }
+          ]
+        },
+        {
+          "name": "长文在文章区滚动 controls",
+          "passed": true,
+          "data": {
+            "top": 399,
+            "height": 520,
+            "total": 919
+          }
+        },
+        {
+          "name": "文章无横向溢出 controls 滚动后",
+          "passed": true,
+          "data": {
+            "article": {
+              "width": 336,
+              "scrollWidth": 336,
+              "height": 520,
+              "scrollHeight": 919
+            },
+            "dialog": {
+              "left": 10,
+              "right": 380,
+              "top": 50.640625,
+              "bottom": 793.359375
+            },
+            "shell": {
+              "left": 27,
+              "right": 363,
+              "top": 75.640625,
+              "bottom": 774.359375
+            },
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "弹窗处于视口内 controls 滚动后",
+          "passed": true,
+          "data": {
+            "left": 10,
+            "right": 380,
+            "top": 50.640625,
+            "bottom": 793.359375
+          }
+        },
+        {
+          "name": "页脚与退出可点击 controls 滚动后",
+          "passed": true,
+          "data": [
+            {
+              "id": "tutorial-exit",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-prev",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-next",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "close-modal",
+              "visible": true,
+              "hit": true
+            }
+          ]
+        },
+        {
+          "name": "顺序导航 questions",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "标题与导航同步 questions",
+          "passed": true,
+          "data": {
+            "title": "遇到问题怎么办",
+            "select": "遇到问题怎么办"
+          }
+        },
+        {
+          "name": "课程序号 questions",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "文章无横向溢出 questions",
+          "passed": true,
+          "data": {
+            "article": {
+              "width": 336,
+              "scrollWidth": 336,
+              "height": 520,
+              "scrollHeight": 637
+            },
+            "dialog": {
+              "left": 10,
+              "right": 380,
+              "top": 50.640625,
+              "bottom": 793.359375
+            },
+            "shell": {
+              "left": 27,
+              "right": 363,
+              "top": 75.640625,
+              "bottom": 774.359375
+            },
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "弹窗处于视口内 questions",
+          "passed": true,
+          "data": {
+            "left": 10,
+            "right": 380,
+            "top": 50.640625,
+            "bottom": 793.359375
+          }
+        },
+        {
+          "name": "页脚与退出可点击 questions",
+          "passed": true,
+          "data": [
+            {
+              "id": "tutorial-exit",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-prev",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-next",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "close-modal",
+              "visible": true,
+              "hit": true
+            }
+          ]
+        },
+        {
+          "name": "长文在文章区滚动 questions",
+          "passed": true,
+          "data": {
+            "top": 117,
+            "height": 520,
+            "total": 637
+          }
+        },
+        {
+          "name": "文章无横向溢出 questions 滚动后",
+          "passed": true,
+          "data": {
+            "article": {
+              "width": 336,
+              "scrollWidth": 336,
+              "height": 520,
+              "scrollHeight": 637
+            },
+            "dialog": {
+              "left": 10,
+              "right": 380,
+              "top": 50.640625,
+              "bottom": 793.359375
+            },
+            "shell": {
+              "left": 27,
+              "right": 363,
+              "top": 75.640625,
+              "bottom": 774.359375
+            },
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "弹窗处于视口内 questions 滚动后",
+          "passed": true,
+          "data": {
+            "left": 10,
+            "right": 380,
+            "top": 50.640625,
+            "bottom": 793.359375
+          }
+        },
+        {
+          "name": "页脚与退出可点击 questions 滚动后",
+          "passed": true,
+          "data": [
+            {
+              "id": "tutorial-exit",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-prev",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-next",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "close-modal",
+              "visible": true,
+              "hit": true
+            }
+          ]
+        },
+        {
+          "name": "反向导航 controls",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "反向导航 route",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "反向导航 shop",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "反向导航 tools",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "反向导航 partners",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "反向导航 turns",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "反向导航 scoring",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "反向导航 practice",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "反向导航 hands",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "反向导航 table",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "反向导航 goal",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "章节跳转 hands",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "九种普通牌型",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "三种隐藏牌型",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "牌型折叠说明可读 1",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "牌型折叠说明可读 2",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "牌型折叠说明可读 3",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "牌型折叠说明可读 4",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "牌型折叠说明可读 5",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "牌型折叠说明可读 6",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "牌型折叠说明可读 7",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "牌型折叠说明可读 8",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "牌型折叠说明可读 9",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "牌型折叠说明可读 10",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "牌型折叠说明可读 11",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "牌型折叠说明可读 12",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "章节跳转 tools",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "强化/印记/版本查阅 1",
+          "passed": true,
+          "data": 8
+        },
+        {
+          "name": "查阅末项可滚动到 1",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "强化/印记/版本查阅 2",
+          "passed": true,
+          "data": 4
+        },
+        {
+          "name": "查阅末项可滚动到 2",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "强化/印记/版本查阅 3",
+          "passed": true,
+          "data": 4
+        },
+        {
+          "name": "查阅末项可滚动到 3",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "首次阅读及导航不创建存档",
+          "passed": true,
+          "data": {
+            "state": true,
+            "save": true,
+            "prefs": true
+          }
+        },
+        {
+          "name": "开局选择在 Escape 返回后保留",
+          "passed": true,
+          "data": {
+            "seed": "REVIEW-mobile",
+            "deck": "b_blue",
+            "stake": "2"
+          }
+        },
+        {
+          "name": "Escape 从教程返回开局弹窗",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "T1 真实航程退出目标修复",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "T1 当前阶段入口出现",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "当前阶段入口跳到次数章节",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "文章无横向溢出 playing 当前阶段",
+          "passed": true,
+          "data": {
+            "article": {
+              "width": 336,
+              "scrollWidth": 336,
+              "height": 492,
+              "scrollHeight": 816
+            },
+            "dialog": {
+              "left": 10,
+              "right": 380,
+              "top": 50.640625,
+              "bottom": 793.359375
+            },
+            "shell": {
+              "left": 27,
+              "right": 363,
+              "top": 75.640625,
+              "bottom": 774.359375
+            },
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-current",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "弹窗处于视口内 playing 当前阶段",
+          "passed": true,
+          "data": {
+            "left": 10,
+            "right": 380,
+            "top": 50.640625,
+            "bottom": 793.359375
+          }
+        },
+        {
+          "name": "页脚与退出可点击 playing 当前阶段",
+          "passed": true,
+          "data": [
+            {
+              "id": "tutorial-exit",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-prev",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-next",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "close-modal",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-current",
+              "visible": true,
+              "hit": true
+            }
+          ]
+        },
+        {
+          "name": "章节跳转 goal",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "首页练习捷径",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "无选择练习按钮禁用",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "练习纸牌选中状态",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "重复点击取消练习选择",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "练习得分 56",
+          "passed": true,
+          "data": "56"
+        },
+        {
+          "name": "对子计分集合为两张 9",
+          "passed": true,
+          "data": "对子成立！两张 9 都参与计分。\n\n本手牌型：对子\n28\n筹码\n×\n2\n倍率\n=\n56\n本手分数\n\n真正计分的是：黑桃 9、红心 9。"
+        },
+        {
+          "name": "练习得分 56",
+          "passed": true,
+          "data": "56"
+        },
+        {
+          "name": "附带 K 的解释反馈",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "文章无横向溢出 playing 练习结果",
+          "passed": true,
+          "data": {
+            "article": {
+              "width": 336,
+              "scrollWidth": 336,
+              "height": 492,
+              "scrollHeight": 765
+            },
+            "dialog": {
+              "left": 10,
+              "right": 380,
+              "top": 50.640625,
+              "bottom": 793.359375
+            },
+            "shell": {
+              "left": 27,
+              "right": 363,
+              "top": 75.640625,
+              "bottom": 774.359375
+            },
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-current",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "弹窗处于视口内 playing 练习结果",
+          "passed": true,
+          "data": {
+            "left": 10,
+            "right": 380,
+            "top": 50.640625,
+            "bottom": 793.359375
+          }
+        },
+        {
+          "name": "页脚与退出可点击 playing 练习结果",
+          "passed": true,
+          "data": [
+            {
+              "id": "tutorial-exit",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-prev",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-next",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "close-modal",
+              "visible": true,
+              "hit": true
+            },
+            {
+              "id": "tutorial-current",
+              "visible": true,
+              "hit": true
+            }
+          ]
+        },
+        {
+          "name": "练习重置清空选择",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "练习得分 15",
+          "passed": true,
+          "data": "15"
+        },
+        {
+          "name": "练习得分 56",
+          "passed": true,
+          "data": "56"
+        },
+        {
+          "name": "练习通过进度",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "章节跳转 partners",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "伙伴原顺序 504",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "交换伙伴顺序 280",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "再次交换恢复 504",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "章节跳转 shop",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "现金滑块 Home 到零",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "现金滑块右键递增",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "现金滑块 End 到上限",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "利息边界 0",
+          "passed": true,
+          "data": {
+            "cash": "$0",
+            "interest": "$0"
+          }
+        },
+        {
+          "name": "利息边界 4",
+          "passed": true,
+          "data": {
+            "cash": "$4",
+            "interest": "$0"
+          }
+        },
+        {
+          "name": "利息边界 5",
+          "passed": true,
+          "data": {
+            "cash": "$5",
+            "interest": "$1"
+          }
+        },
+        {
+          "name": "利息边界 9",
+          "passed": true,
+          "data": {
+            "cash": "$9",
+            "interest": "$1"
+          }
+        },
+        {
+          "name": "利息边界 10",
+          "passed": true,
+          "data": {
+            "cash": "$10",
+            "interest": "$2"
+          }
+        },
+        {
+          "name": "利息边界 24",
+          "passed": true,
+          "data": {
+            "cash": "$24",
+            "interest": "$4"
+          }
+        },
+        {
+          "name": "利息边界 25",
+          "passed": true,
+          "data": {
+            "cash": "$25",
+            "interest": "$5"
+          }
+        },
+        {
+          "name": "利息边界 50",
+          "passed": true,
+          "data": {
+            "cash": "$50",
+            "interest": "$5"
+          }
+        },
+        {
+          "name": "章节跳转 practice",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "教程练习、滑块和游戏快捷键不修改正式状态",
+          "passed": true,
+          "data": {
+            "state": true,
+            "save": true,
+            "prefs": true
+          }
+        },
+        {
+          "name": "T1 教程退出直接返回正式牌桌",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "退出按钮返回保留原航程",
+          "passed": true,
+          "data": {
+            "state": true,
+            "save": true,
+            "prefs": true
+          }
+        },
+        {
+          "name": "X 关闭教程",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "X 返回保留原航程",
+          "passed": true,
+          "data": {
+            "state": true,
+            "save": true,
+            "prefs": true
+          }
+        },
+        {
+          "name": "Escape 关闭教程",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "Escape 返回保留原航程",
+          "passed": true,
+          "data": {
+            "state": true,
+            "save": true,
+            "prefs": true
+          }
+        },
+        {
+          "name": "章节跳转 questions",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "最后一课 关闭教程",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "最后一课 返回保留原航程",
+          "passed": true,
+          "data": {
+            "state": true,
+            "save": true,
+            "prefs": true
+          }
+        },
+        {
+          "name": "教程章节与练习进度保存",
+          "passed": true,
+          "data": {
+            "seen": true,
+            "chapter": "questions",
+            "practicePassed": true
+          }
+        },
+        {
+          "name": "刷新不强制重开首次教程",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "刷新保留正式存档",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "继续航程恢复原状态和存档",
+          "passed": true,
+          "data": {
+            "state": true,
+            "save": true,
+            "prefs": true
+          }
+        },
+        {
+          "name": "重新打开恢复教程章节",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "重新打开恢复练习通过进度",
+          "passed": true,
+          "data": null
+        },
+        {
+          "name": "恢复教程退出仍保留航程",
+          "passed": true,
+          "data": {
+            "state": true,
+            "save": true,
+            "prefs": true
+          }
+        },
+        {
+          "name": "无浏览器运行异常",
+          "passed": true,
+          "data": []
+        },
+        {
+          "name": "无浏览器控制台错误",
+          "passed": true,
+          "data": []
+        }
+      ],
+      "page_errors": [],
+      "console_errors": [],
+      "screenshots": [
+        "/tmp/tutorial-review-final-mobile-first.png",
+        "/tmp/tutorial-review-final-mobile-practice.png",
+        "/tmp/tutorial-review-final-mobile-partners.png"
+      ],
+      "chapters": [
+        {
+          "id": "goal",
+          "title": "先学会怎样过关",
+          "geometry": {
+            "article": {
+              "width": 336,
+              "scrollWidth": 336,
+              "height": 520,
+              "scrollHeight": 691
+            },
+            "dialog": {
+              "left": 10,
+              "right": 380,
+              "top": 50.640625,
+              "bottom": 793.359375
+            },
+            "shell": {
+              "left": 27,
+              "right": 363,
+              "top": 75.640625,
+              "bottom": 774.359375
+            },
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "table",
+          "title": "看懂牌桌",
+          "geometry": {
+            "article": {
+              "width": 336,
+              "scrollWidth": 336,
+              "height": 520,
+              "scrollHeight": 739
+            },
+            "dialog": {
+              "left": 10,
+              "right": 380,
+              "top": 50.640625,
+              "bottom": 793.359375
+            },
+            "shell": {
+              "left": 27,
+              "right": 363,
+              "top": 75.640625,
+              "bottom": 774.359375
+            },
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "hands",
+          "title": "认牌与牌型",
+          "geometry": {
+            "article": {
+              "width": 336,
+              "scrollWidth": 336,
+              "height": 520,
+              "scrollHeight": 997
+            },
+            "dialog": {
+              "left": 10,
+              "right": 380,
+              "top": 50.640625,
+              "bottom": 793.359375
+            },
+            "shell": {
+              "left": 27,
+              "right": 363,
+              "top": 75.640625,
+              "bottom": 774.359375
+            },
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "practice",
+          "title": "亲手选出一个对子",
+          "geometry": {
+            "article": {
+              "width": 336,
+              "scrollWidth": 336,
+              "height": 520,
+              "scrollHeight": 552
+            },
+            "dialog": {
+              "left": 10,
+              "right": 380,
+              "top": 50.640625,
+              "bottom": 793.359375
+            },
+            "shell": {
+              "left": 27,
+              "right": 363,
+              "top": 75.640625,
+              "bottom": 774.359375
+            },
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "scoring",
+          "title": "分数是怎么来的",
+          "geometry": {
+            "article": {
+              "width": 336,
+              "scrollWidth": 336,
+              "height": 520,
+              "scrollHeight": 902
+            },
+            "dialog": {
+              "left": 10,
+              "right": 380,
+              "top": 50.640625,
+              "bottom": 793.359375
+            },
+            "shell": {
+              "left": 27,
+              "right": 363,
+              "top": 75.640625,
+              "bottom": 774.359375
+            },
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "turns",
+          "title": "出牌还是弃牌",
+          "geometry": {
+            "article": {
+              "width": 336,
+              "scrollWidth": 336,
+              "height": 520,
+              "scrollHeight": 816
+            },
+            "dialog": {
+              "left": 10,
+              "right": 380,
+              "top": 50.640625,
+              "bottom": 793.359375
+            },
+            "shell": {
+              "left": 27,
+              "right": 363,
+              "top": 75.640625,
+              "bottom": 774.359375
+            },
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "partners",
+          "title": "伙伴与结算顺序",
+          "geometry": {
+            "article": {
+              "width": 336,
+              "scrollWidth": 336,
+              "height": 520,
+              "scrollHeight": 1159
+            },
+            "dialog": {
+              "left": 10,
+              "right": 380,
+              "top": 50.640625,
+              "bottom": 793.359375
+            },
+            "shell": {
+              "left": 27,
+              "right": 363,
+              "top": 75.640625,
+              "bottom": 774.359375
+            },
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "tools",
+          "title": "升级与改造纸牌",
+          "geometry": {
+            "article": {
+              "width": 336,
+              "scrollWidth": 336,
+              "height": 520,
+              "scrollHeight": 902
+            },
+            "dialog": {
+              "left": 10,
+              "right": 380,
+              "top": 50.640625,
+              "bottom": 793.359375
+            },
+            "shell": {
+              "left": 27,
+              "right": 363,
+              "top": 75.640625,
+              "bottom": 774.359375
+            },
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "shop",
+          "title": "商店、金币与利息",
+          "geometry": {
+            "article": {
+              "width": 336,
+              "scrollWidth": 336,
+              "height": 520,
+              "scrollHeight": 991
+            },
+            "dialog": {
+              "left": 10,
+              "right": 380,
+              "top": 50.640625,
+              "bottom": 793.359375
+            },
+            "shell": {
+              "left": 27,
+              "right": 363,
+              "top": 75.640625,
+              "bottom": 774.359375
+            },
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "route",
+          "title": "关卡与完整航程",
+          "geometry": {
+            "article": {
+              "width": 336,
+              "scrollWidth": 336,
+              "height": 520,
+              "scrollHeight": 902
+            },
+            "dialog": {
+              "left": 10,
+              "right": 380,
+              "top": 50.640625,
+              "bottom": 793.359375
+            },
+            "shell": {
+              "left": 27,
+              "right": 363,
+              "top": 75.640625,
+              "bottom": 774.359375
+            },
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "controls",
+          "title": "操作速查",
+          "geometry": {
+            "article": {
+              "width": 336,
+              "scrollWidth": 336,
+              "height": 520,
+              "scrollHeight": 919
+            },
+            "dialog": {
+              "left": 10,
+              "right": 380,
+              "top": 50.640625,
+              "bottom": 793.359375
+            },
+            "shell": {
+              "left": 27,
+              "right": 363,
+              "top": 75.640625,
+              "bottom": 774.359375
+            },
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "questions",
+          "title": "遇到问题怎么办",
+          "geometry": {
+            "article": {
+              "width": 336,
+              "scrollWidth": 336,
+              "height": 520,
+              "scrollHeight": 637
+            },
+            "dialog": {
+              "left": 10,
+              "right": 380,
+              "top": 50.640625,
+              "bottom": 793.359375
+            },
+            "shell": {
+              "left": 27,
+              "right": 363,
+              "top": 75.640625,
+              "bottom": 774.359375
+            },
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "buttons": [
+              {
+                "id": "tutorial-exit",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-prev",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "tutorial-next",
+                "visible": true,
+                "hit": true
+              },
+              {
+                "id": "close-modal",
+                "visible": true,
+                "hit": true
+              }
+            ]
+          }
+        }
+      ],
+      "formal_baseline": {
+        "phase": "playing",
+        "selected": 1,
+        "state_sha256": "3c18b2bfae52154c2f5a873adbcaaad749ca94fa851abf25c70c01743fbdbcd0",
+        "save_sha256": "3c18b2bfae52154c2f5a873adbcaaad749ca94fa851abf25c70c01743fbdbcd0",
+        "prefs": "{\"muted\":true,\"reducedMotion\":true}"
+      },
+      "completed": true,
+      "passed": true
+    }
+  ],
+  "hashes_after": {
+    "src/ui/tutorial-model.ts": "9073e7dd3077d98073275720ba156c771973103f8549c96175e0a51fe586a5c5",
+    "src/ui/tutorial.ts": "18acfbe63c23baff604f0027ad9e786282a08a23cce75e16cf6e24b3c17651d8",
+    "src/independent-main.ts": "5942de7b2321b21defb0c38758e5bd52777c77952ba71230030066433ed8e0d6",
+    "src/original-style.css": "2e0cdc59653ee1aaa67091d55c157d21434ae236369d1cb8f03cdcf7821670eb",
+    "tests/tutorial.test.ts": "40f7ba3cb3e599bf89a50860e8bc7f225bc6dc8d4c0e6884832008f496650e55",
+    "data/facts.json": "a81865b3ab74a3ef277c33241668e6e4dd22d01a3c8f30a5bd0c4f0b6aee615d",
+    "data/systems-verified.json": "ed28d1ffa43e52104e777fe6125c2efb0b64e911fa51bf11bbc5a9ffd61ef3b2",
+    "data/jokers.json": "52f9817de53e2c22b02043c3c206446af1ef25a31509c8b3eeacb8986c2f037f",
+    "src/core/scoring.ts": "6ca9d97092de7752854d70565bc0a096c640e61510adf964cea508d88831c26a",
+    "src/core/economy-runtime.ts": "38c267ecb46f1ce9a4affe4d559545807d5e1b9722299834db2f874a5deaa2ca",
+    "dist/index.html": "f8f6bca14f637b4a48d8982d44e3c4d28c6f6a36f1d8061ac66f428b58aa4273"
+  },
+  "hashes_unchanged": true,
+  "finished": "2026-10-13T02:44:42.999181+00:00"
+}

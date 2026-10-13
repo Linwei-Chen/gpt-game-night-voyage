@@ -1,0 +1,28 @@
+{
+  "method": "临时独立目录仅放生成器、结构化data与分发的来源记录；不含references或原版文件；三个生成产物逐字节比较。",
+  "command": "tsx <临时目录>/scripts/gen-content.ts",
+  "withoutReferences": true,
+  "passed": true,
+  "files": [
+    {
+      "file": "data/facts.json",
+      "byteEqual": true,
+      "sha256": "a81865b3ab74a3ef277c33241668e6e4dd22d01a3c8f30a5bd0c4f0b6aee615d",
+      "bytes": 1143380
+    },
+    {
+      "file": "docs/fact-table.md",
+      "byteEqual": true,
+      "sha256": "3c508deae5ba3d786fb2b0435afddbc8c2f185501733fb6f79c0cf758c1c0c57",
+      "bytes": 671589
+    },
+    {
+      "file": "src/content/generated.ts",
+      "byteEqual": true,
+      "sha256": "6bf2dac2f918f38d54e0dfd9accfbbd295d1e37a5cc412433cb3004efe96e3c6",
+      "bytes": 409
+    }
+  ],
+  "stdout": "已生成 3642 条事实及完整内容模块。",
+  "testTotalUnchanged": 1959
+}

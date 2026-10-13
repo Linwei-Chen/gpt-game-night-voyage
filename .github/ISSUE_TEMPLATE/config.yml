@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 在线试玩
+    url: https://linwei-chen.github.io/gpt-game-night-voyage/
+    about: 打开游戏与12章教程。
+  - name: 玩法说明
+    url: https://github.com/Linwei-Chen/gpt-game-night-voyage/blob/main/docs/PLAYING.md
+    about: 查看纸牌、计分、商店、操作和存档说明。

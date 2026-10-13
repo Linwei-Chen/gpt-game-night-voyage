@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "project": "星筹夜航",
+  "experimentTitle": "GPT 6.1 制作小游戏测试",
+  "repository": "https://github.com/Linwei-Chen/gpt-game-night-voyage",
+  "playUrl": "https://linwei-chen.github.io/gpt-game-night-voyage/",
+  "status": "本地公开副本验证通过，准备上传",
+  "localChecks": {
+    "gameTests": {
+      "passed": 1967,
+      "failed": 0
+    },
+    "buildExitCode": 0,
+    "contentAuditErrors": [],
+    "factCount": 3642,
+    "mappedFactCount": 3642,
+    "replayStrategies": 3,
+    "tutorialFlows": 11,
+    "normalRunActions": 203,
+    "pageErrors": [],
+    "consoleErrors": []
+  },
+  "publication": {
+    "sourceUploaded": false,
+    "githubChecksPassed": false,
+    "pagesDeployed": false,
+    "onlineVerified": false,
+    "repositoryCreated": true
+  },
+  "localCleanup": {
+    "method": "系统废纸篓，可恢复",
+    "status": "等待远端和在线检查完成后执行",
+    "scope": [
+      "night-voyage-independent",
+      "balatro-rebuild",
+      "night-voyage-public",
+      "专用远端核验副本（如创建）"
+    ]
+  },
+  "originalAcceptanceComplete": false,
+  "community": {
+    "topics": [
+      "gpt-6-1",
+      "codex",
+      "browser-game",
+      "card-game",
+      "typescript",
+      "pixijs",
+      "chinese"
+    ],
+    "discussionsUrl": "https://github.com/Linwei-Chen/gpt-game-night-voyage/discussions",
+    "feedbackUrl": "https://github.com/Linwei-Chen/gpt-game-night-voyage/issues/new/choose"
+  },
+  "webArchive": {
+    "file": "night-voyage-v0.1.0-web.zip",
+    "bytes": 7727341,
+    "sha256": "7249d03505f0e0e0c31447f64b6b16eb0043949e9b264bef56f8b18a22516d1f"
+  }
+}

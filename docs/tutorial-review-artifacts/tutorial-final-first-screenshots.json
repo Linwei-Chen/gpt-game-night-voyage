@@ -1,0 +1,55 @@
+{
+  "time": "2026-10-13T02:52:31.933153+00:00",
+  "purpose": "重新拍摄停留在文章顶部的首次教程截图",
+  "captures": [
+    {
+      "viewport": "desktop",
+      "screenshot": "/tmp/tutorial-review-final2-desktop-first.png",
+      "data": {
+        "chapter": "goal",
+        "top": 0,
+        "focus": "close-modal",
+        "state": null,
+        "save": null
+      }
+    },
+    {
+      "viewport": "mobile",
+      "screenshot": "/tmp/tutorial-review-final2-mobile-first.png",
+      "data": {
+        "chapter": "goal",
+        "top": 0,
+        "focus": "close-modal",
+        "state": null,
+        "save": null
+      }
+    }
+  ],
+  "hashes_before": {
+    "src/ui/tutorial-model.ts": "9073e7dd3077d98073275720ba156c771973103f8549c96175e0a51fe586a5c5",
+    "src/ui/tutorial.ts": "18acfbe63c23baff604f0027ad9e786282a08a23cce75e16cf6e24b3c17651d8",
+    "src/independent-main.ts": "5942de7b2321b21defb0c38758e5bd52777c77952ba71230030066433ed8e0d6",
+    "src/original-style.css": "47e537fe4f6128c72730b2b8a121d68da92996d27bad26c9a08611fcddf48a38",
+    "tests/tutorial.test.ts": "40f7ba3cb3e599bf89a50860e8bc7f225bc6dc8d4c0e6884832008f496650e55",
+    "data/facts.json": "a81865b3ab74a3ef277c33241668e6e4dd22d01a3c8f30a5bd0c4f0b6aee615d",
+    "data/systems-verified.json": "ed28d1ffa43e52104e777fe6125c2efb0b64e911fa51bf11bbc5a9ffd61ef3b2",
+    "data/jokers.json": "52f9817de53e2c22b02043c3c206446af1ef25a31509c8b3eeacb8986c2f037f",
+    "src/core/scoring.ts": "6ca9d97092de7752854d70565bc0a096c640e61510adf964cea508d88831c26a",
+    "src/core/economy-runtime.ts": "38c267ecb46f1ce9a4affe4d559545807d5e1b9722299834db2f874a5deaa2ca",
+    "dist/index.html": "12378b3b81af34f5c83df1265e826606cd3e00c2076fc372a53965a119d54997"
+  },
+  "hashes_after": {
+    "src/ui/tutorial-model.ts": "9073e7dd3077d98073275720ba156c771973103f8549c96175e0a51fe586a5c5",
+    "src/ui/tutorial.ts": "18acfbe63c23baff604f0027ad9e786282a08a23cce75e16cf6e24b3c17651d8",
+    "src/independent-main.ts": "5942de7b2321b21defb0c38758e5bd52777c77952ba71230030066433ed8e0d6",
+    "src/original-style.css": "47e537fe4f6128c72730b2b8a121d68da92996d27bad26c9a08611fcddf48a38",
+    "tests/tutorial.test.ts": "40f7ba3cb3e599bf89a50860e8bc7f225bc6dc8d4c0e6884832008f496650e55",
+    "data/facts.json": "a81865b3ab74a3ef277c33241668e6e4dd22d01a3c8f30a5bd0c4f0b6aee615d",
+    "data/systems-verified.json": "ed28d1ffa43e52104e777fe6125c2efb0b64e911fa51bf11bbc5a9ffd61ef3b2",
+    "data/jokers.json": "52f9817de53e2c22b02043c3c206446af1ef25a31509c8b3eeacb8986c2f037f",
+    "src/core/scoring.ts": "6ca9d97092de7752854d70565bc0a096c640e61510adf964cea508d88831c26a",
+    "src/core/economy-runtime.ts": "38c267ecb46f1ce9a4affe4d559545807d5e1b9722299834db2f874a5deaa2ca",
+    "dist/index.html": "12378b3b81af34f5c83df1265e826606cd3e00c2076fc372a53965a119d54997"
+  },
+  "hashes_unchanged": true
+}

@@ -1,0 +1,16 @@
+{
+  "method": "生产包置于项目子路径，用真实Chrome/Chromium控件核验教程和203步整局，状态只读。",
+  "basePath": "/gpt-game-night-voyage/",
+  "url": "http://127.0.0.1:51692/gpt-game-night-voyage/",
+  "checks": [
+    {
+      "script": "scripts/tutorial_verify.py",
+      "exitCode": 0
+    },
+    {
+      "script": "scripts/browser_verify.py",
+      "exitCode": 0
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,13 @@
+{
+  "method": "公开动作，无修改规则、资源、得分、次数或随机结果",
+  "elapsedMs": 8838,
+  "runs": [
+    {
+      "seed": "NIGHT-VERIFY-0",
+      "outcome": "won",
+      "ante": 8,
+      "round": 24,
+      "actions": 203
+    }
+  ]
+}

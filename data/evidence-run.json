@@ -1,0 +1,54 @@
+{
+  "version": "1.0.1o-FULL",
+  "facts": [
+    {
+      "id": "run.bossRerollCost",
+      "subject": "选择关卡时更换守关者的费用",
+      "value": 10,
+      "source": "references/source/functions/button_callbacks.lua:2784-2803",
+      "confidence": "高（固定参考源码，未游戏内核验）"
+    },
+    {
+      "id": "run.bossRerollAllowance",
+      "subject": "改航凭单次数约束",
+      "value": "普通改航每个 Ante 一次；升级改航不限次数；每次花费须满足 bankruptAt",
+      "source": "references/source/functions/button_callbacks.lua:2784-2803",
+      "confidence": "高（固定参考源码，未游戏内核验）"
+    },
+    {
+      "id": "run.blindTagCache",
+      "subject": "跳过奖励在底注开始时为前两关预先生成",
+      "value": "Small / Big 各缓存一个标签，查看选择界面不会重新抽取",
+      "source": "references/source/game.lua:2179-2180",
+      "confidence": "高（固定参考源码）"
+    },
+    {
+      "id": "run.orbitalHandCache",
+      "subject": "星轨标签的升级目标抽取",
+      "value": "从全部已可见牌型中等候选抽一个；按 ante 和 blind 类型缓存",
+      "source": "references/source/functions/UI_definitions.lua:1506-1517",
+      "confidence": "高（固定参考源码）"
+    },
+    {
+      "id": "run.startingDeckSize",
+      "subject": "局内固定起始牌数",
+      "value": "完成起始牌组变换后的 playing_cards 数量，后续增删不改变此基数",
+      "source": "references/source/game.lua:2375",
+      "confidence": "高（固定参考源码）"
+    },
+    {
+      "id": "run.endlessContinuation",
+      "subject": "达到获胜底注后可继续同一局",
+      "value": "胜利面板可继续；恢复本局正常结算和商店，随后推进下一底注",
+      "source": "references/source/functions/UI_definitions.lua:2784-2786; references/source/functions/state_events.lua:111-112,156-170",
+      "confidence": "高（固定参考源码，尚无游戏内轨迹）"
+    },
+    {
+      "id": "run.winNotificationOnce",
+      "subject": "首次达到目标后的胜利通知只显示一次",
+      "value": "目标底注 Boss 过关且尚未通知时显示；继续后不重复",
+      "source": "references/source/functions/state_events.lua:111-112,156-170",
+      "confidence": "高（固定参考源码）"
+    }
+  ]
+}

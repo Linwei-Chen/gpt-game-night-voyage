@@ -1,0 +1,12 @@
+{
+  "source": "public/fonts/NotoSansSC-Regular.otf",
+  "sourceSha256": "faa6c9df652116dde789d351359f3d7e5d2285a2b2a1f04a2d7244df706d5ea9",
+  "output": "public/fonts/NightVoyageSC-Subset.woff2",
+  "outputSha256": "7ebe95f5ece66aad1da876fbad53375d3c2e9bc5b159d8cb8414fc58d11e88be",
+  "sourceBytes": 8331336,
+  "outputBytes": 199996,
+  "unicodeCharacters": 969,
+  "fontToolsVersion": "4.66.1",
+  "license": "SIL Open Font License 1.1",
+  "family": "Night Voyage SC Subset"
+}

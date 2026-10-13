@@ -1,0 +1,32 @@
+{
+  "filesScanned": 171,
+  "privatePathFiles": [],
+  "credentialPatternFiles": [],
+  "invalidJsonFiles": [],
+  "excludedDirectoryLeaks": [],
+  "symlinks": [],
+  "largestFiles": [
+    {
+      "file": "public/fonts/NotoSansSC-Regular.otf",
+      "bytes": 8331336
+    },
+    {
+      "file": "docs/fact-assertion-audit.json",
+      "bytes": 8210450
+    },
+    {
+      "file": "docs/jokers-fact-assertions.json",
+      "bytes": 2448793
+    },
+    {
+      "file": "data/facts.json",
+      "bytes": 1143380
+    },
+    {
+      "file": "data/evidence-jokers.json",
+      "bytes": 690399
+    }
+  ],
+  "passed": true,
+  "method": "扫描实际待提交文件；秘密检查仅输出命中文件名。常见格式扫描与独立评审共同构成发布核对。"
+}

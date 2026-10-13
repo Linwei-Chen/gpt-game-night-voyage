@@ -1,0 +1,3741 @@
+{
+  "sourceVersion": {
+    "game": "1.0.1o-FULL",
+    "commit": "895ab3a25bc6f513fa80885eb59951bf8e76bc55",
+    "sourceConfidence": "社区源码，非游戏内 dump"
+  },
+  "mechanisms": [
+    {
+      "key": "c_fool",
+      "group": "consumables",
+      "index": 0,
+      "factId": "system.c_fool.effects.0",
+      "trigger": "consume",
+      "condition": {},
+      "action": "copyLastConsumable",
+      "sourceRefs": [
+        "references/source/card.lua:1373-1381",
+        "references/source/card.lua:1553-1555",
+        "references/source/game.lua:533"
+      ]
+    },
+    {
+      "key": "c_mercury",
+      "group": "consumables",
+      "index": 0,
+      "factId": "system.c_mercury.effects.0",
+      "trigger": "consume",
+      "condition": {},
+      "action": "upgradeHand",
+      "sourceRefs": [
+        "references/source/card.lua:1264-1266",
+        "references/source/functions/common_events.lua:464-468",
+        "references/source/game.lua:557"
+      ]
+    },
+    {
+      "key": "c_familiar",
+      "group": "consumables",
+      "index": 0,
+      "factId": "system.c_familiar.effects.0",
+      "trigger": "consume",
+      "condition": {
+        "handMin": 2
+      },
+      "action": "removeRandom",
+      "sourceRefs": [
+        "references/source/card.lua:1292-1309",
+        "references/source/card.lua:1570-1574",
+        "references/source/game.lua:571"
+      ]
+    },
+    {
+      "key": "c_familiar",
+      "group": "consumables",
+      "index": 1,
+      "factId": "system.c_familiar.effects.1",
+      "trigger": "consume",
+      "condition": {},
+      "action": "spawnPlayingCards",
+      "sourceRefs": [
+        "references/source/card.lua:1319-1321",
+        "references/source/card.lua:1315-1338",
+        "references/source/game.lua:571"
+      ]
+    },
+    {
+      "key": "c_magician",
+      "group": "consumables",
+      "index": 0,
+      "factId": "system.c_magician.effects.0",
+      "trigger": "consume",
+      "condition": {
+        "selectedMin": 1,
+        "selectedMax": 2
+      },
+      "action": "selectedSet",
+      "sourceRefs": [
+        "references/source/card.lua:1101-1106",
+        "references/source/card.lua:1142-1144",
+        "references/source/card.lua:1564-1567",
+        "references/source/game.lua:534"
+      ]
+    },
+    {
+      "key": "c_venus",
+      "group": "consumables",
+      "index": 0,
+      "factId": "system.c_venus.effects.0",
+      "trigger": "consume",
+      "condition": {},
+      "action": "upgradeHand",
+      "sourceRefs": [
+        "references/source/card.lua:1264-1266",
+        "references/source/functions/common_events.lua:464-468",
+        "references/source/game.lua:558"
+      ]
+    },
+    {
+      "key": "c_grim",
+      "group": "consumables",
+      "index": 0,
+      "factId": "system.c_grim.effects.0",
+      "trigger": "consume",
+      "condition": {
+        "handMin": 2
+      },
+      "action": "removeRandom",
+      "sourceRefs": [
+        "references/source/card.lua:1292-1309",
+        "references/source/card.lua:1570-1574",
+        "references/source/game.lua:572"
+      ]
+    },
+    {
+      "key": "c_grim",
+      "group": "consumables",
+      "index": 1,
+      "factId": "system.c_grim.effects.1",
+      "trigger": "consume",
+      "condition": {},
+      "action": "spawnPlayingCards",
+      "sourceRefs": [
+        "references/source/card.lua:1322-1324",
+        "references/source/card.lua:1315-1338",
+        "references/source/game.lua:572"
+      ]
+    },
+    {
+      "key": "c_high_priestess",
+      "group": "consumables",
+      "index": 0,
+      "factId": "system.c_high_priestess.effects.0",
+      "trigger": "consume",
+      "condition": {},
+      "action": "spawnConsumables",
+      "sourceRefs": [
+        "references/source/card.lua:1401-1411",
+        "references/source/card.lua:1550-1551",
+        "references/source/game.lua:535"
+      ]
+    },
+    {
+      "key": "c_earth",
+      "group": "consumables",
+      "index": 0,
+      "factId": "system.c_earth.effects.0",
+      "trigger": "consume",
+      "condition": {},
+      "action": "upgradeHand",
+      "sourceRefs": [
+        "references/source/card.lua:1264-1266",
+        "references/source/functions/common_events.lua:464-468",
+        "references/source/game.lua:559"
+      ]
+    },
+    {
+      "key": "c_incantation",
+      "group": "consumables",
+      "index": 0,
+      "factId": "system.c_incantation.effects.0",
+      "trigger": "consume",
+      "condition": {
+        "handMin": 2
+      },
+      "action": "removeRandom",
+      "sourceRefs": [
+        "references/source/card.lua:1292-1309",
+        "references/source/card.lua:1570-1574",
+        "references/source/game.lua:573"
+      ]
+    },
+    {
+      "key": "c_incantation",
+      "group": "consumables",
+      "index": 1,
+      "factId": "system.c_incantation.effects.1",
+      "trigger": "consume",
+      "condition": {},
+      "action": "spawnPlayingCards",
+      "sourceRefs": [
+        "references/source/card.lua:1325-1327",
+        "references/source/card.lua:1315-1338",
+        "references/source/game.lua:573"
+      ]
+    },
+    {
+      "key": "c_empress",
+      "group": "consumables",
+      "index": 0,
+      "factId": "system.c_empress.effects.0",
+      "trigger": "consume",
+      "condition": {
+        "selectedMin": 1,
+        "selectedMax": 2
+      },
+      "action": "selectedSet",
+      "sourceRefs": [
+        "references/source/card.lua:1101-1106",
+        "references/source/card.lua:1142-1144",
+        "references/source/card.lua:1564-1567",
+        "references/source/game.lua:536"
+      ]
+    },
+    {
+      "key": "c_mars",
+      "group": "consumables",
+      "index": 0,
+      "factId": "system.c_mars.effects.0",
+      "trigger": "consume",
+      "condition": {},
+      "action": "upgradeHand",
+      "sourceRefs": [
+        "references/source/card.lua:1264-1266",
+        "references/source/functions/common_events.lua:464-468",
+        "references/source/game.lua:560"
+      ]
+    },
+    {
+      "key": "c_talisman",
+      "group": "consumables",
+      "index": 0,
+      "factId": "system.c_talisman.effects.0",
+      "trigger": "consume",
+      "condition": {
+        "selectedMin": 1,
+        "selectedMax": 1
+      },
+      "action": "selectedSet",
+      "sourceRefs": [
+        "references/source/card.lua:1178-1186",
+        "references/source/card.lua:1564-1567",
+        "references/source/game.lua:574"
+      ]
+    },
+    {
+      "key": "c_emperor",
+      "group": "consumables",
+      "index": 0,
+      "factId": "system.c_emperor.effects.0",
+      "trigger": "consume",
+      "condition": {},
+      "action": "spawnConsumables",
+      "sourceRefs": [
+        "references/source/card.lua:1401-1411",
+        "references/source/card.lua:1550-1551",
+        "references/source/game.lua:537"
+      ]
+    },
+    {
+      "key": "c_jupiter",
+      "group": "consumables",
+      "index": 0,
+      "factId": "system.c_jupiter.effects.0",
+      "trigger": "consume",
+      "condition": {},
+      "action": "upgradeHand",
+      "sourceRefs": [
+        "references/source/card.lua:1264-1266",
+        "references/source/functions/common_events.lua:464-468",
+        "references/source/game.lua:561"
+      ]
+    },
+    {
+      "key": "c_aura",
+      "group": "consumables",
+      "index": 0,
+      "factId": "system.c_aura.effects.0",
+      "trigger": "consume",
+      "condition": {
+        "selectedMin": 1,
+        "selectedMax": 1,
+        "selectedEditionless": true
+      },
+      "action": "selectedEdition",
+      "sourceRefs": [
+        "references/source/card.lua:1192-1197",
+        "references/source/card.lua:1544-1545",
+        "references/source/functions/common_events.lua:2055-2080",
+        "references/source/card.lua:1564-1567",
+        "references/source/game.lua:575"
+      ]
+    },
+    {
+      "key": "c_heirophant",
+      "group": "consumables",
+      "index": 0,
+      "factId": "system.c_heirophant.effects.0",
+      "trigger": "consume",
+      "condition": {
+        "selectedMin": 1,
+        "selectedMax": 2
+      },
+      "action": "selectedSet",
+      "sourceRefs": [
+        "references/source/card.lua:1101-1106",
+        "references/source/card.lua:1142-1144",
+        "references/source/card.lua:1564-1567",
+        "references/source/game.lua:538"
+      ]
+    },
+    {
+      "key": "c_saturn",
+      "group": "consumables",
+      "index": 0,
+      "factId": "system.c_saturn.effects.0",
+      "trigger": "consume",
+      "condition": {},
+      "action": "upgradeHand",
+      "sourceRefs": [
+        "references/source/card.lua:1264-1266",
+        "references/source/functions/common_events.lua:464-468",
+        "references/source/game.lua:562"
+      ]
+    },
+    {
+      "key": "c_wraith",
+      "group": "consumables",
+      "index": 0,
+      "factId": "system.c_wraith.effects.0",
+      "trigger": "consume",
+      "condition": {
+        "freeJokerSlot": true
+      },
+      "action": "spawnJoker",
+      "sourceRefs": [
+        "references/source/card.lua:1454-1464",
+        "references/source/card.lua:1557-1562",
+        "references/source/game.lua:576"
+      ]
+    },
+    {
+      "key": "c_wraith",
+      "group": "consumables",
+      "index": 1,
+      "factId": "system.c_wraith.effects.1",
+      "trigger": "consume",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/card.lua:1454-1464",
+        "references/source/card.lua:1557-1562",
+        "references/source/game.lua:576"
+      ]
+    },
+    {
+      "key": "c_lovers",
+      "group": "consumables",
+      "index": 0,
+      "factId": "system.c_lovers.effects.0",
+      "trigger": "consume",
+      "condition": {
+        "selectedMin": 1,
+        "selectedMax": 1
+      },
+      "action": "selectedSet",
+      "sourceRefs": [
+        "references/source/card.lua:1101-1106",
+        "references/source/card.lua:1142-1144",
+        "references/source/card.lua:1564-1567",
+        "references/source/game.lua:539"
+      ]
+    },
+    {
+      "key": "c_uranus",
+      "group": "consumables",
+      "index": 0,
+      "factId": "system.c_uranus.effects.0",
+      "trigger": "consume",
+      "condition": {},
+      "action": "upgradeHand",
+      "sourceRefs": [
+        "references/source/card.lua:1264-1266",
+        "references/source/functions/common_events.lua:464-468",
+        "references/source/game.lua:563"
+      ]
+    },
+    {
+      "key": "c_sigil",
+      "group": "consumables",
+      "index": 0,
+      "factId": "system.c_sigil.effects.0",
+      "trigger": "consume",
+      "condition": {
+        "handMin": 2
+      },
+      "action": "randomizeAllSuit",
+      "sourceRefs": [
+        "references/source/card.lua:1232-1242",
+        "references/source/card.lua:1570-1574",
+        "references/source/game.lua:577"
+      ]
+    },
+    {
+      "key": "c_chariot",
+      "group": "consumables",
+      "index": 0,
+      "factId": "system.c_chariot.effects.0",
+      "trigger": "consume",
+      "condition": {
+        "selectedMin": 1,
+        "selectedMax": 1
+      },
+      "action": "selectedSet",
+      "sourceRefs": [
+        "references/source/card.lua:1101-1106",
+        "references/source/card.lua:1142-1144",
+        "references/source/card.lua:1564-1567",
+        "references/source/game.lua:540"
+      ]
+    },
+    {
+      "key": "c_neptune",
+      "group": "consumables",
+      "index": 0,
+      "factId": "system.c_neptune.effects.0",
+      "trigger": "consume",
+      "condition": {},
+      "action": "upgradeHand",
+      "sourceRefs": [
+        "references/source/card.lua:1264-1266",
+        "references/source/functions/common_events.lua:464-468",
+        "references/source/game.lua:564"
+      ]
+    },
+    {
+      "key": "c_ouija",
+      "group": "consumables",
+      "index": 0,
+      "factId": "system.c_ouija.effects.0",
+      "trigger": "consume",
+      "condition": {
+        "handMin": 2
+      },
+      "action": "randomizeAllRank",
+      "sourceRefs": [
+        "references/source/card.lua:1246-1256",
+        "references/source/card.lua:1570-1574",
+        "references/source/game.lua:578"
+      ]
+    },
+    {
+      "key": "c_ouija",
+      "group": "consumables",
+      "index": 1,
+      "factId": "system.c_ouija.effects.1",
+      "trigger": "consume",
+      "condition": {},
+      "action": "add",
+      "sourceRefs": [
+        "references/source/card.lua:1246-1256",
+        "references/source/card.lua:1570-1574",
+        "references/source/game.lua:578"
+      ]
+    },
+    {
+      "key": "c_justice",
+      "group": "consumables",
+      "index": 0,
+      "factId": "system.c_justice.effects.0",
+      "trigger": "consume",
+      "condition": {
+        "selectedMin": 1,
+        "selectedMax": 1
+      },
+      "action": "selectedSet",
+      "sourceRefs": [
+        "references/source/card.lua:1101-1106",
+        "references/source/card.lua:1142-1144",
+        "references/source/card.lua:1564-1567",
+        "references/source/game.lua:541"
+      ]
+    },
+    {
+      "key": "c_pluto",
+      "group": "consumables",
+      "index": 0,
+      "factId": "system.c_pluto.effects.0",
+      "trigger": "consume",
+      "condition": {},
+      "action": "upgradeHand",
+      "sourceRefs": [
+        "references/source/card.lua:1264-1266",
+        "references/source/functions/common_events.lua:464-468",
+        "references/source/game.lua:565"
+      ]
+    },
+    {
+      "key": "c_ectoplasm",
+      "group": "consumables",
+      "index": 0,
+      "factId": "system.c_ectoplasm.effects.0",
+      "trigger": "consume",
+      "condition": {
+        "editionlessJoker": true
+      },
+      "action": "randomJokerEdition",
+      "sourceRefs": [
+        "references/source/card.lua:1467-1492",
+        "references/source/card.lua:1547-1548",
+        "references/source/functions/common_events.lua:2055-2080",
+        "references/source/game.lua:579"
+      ]
+    },
+    {
+      "key": "c_ectoplasm",
+      "group": "consumables",
+      "index": 1,
+      "factId": "system.c_ectoplasm.effects.1",
+      "trigger": "consume",
+      "condition": {},
+      "action": "reduceHandEscalating",
+      "sourceRefs": [
+        "references/source/card.lua:1494-1497",
+        "references/source/game.lua:579"
+      ]
+    },
+    {
+      "key": "c_hermit",
+      "group": "consumables",
+      "index": 0,
+      "factId": "system.c_hermit.effects.0",
+      "trigger": "consume",
+      "condition": {},
+      "action": "gainCappedCash",
+      "sourceRefs": [
+        "references/source/card.lua:1385-1390",
+        "references/source/game.lua:542"
+      ]
+    },
+    {
+      "key": "c_planet_x",
+      "group": "consumables",
+      "index": 0,
+      "factId": "system.c_planet_x.effects.0",
+      "trigger": "consume",
+      "condition": {},
+      "action": "upgradeHand",
+      "sourceRefs": [
+        "references/source/card.lua:1264-1266",
+        "references/source/functions/common_events.lua:464-468",
+        "references/source/game.lua:566"
+      ]
+    },
+    {
+      "key": "c_immolate",
+      "group": "consumables",
+      "index": 0,
+      "factId": "system.c_immolate.effects.0",
+      "trigger": "consume",
+      "condition": {
+        "handMin": 2
+      },
+      "action": "removeRandom",
+      "sourceRefs": [
+        "references/source/card.lua:1340-1346",
+        "references/source/card.lua:1570-1574",
+        "references/source/game.lua:580"
+      ]
+    },
+    {
+      "key": "c_immolate",
+      "group": "consumables",
+      "index": 1,
+      "factId": "system.c_immolate.effects.1",
+      "trigger": "consume",
+      "condition": {},
+      "action": "add",
+      "sourceRefs": [
+        "references/source/card.lua:1340-1367",
+        "references/source/card.lua:1570-1574",
+        "references/source/game.lua:580"
+      ]
+    },
+    {
+      "key": "c_wheel_of_fortune",
+      "group": "consumables",
+      "index": 0,
+      "factId": "system.c_wheel_of_fortune.effects.0",
+      "trigger": "consume",
+      "condition": {
+        "editionlessJoker": true
+      },
+      "action": "randomJokerEdition",
+      "sourceRefs": [
+        "references/source/card.lua:1467-1492",
+        "references/source/card.lua:1547-1548",
+        "references/source/functions/common_events.lua:2055-2080",
+        "references/source/game.lua:543"
+      ]
+    },
+    {
+      "key": "c_ceres",
+      "group": "consumables",
+      "index": 0,
+      "factId": "system.c_ceres.effects.0",
+      "trigger": "consume",
+      "condition": {},
+      "action": "upgradeHand",
+      "sourceRefs": [
+        "references/source/card.lua:1264-1266",
+        "references/source/functions/common_events.lua:464-468",
+        "references/source/game.lua:567"
+      ]
+    },
+    {
+      "key": "c_ankh",
+      "group": "consumables",
+      "index": 0,
+      "factId": "system.c_ankh.effects.0",
+      "trigger": "consume",
+      "condition": {
+        "hasJoker": true,
+        "jokerSlotsMin": 2
+      },
+      "action": "cloneOneJokerAndPrune",
+      "sourceRefs": [
+        "references/source/card.lua:1426-1451",
+        "references/source/card.lua:1536-1541",
+        "references/source/game.lua:581"
+      ]
+    },
+    {
+      "key": "c_strength",
+      "group": "consumables",
+      "index": 0,
+      "factId": "system.c_strength.effects.0",
+      "trigger": "consume",
+      "condition": {
+        "selectedMin": 1,
+        "selectedMax": 2
+      },
+      "action": "raiseRanks",
+      "sourceRefs": [
+        "references/source/card.lua:1121-1134",
+        "references/source/card.lua:1564-1567",
+        "references/source/game.lua:544"
+      ]
+    },
+    {
+      "key": "c_eris",
+      "group": "consumables",
+      "index": 0,
+      "factId": "system.c_eris.effects.0",
+      "trigger": "consume",
+      "condition": {},
+      "action": "upgradeHand",
+      "sourceRefs": [
+        "references/source/card.lua:1264-1266",
+        "references/source/functions/common_events.lua:464-468",
+        "references/source/game.lua:568"
+      ]
+    },
+    {
+      "key": "c_deja_vu",
+      "group": "consumables",
+      "index": 0,
+      "factId": "system.c_deja_vu.effects.0",
+      "trigger": "consume",
+      "condition": {
+        "selectedMin": 1,
+        "selectedMax": 1
+      },
+      "action": "selectedSet",
+      "sourceRefs": [
+        "references/source/card.lua:1178-1186",
+        "references/source/card.lua:1564-1567",
+        "references/source/game.lua:582"
+      ]
+    },
+    {
+      "key": "c_hanged_man",
+      "group": "consumables",
+      "index": 0,
+      "factId": "system.c_hanged_man.effects.0",
+      "trigger": "consume",
+      "condition": {
+        "selectedMin": 1,
+        "selectedMax": 2
+      },
+      "action": "removeSelected",
+      "sourceRefs": [
+        "references/source/card.lua:1271-1289",
+        "references/source/card.lua:1564-1567",
+        "references/source/game.lua:545"
+      ]
+    },
+    {
+      "key": "c_hex",
+      "group": "consumables",
+      "index": 0,
+      "factId": "system.c_hex.effects.0",
+      "trigger": "consume",
+      "condition": {
+        "editionlessJoker": true
+      },
+      "action": "randomJokerEdition",
+      "sourceRefs": [
+        "references/source/card.lua:1467-1492",
+        "references/source/card.lua:1547-1548",
+        "references/source/functions/common_events.lua:2055-2080",
+        "references/source/game.lua:583"
+      ]
+    },
+    {
+      "key": "c_death",
+      "group": "consumables",
+      "index": 0,
+      "factId": "system.c_death.effects.0",
+      "trigger": "consume",
+      "condition": {
+        "selectedMin": 2,
+        "selectedMax": 2
+      },
+      "action": "copyRightmost",
+      "sourceRefs": [
+        "references/source/card.lua:1111-1118",
+        "references/source/functions/common_events.lua:2160-2198",
+        "references/source/card.lua:1564-1567",
+        "references/source/game.lua:546"
+      ]
+    },
+    {
+      "key": "c_trance",
+      "group": "consumables",
+      "index": 0,
+      "factId": "system.c_trance.effects.0",
+      "trigger": "consume",
+      "condition": {
+        "selectedMin": 1,
+        "selectedMax": 1
+      },
+      "action": "selectedSet",
+      "sourceRefs": [
+        "references/source/card.lua:1178-1186",
+        "references/source/card.lua:1564-1567",
+        "references/source/game.lua:584"
+      ]
+    },
+    {
+      "key": "c_temperance",
+      "group": "consumables",
+      "index": 0,
+      "factId": "system.c_temperance.effects.0",
+      "trigger": "consume",
+      "condition": {},
+      "action": "gainJokerSellTotal",
+      "sourceRefs": [
+        "references/source/card.lua:1393-1398",
+        "references/source/card.lua:4167-4174",
+        "references/source/game.lua:547"
+      ]
+    },
+    {
+      "key": "c_medium",
+      "group": "consumables",
+      "index": 0,
+      "factId": "system.c_medium.effects.0",
+      "trigger": "consume",
+      "condition": {
+        "selectedMin": 1,
+        "selectedMax": 1
+      },
+      "action": "selectedSet",
+      "sourceRefs": [
+        "references/source/card.lua:1178-1186",
+        "references/source/card.lua:1564-1567",
+        "references/source/game.lua:585"
+      ]
+    },
+    {
+      "key": "c_devil",
+      "group": "consumables",
+      "index": 0,
+      "factId": "system.c_devil.effects.0",
+      "trigger": "consume",
+      "condition": {
+        "selectedMin": 1,
+        "selectedMax": 1
+      },
+      "action": "selectedSet",
+      "sourceRefs": [
+        "references/source/card.lua:1101-1106",
+        "references/source/card.lua:1142-1144",
+        "references/source/card.lua:1564-1567",
+        "references/source/game.lua:548"
+      ]
+    },
+    {
+      "key": "c_cryptid",
+      "group": "consumables",
+      "index": 0,
+      "factId": "system.c_cryptid.effects.0",
+      "trigger": "consume",
+      "condition": {
+        "selectedMin": 1,
+        "selectedMax": 1
+      },
+      "action": "cloneSelectedCards",
+      "sourceRefs": [
+        "references/source/card.lua:1201-1217",
+        "references/source/card.lua:1564-1567",
+        "references/source/game.lua:586"
+      ]
+    },
+    {
+      "key": "c_tower",
+      "group": "consumables",
+      "index": 0,
+      "factId": "system.c_tower.effects.0",
+      "trigger": "consume",
+      "condition": {
+        "selectedMin": 1,
+        "selectedMax": 1
+      },
+      "action": "selectedSet",
+      "sourceRefs": [
+        "references/source/card.lua:1101-1106",
+        "references/source/card.lua:1142-1144",
+        "references/source/card.lua:1564-1567",
+        "references/source/game.lua:549"
+      ]
+    },
+    {
+      "key": "c_soul",
+      "group": "consumables",
+      "index": 0,
+      "factId": "system.c_soul.effects.0",
+      "trigger": "consume",
+      "condition": {
+        "freeJokerSlot": true
+      },
+      "action": "spawnJoker",
+      "sourceRefs": [
+        "references/source/card.lua:1415-1421",
+        "references/source/card.lua:1557-1562",
+        "references/source/game.lua:587"
+      ]
+    },
+    {
+      "key": "c_star",
+      "group": "consumables",
+      "index": 0,
+      "factId": "system.c_star.effects.0",
+      "trigger": "consume",
+      "condition": {
+        "selectedMin": 1,
+        "selectedMax": 3
+      },
+      "action": "selectedSet",
+      "sourceRefs": [
+        "references/source/card.lua:1137-1139",
+        "references/source/card.lua:1564-1567",
+        "references/source/game.lua:550"
+      ]
+    },
+    {
+      "key": "c_black_hole",
+      "group": "consumables",
+      "index": 0,
+      "factId": "system.c_black_hole.effects.0",
+      "trigger": "consume",
+      "condition": {},
+      "action": "upgradeAllHands",
+      "sourceRefs": [
+        "references/source/card.lua:1171-1175",
+        "references/source/functions/common_events.lua:464-468",
+        "references/source/game.lua:588"
+      ]
+    },
+    {
+      "key": "c_moon",
+      "group": "consumables",
+      "index": 0,
+      "factId": "system.c_moon.effects.0",
+      "trigger": "consume",
+      "condition": {
+        "selectedMin": 1,
+        "selectedMax": 3
+      },
+      "action": "selectedSet",
+      "sourceRefs": [
+        "references/source/card.lua:1137-1139",
+        "references/source/card.lua:1564-1567",
+        "references/source/game.lua:551"
+      ]
+    },
+    {
+      "key": "c_sun",
+      "group": "consumables",
+      "index": 0,
+      "factId": "system.c_sun.effects.0",
+      "trigger": "consume",
+      "condition": {
+        "selectedMin": 1,
+        "selectedMax": 3
+      },
+      "action": "selectedSet",
+      "sourceRefs": [
+        "references/source/card.lua:1137-1139",
+        "references/source/card.lua:1564-1567",
+        "references/source/game.lua:552"
+      ]
+    },
+    {
+      "key": "c_judgement",
+      "group": "consumables",
+      "index": 0,
+      "factId": "system.c_judgement.effects.0",
+      "trigger": "consume",
+      "condition": {
+        "freeJokerSlot": true
+      },
+      "action": "spawnJoker",
+      "sourceRefs": [
+        "references/source/card.lua:1415-1421",
+        "references/source/card.lua:1557-1562",
+        "references/source/game.lua:553"
+      ]
+    },
+    {
+      "key": "c_world",
+      "group": "consumables",
+      "index": 0,
+      "factId": "system.c_world.effects.0",
+      "trigger": "consume",
+      "condition": {
+        "selectedMin": 1,
+        "selectedMax": 3
+      },
+      "action": "selectedSet",
+      "sourceRefs": [
+        "references/source/card.lua:1137-1139",
+        "references/source/card.lua:1564-1567",
+        "references/source/game.lua:554"
+      ]
+    },
+    {
+      "key": "v_overstock_norm",
+      "group": "vouchers",
+      "index": 0,
+      "factId": "system.v_overstock_norm.effects.0",
+      "trigger": "redeem",
+      "condition": {},
+      "action": "add",
+      "sourceRefs": [
+        "references/source/card.lua:1885-1888",
+        "references/source/game.lua:592"
+      ]
+    },
+    {
+      "key": "v_overstock_plus",
+      "group": "vouchers",
+      "index": 0,
+      "factId": "system.v_overstock_plus.effects.0",
+      "trigger": "redeem",
+      "condition": {},
+      "action": "add",
+      "sourceRefs": [
+        "references/source/card.lua:1885-1888",
+        "references/source/game.lua:609"
+      ]
+    },
+    {
+      "key": "v_clearance_sale",
+      "group": "vouchers",
+      "index": 0,
+      "factId": "system.v_clearance_sale.effects.0",
+      "trigger": "redeem",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/card.lua:1917-1922",
+        "references/source/game.lua:593"
+      ]
+    },
+    {
+      "key": "v_liquidation",
+      "group": "vouchers",
+      "index": 0,
+      "factId": "system.v_liquidation.effects.0",
+      "trigger": "redeem",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/card.lua:1917-1922",
+        "references/source/game.lua:610"
+      ]
+    },
+    {
+      "key": "v_hone",
+      "group": "vouchers",
+      "index": 0,
+      "factId": "system.v_hone.effects.0",
+      "trigger": "redeem",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/card.lua:1900-1903",
+        "references/source/game.lua:594"
+      ]
+    },
+    {
+      "key": "v_glow_up",
+      "group": "vouchers",
+      "index": 0,
+      "factId": "system.v_glow_up.effects.0",
+      "trigger": "redeem",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/card.lua:1900-1903",
+        "references/source/game.lua:611"
+      ]
+    },
+    {
+      "key": "v_reroll_surplus",
+      "group": "vouchers",
+      "index": 0,
+      "factId": "system.v_reroll_surplus.effects.0",
+      "trigger": "redeem",
+      "condition": {},
+      "action": "add",
+      "sourceRefs": [
+        "references/source/card.lua:1925-1928",
+        "references/source/game.lua:595"
+      ]
+    },
+    {
+      "key": "v_reroll_glut",
+      "group": "vouchers",
+      "index": 0,
+      "factId": "system.v_reroll_glut.effects.0",
+      "trigger": "redeem",
+      "condition": {},
+      "action": "add",
+      "sourceRefs": [
+        "references/source/card.lua:1925-1928",
+        "references/source/game.lua:612"
+      ]
+    },
+    {
+      "key": "v_crystal_ball",
+      "group": "vouchers",
+      "index": 0,
+      "factId": "system.v_crystal_ball.effects.0",
+      "trigger": "redeem",
+      "condition": {},
+      "action": "add",
+      "sourceRefs": [
+        "references/source/card.lua:1912-1915",
+        "references/source/game.lua:596"
+      ]
+    },
+    {
+      "key": "v_omen_globe",
+      "group": "vouchers",
+      "index": 0,
+      "factId": "system.v_omen_globe.effects.0",
+      "trigger": "redeem",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/card.lua:1730-1735",
+        "references/source/game.lua:613"
+      ]
+    },
+    {
+      "key": "v_telescope",
+      "group": "vouchers",
+      "index": 0,
+      "factId": "system.v_telescope.effects.0",
+      "trigger": "redeem",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/card.lua:1736-1751",
+        "references/source/game.lua:597"
+      ]
+    },
+    {
+      "key": "v_observatory",
+      "group": "vouchers",
+      "index": 0,
+      "factId": "system.v_observatory.effects.0",
+      "trigger": "redeem",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/card.lua:2291-2300",
+        "references/source/game.lua:614"
+      ]
+    },
+    {
+      "key": "v_observatory",
+      "group": "vouchers",
+      "index": 1,
+      "factId": "system.v_observatory.effects.1",
+      "trigger": "jokerMainConsumable",
+      "condition": {
+        "matchingPlanet": true,
+        "notDebuffed": true
+      },
+      "action": "observatoryXMult",
+      "sourceRefs": [
+        "references/source/card.lua:2291-2300",
+        "references/source/functions/state_events.lua:877-959",
+        "references/source/game.lua:614"
+      ]
+    },
+    {
+      "key": "v_grabber",
+      "group": "vouchers",
+      "index": 0,
+      "factId": "system.v_grabber.effects.0",
+      "trigger": "redeem",
+      "condition": {},
+      "action": "add",
+      "sourceRefs": [
+        "references/source/card.lua:1936-1938",
+        "references/source/game.lua:598"
+      ]
+    },
+    {
+      "key": "v_nacho_tong",
+      "group": "vouchers",
+      "index": 0,
+      "factId": "system.v_nacho_tong.effects.0",
+      "trigger": "redeem",
+      "condition": {},
+      "action": "add",
+      "sourceRefs": [
+        "references/source/card.lua:1936-1938",
+        "references/source/game.lua:615"
+      ]
+    },
+    {
+      "key": "v_wasteful",
+      "group": "vouchers",
+      "index": 0,
+      "factId": "system.v_wasteful.effects.0",
+      "trigger": "redeem",
+      "condition": {},
+      "action": "add",
+      "sourceRefs": [
+        "references/source/card.lua:1943-1945",
+        "references/source/game.lua:599"
+      ]
+    },
+    {
+      "key": "v_recyclomancy",
+      "group": "vouchers",
+      "index": 0,
+      "factId": "system.v_recyclomancy.effects.0",
+      "trigger": "redeem",
+      "condition": {},
+      "action": "add",
+      "sourceRefs": [
+        "references/source/card.lua:1943-1945",
+        "references/source/game.lua:616"
+      ]
+    },
+    {
+      "key": "v_tarot_merchant",
+      "group": "vouchers",
+      "index": 0,
+      "factId": "system.v_tarot_merchant.effects.0",
+      "trigger": "redeem",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/card.lua:1890-1893",
+        "references/source/game.lua:600"
+      ]
+    },
+    {
+      "key": "v_tarot_tycoon",
+      "group": "vouchers",
+      "index": 0,
+      "factId": "system.v_tarot_tycoon.effects.0",
+      "trigger": "redeem",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/card.lua:1890-1893",
+        "references/source/game.lua:617"
+      ]
+    },
+    {
+      "key": "v_planet_merchant",
+      "group": "vouchers",
+      "index": 0,
+      "factId": "system.v_planet_merchant.effects.0",
+      "trigger": "redeem",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/card.lua:1895-1898",
+        "references/source/game.lua:601"
+      ]
+    },
+    {
+      "key": "v_planet_tycoon",
+      "group": "vouchers",
+      "index": 0,
+      "factId": "system.v_planet_tycoon.effects.0",
+      "trigger": "redeem",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/card.lua:1895-1898",
+        "references/source/game.lua:618"
+      ]
+    },
+    {
+      "key": "v_seed_money",
+      "group": "vouchers",
+      "index": 0,
+      "factId": "system.v_seed_money.effects.0",
+      "trigger": "redeem",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/card.lua:1931-1934",
+        "references/source/game.lua:602"
+      ]
+    },
+    {
+      "key": "v_money_tree",
+      "group": "vouchers",
+      "index": 0,
+      "factId": "system.v_money_tree.effects.0",
+      "trigger": "redeem",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/card.lua:1931-1934",
+        "references/source/game.lua:619"
+      ]
+    },
+    {
+      "key": "v_blank",
+      "group": "vouchers",
+      "index": 0,
+      "factId": "system.v_blank.effects.0",
+      "trigger": "redeem",
+      "condition": {},
+      "action": "add",
+      "sourceRefs": [
+        "references/source/card.lua:1947-1948",
+        "references/source/game.lua:603"
+      ]
+    },
+    {
+      "key": "v_antimatter",
+      "group": "vouchers",
+      "index": 0,
+      "factId": "system.v_antimatter.effects.0",
+      "trigger": "redeem",
+      "condition": {},
+      "action": "add",
+      "sourceRefs": [
+        "references/source/card.lua:1950-1954",
+        "references/source/game.lua:620"
+      ]
+    },
+    {
+      "key": "v_magic_trick",
+      "group": "vouchers",
+      "index": 0,
+      "factId": "system.v_magic_trick.effects.0",
+      "trigger": "redeem",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/card.lua:1905-1908",
+        "references/source/game.lua:604"
+      ]
+    },
+    {
+      "key": "v_illusion",
+      "group": "vouchers",
+      "index": 0,
+      "factId": "system.v_illusion.effects.0",
+      "trigger": "redeem",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/card.lua:1905-1908",
+        "references/source/game.lua:621"
+      ]
+    },
+    {
+      "key": "v_illusion",
+      "group": "vouchers",
+      "index": 1,
+      "factId": "system.v_illusion.effects.1",
+      "trigger": "redeem",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/functions/UI_definitions.lua:769-794",
+        "references/source/game.lua:621"
+      ]
+    },
+    {
+      "key": "v_hieroglyph",
+      "group": "vouchers",
+      "index": 0,
+      "factId": "system.v_hieroglyph.effects.0",
+      "trigger": "redeem",
+      "condition": {},
+      "action": "add",
+      "sourceRefs": [
+        "references/source/card.lua:1957-1960",
+        "references/source/game.lua:605"
+      ]
+    },
+    {
+      "key": "v_hieroglyph",
+      "group": "vouchers",
+      "index": 1,
+      "factId": "system.v_hieroglyph.effects.1",
+      "trigger": "redeem",
+      "condition": {},
+      "action": "add",
+      "sourceRefs": [
+        "references/source/card.lua:1957-1960",
+        "references/source/game.lua:605"
+      ]
+    },
+    {
+      "key": "v_hieroglyph",
+      "group": "vouchers",
+      "index": 2,
+      "factId": "system.v_hieroglyph.effects.2",
+      "trigger": "redeem",
+      "condition": {},
+      "action": "add",
+      "sourceRefs": [
+        "references/source/card.lua:1962-1964",
+        "references/source/game.lua:605"
+      ]
+    },
+    {
+      "key": "v_petroglyph",
+      "group": "vouchers",
+      "index": 0,
+      "factId": "system.v_petroglyph.effects.0",
+      "trigger": "redeem",
+      "condition": {},
+      "action": "add",
+      "sourceRefs": [
+        "references/source/card.lua:1957-1960",
+        "references/source/game.lua:622"
+      ]
+    },
+    {
+      "key": "v_petroglyph",
+      "group": "vouchers",
+      "index": 1,
+      "factId": "system.v_petroglyph.effects.1",
+      "trigger": "redeem",
+      "condition": {},
+      "action": "add",
+      "sourceRefs": [
+        "references/source/card.lua:1957-1960",
+        "references/source/game.lua:622"
+      ]
+    },
+    {
+      "key": "v_petroglyph",
+      "group": "vouchers",
+      "index": 2,
+      "factId": "system.v_petroglyph.effects.2",
+      "trigger": "redeem",
+      "condition": {},
+      "action": "add",
+      "sourceRefs": [
+        "references/source/card.lua:1966-1968",
+        "references/source/game.lua:622"
+      ]
+    },
+    {
+      "key": "v_directors_cut",
+      "group": "vouchers",
+      "index": 0,
+      "factId": "system.v_directors_cut.effects.0",
+      "trigger": "redeem",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/functions/button_callbacks.lua:2784-2803",
+        "references/source/game.lua:606"
+      ]
+    },
+    {
+      "key": "v_retcon",
+      "group": "vouchers",
+      "index": 0,
+      "factId": "system.v_retcon.effects.0",
+      "trigger": "redeem",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/functions/button_callbacks.lua:2784-2803",
+        "references/source/game.lua:623"
+      ]
+    },
+    {
+      "key": "v_paint_brush",
+      "group": "vouchers",
+      "index": 0,
+      "factId": "system.v_paint_brush.effects.0",
+      "trigger": "redeem",
+      "condition": {},
+      "action": "add",
+      "sourceRefs": [
+        "references/source/card.lua:1940-1941",
+        "references/source/game.lua:607"
+      ]
+    },
+    {
+      "key": "v_palette",
+      "group": "vouchers",
+      "index": 0,
+      "factId": "system.v_palette.effects.0",
+      "trigger": "redeem",
+      "condition": {},
+      "action": "add",
+      "sourceRefs": [
+        "references/source/card.lua:1940-1941",
+        "references/source/game.lua:624"
+      ]
+    },
+    {
+      "key": "b_red",
+      "group": "decks",
+      "index": 0,
+      "factId": "system.b_red.effects.0",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "add",
+      "sourceRefs": [
+        "references/source/back.lua:209-210",
+        "references/source/game.lua:628"
+      ]
+    },
+    {
+      "key": "b_blue",
+      "group": "decks",
+      "index": 0,
+      "factId": "system.b_blue.effects.0",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "add",
+      "sourceRefs": [
+        "references/source/back.lua:181-182",
+        "references/source/game.lua:629"
+      ]
+    },
+    {
+      "key": "b_yellow",
+      "group": "decks",
+      "index": 0,
+      "factId": "system.b_yellow.effects.0",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "add",
+      "sourceRefs": [
+        "references/source/back.lua:199-200",
+        "references/source/game.lua:630"
+      ]
+    },
+    {
+      "key": "b_green",
+      "group": "decks",
+      "index": 0,
+      "factId": "system.b_green.effects.0",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/back.lua:272-273",
+        "references/source/game.lua:631"
+      ]
+    },
+    {
+      "key": "b_green",
+      "group": "decks",
+      "index": 1,
+      "factId": "system.b_green.effects.1",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/back.lua:275-276",
+        "references/source/game.lua:631"
+      ]
+    },
+    {
+      "key": "b_green",
+      "group": "decks",
+      "index": 2,
+      "factId": "system.b_green.effects.2",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/back.lua:269-270",
+        "references/source/game.lua:631"
+      ]
+    },
+    {
+      "key": "b_black",
+      "group": "decks",
+      "index": 0,
+      "factId": "system.b_black.effects.0",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "add",
+      "sourceRefs": [
+        "references/source/back.lua:181-182",
+        "references/source/game.lua:632"
+      ]
+    },
+    {
+      "key": "b_black",
+      "group": "decks",
+      "index": 1,
+      "factId": "system.b_black.effects.1",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "add",
+      "sourceRefs": [
+        "references/source/back.lua:257-258",
+        "references/source/game.lua:632"
+      ]
+    },
+    {
+      "key": "b_magic",
+      "group": "decks",
+      "index": 0,
+      "factId": "system.b_magic.effects.0",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "redeemVoucher",
+      "sourceRefs": [
+        "references/source/back.lua:174-179",
+        "references/source/back.lua:232-237",
+        "references/source/game.lua:633"
+      ]
+    },
+    {
+      "key": "b_magic",
+      "group": "decks",
+      "index": 1,
+      "factId": "system.b_magic.effects.1",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "addConsumables",
+      "sourceRefs": [
+        "references/source/back.lua:184-191",
+        "references/source/game.lua:633"
+      ]
+    },
+    {
+      "key": "b_nebula",
+      "group": "decks",
+      "index": 0,
+      "factId": "system.b_nebula.effects.0",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "add",
+      "sourceRefs": [
+        "references/source/back.lua:266-267",
+        "references/source/game.lua:634"
+      ]
+    },
+    {
+      "key": "b_nebula",
+      "group": "decks",
+      "index": 1,
+      "factId": "system.b_nebula.effects.1",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "redeemVoucher",
+      "sourceRefs": [
+        "references/source/back.lua:174-179",
+        "references/source/back.lua:232-237",
+        "references/source/game.lua:634"
+      ]
+    },
+    {
+      "key": "b_ghost",
+      "group": "decks",
+      "index": 0,
+      "factId": "system.b_ghost.effects.0",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/back.lua:206-207",
+        "references/source/game.lua:635"
+      ]
+    },
+    {
+      "key": "b_ghost",
+      "group": "decks",
+      "index": 1,
+      "factId": "system.b_ghost.effects.1",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "addConsumables",
+      "sourceRefs": [
+        "references/source/back.lua:184-191",
+        "references/source/game.lua:635"
+      ]
+    },
+    {
+      "key": "b_abandoned",
+      "group": "decks",
+      "index": 0,
+      "factId": "system.b_abandoned.effects.0",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "removeFaces",
+      "sourceRefs": [
+        "references/source/back.lua:202-203",
+        "references/source/game.lua:2355",
+        "references/source/game.lua:636"
+      ]
+    },
+    {
+      "key": "b_checkered",
+      "group": "decks",
+      "index": 0,
+      "factId": "system.b_checkered.effects.0",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "mapSuits",
+      "sourceRefs": [
+        "references/source/back.lua:239-248",
+        "references/source/game.lua:637"
+      ]
+    },
+    {
+      "key": "b_zodiac",
+      "group": "decks",
+      "index": 0,
+      "factId": "system.b_zodiac.effects.0",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "redeemVoucher",
+      "sourceRefs": [
+        "references/source/back.lua:174-179",
+        "references/source/back.lua:232-237",
+        "references/source/game.lua:638"
+      ]
+    },
+    {
+      "key": "b_zodiac",
+      "group": "decks",
+      "index": 1,
+      "factId": "system.b_zodiac.effects.1",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "redeemVoucher",
+      "sourceRefs": [
+        "references/source/back.lua:174-179",
+        "references/source/back.lua:232-237",
+        "references/source/game.lua:638"
+      ]
+    },
+    {
+      "key": "b_zodiac",
+      "group": "decks",
+      "index": 2,
+      "factId": "system.b_zodiac.effects.2",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "redeemVoucher",
+      "sourceRefs": [
+        "references/source/back.lua:174-179",
+        "references/source/back.lua:232-237",
+        "references/source/game.lua:638"
+      ]
+    },
+    {
+      "key": "b_painted",
+      "group": "decks",
+      "index": 0,
+      "factId": "system.b_painted.effects.0",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "add",
+      "sourceRefs": [
+        "references/source/back.lua:257-258",
+        "references/source/game.lua:639"
+      ]
+    },
+    {
+      "key": "b_painted",
+      "group": "decks",
+      "index": 1,
+      "factId": "system.b_painted.effects.1",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "add",
+      "sourceRefs": [
+        "references/source/back.lua:260-261",
+        "references/source/game.lua:639"
+      ]
+    },
+    {
+      "key": "b_anaglyph",
+      "group": "decks",
+      "index": 0,
+      "factId": "system.b_anaglyph.effects.0",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/back.lua:111-119",
+        "references/source/game.lua:640"
+      ]
+    },
+    {
+      "key": "b_anaglyph",
+      "group": "decks",
+      "index": 1,
+      "factId": "system.b_anaglyph.effects.1",
+      "trigger": "bossDefeated",
+      "condition": {},
+      "action": "addTag",
+      "sourceRefs": [
+        "references/source/back.lua:111-119",
+        "references/source/game.lua:640"
+      ]
+    },
+    {
+      "key": "b_plasma",
+      "group": "decks",
+      "index": 0,
+      "factId": "system.b_plasma.effects.0",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/back.lua:263-264",
+        "references/source/game.lua:641"
+      ]
+    },
+    {
+      "key": "b_plasma",
+      "group": "decks",
+      "index": 1,
+      "factId": "system.b_plasma.effects.1",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/back.lua:125-129",
+        "references/source/game.lua:641"
+      ]
+    },
+    {
+      "key": "b_plasma",
+      "group": "decks",
+      "index": 2,
+      "factId": "system.b_plasma.effects.2",
+      "trigger": "finalScore",
+      "condition": {},
+      "action": "balanceChipsMult",
+      "sourceRefs": [
+        "references/source/back.lua:125-129",
+        "references/source/game.lua:641"
+      ]
+    },
+    {
+      "key": "b_erratic",
+      "group": "decks",
+      "index": 0,
+      "factId": "system.b_erratic.effects.0",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "randomizeDeck",
+      "sourceRefs": [
+        "references/source/back.lua:254-255",
+        "references/source/game.lua:2342",
+        "references/source/game.lua:642"
+      ]
+    },
+    {
+      "key": "bl_small",
+      "group": "blinds",
+      "index": 0,
+      "factId": "system.bl_small.effects.0",
+      "trigger": "start",
+      "condition": {},
+      "action": "none",
+      "sourceRefs": [
+        "references/source/blind.lua:346-352",
+        "references/source/game.lua:264"
+      ]
+    },
+    {
+      "key": "bl_big",
+      "group": "blinds",
+      "index": 0,
+      "factId": "system.bl_big.effects.0",
+      "trigger": "start",
+      "condition": {},
+      "action": "none",
+      "sourceRefs": [
+        "references/source/blind.lua:346-352",
+        "references/source/game.lua:265"
+      ]
+    },
+    {
+      "key": "bl_hook",
+      "group": "blinds",
+      "index": 0,
+      "factId": "system.bl_hook.effects.0",
+      "trigger": "beforeHand",
+      "condition": {},
+      "action": "discardRandomHand",
+      "sourceRefs": [
+        "references/source/blind.lua:464-486",
+        "references/source/game.lua:267"
+      ]
+    },
+    {
+      "key": "bl_ox",
+      "group": "blinds",
+      "index": 0,
+      "factId": "system.bl_ox.effects.0",
+      "trigger": "beforeHand",
+      "condition": {
+        "mostPlayedHand": true
+      },
+      "action": "zeroCash",
+      "sourceRefs": [
+        "references/source/blind.lua:560-566",
+        "references/source/game.lua:266"
+      ]
+    },
+    {
+      "key": "bl_house",
+      "group": "blinds",
+      "index": 0,
+      "factId": "system.bl_house.effects.0",
+      "trigger": "draw",
+      "condition": {
+        "firstDraw": true
+      },
+      "action": "hideDrawn",
+      "sourceRefs": [
+        "references/source/blind.lua:611-612",
+        "references/source/game.lua:274"
+      ]
+    },
+    {
+      "key": "bl_wall",
+      "group": "blinds",
+      "index": 0,
+      "factId": "system.bl_wall.effects.0",
+      "trigger": "start",
+      "condition": {},
+      "action": "requirementMultiplier",
+      "sourceRefs": [
+        "references/source/blind.lua:107-108",
+        "references/source/game.lua:273"
+      ]
+    },
+    {
+      "key": "bl_wheel",
+      "group": "blinds",
+      "index": 0,
+      "factId": "system.bl_wheel.effects.0",
+      "trigger": "draw",
+      "condition": {},
+      "action": "randomHide",
+      "sourceRefs": [
+        "references/source/blind.lua:605-609",
+        "references/source/game.lua:278"
+      ]
+    },
+    {
+      "key": "bl_arm",
+      "group": "blinds",
+      "index": 0,
+      "factId": "system.bl_arm.effects.0",
+      "trigger": "beforeHand",
+      "condition": {},
+      "action": "downgradeHand",
+      "sourceRefs": [
+        "references/source/blind.lua:550-558",
+        "references/source/game.lua:279"
+      ]
+    },
+    {
+      "key": "bl_club",
+      "group": "blinds",
+      "index": 0,
+      "factId": "system.bl_club.effects.0",
+      "trigger": "cardDebuff",
+      "condition": {},
+      "action": "debuffSuit",
+      "sourceRefs": [
+        "references/source/blind.lua:624-628",
+        "references/source/card.lua:4064-4088",
+        "references/source/game.lua:270"
+      ]
+    },
+    {
+      "key": "bl_fish",
+      "group": "blinds",
+      "index": 0,
+      "factId": "system.bl_fish.effects.0",
+      "trigger": "beforeHand",
+      "condition": {},
+      "action": "prepareFish",
+      "sourceRefs": [
+        "references/source/blind.lua:494-496",
+        "references/source/game.lua:269"
+      ]
+    },
+    {
+      "key": "bl_fish",
+      "group": "blinds",
+      "index": 1,
+      "factId": "system.bl_fish.effects.1",
+      "trigger": "draw",
+      "condition": {
+        "fishPrepped": true
+      },
+      "action": "hideDrawn",
+      "sourceRefs": [
+        "references/source/blind.lua:617-618",
+        "references/source/game.lua:269"
+      ]
+    },
+    {
+      "key": "bl_psychic",
+      "group": "blinds",
+      "index": 0,
+      "factId": "system.bl_psychic.effects.0",
+      "trigger": "beforeHand",
+      "condition": {},
+      "action": "requireCardCount",
+      "sourceRefs": [
+        "references/source/blind.lua:527-529",
+        "references/source/game.lua:280"
+      ]
+    },
+    {
+      "key": "bl_goad",
+      "group": "blinds",
+      "index": 0,
+      "factId": "system.bl_goad.effects.0",
+      "trigger": "cardDebuff",
+      "condition": {},
+      "action": "debuffSuit",
+      "sourceRefs": [
+        "references/source/blind.lua:624-628",
+        "references/source/card.lua:4064-4088",
+        "references/source/game.lua:281"
+      ]
+    },
+    {
+      "key": "bl_water",
+      "group": "blinds",
+      "index": 0,
+      "factId": "system.bl_water.effects.0",
+      "trigger": "start",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/blind.lua:179-181",
+        "references/source/game.lua:282"
+      ]
+    },
+    {
+      "key": "bl_window",
+      "group": "blinds",
+      "index": 0,
+      "factId": "system.bl_window.effects.0",
+      "trigger": "cardDebuff",
+      "condition": {},
+      "action": "debuffSuit",
+      "sourceRefs": [
+        "references/source/blind.lua:624-628",
+        "references/source/card.lua:4064-4088",
+        "references/source/game.lua:289"
+      ]
+    },
+    {
+      "key": "bl_manacle",
+      "group": "blinds",
+      "index": 0,
+      "factId": "system.bl_manacle.effects.0",
+      "trigger": "start",
+      "condition": {},
+      "action": "add",
+      "sourceRefs": [
+        "references/source/blind.lua:187-188",
+        "references/source/game.lua:271"
+      ]
+    },
+    {
+      "key": "bl_manacle",
+      "group": "blinds",
+      "index": 1,
+      "factId": "system.bl_manacle.effects.1",
+      "trigger": "end",
+      "condition": {},
+      "action": "add",
+      "sourceRefs": [
+        "references/source/blind.lua:341-342",
+        "references/source/game.lua:271"
+      ]
+    },
+    {
+      "key": "bl_eye",
+      "group": "blinds",
+      "index": 0,
+      "factId": "system.bl_eye.effects.0",
+      "trigger": "beforeHand",
+      "condition": {},
+      "action": "requireUnusedHand",
+      "sourceRefs": [
+        "references/source/blind.lua:535-540",
+        "references/source/game.lua:283"
+      ]
+    },
+    {
+      "key": "bl_mouth",
+      "group": "blinds",
+      "index": 0,
+      "factId": "system.bl_mouth.effects.0",
+      "trigger": "beforeHand",
+      "condition": {},
+      "action": "requireSameHand",
+      "sourceRefs": [
+        "references/source/blind.lua:542-547",
+        "references/source/game.lua:268"
+      ]
+    },
+    {
+      "key": "bl_plant",
+      "group": "blinds",
+      "index": 0,
+      "factId": "system.bl_plant.effects.0",
+      "trigger": "cardDebuff",
+      "condition": {},
+      "action": "debuffFaces",
+      "sourceRefs": [
+        "references/source/blind.lua:630-632",
+        "references/source/game.lua:284"
+      ]
+    },
+    {
+      "key": "bl_serpent",
+      "group": "blinds",
+      "index": 0,
+      "factId": "system.bl_serpent.effects.0",
+      "trigger": "afterHand",
+      "condition": {},
+      "action": "limitDraw",
+      "sourceRefs": [
+        "references/source/functions/state_events.lua:362-367",
+        "references/source/game.lua:290"
+      ]
+    },
+    {
+      "key": "bl_serpent",
+      "group": "blinds",
+      "index": 1,
+      "factId": "system.bl_serpent.effects.1",
+      "trigger": "afterDiscard",
+      "condition": {},
+      "action": "limitDraw",
+      "sourceRefs": [
+        "references/source/functions/state_events.lua:362-367",
+        "references/source/game.lua:290"
+      ]
+    },
+    {
+      "key": "bl_pillar",
+      "group": "blinds",
+      "index": 0,
+      "factId": "system.bl_pillar.effects.0",
+      "trigger": "cardDebuff",
+      "condition": {},
+      "action": "debuffPlayedThisAnte",
+      "sourceRefs": [
+        "references/source/blind.lua:634-636",
+        "references/source/game.lua:291"
+      ]
+    },
+    {
+      "key": "bl_needle",
+      "group": "blinds",
+      "index": 0,
+      "factId": "system.bl_needle.effects.0",
+      "trigger": "start",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/blind.lua:183-185",
+        "references/source/game.lua:285"
+      ]
+    },
+    {
+      "key": "bl_head",
+      "group": "blinds",
+      "index": 0,
+      "factId": "system.bl_head.effects.0",
+      "trigger": "cardDebuff",
+      "condition": {},
+      "action": "debuffSuit",
+      "sourceRefs": [
+        "references/source/blind.lua:624-628",
+        "references/source/card.lua:4064-4088",
+        "references/source/game.lua:286"
+      ]
+    },
+    {
+      "key": "bl_tooth",
+      "group": "blinds",
+      "index": 0,
+      "factId": "system.bl_tooth.effects.0",
+      "trigger": "beforeHand",
+      "condition": {},
+      "action": "chargePlayedCards",
+      "sourceRefs": [
+        "references/source/blind.lua:497-505",
+        "references/source/game.lua:272"
+      ]
+    },
+    {
+      "key": "bl_flint",
+      "group": "blinds",
+      "index": 0,
+      "factId": "system.bl_flint.effects.0",
+      "trigger": "beforeHand",
+      "condition": {},
+      "action": "halveBase",
+      "sourceRefs": [
+        "references/source/blind.lua:510-515",
+        "references/source/game.lua:292"
+      ]
+    },
+    {
+      "key": "bl_mark",
+      "group": "blinds",
+      "index": 0,
+      "factId": "system.bl_mark.effects.0",
+      "trigger": "draw",
+      "condition": {},
+      "action": "hideFaces",
+      "sourceRefs": [
+        "references/source/blind.lua:614-615",
+        "references/source/game.lua:275"
+      ]
+    },
+    {
+      "key": "bl_final_acorn",
+      "group": "blinds",
+      "index": 0,
+      "factId": "system.bl_final_acorn.effects.0",
+      "trigger": "start",
+      "condition": {},
+      "action": "hideShuffleJokers",
+      "sourceRefs": [
+        "references/source/blind.lua:190-203",
+        "references/source/game.lua:293"
+      ]
+    },
+    {
+      "key": "bl_final_leaf",
+      "group": "blinds",
+      "index": 0,
+      "factId": "system.bl_final_leaf.effects.0",
+      "trigger": "cardDebuff",
+      "condition": {},
+      "action": "debuffAll",
+      "sourceRefs": [
+        "references/source/blind.lua:650-651",
+        "references/source/game.lua:287"
+      ]
+    },
+    {
+      "key": "bl_final_leaf",
+      "group": "blinds",
+      "index": 1,
+      "factId": "system.bl_final_leaf.effects.1",
+      "trigger": "jokerSold",
+      "condition": {},
+      "action": "disableBlind",
+      "sourceRefs": [
+        "references/source/card.lua:1616-1619",
+        "references/source/blind.lua:356-412",
+        "references/source/game.lua:287"
+      ]
+    },
+    {
+      "key": "bl_final_vessel",
+      "group": "blinds",
+      "index": 0,
+      "factId": "system.bl_final_vessel.effects.0",
+      "trigger": "start",
+      "condition": {},
+      "action": "requirementMultiplier",
+      "sourceRefs": [
+        "references/source/blind.lua:107-108",
+        "references/source/game.lua:288"
+      ]
+    },
+    {
+      "key": "bl_final_heart",
+      "group": "blinds",
+      "index": 0,
+      "factId": "system.bl_final_heart.effects.0",
+      "trigger": "draw",
+      "condition": {
+        "heartPrepped": true
+      },
+      "action": "debuffRandomJoker",
+      "sourceRefs": [
+        "references/source/blind.lua:588-596",
+        "references/source/card.lua:526-532",
+        "references/source/game.lua:294"
+      ]
+    },
+    {
+      "key": "bl_final_heart",
+      "group": "blinds",
+      "index": 1,
+      "factId": "system.bl_final_heart.effects.1",
+      "trigger": "beforeHand",
+      "condition": {},
+      "action": "prepareHeart",
+      "sourceRefs": [
+        "references/source/blind.lua:488-492",
+        "references/source/game.lua:294"
+      ]
+    },
+    {
+      "key": "bl_final_bell",
+      "group": "blinds",
+      "index": 0,
+      "factId": "system.bl_final_bell.effects.0",
+      "trigger": "draw",
+      "condition": {},
+      "action": "forceSelection",
+      "sourceRefs": [
+        "references/source/blind.lua:575-587",
+        "references/source/game.lua:277"
+      ]
+    },
+    {
+      "key": "stake_white",
+      "group": "stakes",
+      "index": 0,
+      "factId": "system.stake_white.effects.0",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/game.lua:2049-2059",
+        "references/source/game.lua:253"
+      ]
+    },
+    {
+      "key": "stake_red",
+      "group": "stakes",
+      "index": 0,
+      "factId": "system.stake_red.effects.0",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/game.lua:2049-2059",
+        "references/source/game.lua:254"
+      ]
+    },
+    {
+      "key": "stake_red",
+      "group": "stakes",
+      "index": 1,
+      "factId": "system.stake_red.effects.1",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/game.lua:2050-2052",
+        "references/source/game.lua:254"
+      ]
+    },
+    {
+      "key": "stake_green",
+      "group": "stakes",
+      "index": 0,
+      "factId": "system.stake_green.effects.0",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/game.lua:2049-2059",
+        "references/source/game.lua:255"
+      ]
+    },
+    {
+      "key": "stake_green",
+      "group": "stakes",
+      "index": 1,
+      "factId": "system.stake_green.effects.1",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/game.lua:2050-2052",
+        "references/source/game.lua:255"
+      ]
+    },
+    {
+      "key": "stake_green",
+      "group": "stakes",
+      "index": 2,
+      "factId": "system.stake_green.effects.2",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/game.lua:2054-2057",
+        "references/source/game.lua:255"
+      ]
+    },
+    {
+      "key": "stake_black",
+      "group": "stakes",
+      "index": 0,
+      "factId": "system.stake_black.effects.0",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/game.lua:2049-2059",
+        "references/source/game.lua:256"
+      ]
+    },
+    {
+      "key": "stake_black",
+      "group": "stakes",
+      "index": 1,
+      "factId": "system.stake_black.effects.1",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/game.lua:2050-2052",
+        "references/source/game.lua:256"
+      ]
+    },
+    {
+      "key": "stake_black",
+      "group": "stakes",
+      "index": 2,
+      "factId": "system.stake_black.effects.2",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/game.lua:2054-2057",
+        "references/source/game.lua:256"
+      ]
+    },
+    {
+      "key": "stake_black",
+      "group": "stakes",
+      "index": 3,
+      "factId": "system.stake_black.effects.3",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/game.lua:2055",
+        "references/source/game.lua:256"
+      ]
+    },
+    {
+      "key": "stake_blue",
+      "group": "stakes",
+      "index": 0,
+      "factId": "system.stake_blue.effects.0",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/game.lua:2049-2059",
+        "references/source/game.lua:257"
+      ]
+    },
+    {
+      "key": "stake_blue",
+      "group": "stakes",
+      "index": 1,
+      "factId": "system.stake_blue.effects.1",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/game.lua:2050-2052",
+        "references/source/game.lua:257"
+      ]
+    },
+    {
+      "key": "stake_blue",
+      "group": "stakes",
+      "index": 2,
+      "factId": "system.stake_blue.effects.2",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/game.lua:2054-2057",
+        "references/source/game.lua:257"
+      ]
+    },
+    {
+      "key": "stake_blue",
+      "group": "stakes",
+      "index": 3,
+      "factId": "system.stake_blue.effects.3",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/game.lua:2055",
+        "references/source/game.lua:257"
+      ]
+    },
+    {
+      "key": "stake_blue",
+      "group": "stakes",
+      "index": 4,
+      "factId": "system.stake_blue.effects.4",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "add",
+      "sourceRefs": [
+        "references/source/game.lua:2056",
+        "references/source/game.lua:257"
+      ]
+    },
+    {
+      "key": "stake_purple",
+      "group": "stakes",
+      "index": 0,
+      "factId": "system.stake_purple.effects.0",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/game.lua:2049-2059",
+        "references/source/game.lua:258"
+      ]
+    },
+    {
+      "key": "stake_purple",
+      "group": "stakes",
+      "index": 1,
+      "factId": "system.stake_purple.effects.1",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/game.lua:2050-2052",
+        "references/source/game.lua:258"
+      ]
+    },
+    {
+      "key": "stake_purple",
+      "group": "stakes",
+      "index": 2,
+      "factId": "system.stake_purple.effects.2",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/game.lua:2054-2057",
+        "references/source/game.lua:258"
+      ]
+    },
+    {
+      "key": "stake_purple",
+      "group": "stakes",
+      "index": 3,
+      "factId": "system.stake_purple.effects.3",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/game.lua:2055",
+        "references/source/game.lua:258"
+      ]
+    },
+    {
+      "key": "stake_purple",
+      "group": "stakes",
+      "index": 4,
+      "factId": "system.stake_purple.effects.4",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "add",
+      "sourceRefs": [
+        "references/source/game.lua:2056",
+        "references/source/game.lua:258"
+      ]
+    },
+    {
+      "key": "stake_orange",
+      "group": "stakes",
+      "index": 0,
+      "factId": "system.stake_orange.effects.0",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/game.lua:2049-2059",
+        "references/source/game.lua:259"
+      ]
+    },
+    {
+      "key": "stake_orange",
+      "group": "stakes",
+      "index": 1,
+      "factId": "system.stake_orange.effects.1",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/game.lua:2050-2052",
+        "references/source/game.lua:259"
+      ]
+    },
+    {
+      "key": "stake_orange",
+      "group": "stakes",
+      "index": 2,
+      "factId": "system.stake_orange.effects.2",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/game.lua:2054-2057",
+        "references/source/game.lua:259"
+      ]
+    },
+    {
+      "key": "stake_orange",
+      "group": "stakes",
+      "index": 3,
+      "factId": "system.stake_orange.effects.3",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/game.lua:2055",
+        "references/source/game.lua:259"
+      ]
+    },
+    {
+      "key": "stake_orange",
+      "group": "stakes",
+      "index": 4,
+      "factId": "system.stake_orange.effects.4",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "add",
+      "sourceRefs": [
+        "references/source/game.lua:2056",
+        "references/source/game.lua:259"
+      ]
+    },
+    {
+      "key": "stake_orange",
+      "group": "stakes",
+      "index": 5,
+      "factId": "system.stake_orange.effects.5",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/game.lua:2058",
+        "references/source/game.lua:259"
+      ]
+    },
+    {
+      "key": "stake_gold",
+      "group": "stakes",
+      "index": 0,
+      "factId": "system.stake_gold.effects.0",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/game.lua:2049-2059",
+        "references/source/game.lua:260"
+      ]
+    },
+    {
+      "key": "stake_gold",
+      "group": "stakes",
+      "index": 1,
+      "factId": "system.stake_gold.effects.1",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/game.lua:2050-2052",
+        "references/source/game.lua:260"
+      ]
+    },
+    {
+      "key": "stake_gold",
+      "group": "stakes",
+      "index": 2,
+      "factId": "system.stake_gold.effects.2",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/game.lua:2054-2057",
+        "references/source/game.lua:260"
+      ]
+    },
+    {
+      "key": "stake_gold",
+      "group": "stakes",
+      "index": 3,
+      "factId": "system.stake_gold.effects.3",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/game.lua:2055",
+        "references/source/game.lua:260"
+      ]
+    },
+    {
+      "key": "stake_gold",
+      "group": "stakes",
+      "index": 4,
+      "factId": "system.stake_gold.effects.4",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "add",
+      "sourceRefs": [
+        "references/source/game.lua:2056",
+        "references/source/game.lua:260"
+      ]
+    },
+    {
+      "key": "stake_gold",
+      "group": "stakes",
+      "index": 5,
+      "factId": "system.stake_gold.effects.5",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/game.lua:2058",
+        "references/source/game.lua:260"
+      ]
+    },
+    {
+      "key": "stake_gold",
+      "group": "stakes",
+      "index": 6,
+      "factId": "system.stake_gold.effects.6",
+      "trigger": "runStart",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/game.lua:2059",
+        "references/source/game.lua:260"
+      ]
+    },
+    {
+      "key": "tag_uncommon",
+      "group": "tags",
+      "index": 0,
+      "factId": "system.tag_uncommon.effects.0",
+      "trigger": "store_joker_create",
+      "condition": {},
+      "action": "shopJoker",
+      "sourceRefs": [
+        "references/source/tag.lua:369-381",
+        "references/source/game.lua:225"
+      ]
+    },
+    {
+      "key": "tag_rare",
+      "group": "tags",
+      "index": 0,
+      "factId": "system.tag_rare.effects.0",
+      "trigger": "store_joker_create",
+      "condition": {},
+      "action": "shopJoker",
+      "sourceRefs": [
+        "references/source/tag.lua:346-368",
+        "references/source/game.lua:226"
+      ]
+    },
+    {
+      "key": "tag_negative",
+      "group": "tags",
+      "index": 0,
+      "factId": "system.tag_negative.effects.0",
+      "trigger": "store_joker_modify",
+      "condition": {},
+      "action": "shopEdition",
+      "sourceRefs": [
+        "references/source/tag.lua:431-441",
+        "references/source/game.lua:227"
+      ]
+    },
+    {
+      "key": "tag_foil",
+      "group": "tags",
+      "index": 0,
+      "factId": "system.tag_foil.effects.0",
+      "trigger": "store_joker_modify",
+      "condition": {},
+      "action": "shopEdition",
+      "sourceRefs": [
+        "references/source/tag.lua:398-408",
+        "references/source/game.lua:228"
+      ]
+    },
+    {
+      "key": "tag_holo",
+      "group": "tags",
+      "index": 0,
+      "factId": "system.tag_holo.effects.0",
+      "trigger": "store_joker_modify",
+      "condition": {},
+      "action": "shopEdition",
+      "sourceRefs": [
+        "references/source/tag.lua:409-419",
+        "references/source/game.lua:229"
+      ]
+    },
+    {
+      "key": "tag_polychrome",
+      "group": "tags",
+      "index": 0,
+      "factId": "system.tag_polychrome.effects.0",
+      "trigger": "store_joker_modify",
+      "condition": {},
+      "action": "shopEdition",
+      "sourceRefs": [
+        "references/source/tag.lua:420-430",
+        "references/source/game.lua:230"
+      ]
+    },
+    {
+      "key": "tag_investment",
+      "group": "tags",
+      "index": 0,
+      "factId": "system.tag_investment.effects.0",
+      "trigger": "eval",
+      "condition": {
+        "bossDefeated": true
+      },
+      "action": "add",
+      "sourceRefs": [
+        "references/source/tag.lua:117-129",
+        "references/source/game.lua:231"
+      ]
+    },
+    {
+      "key": "tag_voucher",
+      "group": "tags",
+      "index": 0,
+      "factId": "system.tag_voucher.effects.0",
+      "trigger": "voucher_add",
+      "condition": {},
+      "action": "extraVoucher",
+      "sourceRefs": [
+        "references/source/tag.lua:302-317",
+        "references/source/game.lua:232"
+      ]
+    },
+    {
+      "key": "tag_boss",
+      "group": "tags",
+      "index": 0,
+      "factId": "system.tag_boss.effects.0",
+      "trigger": "new_blind_choice",
+      "condition": {},
+      "action": "rerollBoss",
+      "sourceRefs": [
+        "references/source/tag.lua:284-300",
+        "references/source/game.lua:233"
+      ]
+    },
+    {
+      "key": "tag_standard",
+      "group": "tags",
+      "index": 0,
+      "factId": "system.tag_standard.effects.0",
+      "trigger": "new_blind_choice",
+      "condition": {},
+      "action": "freePack",
+      "sourceRefs": [
+        "references/source/tag.lua:254-266",
+        "references/source/game.lua:234"
+      ]
+    },
+    {
+      "key": "tag_charm",
+      "group": "tags",
+      "index": 0,
+      "factId": "system.tag_charm.effects.0",
+      "trigger": "new_blind_choice",
+      "condition": {},
+      "action": "freePack",
+      "sourceRefs": [
+        "references/source/tag.lua:205-220",
+        "references/source/game.lua:235"
+      ]
+    },
+    {
+      "key": "tag_meteor",
+      "group": "tags",
+      "index": 0,
+      "factId": "system.tag_meteor.effects.0",
+      "trigger": "new_blind_choice",
+      "condition": {},
+      "action": "freePack",
+      "sourceRefs": [
+        "references/source/tag.lua:221-237",
+        "references/source/game.lua:236"
+      ]
+    },
+    {
+      "key": "tag_buffoon",
+      "group": "tags",
+      "index": 0,
+      "factId": "system.tag_buffoon.effects.0",
+      "trigger": "new_blind_choice",
+      "condition": {},
+      "action": "freePack",
+      "sourceRefs": [
+        "references/source/tag.lua:267-282",
+        "references/source/game.lua:237"
+      ]
+    },
+    {
+      "key": "tag_handy",
+      "group": "tags",
+      "index": 0,
+      "factId": "system.tag_handy.effects.0",
+      "trigger": "immediate",
+      "condition": {},
+      "action": "gainFromCounter",
+      "sourceRefs": [
+        "references/source/tag.lua:167-174",
+        "references/source/game.lua:238"
+      ]
+    },
+    {
+      "key": "tag_garbage",
+      "group": "tags",
+      "index": 0,
+      "factId": "system.tag_garbage.effects.0",
+      "trigger": "immediate",
+      "condition": {},
+      "action": "gainFromCounter",
+      "sourceRefs": [
+        "references/source/tag.lua:158-165",
+        "references/source/game.lua:239"
+      ]
+    },
+    {
+      "key": "tag_ethereal",
+      "group": "tags",
+      "index": 0,
+      "factId": "system.tag_ethereal.effects.0",
+      "trigger": "new_blind_choice",
+      "condition": {},
+      "action": "freePack",
+      "sourceRefs": [
+        "references/source/tag.lua:238-252",
+        "references/source/game.lua:240"
+      ]
+    },
+    {
+      "key": "tag_coupon",
+      "group": "tags",
+      "index": 0,
+      "factId": "system.tag_coupon.effects.0",
+      "trigger": "shop_final_pass",
+      "condition": {},
+      "action": "shopFree",
+      "sourceRefs": [
+        "references/source/tag.lua:447-464",
+        "references/source/game.lua:241"
+      ]
+    },
+    {
+      "key": "tag_double",
+      "group": "tags",
+      "index": 0,
+      "factId": "system.tag_double.effects.0",
+      "trigger": "tag_add",
+      "condition": {
+        "notDoubleTag": true
+      },
+      "action": "doubleNextTag",
+      "sourceRefs": [
+        "references/source/tag.lua:319-333",
+        "references/source/game.lua:242"
+      ]
+    },
+    {
+      "key": "tag_juggle",
+      "group": "tags",
+      "index": 0,
+      "factId": "system.tag_juggle.effects.0",
+      "trigger": "round_start_bonus",
+      "condition": {},
+      "action": "add",
+      "sourceRefs": [
+        "references/source/tag.lua:334-342",
+        "references/source/game.lua:243"
+      ]
+    },
+    {
+      "key": "tag_juggle",
+      "group": "tags",
+      "index": 1,
+      "factId": "system.tag_juggle.effects.1",
+      "trigger": "round_start_bonus",
+      "condition": {},
+      "action": "add",
+      "sourceRefs": [
+        "references/source/tag.lua:334-342",
+        "references/source/game.lua:243"
+      ]
+    },
+    {
+      "key": "tag_d_six",
+      "group": "tags",
+      "index": 0,
+      "factId": "system.tag_d_six.effects.0",
+      "trigger": "shop_start",
+      "condition": {},
+      "action": "set",
+      "sourceRefs": [
+        "references/source/tag.lua:382-388",
+        "references/source/game.lua:244"
+      ]
+    },
+    {
+      "key": "tag_top_up",
+      "group": "tags",
+      "index": 0,
+      "factId": "system.tag_top_up.effects.0",
+      "trigger": "immediate",
+      "condition": {},
+      "action": "spawnJoker",
+      "sourceRefs": [
+        "references/source/tag.lua:134-147",
+        "references/source/game.lua:245"
+      ]
+    },
+    {
+      "key": "tag_skip",
+      "group": "tags",
+      "index": 0,
+      "factId": "system.tag_skip.effects.0",
+      "trigger": "immediate",
+      "condition": {},
+      "action": "gainFromCounter",
+      "sourceRefs": [
+        "references/source/tag.lua:149-156",
+        "references/source/game.lua:246"
+      ]
+    },
+    {
+      "key": "tag_orbital",
+      "group": "tags",
+      "index": 0,
+      "factId": "system.tag_orbital.effects.0",
+      "trigger": "immediate",
+      "condition": {},
+      "action": "upgradeOrbital",
+      "sourceRefs": [
+        "references/source/tag.lua:191-202",
+        "references/source/game.lua:247"
+      ]
+    },
+    {
+      "key": "tag_economy",
+      "group": "tags",
+      "index": 0,
+      "factId": "system.tag_economy.effects.0",
+      "trigger": "immediate",
+      "condition": {},
+      "action": "gainCappedCash",
+      "sourceRefs": [
+        "references/source/tag.lua:176-189",
+        "references/source/game.lua:248"
+      ]
+    },
+    {
+      "key": "p_arcana_normal_1",
+      "group": "boosters",
+      "index": 0,
+      "factId": "system.p_arcana_normal_1.effects.0",
+      "trigger": "open",
+      "condition": {},
+      "action": "openPack",
+      "sourceRefs": [
+        "references/source/card.lua:1692-1709",
+        "references/source/card.lua:1726-1778",
+        "references/source/game.lua:665"
+      ]
+    },
+    {
+      "key": "p_arcana_normal_2",
+      "group": "boosters",
+      "index": 0,
+      "factId": "system.p_arcana_normal_2.effects.0",
+      "trigger": "open",
+      "condition": {},
+      "action": "openPack",
+      "sourceRefs": [
+        "references/source/card.lua:1692-1709",
+        "references/source/card.lua:1726-1778",
+        "references/source/game.lua:666"
+      ]
+    },
+    {
+      "key": "p_arcana_normal_3",
+      "group": "boosters",
+      "index": 0,
+      "factId": "system.p_arcana_normal_3.effects.0",
+      "trigger": "open",
+      "condition": {},
+      "action": "openPack",
+      "sourceRefs": [
+        "references/source/card.lua:1692-1709",
+        "references/source/card.lua:1726-1778",
+        "references/source/game.lua:667"
+      ]
+    },
+    {
+      "key": "p_arcana_normal_4",
+      "group": "boosters",
+      "index": 0,
+      "factId": "system.p_arcana_normal_4.effects.0",
+      "trigger": "open",
+      "condition": {},
+      "action": "openPack",
+      "sourceRefs": [
+        "references/source/card.lua:1692-1709",
+        "references/source/card.lua:1726-1778",
+        "references/source/game.lua:668"
+      ]
+    },
+    {
+      "key": "p_arcana_jumbo_1",
+      "group": "boosters",
+      "index": 0,
+      "factId": "system.p_arcana_jumbo_1.effects.0",
+      "trigger": "open",
+      "condition": {},
+      "action": "openPack",
+      "sourceRefs": [
+        "references/source/card.lua:1692-1709",
+        "references/source/card.lua:1726-1778",
+        "references/source/game.lua:669"
+      ]
+    },
+    {
+      "key": "p_arcana_jumbo_2",
+      "group": "boosters",
+      "index": 0,
+      "factId": "system.p_arcana_jumbo_2.effects.0",
+      "trigger": "open",
+      "condition": {},
+      "action": "openPack",
+      "sourceRefs": [
+        "references/source/card.lua:1692-1709",
+        "references/source/card.lua:1726-1778",
+        "references/source/game.lua:670"
+      ]
+    },
+    {
+      "key": "p_arcana_mega_1",
+      "group": "boosters",
+      "index": 0,
+      "factId": "system.p_arcana_mega_1.effects.0",
+      "trigger": "open",
+      "condition": {},
+      "action": "openPack",
+      "sourceRefs": [
+        "references/source/card.lua:1692-1709",
+        "references/source/card.lua:1726-1778",
+        "references/source/game.lua:671"
+      ]
+    },
+    {
+      "key": "p_arcana_mega_2",
+      "group": "boosters",
+      "index": 0,
+      "factId": "system.p_arcana_mega_2.effects.0",
+      "trigger": "open",
+      "condition": {},
+      "action": "openPack",
+      "sourceRefs": [
+        "references/source/card.lua:1692-1709",
+        "references/source/card.lua:1726-1778",
+        "references/source/game.lua:672"
+      ]
+    },
+    {
+      "key": "p_celestial_normal_1",
+      "group": "boosters",
+      "index": 0,
+      "factId": "system.p_celestial_normal_1.effects.0",
+      "trigger": "open",
+      "condition": {},
+      "action": "openPack",
+      "sourceRefs": [
+        "references/source/card.lua:1692-1709",
+        "references/source/card.lua:1726-1778",
+        "references/source/game.lua:673"
+      ]
+    },
+    {
+      "key": "p_celestial_normal_2",
+      "group": "boosters",
+      "index": 0,
+      "factId": "system.p_celestial_normal_2.effects.0",
+      "trigger": "open",
+      "condition": {},
+      "action": "openPack",
+      "sourceRefs": [
+        "references/source/card.lua:1692-1709",
+        "references/source/card.lua:1726-1778",
+        "references/source/game.lua:674"
+      ]
+    },
+    {
+      "key": "p_celestial_normal_3",
+      "group": "boosters",
+      "index": 0,
+      "factId": "system.p_celestial_normal_3.effects.0",
+      "trigger": "open",
+      "condition": {},
+      "action": "openPack",
+      "sourceRefs": [
+        "references/source/card.lua:1692-1709",
+        "references/source/card.lua:1726-1778",
+        "references/source/game.lua:675"
+      ]
+    },
+    {
+      "key": "p_celestial_normal_4",
+      "group": "boosters",
+      "index": 0,
+      "factId": "system.p_celestial_normal_4.effects.0",
+      "trigger": "open",
+      "condition": {},
+      "action": "openPack",
+      "sourceRefs": [
+        "references/source/card.lua:1692-1709",
+        "references/source/card.lua:1726-1778",
+        "references/source/game.lua:676"
+      ]
+    },
+    {
+      "key": "p_celestial_jumbo_1",
+      "group": "boosters",
+      "index": 0,
+      "factId": "system.p_celestial_jumbo_1.effects.0",
+      "trigger": "open",
+      "condition": {},
+      "action": "openPack",
+      "sourceRefs": [
+        "references/source/card.lua:1692-1709",
+        "references/source/card.lua:1726-1778",
+        "references/source/game.lua:677"
+      ]
+    },
+    {
+      "key": "p_celestial_jumbo_2",
+      "group": "boosters",
+      "index": 0,
+      "factId": "system.p_celestial_jumbo_2.effects.0",
+      "trigger": "open",
+      "condition": {},
+      "action": "openPack",
+      "sourceRefs": [
+        "references/source/card.lua:1692-1709",
+        "references/source/card.lua:1726-1778",
+        "references/source/game.lua:678"
+      ]
+    },
+    {
+      "key": "p_celestial_mega_1",
+      "group": "boosters",
+      "index": 0,
+      "factId": "system.p_celestial_mega_1.effects.0",
+      "trigger": "open",
+      "condition": {},
+      "action": "openPack",
+      "sourceRefs": [
+        "references/source/card.lua:1692-1709",
+        "references/source/card.lua:1726-1778",
+        "references/source/game.lua:679"
+      ]
+    },
+    {
+      "key": "p_celestial_mega_2",
+      "group": "boosters",
+      "index": 0,
+      "factId": "system.p_celestial_mega_2.effects.0",
+      "trigger": "open",
+      "condition": {},
+      "action": "openPack",
+      "sourceRefs": [
+        "references/source/card.lua:1692-1709",
+        "references/source/card.lua:1726-1778",
+        "references/source/game.lua:680"
+      ]
+    },
+    {
+      "key": "p_standard_normal_1",
+      "group": "boosters",
+      "index": 0,
+      "factId": "system.p_standard_normal_1.effects.0",
+      "trigger": "open",
+      "condition": {},
+      "action": "openPack",
+      "sourceRefs": [
+        "references/source/card.lua:1692-1709",
+        "references/source/card.lua:1726-1778",
+        "references/source/game.lua:685"
+      ]
+    },
+    {
+      "key": "p_standard_normal_2",
+      "group": "boosters",
+      "index": 0,
+      "factId": "system.p_standard_normal_2.effects.0",
+      "trigger": "open",
+      "condition": {},
+      "action": "openPack",
+      "sourceRefs": [
+        "references/source/card.lua:1692-1709",
+        "references/source/card.lua:1726-1778",
+        "references/source/game.lua:686"
+      ]
+    },
+    {
+      "key": "p_standard_normal_3",
+      "group": "boosters",
+      "index": 0,
+      "factId": "system.p_standard_normal_3.effects.0",
+      "trigger": "open",
+      "condition": {},
+      "action": "openPack",
+      "sourceRefs": [
+        "references/source/card.lua:1692-1709",
+        "references/source/card.lua:1726-1778",
+        "references/source/game.lua:687"
+      ]
+    },
+    {
+      "key": "p_standard_normal_4",
+      "group": "boosters",
+      "index": 0,
+      "factId": "system.p_standard_normal_4.effects.0",
+      "trigger": "open",
+      "condition": {},
+      "action": "openPack",
+      "sourceRefs": [
+        "references/source/card.lua:1692-1709",
+        "references/source/card.lua:1726-1778",
+        "references/source/game.lua:688"
+      ]
+    },
+    {
+      "key": "p_standard_jumbo_1",
+      "group": "boosters",
+      "index": 0,
+      "factId": "system.p_standard_jumbo_1.effects.0",
+      "trigger": "open",
+      "condition": {},
+      "action": "openPack",
+      "sourceRefs": [
+        "references/source/card.lua:1692-1709",
+        "references/source/card.lua:1726-1778",
+        "references/source/game.lua:689"
+      ]
+    },
+    {
+      "key": "p_standard_jumbo_2",
+      "group": "boosters",
+      "index": 0,
+      "factId": "system.p_standard_jumbo_2.effects.0",
+      "trigger": "open",
+      "condition": {},
+      "action": "openPack",
+      "sourceRefs": [
+        "references/source/card.lua:1692-1709",
+        "references/source/card.lua:1726-1778",
+        "references/source/game.lua:690"
+      ]
+    },
+    {
+      "key": "p_standard_mega_1",
+      "group": "boosters",
+      "index": 0,
+      "factId": "system.p_standard_mega_1.effects.0",
+      "trigger": "open",
+      "condition": {},
+      "action": "openPack",
+      "sourceRefs": [
+        "references/source/card.lua:1692-1709",
+        "references/source/card.lua:1726-1778",
+        "references/source/game.lua:691"
+      ]
+    },
+    {
+      "key": "p_standard_mega_2",
+      "group": "boosters",
+      "index": 0,
+      "factId": "system.p_standard_mega_2.effects.0",
+      "trigger": "open",
+      "condition": {},
+      "action": "openPack",
+      "sourceRefs": [
+        "references/source/card.lua:1692-1709",
+        "references/source/card.lua:1726-1778",
+        "references/source/game.lua:692"
+      ]
+    },
+    {
+      "key": "p_buffoon_normal_1",
+      "group": "boosters",
+      "index": 0,
+      "factId": "system.p_buffoon_normal_1.effects.0",
+      "trigger": "open",
+      "condition": {},
+      "action": "openPack",
+      "sourceRefs": [
+        "references/source/card.lua:1692-1709",
+        "references/source/card.lua:1726-1778",
+        "references/source/game.lua:693"
+      ]
+    },
+    {
+      "key": "p_buffoon_normal_2",
+      "group": "boosters",
+      "index": 0,
+      "factId": "system.p_buffoon_normal_2.effects.0",
+      "trigger": "open",
+      "condition": {},
+      "action": "openPack",
+      "sourceRefs": [
+        "references/source/card.lua:1692-1709",
+        "references/source/card.lua:1726-1778",
+        "references/source/game.lua:694"
+      ]
+    },
+    {
+      "key": "p_buffoon_jumbo_1",
+      "group": "boosters",
+      "index": 0,
+      "factId": "system.p_buffoon_jumbo_1.effects.0",
+      "trigger": "open",
+      "condition": {},
+      "action": "openPack",
+      "sourceRefs": [
+        "references/source/card.lua:1692-1709",
+        "references/source/card.lua:1726-1778",
+        "references/source/game.lua:695"
+      ]
+    },
+    {
+      "key": "p_buffoon_mega_1",
+      "group": "boosters",
+      "index": 0,
+      "factId": "system.p_buffoon_mega_1.effects.0",
+      "trigger": "open",
+      "condition": {},
+      "action": "openPack",
+      "sourceRefs": [
+        "references/source/card.lua:1692-1709",
+        "references/source/card.lua:1726-1778",
+        "references/source/game.lua:696"
+      ]
+    },
+    {
+      "key": "p_spectral_normal_1",
+      "group": "boosters",
+      "index": 0,
+      "factId": "system.p_spectral_normal_1.effects.0",
+      "trigger": "open",
+      "condition": {},
+      "action": "openPack",
+      "sourceRefs": [
+        "references/source/card.lua:1692-1709",
+        "references/source/card.lua:1726-1778",
+        "references/source/game.lua:681"
+      ]
+    },
+    {
+      "key": "p_spectral_normal_2",
+      "group": "boosters",
+      "index": 0,
+      "factId": "system.p_spectral_normal_2.effects.0",
+      "trigger": "open",
+      "condition": {},
+      "action": "openPack",
+      "sourceRefs": [
+        "references/source/card.lua:1692-1709",
+        "references/source/card.lua:1726-1778",
+        "references/source/game.lua:682"
+      ]
+    },
+    {
+      "key": "p_spectral_jumbo_1",
+      "group": "boosters",
+      "index": 0,
+      "factId": "system.p_spectral_jumbo_1.effects.0",
+      "trigger": "open",
+      "condition": {},
+      "action": "openPack",
+      "sourceRefs": [
+        "references/source/card.lua:1692-1709",
+        "references/source/card.lua:1726-1778",
+        "references/source/game.lua:683"
+      ]
+    },
+    {
+      "key": "p_spectral_mega_1",
+      "group": "boosters",
+      "index": 0,
+      "factId": "system.p_spectral_mega_1.effects.0",
+      "trigger": "open",
+      "condition": {},
+      "action": "openPack",
+      "sourceRefs": [
+        "references/source/card.lua:1692-1709",
+        "references/source/card.lua:1726-1778",
+        "references/source/game.lua:684"
+      ]
+    },
+    {
+      "key": "m_bonus",
+      "group": "enhancements",
+      "index": 0,
+      "factId": "system.m_bonus.effects.0",
+      "trigger": "cardOrHeld",
+      "condition": {},
+      "action": "scoringEnhancement",
+      "sourceRefs": [
+        "references/source/card.lua:976-982",
+        "references/source/game.lua:648"
+      ]
+    },
+    {
+      "key": "m_mult",
+      "group": "enhancements",
+      "index": 0,
+      "factId": "system.m_mult.effects.0",
+      "trigger": "cardOrHeld",
+      "condition": {},
+      "action": "scoringEnhancement",
+      "sourceRefs": [
+        "references/source/card.lua:984-996",
+        "references/source/game.lua:649"
+      ]
+    },
+    {
+      "key": "m_wild",
+      "group": "enhancements",
+      "index": 0,
+      "factId": "system.m_wild.effects.0",
+      "trigger": "cardOrHeld",
+      "condition": {},
+      "action": "scoringEnhancement",
+      "sourceRefs": [
+        "references/source/card.lua:4064-4088",
+        "references/source/game.lua:650"
+      ]
+    },
+    {
+      "key": "m_glass",
+      "group": "enhancements",
+      "index": 0,
+      "factId": "system.m_glass.effects.0",
+      "trigger": "cardOrHeld",
+      "condition": {},
+      "action": "scoringEnhancement",
+      "sourceRefs": [
+        "references/source/card.lua:999-1003",
+        "references/source/functions/state_events.lua:961-963",
+        "references/source/game.lua:651"
+      ]
+    },
+    {
+      "key": "m_steel",
+      "group": "enhancements",
+      "index": 0,
+      "factId": "system.m_steel.effects.0",
+      "trigger": "cardOrHeld",
+      "condition": {},
+      "action": "scoringEnhancement",
+      "sourceRefs": [
+        "references/source/card.lua:1011-1014",
+        "references/source/game.lua:652"
+      ]
+    },
+    {
+      "key": "m_stone",
+      "group": "enhancements",
+      "index": 0,
+      "factId": "system.m_stone.effects.0",
+      "trigger": "cardOrHeld",
+      "condition": {},
+      "action": "scoringEnhancement",
+      "sourceRefs": [
+        "references/source/card.lua:976-981",
+        "references/source/game.lua:653"
+      ]
+    },
+    {
+      "key": "m_gold",
+      "group": "enhancements",
+      "index": 0,
+      "factId": "system.m_gold.effects.0",
+      "trigger": "cardOrHeld",
+      "condition": {},
+      "action": "scoringEnhancement",
+      "sourceRefs": [
+        "references/source/card.lua:1033-1038",
+        "references/source/game.lua:654"
+      ]
+    },
+    {
+      "key": "m_lucky",
+      "group": "enhancements",
+      "index": 0,
+      "factId": "system.m_lucky.effects.0",
+      "trigger": "cardOrHeld",
+      "condition": {},
+      "action": "scoringEnhancement",
+      "sourceRefs": [
+        "references/source/card.lua:984-996",
+        "references/source/card.lua:1074-1082",
+        "references/source/game.lua:655"
+      ]
+    },
+    {
+      "key": "Gold",
+      "group": "seals",
+      "index": 0,
+      "factId": "system.Gold.effects.0",
+      "trigger": "card",
+      "condition": {},
+      "action": "sealEffect",
+      "sourceRefs": [
+        "references/source/card.lua:1068-1072",
+        "references/source/game.lua:219"
+      ]
+    },
+    {
+      "key": "Red",
+      "group": "seals",
+      "index": 0,
+      "factId": "system.Red.effects.0",
+      "trigger": "retrigger",
+      "condition": {},
+      "action": "sealEffect",
+      "sourceRefs": [
+        "references/source/card.lua:2242-2250",
+        "references/source/game.lua:220"
+      ]
+    },
+    {
+      "key": "Blue",
+      "group": "seals",
+      "index": 0,
+      "factId": "system.Blue.effects.0",
+      "trigger": "roundEnd",
+      "condition": {},
+      "action": "sealEffect",
+      "sourceRefs": [
+        "references/source/card.lua:1033-1063",
+        "references/source/game.lua:221"
+      ]
+    },
+    {
+      "key": "Purple",
+      "group": "seals",
+      "index": 0,
+      "factId": "system.Purple.effects.0",
+      "trigger": "discard",
+      "condition": {},
+      "action": "sealEffect",
+      "sourceRefs": [
+        "references/source/card.lua:2253-2266",
+        "references/source/game.lua:222"
+      ]
+    },
+    {
+      "key": "e_base",
+      "group": "editions",
+      "index": 0,
+      "factId": "system.e_base.effects.0",
+      "trigger": "score",
+      "condition": {},
+      "action": "scoringEdition",
+      "sourceRefs": [
+        "references/source/card.lua:1016-1030",
+        "references/source/game.lua:658"
+      ]
+    },
+    {
+      "key": "e_foil",
+      "group": "editions",
+      "index": 0,
+      "factId": "system.e_foil.effects.0",
+      "trigger": "score",
+      "condition": {},
+      "action": "scoringEdition",
+      "sourceRefs": [
+        "references/source/card.lua:395-399",
+        "references/source/card.lua:1026-1027",
+        "references/source/game.lua:659"
+      ]
+    },
+    {
+      "key": "e_holo",
+      "group": "editions",
+      "index": 0,
+      "factId": "system.e_holo.effects.0",
+      "trigger": "score",
+      "condition": {},
+      "action": "scoringEdition",
+      "sourceRefs": [
+        "references/source/card.lua:390-394",
+        "references/source/card.lua:1023-1024",
+        "references/source/game.lua:660"
+      ]
+    },
+    {
+      "key": "e_polychrome",
+      "group": "editions",
+      "index": 0,
+      "factId": "system.e_polychrome.effects.0",
+      "trigger": "score",
+      "condition": {},
+      "action": "scoringEdition",
+      "sourceRefs": [
+        "references/source/card.lua:400-404",
+        "references/source/card.lua:1020-1021",
+        "references/source/game.lua:661"
+      ]
+    },
+    {
+      "key": "e_negative",
+      "group": "editions",
+      "index": 0,
+      "factId": "system.e_negative.effects.0",
+      "trigger": "score",
+      "condition": {},
+      "action": "scoringEdition",
+      "sourceRefs": [
+        "references/source/card.lua:405-417",
+        "references/source/game.lua:662"
+      ]
+    }
+  ],
+  "serviceMechanisms": {
+    "jokerStickers": {
+      "areas": [
+        "shop",
+        "pack"
+      ],
+      "eternalThreshold": 0.7,
+      "perishableLow": 0.4,
+      "perishableHigh": 0.7,
+      "rentalThreshold": 0.7,
+      "eternalPerishableSharedRoll": true,
+      "perishableRounds": 5
+    },
+    "duplicatePolicy": {
+      "occupiedAreas": [
+        "ownedJokers",
+        "ownedConsumables",
+        "shop",
+        "pack"
+      ],
+      "allowWithActiveShowman": true,
+      "allowWithDebuffedShowman": false
+    },
+    "observatoryOrder": {
+      "stage": "afterJokerMainBeforeDeckFinal",
+      "perCard": true,
+      "consumes": false
+    },
+    "orbitalSelection": {
+      "time": "blindChoicePreview",
+      "visibleOnly": true,
+      "cache": "anteAndBlind",
+      "rngKey": "orbital"
+    },
+    "perishableDebuff": {
+      "expiresAt": 0,
+      "persistsAfterBlindEnd": true,
+      "persistsAfterBlindDisable": true
+    },
+    "roundTemporaryHandSize": {
+      "expiresAt": "roundEnd",
+      "sourceField": "temporaryHandSize",
+      "preservePermanentChanges": true
+    }
+  },
+  "说明": "每条动作引用具体执行方法和原始配置行。采集一致性断言与行为验证分层统计，不将二者混同。"
+}

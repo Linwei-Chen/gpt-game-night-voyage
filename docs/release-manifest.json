@@ -1,0 +1,709 @@
+{
+  "schema": 2,
+  "generatedAtUTC": "2026-10-13T03:52:29.742078+00:00",
+  "project": "星筹夜航",
+  "experimentTitle": "GPT 6.1 制作小游戏测试",
+  "implementationRoot": ".",
+  "referenceCommit": "895ab3a25bc6f513fa80885eb59951bf8e76bc55",
+  "referenceVersion": "1.0.1o-FULL（来源自声明）",
+  "sourceFingerprints": {
+    ".github/ISSUE_TEMPLATE/bug.yml": "7eeab0cd41d6a9865059c464c212626935c34ab2b26fe004c063341674480706",
+    ".github/ISSUE_TEMPLATE/config.yml": "84683607330ebca729f24d8311b0cfba6785358d081414a93f80cda724b724b2",
+    ".github/ISSUE_TEMPLATE/seed.yml": "3bb51940ceac66c796b6dd9135a6cba57302f32530766da4cdc9ebde0140968d",
+    ".github/pull_request_template.md": "9104fbb7dd89e38d27eb84b96bc838e5d1320cadf5c01d96c857338a1ef13f0d",
+    ".github/workflows/check.yml": "bb0eff253a03fdb4e24c353f299c8dc21c21eca134e29cac5b4910393f03cf79",
+    ".github/workflows/pages.yml": "83918e8d57d4d618df0baa34c55f56bdea9962933c7bce214a731f06ea145fec",
+    ".gitignore": "6c61c4de255d6795736d5065268b39982bdb300e9b32ea7a4e0b0bd419d396c0",
+    "CONTRIBUTING.md": "a484764c90de42e42d9e4ce3e24e15d3b19b4f035005080eaf4b150bd991d874",
+    "LICENSE": "6f46a7db9119fef4693b79444b9c0607086a80c9321df935ea09b79bda45cc91",
+    "README.md": "2b304a5fba6c8810f3ea645eed9c8689cee6e7ed46985314f709c5e8b885fe4d",
+    "THIRD_PARTY_NOTICES.md": "387e2260b7261cd73a2c59bda13c282efdaa42f661f3f5de813e887719ed7c98",
+    "data/evidence-jokers.json": "452bec25e9676919cc954df29ac12718859681fb40cfd33ac27a5b6e4018d3aa",
+    "data/evidence-run.json": "1ff3f4bc96b2ff8f522315de89c469af2e05c39d99272415bcaa475db27030e8",
+    "data/evidence-scoring.json": "d3bcb5a73a1a848169c2085a6e91f5b9e199c2b577d1531bd89320700a51a900",
+    "data/evidence-systems-verified.json": "eaebce077a77e4e0ebd658171ed668b7f01b8c2db0c4a78a64c5b326d508a68f",
+    "data/evidence-ui.json": "62aec6471e81b6ed45face724a464fc5b1d02d1210c4648b78d078a03460bde6",
+    "data/facts.json": "a81865b3ab74a3ef277c33241668e6e4dd22d01a3c8f30a5bd0c4f0b6aee615d",
+    "data/jokers.json": "52f9817de53e2c22b02043c3c206446af1ef25a31509c8b3eeacb8986c2f037f",
+    "data/system-mechanisms.json": "9846055ae2db719052639a5f777264f7cbaa315c03aae49db386518ccb83e791",
+    "data/systems-validation.json": "28fb39877a4a527eec1ef23082257cb85aae499ff6cb4e24c6712bc26e2db490",
+    "data/systems-verified.json": "ed28d1ffa43e52104e777fe6125c2efb0b64e911fa51bf11bbc5a9ffd61ef3b2",
+    "docs/core-fact-assertions.json": "99ff66ed78bfd930acfc80e0025f0be93a39f09ef84a9487a4e263a01187a772",
+    "docs/fact-table.md": "3c508deae5ba3d786fb2b0435afddbc8c2f185501733fb6f79c0cf758c1c0c57",
+    "docs/jokers-fact-assertions.json": "107e1cfd6b99926ee4d10ed5e8b1da27d9ac94c5dbb9eb1de774ed0d8c5b3b1b",
+    "index.html": "72227e0dba62a11b8435cafdffee54e087ce7ef8eb989d31ee193824293649b8",
+    "package-lock.json": "dfb63a000dfb0be514fe2e546ce18ad8714efa067d3fdc246b39428cf851d077",
+    "package.json": "37bc04a23b479ecb5a2392336d384bb1b9c6f84a385ba09e01a76f1880e2fe02",
+    "public/.nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "public/LICENSE.txt": "6f46a7db9119fef4693b79444b9c0607086a80c9321df935ea09b79bda45cc91",
+    "public/THIRD_PARTY_NOTICES.txt": "387e2260b7261cd73a2c59bda13c282efdaa42f661f3f5de813e887719ed7c98",
+    "public/favicon.svg": "1ba4b89997df1d5874881240bef0393147797d62076ec4ebb8a3caa5df527c0e",
+    "public/fonts/COPYRIGHT.txt": "eb115f50f8269394856f6813aef5b7e533b15359fa0d9522fab9d0d4f4e00216",
+    "public/fonts/NightVoyageSC-Subset.woff2": "7ebe95f5ece66aad1da876fbad53375d3c2e9bc5b159d8cb8414fc58d11e88be",
+    "public/fonts/NotoSansSC-Regular.otf": "faa6c9df652116dde789d351359f3d7e5d2285a2b2a1f04a2d7244df706d5ea9",
+    "public/fonts/OFL.txt": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+    "scripts/audit.ts": "e8fe087d33756c5abaa4011c2cd219b39d6df0cd6f7151517ff7f61eff07bf00",
+    "scripts/autoplay.ts": "b787894b2f794798bfce0eb2b14a38499c62a98c8db2fdde031352ff3eccdffc",
+    "scripts/browser_probe.py": "bbec8389160f8caa3c566f622b680e17a0e3c7350132fa64b98f450e025a43cf",
+    "scripts/browser_verify.py": "dd6b3c72585e1108998a36c89f39c43cad672351ad5482ed800f6c42352027e9",
+    "scripts/check-save.ts": "18c75fa0ad22aa9fc838a4bb6ec34b731e95c4c9b3c8ddeeaa81d25f9b9f2081",
+    "scripts/gen-content.ts": "ef1e5d640dd04e505fafffc91c0f48f58bbfc2a49b171930340a069fdfc741d7",
+    "scripts/gen-release-manifest.py": "0032937cd1323c7f4a4f702bf0358606c9916241e5c11c561ca4eebc959b280e",
+    "scripts/gen-report.ts": "b922058502b9175e57d829d3d2e63faed070f071ee96a8e9d20c6659e7cc1363",
+    "scripts/pages_verify.py": "c98d331ef6dbdf192878cde03411cedcb1268975e5e48bbd0919c126f03a11f3",
+    "scripts/replay.ts": "8bb133505cc601c14a9b6dc10e20065896b02c46c0e884f32021e863889ef982",
+    "scripts/subset-font.py": "b9cacbd0de1f15fedfcf9586097ba3e235f8fcd7bc8e7fef161f683ee0531367",
+    "scripts/tutorial_verify.py": "675dc59c78506ef0a72e65d1f72bb214ed37c3f67cf52b3bc0f1bd98115f3cfe",
+    "scripts/verify-facts.ts": "a698e9db6fd8e0367dbc007ec654cde2ef5c97df0051c2d59d66f506e0e111e5",
+    "src/content/generated.ts": "6bf2dac2f918f38d54e0dfd9accfbbd295d1e37a5cc412433cb3004efe96e3c6",
+    "src/content/jokers.ts": "3207262cb3b3f64dbb6e79131ce5713dea4cf36c4906d6ac671d8be5b51194d2",
+    "src/content/systems-runtime.ts": "e9d2a17dd38e3497992276f9ec327c429d4a1b6f35c9f9ee811c8c2e06f84314",
+    "src/core/cards.ts": "0a5e21b987ed6bee4b87980ec8aa916ed342fc77be5bff9c4b08730a2ef5e36f",
+    "src/core/economy-runtime.ts": "38c267ecb46f1ce9a4affe4d559545807d5e1b9722299834db2f874a5deaa2ca",
+    "src/core/poker.ts": "e2f44b1288ac216cf8e7ec7950ce6630ec79e3d4b27ece10c47a540ffa24461f",
+    "src/core/rng.ts": "c5fe0e4b7e0b5b37d87c0f42e251ddb8ebb3ba668cec3b27345c0e72a7b8afb6",
+    "src/core/run-engine.ts": "c111d5dab1e116d778313e4232f8d58f7fb400954283b0aba29b6a3faa0f415a",
+    "src/core/scoring.ts": "6ca9d97092de7752854d70565bc0a096c640e61510adf964cea508d88831c26a",
+    "src/independent-main.ts": "5942de7b2321b21defb0c38758e5bd52777c77952ba71230030066433ed8e0d6",
+    "src/original-style.css": "09a87bf51bae9d2f92deed6691a58d5f1af6ac2648283ad2b9f0097b030edb8c",
+    "src/render/original-table.ts": "4fa9fd21f23e5ffbb423b13c145895e0665b83a987a8ad830a1a05202ca6a0c4",
+    "src/render/timing.ts": "1a17ba7bc3f3d40a4beab1d16a86cdfd4a29e81b64bf8cbd231f1dc20fa7bfb9",
+    "src/ui/tutorial-model.ts": "9073e7dd3077d98073275720ba156c771973103f8549c96175e0a51fe586a5c5",
+    "src/ui/tutorial.ts": "18acfbe63c23baff604f0027ad9e786282a08a23cce75e16cf6e24b3c17651d8",
+    "tests/endless.test.ts": "eb59d649ec730475102ec166f1dcf0effcef2e5ed9d9aed3ad86ed0239d34663",
+    "tests/game.test.ts": "f3f94ec823748d6c4a29e734c705160906c7e42881ef0a4ecc81d0caa1c39fee",
+    "tests/jokers.test.ts": "a044c8edaea11bbf498ea79f153ff45817c6060a091bac83c23d8f13cade3e4e",
+    "tests/poker.test.ts": "d95e98f59e39a3fae7fff20fe539ade302caaf33332048c28591f1a09557aa88",
+    "tests/rng.test.ts": "80aa1146169175fbfc6560a84837c268793993f1911194cb7370f7635a2fb747",
+    "tests/scoring.test.ts": "5daf0ee2e4c7245e4119858bfee943f3aeddd2d736e705c8e5fa4b18fcb5eb7d",
+    "tests/systems-verified.test.ts": "3e60c66eee35caf3d57b64ef996ba10c6e6bb6dbbfe055354b94e4a09ebf8fb3",
+    "tests/timing.test.ts": "bfca2db482fb078e8f76b51f1b1bdd59979c71eee0a175f8c6dd249db427eed4",
+    "tests/tutorial.test.ts": "40f7ba3cb3e599bf89a50860e8bc7f225bc6dc8d4c0e6884832008f496650e55",
+    "tools/browser-requirements.txt": "44c8121654922f51fbd7d7700c4300f1cf5f2ca942ddcf62cb081e4036630196",
+    "tools/export-mod/README.md": "98cd9cb1cc648431aaa9588f33217a6dc20528e1c9b90d9106dfe9fe315dc7b6",
+    "tools/export-mod/main.lua": "52fcbe6501a1355420923dd255e5044b7bca1835be7ea234f9fb8af3557c2ca0",
+    "tools/export-mod/manifest.json": "faab9c1b05ba22efb131fa607c9e46a7248df9e51094755dbc2676f87c856a0e",
+    "tools/export-mod/test-exporter.lua": "24360daf3d15ce00d08dc2fb769acd3e58220c1a2c86f470197b6de87003ac35",
+    "tools/font-requirements.txt": "8844658cca05434bff3ea4c1e5b7d2bd79b24ed87a17a9265a8daa900f133062",
+    "tsconfig.json": "d54ad28802d09ed42c75b473c4d91b311d15cdcbdb79c9d921d38fbedd9c348c",
+    "vite.config.ts": "8b7de9c3bd77a3b583276b5949ccd23e03b6645e3c0e2083c1fbfaac6ef0ecbc"
+  },
+  "productionArtifacts": [
+    {
+      "file": "dist/.nojekyll",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "file": "dist/LICENSE.txt",
+      "sha256": "6f46a7db9119fef4693b79444b9c0607086a80c9321df935ea09b79bda45cc91",
+      "bytes": 1098
+    },
+    {
+      "file": "dist/THIRD_PARTY_NOTICES.txt",
+      "sha256": "387e2260b7261cd73a2c59bda13c282efdaa42f661f3f5de813e887719ed7c98",
+      "bytes": 15437
+    },
+    {
+      "file": "dist/assets/BatchableSprite-fU39kw5s.js",
+      "sha256": "e27029fb3a28131cb3f85eba1ecd21393fcd5b43264eb3d9d3f05d53218740e7",
+      "bytes": 26012
+    },
+    {
+      "file": "dist/assets/CanvasPool-BO8jmDmJ.js",
+      "sha256": "77b2bbc299d6cbd668bf33c5967625d46fa009e68c2ecaa145373c953565dde9",
+      "bytes": 113547
+    },
+    {
+      "file": "dist/assets/CanvasRenderer-Xm1Fqjwn.js",
+      "sha256": "6879714ce2781beb505667f29eb0d44b379c7384727e5eedfecd6551203a7611",
+      "bytes": 18018
+    },
+    {
+      "file": "dist/assets/Filter-D0hf7wn8.js",
+      "sha256": "e49cb36a174ff9342c7a75441468ab42aa8735fe9681da654462d2adf03522d6",
+      "bytes": 909
+    },
+    {
+      "file": "dist/assets/Graphics-B0QO8SG-.js",
+      "sha256": "9a580777a34955c6f501ccdf2233ce472876d9945a4592947ecc07c7eee4cbc1",
+      "bytes": 72599
+    },
+    {
+      "file": "dist/assets/RenderTargetSystem-DiMrQnlB.js",
+      "sha256": "9f4bafdc89178700fdcbba8e61680dde3390936598fb5c7c5958509de3781521",
+      "bytes": 53503
+    },
+    {
+      "file": "dist/assets/WebGLRenderer-BCx5iX9f.js",
+      "sha256": "bac838b88b637320b7bc56b88649e722e1ee9f41cf68555a67c504bbdafe52f3",
+      "bytes": 73671
+    },
+    {
+      "file": "dist/assets/WebGPURenderer-Bq5qS-Sx.js",
+      "sha256": "8338b31d360a5d798c79c754646d4479a3104361510bd95584f8482508e5e21a",
+      "bytes": 55964
+    },
+    {
+      "file": "dist/assets/browserAll-G7Cu-Txx.js",
+      "sha256": "4015b38294e755d643cd92ee7d6aa7c3e4caa9fd21910a4d936a74c884d6870f",
+      "bytes": 44013
+    },
+    {
+      "file": "dist/assets/canvasUtils-DexliMHI.js",
+      "sha256": "ddbd30544a52aa969de391c5e73ae97afc4e646cbe1c2e5b88473a8d79966fcc",
+      "bytes": 6040
+    },
+    {
+      "file": "dist/assets/getPo2TextureFromSource-DbMhKVnc.js",
+      "sha256": "397073b5d065b09591aa3cf18deb0a08cd98fc5acaf287c802ba1d14cc33b4f3",
+      "bytes": 25529
+    },
+    {
+      "file": "dist/assets/getTexelRangeRects-DZY4NxT9.js",
+      "sha256": "55a914c97b03e24d2aa3504a748b371da1c8195395919b3e54d4824bac1ed42f",
+      "bytes": 11451
+    },
+    {
+      "file": "dist/assets/getTextureBatchBindGroup-CGITerI7.js",
+      "sha256": "f3d7fee52e287f0d244e564787eb4cf2ef30d0a22a473017688662ccba51f736",
+      "bytes": 357
+    },
+    {
+      "file": "dist/assets/index-CctDqWRC.js",
+      "sha256": "b113054ddaca29fc30e33396ccb7cf8bf48e93a9e759c0d7d19303717321989b",
+      "bytes": 1094145
+    },
+    {
+      "file": "dist/assets/index-DpWUwQS3.css",
+      "sha256": "1098e763b0fe764f170ed9b260245168e0db64b908a388bd0f02583b27d8034a",
+      "bytes": 20360
+    },
+    {
+      "file": "dist/assets/webworkerAll-CZXc1NV-.js",
+      "sha256": "deff5806d096c7a6617a1284524318c221fe25972b87346cbbf93a7a1d5a260d",
+      "bytes": 15111
+    },
+    {
+      "file": "dist/favicon.svg",
+      "sha256": "1ba4b89997df1d5874881240bef0393147797d62076ec4ebb8a3caa5df527c0e",
+      "bytes": 193
+    },
+    {
+      "file": "dist/fonts/COPYRIGHT.txt",
+      "sha256": "eb115f50f8269394856f6813aef5b7e533b15359fa0d9522fab9d0d4f4e00216",
+      "bytes": 405
+    },
+    {
+      "file": "dist/fonts/NightVoyageSC-Subset.woff2",
+      "sha256": "7ebe95f5ece66aad1da876fbad53375d3c2e9bc5b159d8cb8414fc58d11e88be",
+      "bytes": 199996
+    },
+    {
+      "file": "dist/fonts/NotoSansSC-Regular.otf",
+      "sha256": "faa6c9df652116dde789d351359f3d7e5d2285a2b2a1f04a2d7244df706d5ea9",
+      "bytes": 8331336
+    },
+    {
+      "file": "dist/fonts/OFL.txt",
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+      "bytes": 4301
+    },
+    {
+      "file": "dist/index.html",
+      "sha256": "1be170d1f718c982c059cf03d1db271952509d26ddeb4bc5f85ac780565cc675",
+      "bytes": 3981
+    }
+  ],
+  "reports": {
+    "docs/EXPERIMENT.md": {
+      "sha256": "ab429477eb7e6250eb8c89d1360d3677e8d9ff6099a9ce350dcbd864840d8c9f",
+      "bytes": 3671
+    },
+    "docs/PLAYING.md": {
+      "sha256": "dd4b555cb1e96d3bbba0b31fa8b1b64fe0ebd6236305498679ce38b313396001",
+      "bytes": 5147
+    },
+    "docs/assets.md": {
+      "sha256": "5bfd693cdae2e0b000546713b5ba69070eea7ec4186ee95b679590e777410aaa",
+      "bytes": 1632
+    },
+    "docs/autoplay-search.json": {
+      "sha256": "0017806332cdad7622ee8eea9d18a3379c5d122721546d12b4afc777375aafcb",
+      "bytes": 253
+    },
+    "docs/boss-reroll-before.json": {
+      "sha256": "dc15cd837de14c0de5c5de5bfec713e1087f2b64a31219a7854e905a458fbd7a",
+      "bytes": 13289
+    },
+    "docs/browser-report.json": {
+      "sha256": "6a609962782a59b1c3350f309d7783b4ac4630bccdce749c1ce1558fe54bfa44",
+      "bytes": 5925
+    },
+    "docs/content-audit.json": {
+      "sha256": "8ebc7a8fcb1c2c537de6829ca756c6dfe0b6cf9cb5f78d6d7769ee895f1c9a1b",
+      "bytes": 522
+    },
+    "docs/content-rebuild-report.json": {
+      "sha256": "63c498dad0b230e85fe8fd3bbe4075adcc3cb2af4fc3d2a6943c68d415eace42",
+      "bytes": 922
+    },
+    "docs/core-fact-assertions.json": {
+      "sha256": "99ff66ed78bfd930acfc80e0025f0be93a39f09ef84a9487a4e263a01187a772",
+      "bytes": 91867
+    },
+    "docs/coverage.md": {
+      "sha256": "bf9c5dd824b51e203d39119b3c61fdaa2ae55e33baf7d472068de0e236eecbd9",
+      "bytes": 66706
+    },
+    "docs/decisions.md": {
+      "sha256": "0591e2b7886800e04d01dab5f8de0c56641a759cc4172b6ea6921e545408d013",
+      "bytes": 2161
+    },
+    "docs/design.md": {
+      "sha256": "7db6d46b5624643713c74e529a4d2e7ab7d4fbca1d9089efa7cb70623d3af5ed",
+      "bytes": 2155
+    },
+    "docs/endless-after.json": {
+      "sha256": "ab64c610cb58b4a46e5fce44d8da16da4f05e41544320cac568984ec0447ae28",
+      "bytes": 1928
+    },
+    "docs/endless-before.json": {
+      "sha256": "8e601b936008fb9d48bb0648fd3d37c5f14e68b2c7ab16108812ecbdb3b37e82",
+      "bytes": 3334
+    },
+    "docs/erosion-before.json": {
+      "sha256": "6294759253ee84635504457e0d7f3d042468c43f6ff2a1e4f9f8bc0529fca94a",
+      "bytes": 13267
+    },
+    "docs/exporter-status.md": {
+      "sha256": "ffe0fa0ab8748828252ba5789c0e2fd1bcbb4f458110b45fba1716a356d9b260",
+      "bytes": 5979
+    },
+    "docs/fact-assertion-audit.json": {
+      "sha256": "bb66a167a14a7c61985a2f448ea3bd087774d5e4a86a403eddc4ab1ad101fc39",
+      "bytes": 8210450
+    },
+    "docs/fact-table.md": {
+      "sha256": "3c508deae5ba3d786fb2b0435afddbc8c2f185501733fb6f79c0cf758c1c0c57",
+      "bytes": 671589
+    },
+    "docs/font-subset-report.json": {
+      "sha256": "90c4f54e4a781affa780b71247d0995b8578c76530d7c2f3b499fa24d85d728d",
+      "bytes": 472
+    },
+    "docs/full-run.json": {
+      "sha256": "49594d95f2a8b8a2625eb4c7685ad845f3835962f66be8ef918f19b78dac8d5c",
+      "bytes": 124723
+    },
+    "docs/independent-review.md": {
+      "sha256": "038d1f2185955b49cee34ff7c02e9e5337006e9b633265c37c0a63e0a9e34192",
+      "bytes": 15263
+    },
+    "docs/integration-after-2.json": {
+      "sha256": "90f1e244f7f970aea739c7f638886ad08b890098ee0610541a785a260481124b",
+      "bytes": 10802
+    },
+    "docs/integration-after-4.json": {
+      "sha256": "b9883343f0e22d22e6e665751b7f141a998fb9c25e4e8177d2576af606341073",
+      "bytes": 12069
+    },
+    "docs/integration-after.json": {
+      "sha256": "da89bd1f2b0edcc631fa0b4166b2fc008e8140ee70e1f914d0ccf8802639dbde",
+      "bytes": 9208
+    },
+    "docs/integration-before-2.json": {
+      "sha256": "4429169066d329bd7d3b326a23fe93091683e3c5005fb78a06b193bf733d5059",
+      "bytes": 13697
+    },
+    "docs/integration-before-3.json": {
+      "sha256": "02259190ffd24be9b778a339bee480c5755bed064d8a2b6905159961b4047b83",
+      "bytes": 14584
+    },
+    "docs/integration-before-4.json": {
+      "sha256": "50690d5f44eed6dc0e6311cbd6fd53034d55f72cc4c517f24442fe2e9a340f3a",
+      "bytes": 16070
+    },
+    "docs/integration-before.json": {
+      "sha256": "6a23e334c8d17422716ac152079e9b99fbe9e91dd81001634045f8a7397e0603",
+      "bytes": 25034
+    },
+    "docs/jokers-fact-assertions.json": {
+      "sha256": "107e1cfd6b99926ee4d10ed5e8b1da27d9ac94c5dbb9eb1de774ed0d8c5b3b1b",
+      "bytes": 2448793
+    },
+    "docs/jokers-research.md": {
+      "sha256": "2bb25b35eb455005fc3eabc2190686edffe3050f058fe239cd713c0bbab89ecb",
+      "bytes": 22528
+    },
+    "docs/pages-browser-report.json": {
+      "sha256": "56ff53bde2a85f05ca1762525ac96102cdf2b82d83725f96b411963c931b7eb1",
+      "bytes": 419
+    },
+    "docs/phase-commits.md": {
+      "sha256": "6372366017dec12c60114f00feb0ae21b48bd2036b77c502f5b629535d45e734",
+      "bytes": 1046
+    },
+    "docs/progress.md": {
+      "sha256": "73e03b242d3a84c3fb0a445d4c1462e84bbf23db2f8e31dfbee98869130f9f1a",
+      "bytes": 6837
+    },
+    "docs/public-release-review.md": {
+      "sha256": "2cd389fadc439396a514862c81e9bf84f51107cc49f626e8634022c13fe94290",
+      "bytes": 5924
+    },
+    "docs/publishing-plan.md": {
+      "sha256": "20b6f78fbaa1be420a161b36a0c5ed39b9a28cba0b485d437097ce18f79aa21a",
+      "bytes": 2138
+    },
+    "docs/publishing-report.json": {
+      "sha256": "781a26f7cfd1e7dbe251c60a9e0a2726e3f067504b26e0972247d1eb5a572679",
+      "bytes": 1646
+    },
+    "docs/release-preflight.json": {
+      "sha256": "a3c059cda399c35a602dc88a783d5137270181ae6839cb774108e8fed3267f76",
+      "bytes": 753
+    },
+    "docs/replay-report.json": {
+      "sha256": "0bda93ea424db9c3268f65c18d3de008af73a3129bc6cf0181ee0f3066f88de4",
+      "bytes": 756
+    },
+    "docs/scoring-research.md": {
+      "sha256": "f0f2e1ce42fd5ff3fe762e8b5a7538224a1c03ecb8c2a813580dc4bf8830e6cf",
+      "bytes": 4488
+    },
+    "docs/source-provenance.json": {
+      "sha256": "00092555d1be22d38e7fdf642f5f9507316d8a419bb96662a085ccfa1be724ae",
+      "bytes": 2293
+    },
+    "docs/systems-research.md": {
+      "sha256": "3d3cf8383a27b47f868508e7e24b1ac0d8fc6651b3798c6fa9df266dc4a281b5",
+      "bytes": 4408
+    },
+    "docs/systems-test-report.json": {
+      "sha256": "e2d8f345a564f2308b3e045170c1c0bf1e6e5f149dd4e43e7a3d681720ed9591",
+      "bytes": 386888
+    },
+    "docs/task-plan.md": {
+      "sha256": "c06a0555b2aad02318946f30264c40fd0dde14c83983cb470ee95f450c718033",
+      "bytes": 412
+    },
+    "docs/test-results.json": {
+      "sha256": "7630dc076519f24200103ae0ba7d132013b2c6bac074181694ac34c6447698ad",
+      "bytes": 571631
+    },
+    "docs/tutorial-after.json": {
+      "sha256": "8a88c17c3006a9b060b5ddf37d9e8e946ee2ba179e7f7f351bfe2d30d3dfc078",
+      "bytes": 3034
+    },
+    "docs/tutorial-before.json": {
+      "sha256": "b869654cbcdb59a3314d62252e74159e6b8ffe9b6fe44fa91735e8e724122ac2",
+      "bytes": 701
+    },
+    "docs/tutorial-browser-report.json": {
+      "sha256": "0307b60cb60db2f7e9f91f0579f5e29a95f0b267f0f4429d9cc3a2c2ceb83b60",
+      "bytes": 4044
+    },
+    "docs/tutorial-layout-before.json": {
+      "sha256": "886ff2e2dbabd89b72cf221929eead93fe6f719dcb841b21766a7b5634ff5728",
+      "bytes": 564
+    },
+    "docs/tutorial-plan.md": {
+      "sha256": "3ccc8628f52827926bc7e628b9b5c99fa20bc2f4f03576b53ea7f36a1409b047",
+      "bytes": 4963
+    },
+    "docs/tutorial-review-artifacts/tutorial-final-first-screenshots.json": {
+      "sha256": "27533c0e8cb4e161b0e97e79abdc8e55abf952956f3fdf6970f4b9bd32f4b0ff",
+      "bytes": 2852
+    },
+    "docs/tutorial-review-artifacts/tutorial-header-fix-review.json": {
+      "sha256": "26abb55b7c8c75f8d73ff26d95df33f094ecf75889bd73fd7de70254d5faa3a7",
+      "bytes": 306824
+    },
+    "docs/tutorial-review-artifacts/tutorial-independent-final-review.json": {
+      "sha256": "64e2703f408c96325341a5a3eeb3ee6a0b402c8eb1a33557d7312ae3063451c2",
+      "bytes": 182308
+    },
+    "docs/tutorial-review.md": {
+      "sha256": "281c9569a31f5b2ed81d94323b09682b107a56ec68a50c81909b3f9a09d118cf",
+      "bytes": 12230
+    },
+    "docs/verification-report.md": {
+      "sha256": "59bed73b6ce6f31724b4b93dbf6a8213f890bbee81db5dc6a346000dccfb2720",
+      "bytes": 7924
+    }
+  },
+  "screenshots": [
+    {
+      "file": "docs/screenshots/01-menu.png",
+      "sha256": "e3e891357aeb3d517957f8dce3793be8056522777208f6c3f658f009d7c782bd",
+      "bytes": 124692
+    },
+    {
+      "file": "docs/screenshots/02-blind-select.png",
+      "sha256": "740aff2188eee97c42fdf9ff4102a94136a45c344ba5788b0c4ee4d1a03f0a84",
+      "bytes": 378316
+    },
+    {
+      "file": "docs/screenshots/03-playing.png",
+      "sha256": "5510a5d50b2c1507f3faca0848273729acb360492f66d03355c125a33309a441",
+      "bytes": 379298
+    },
+    {
+      "file": "docs/screenshots/04-mobile.png",
+      "sha256": "aa955212b53904ce04678d3df174df3e57737597409c7a9d0e84237b5eb05cf0",
+      "bytes": 160042
+    },
+    {
+      "file": "docs/screenshots/05-shop.png",
+      "sha256": "79cdafe7740a88b85a0a922790cf1c236056158d0417bd375c8aea007ebcd048",
+      "bytes": 405058
+    },
+    {
+      "file": "docs/screenshots/06-pack.png",
+      "sha256": "9628723238efa6b866383a05e84a005601d9ad6ec305f7f4eb5dd3172dfb5c8d",
+      "bytes": 392559
+    },
+    {
+      "file": "docs/screenshots/07-mobile-shop.png",
+      "sha256": "46dd63706871182e5e741a4cba365b7e46ff82e94c11fc29a1ae3e1e143a40cf",
+      "bytes": 181555
+    },
+    {
+      "file": "docs/screenshots/08-won.png",
+      "sha256": "adcca7dd4cdccd5f9c5ff808d44aaf0ed42da12fdd605394beec7312b125c3b0",
+      "bytes": 377170
+    },
+    {
+      "file": "docs/screenshots/09-endless.png",
+      "sha256": "d60c20321cdb7486fa1f00dc773685a32f5d10b64411fbf120deec278beb21c3",
+      "bytes": 383338
+    },
+    {
+      "file": "docs/screenshots/review/night-review-freeze-desktop-ante9.png",
+      "sha256": "6791b4a6e3da46ac33abb999467302f9206b93a0e2cb1abd0c170a6cd7958aea",
+      "bytes": 402775
+    },
+    {
+      "file": "docs/screenshots/review/night-review-freeze-desktop-won.png",
+      "sha256": "cf4884fd82f6ff69ba80664a6292e429a3e3086f78b35b96d5594c7cf212115b",
+      "bytes": 405707
+    },
+    {
+      "file": "docs/screenshots/review/night-review-freeze-mobile-ante9.png",
+      "sha256": "783f8cb7e3b191606a5e0e014e291f2d857c533303e14a56ebb43c20558e5477",
+      "bytes": 187365
+    },
+    {
+      "file": "docs/screenshots/review/night-review-freeze-mobile-won.png",
+      "sha256": "a61b18acf05ee235207da3cadff8e4dc9b26872c164ed26cf9416a9d119834e6",
+      "bytes": 176483
+    },
+    {
+      "file": "docs/screenshots/review/night-review-last-desktop-expanded-pack.png",
+      "sha256": "4011272f54a6818397b61269d4e6a1fa680f2a0cd71d8cd299e0cf24e691482e",
+      "bytes": 361230
+    },
+    {
+      "file": "docs/screenshots/review/night-review-last-desktop-expanded.png",
+      "sha256": "43c26e6e79193ab34be6bfd0008ff3d432f470c27b88b69215ad3262bcc5dcf8",
+      "bytes": 359458
+    },
+    {
+      "file": "docs/screenshots/review/night-review-last-desktop-shop-pack.png",
+      "sha256": "1752e0f6598ffe0b50f7fca0252692d543df67d17baddd5a5b2200fa96fd7050",
+      "bytes": 364934
+    },
+    {
+      "file": "docs/screenshots/review/night-review-last-desktop-shop.png",
+      "sha256": "aa1582ce6a22aa2d59e62b81d70b5e4e0d56498ca5aef081329942b61316f033",
+      "bytes": 362258
+    },
+    {
+      "file": "docs/screenshots/review/night-review-last-mobile-expanded-pack.png",
+      "sha256": "2e908331c527c1f92281d5e99445cf7f1778d769154ef86267880a0084b0565d",
+      "bytes": 171406
+    },
+    {
+      "file": "docs/screenshots/review/night-review-last-mobile-expanded.png",
+      "sha256": "22dabf38968eedd88b6186d7e2051f5f33d48d69a4878e3be5898850ed244f98",
+      "bytes": 175035
+    },
+    {
+      "file": "docs/screenshots/review/night-review-last-mobile-shop-pack.png",
+      "sha256": "fdbc307753fa144233d6cb415e307b4f0aae99492f951747a243d328282e84e1",
+      "bytes": 172001
+    },
+    {
+      "file": "docs/screenshots/review/night-review-last-mobile-shop.png",
+      "sha256": "609cb49ad92accc423c941644fe933b7a377d234212ec2e78d3c3d77ee3ad65b",
+      "bytes": 175428
+    },
+    {
+      "file": "docs/screenshots/tutorial/01-first-visit-desktop.png",
+      "sha256": "6e7ddc4d94e25a70e73bad772290618200b1cc6958e4086544e1e4d3ca581397",
+      "bytes": 191067
+    },
+    {
+      "file": "docs/screenshots/tutorial/02-practice-desktop.png",
+      "sha256": "b59648121682f87fb68b8e8fdcf56de495a36d0054874416dbdd5f9d12dba3f2",
+      "bytes": 151589
+    },
+    {
+      "file": "docs/screenshots/tutorial/03-partner-order-desktop.png",
+      "sha256": "7548dbbf0044e5236bf98b5c13e221873daf13339c8a0985b10ec0908f2f7420",
+      "bytes": 179092
+    },
+    {
+      "file": "docs/screenshots/tutorial/04-first-visit-mobile.png",
+      "sha256": "a79409f25b4e632fb52635d34cbba8853ef2add43f50430d2819396c96304dfa",
+      "bytes": 91608
+    },
+    {
+      "file": "docs/screenshots/tutorial/05-practice-mobile.png",
+      "sha256": "82a39db0c28d3ffa9f485dfb1753b208d0666a28179b954f32e93aab864403e8",
+      "bytes": 66737
+    },
+    {
+      "file": "docs/screenshots/tutorial/06-shop-mobile.png",
+      "sha256": "521e47482c7e6468ab680d8278879489dd21996758e362ebc009d6a707a36665",
+      "bytes": 103446
+    },
+    {
+      "file": "docs/screenshots/tutorial/07-menu-entry-mobile.png",
+      "sha256": "4e23bb39630f86877dd9e92a552bd3750372f36a449c7e879a59f00583d37193",
+      "bytes": 67970
+    },
+    {
+      "file": "docs/screenshots/tutorial/review/evidence/tutorial-review-header-overlap-mobile.png",
+      "sha256": "b38ba3eb4a0e0593c3313dedca48e699724d892b32d66c650d7353f71b9868ca",
+      "bytes": 91563
+    },
+    {
+      "file": "docs/screenshots/tutorial/review/evidence/tutorial-review-return-after.png",
+      "sha256": "c0ea081bf855b1b8a4b3958af4984bb6529bae5c2168df442811b24424f22795",
+      "bytes": 142421
+    },
+    {
+      "file": "docs/screenshots/tutorial/review/evidence/tutorial-review-return-desktop.png",
+      "sha256": "1e33860305c936260ef122e691da1d08c870e69b4e43d6df49b8bb8af5c3a21d",
+      "bytes": 199301
+    },
+    {
+      "file": "docs/screenshots/tutorial/review/tutorial-review-final2-desktop-first.png",
+      "sha256": "983beba73b979a647e7c00151565e3303fd860cae2626aeddae2e59342089ff1",
+      "bytes": 191067
+    },
+    {
+      "file": "docs/screenshots/tutorial/review/tutorial-review-final2-desktop-partners.png",
+      "sha256": "3ea168367f4f272277d283631b7f249903d6e2c3df66d2d4ecab9c98c0387605",
+      "bytes": 190321
+    },
+    {
+      "file": "docs/screenshots/tutorial/review/tutorial-review-final2-desktop-practice.png",
+      "sha256": "682f6825eeff2e3a91c375c66bd1c54f8a6a28e6ff703f1cc776700a7ba20fb4",
+      "bytes": 170387
+    },
+    {
+      "file": "docs/screenshots/tutorial/review/tutorial-review-final2-mobile-first.png",
+      "sha256": "a79409f25b4e632fb52635d34cbba8853ef2add43f50430d2819396c96304dfa",
+      "bytes": 91608
+    },
+    {
+      "file": "docs/screenshots/tutorial/review/tutorial-review-final2-mobile-partners.png",
+      "sha256": "9f86c0e5935c8e76617c86bdad5ec6d8ffd9c5047811b373c2c4e4c5fb2bede7",
+      "bytes": 95408
+    },
+    {
+      "file": "docs/screenshots/tutorial/review/tutorial-review-final2-mobile-practice.png",
+      "sha256": "191a025e480bd468ae95a0c701d6f35a16f63386a1bcc84bb3f9f48b1d168369",
+      "bytes": 77115
+    }
+  ],
+  "verification": {
+    "gameTests": {
+      "passed": 1967,
+      "failed": 0,
+      "source": "docs/test-results.json"
+    },
+    "strictTypesAndBuild": {
+      "command": "npm run build",
+      "observedExitCode": 0
+    },
+    "contentAudit": {
+      "errors": [],
+      "source": "docs/content-audit.json"
+    },
+    "facts": {
+      "count": 3642,
+      "mapped": 3642,
+      "levels": {
+        "same_source_internal_consistency": 3370,
+        "independent_scenario": 228,
+        "partial_field": 27,
+        "uncovered": 8,
+        "oracle_vector": 9
+      },
+      "source": "docs/fact-assertion-audit.json"
+    },
+    "browser": {
+      "url": "http://127.0.0.1:51692/gpt-game-night-voyage/",
+      "version": "155.0.8059.40",
+      "actions": 203,
+      "pageErrors": [],
+      "consoleErrors": [],
+      "sourceChangesAfterRecording": []
+    },
+    "tutorial": {
+      "flows": 11,
+      "passed": 11,
+      "pageErrors": [],
+      "consoleErrors": [],
+      "sourceChangesAfterRecording": []
+    },
+    "projectSubpath": {
+      "method": "生产包置于项目子路径，用真实Chrome/Chromium控件核验教程和203步整局，状态只读。",
+      "basePath": "/gpt-game-night-voyage/",
+      "url": "http://127.0.0.1:51692/gpt-game-night-voyage/",
+      "checks": [
+        {
+          "script": "scripts/tutorial_verify.py",
+          "exitCode": 0
+        },
+        {
+          "script": "scripts/browser_verify.py",
+          "exitCode": 0
+        }
+      ],
+      "passed": true
+    },
+    "replayStrategies": 3,
+    "historicalIndependentReviews": [
+      "docs/independent-review.md",
+      "docs/tutorial-review.md"
+    ],
+    "publicReleaseReview": "docs/public-release-review.md"
+  },
+  "originalAcceptanceComplete": false,
+  "unimplemented": [
+    "持久解锁进度",
+    "挑战",
+    "成就"
+  ],
+  "notVerifiedAgainstOriginal": [
+    "游戏内dump",
+    "同种子整局与全局随机轨迹",
+    "平台浮点模式",
+    "录屏、音频及逐帧手感",
+    "全部组合、随机分支与完整无尽实战"
+  ],
+  "excludedFromRepository": [
+    "references/",
+    "node_modules/",
+    "dist/",
+    ".venv/",
+    ".publish-venv/",
+    "artifacts/"
+  ],
+  "note": "当前公开树指纹与历史评审分别记录；指纹不是原版金标准。dist仅记录指纹，由Actions重建发布。发布状态与线上核验见publishing-report.json。"
+}

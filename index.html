@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#0d2940"><title>星筹夜航 · GPT 6.1 制作小游戏测试</title><link rel="icon" href="/favicon.svg" type="image/svg+xml"><meta name="description" content="免费浏览器纸牌策略小游戏：组合牌型，结识伙伴，穿越八段夜航。支持电脑、手机、自动存档和详细互动教程。"></head>
+<body>
+<div id="app">
+<header><a class="wordmark" href="./">星筹<span>夜航</span><i>✦</i></a><div class="top-actions"><button id="collection-btn">图鉴</button><button id="help-btn">教程</button><button id="sound-btn" aria-pressed="false">声音：关</button><button id="settings-btn">设置</button></div></header>
+<main class="game-layout">
+<aside class="hud">
+<div class="voyage"><span id="ante-label">夜航 1 / 8</span><span id="round-label">第 1 关</span></div>
+<div class="target-box"><span class="label">本关目标</span><strong id="target">300</strong><span id="blind-name">前哨</span><small id="blind-effect">组合手牌，超过目标筹码</small></div>
+<div class="total-box"><span class="label">本关筹码</span><strong id="round-score">0</strong><div class="progress-track"><i id="score-progress"></i></div></div>
+<div class="hand-name" id="hand-name">选择你的牌</div>
+<div class="score-equation"><div><strong id="chips">0</strong><span>筹码</span></div><b>×</b><div><strong id="mult">0</strong><span>倍率</span></div></div>
+<div class="resources"><div><span>出牌</span><strong id="hands-left">4</strong></div><div><span>弃牌</span><strong id="discards-left">4</strong></div><div class="cash"><span>金币</span><strong id="money">$4</strong></div></div>
+<div class="deck-info"><span id="deck-count">牌堆 52</span><button id="deck-btn">查看</button></div>
+<button id="new-run-btn" class="quiet">重新开始</button>
+</aside>
+<section class="board-area" aria-label="游戏牌桌">
+<div class="board-top"><span id="joker-count">伙伴 0 / 5</span><span id="consumable-count">道具 0 / 2</span></div>
+<div id="table"></div>
+<div id="stage-panel" class="stage-panel"></div>
+<div class="hand-guide"><span id="hand-hint">点击手牌选择，最多五张</span><span id="selected-count">0 / 5</span></div>
+<div class="game-controls"><div class="sort-buttons"><button id="hand-left" class="small" aria-label="选中手牌左移">←</button><button id="hand-right" class="small" aria-label="选中手牌右移">→</button><button id="sort-rank" class="small">按点数</button><button id="sort-suit" class="small">按花色</button></div><button id="play-btn" class="primary" disabled>出牌</button><button id="discard-btn" class="danger" disabled>弃牌</button><div class="speed-control"><label for="speed">结算速度</label><select id="speed"><option value="1">1×</option><option value="2" selected>2×</option><option value="4">4×</option></select></div></div>
+</section>
+</main>
+<footer><span id="status" aria-live="polite">用一副纸牌，找到自己的航线。</span><span id="seed-label"></span></footer>
+</div>
+<dialog id="modal"><button id="close-modal" class="dialog-close" aria-label="关闭">×</button><div id="modal-content"></div></dialog>
+<script type="module" src="/src/independent-main.ts"></script>
+</body></html>

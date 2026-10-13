@@ -1,0 +1,214 @@
+{
+  "报告类型": "系统域最终内部验证摘要，明确区分各验证层级；不是原版差分验收",
+  "生成时间": "2026-10-13T04:44:34.630653+08:00",
+  "项目目录": ".",
+  "来源": {
+    "版本": "1.0.1o-FULL",
+    "参考仓库": "https://github.com/GladdonT/balatro-source-code",
+    "固定提交": "895ab3a25bc6f513fa80885eb59951bf8e76bc55",
+    "原始目录": "references/source/",
+    "置信度": "人工阅读固定社区源码；没有游戏内dump或原版运行结果交叉验证"
+  },
+  "活动文件": [
+    "data/systems-verified.json",
+    "data/evidence-systems-verified.json",
+    "data/system-mechanisms.json",
+    "src/content/systems-runtime.ts",
+    "src/core/economy-runtime.ts",
+    "tests/systems-verified.test.ts"
+  ],
+  "文件SHA256": {
+    "data/systems-verified.json": "ed28d1ffa43e52104e777fe6125c2efb0b64e911fa51bf11bbc5a9ffd61ef3b2",
+    "data/evidence-systems-verified.json": "eaebce077a77e4e0ebd658171ed668b7f01b8c2db0c4a78a64c5b326d508a68f",
+    "data/system-mechanisms.json": "9846055ae2db719052639a5f777264f7cbaa315c03aae49db386518ccb83e791",
+    "src/content/systems-runtime.ts": "e9d2a17dd38e3497992276f9ec327c429d4a1b6f35c9f9ee811c8c2e06f84314",
+    "src/core/economy-runtime.ts": "38c267ecb46f1ce9a4affe4d559545807d5e1b9722299834db2f874a5deaa2ca",
+    "tests/systems-verified.test.ts": "3e60c66eee35caf3d57b64ef996ba10c6e6bb6dbbfe055354b94e4a09ebf8fb3"
+  },
+  "内容数量": {
+    "consumables": {
+      "数量": 52,
+      "目录与来源": "已采集并逐字段一致性检查",
+      "独立系统实现": "已实现",
+      "行为验证": "本域运行行为测试通过；完整主流程组合由主代理报告",
+      "分类数量": {
+        "tarot": 22,
+        "planet": 12,
+        "spectral": 18
+      }
+    },
+    "vouchers": {
+      "数量": 32,
+      "目录与来源": "已采集并逐字段一致性检查",
+      "独立系统实现": "已实现",
+      "行为验证": "本域运行行为测试通过；完整主流程组合由主代理报告"
+    },
+    "decks": {
+      "数量": 15,
+      "目录与来源": "已采集并逐字段一致性检查",
+      "独立系统实现": "已实现",
+      "行为验证": "本域运行行为测试通过；完整主流程组合由主代理报告"
+    },
+    "blinds": {
+      "数量": 30,
+      "目录与来源": "已采集并逐字段一致性检查",
+      "独立系统实现": "已实现",
+      "行为验证": "本域运行行为测试通过；完整主流程组合由主代理报告",
+      "守关数量": 28
+    },
+    "stakes": {
+      "数量": 8,
+      "目录与来源": "已采集并逐字段一致性检查",
+      "独立系统实现": "已实现",
+      "行为验证": "本域运行行为测试通过；完整主流程组合由主代理报告"
+    },
+    "tags": {
+      "数量": 24,
+      "目录与来源": "已采集并逐字段一致性检查",
+      "独立系统实现": "已实现",
+      "行为验证": "本域运行行为测试通过；完整主流程组合由主代理报告"
+    },
+    "boosters": {
+      "数量": 32,
+      "目录与来源": "已采集并逐字段一致性检查",
+      "独立系统实现": "已实现",
+      "行为验证": "本域运行行为测试通过；完整主流程组合由主代理报告"
+    },
+    "enhancements": {
+      "数量": 8,
+      "目录与来源": "已采集并逐字段一致性检查",
+      "独立系统实现": "本域负责数值、生成与分配；牌上计分／触发由计分域及主流程负责",
+      "行为验证": "本域生成流程通过；计分与回合触发另验"
+    },
+    "seals": {
+      "数量": 4,
+      "目录与来源": "已采集并逐字段一致性检查",
+      "独立系统实现": "本域负责数值、生成与分配；牌上计分／触发由计分域及主流程负责",
+      "行为验证": "本域生成流程通过；计分与回合触发另验"
+    },
+    "editions": {
+      "数量": 5,
+      "目录与来源": "已采集并逐字段一致性检查",
+      "独立系统实现": "本域负责数值、生成与分配；牌上计分／触发由计分域及主流程负责",
+      "行为验证": "本域生成流程通过；计分与回合触发另验"
+    }
+  },
+  "目录总数": 210,
+  "原创说明数量": 210,
+  "测试总览": {
+    "范围": "tests/systems-verified.test.ts",
+    "命令": "npm test -- tests/systems-verified.test.ts",
+    "机器报告": "docs/systems-test-report.json",
+    "总数": 1433,
+    "通过": 1433,
+    "失败": 0,
+    "跳过": 0
+  },
+  "验证分层": {
+    "采集一致性": {
+      "断言数量": 912,
+      "含义": "数值字段、配置、价格、权重、资格等与保存的来源事实一致。不能单独证明运行行为正确。"
+    },
+    "机制溯源一致性": {
+      "断言数量": 272,
+      "动作数量": 266,
+      "服务机制数量": 6,
+      "含义": "声明式动作的时机、条件、公式与逐动作事实一致，每条引用具体执行源码及原始配置行。它是表达及采集一致性断言，不是独立原版行为验证。"
+    },
+    "运行行为回归": {
+      "用例数量": 248,
+      "含义": "调用独立公开入口，检查预先写入的期望结果，覆盖逐件消费、凭单、牌组、凭签、守关、卡包、经济、概率边界与生命周期。未获得原版同操作输出进行差分。"
+    },
+    "目录元数据": {
+      "用例数量": 1,
+      "含义": "版本和数量检查，不计为行为验证。"
+    },
+    "游戏内金标准与录屏": "未完成；本机没有原版。"
+  },
+  "类型检查": {
+    "命令": "node_modules/.bin/tsc --noEmit",
+    "最新状态": "通过",
+    "退出码": 0,
+    "说明": "系统域修复后完整隔离工程执行成功。"
+  },
+  "已修缺陷": [
+    {
+      "问题": "到期短期伙伴被盲注清理复活",
+      "位置": [
+        "applyBlindEnd",
+        "disableBlind",
+        "debuffRandomJoker"
+      ],
+      "出处": [
+        "references/source/card.lua:526-532",
+        "references/source/blind.lua:588-596"
+      ],
+      "测试先行": "4项先失败后通过"
+    },
+    {
+      "问题": "伙伴包与赠送货架伙伴缺少高难度贴签；包内和货架未去重；静默展商仍生效",
+      "位置": [
+        "randomJoker",
+        "eligibleJokerDefinitions",
+        "eligibleConsumables",
+        "generatePackContents"
+      ],
+      "出处": [
+        "references/source/functions/common_events.lua:2137-2147",
+        "references/source/card.lua:349-353",
+        "references/source/functions/common_events.lua:1987-1989",
+        "references/source/functions/misc_functions.lua:903-913"
+      ],
+      "测试先行": "相关回归先失败后通过"
+    },
+    {
+      "问题": "持有星图的观测增幅尚未对主流程提供接口",
+      "位置": [
+        "getObservatoryEffects"
+      ],
+      "出处": [
+        "references/source/card.lua:2291-2300",
+        "references/source/functions/state_events.lua:877-959"
+      ],
+      "测试先行": "4项先失败后通过"
+    },
+    {
+      "问题": "回合临时手牌容量没有回收",
+      "位置": [
+        "applyBlindEnd"
+      ],
+      "出处": [
+        "references/source/functions/state_events.lua:270",
+        "references/source/tag.lua:339-340"
+      ],
+      "测试先行": "1项先失败后通过，保留期间永久修改且不重复回收"
+    },
+    {
+      "问题": "凭签赠包固定第1种等效变体",
+      "位置": [
+        "freePack"
+      ],
+      "出处": [
+        "references/source/tag.lua:205-237"
+      ],
+      "验证": "第2种变体选择用例通过；原版使用非种子化外观随机，当前用可复现流，尚未与原版随机序列对照"
+    }
+  ],
+  "主流程接入约定": [
+    "getObservatoryEffects(input, handType, heldPlanets?)返回从左到右逐张scoreXMult事件；传完整道具对象保留实例id；在伙伴主阶段后、牌组最终平衡前应用。",
+    "generatePackContents返回state/items/choose，伙伴项保留joker状态及eternal/rental/perishable；主流程选择时不要重新抽贴签。",
+    "货架与包内的未购入卡占用候选键，只有未静默展商允许重复。",
+    "applyTag四参，applied:false时保留凭签；每次新商店重置shopD6Used/shopFree/temporaryRerollBase。",
+    "动态槽位包含空域加成，实际卡数量也包含空域卡；实际支付为0时正常售价仍按原始成本算。",
+    "本轮与整局计数分别传入，Boss重选次数表需同步，Orbital目标按可见牌型在关卡选择阶段随机并按首注/关卡缓存。",
+    "单盲注耗尽牌库不重洗弃牌堆；drawRequested由主流程处理。",
+    "applyBlindEnd回收本轮temporaryHandSize，已耗尽伙伴保持永久静默。"
+  ],
+  "最终仍待验收": [
+    "游戏内dump与社区源码的版本及数值交叉验证",
+    "原版同种子同操作随机序列差分",
+    "原版关键交互录屏逐帧与声音对照",
+    "Ante 1至8完整运行和所有系统／伙伴主流程组合差分，详见主代理最终报告"
+  ],
+  "封版说明": "本代理完成本域修复并停止写入。由主代理重新生成总fact-table、统一运行全工程验证与提交。"
+}

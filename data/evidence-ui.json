@@ -1,0 +1,61 @@
+{
+  "version": "1.0.1o-FULL",
+  "facts": [
+    {
+      "id": "UI-001",
+      "subject": "抽牌音高关系",
+      "value": "0.85 + percent*0.2/100",
+      "source": "references/source/functions/common_events.lua:416",
+      "confidence": "高（参考源码）"
+    },
+    {
+      "id": "UI-002",
+      "subject": "逐牌计分弹出基础时长",
+      "value": 0.65,
+      "source": "references/source/functions/common_events.lua:805",
+      "confidence": "高（参考源码）"
+    },
+    {
+      "id": "UI-003",
+      "subject": "筹码弹出时长基数",
+      "value": 0.6,
+      "source": "references/source/functions/common_events.lua:805",
+      "confidence": "高（参考源码）"
+    },
+    {
+      "id": "UI-004",
+      "subject": "弹出时长倍率",
+      "value": 1.25,
+      "source": "references/source/functions/common_events.lua:878",
+      "confidence": "高（参考源码）"
+    },
+    {
+      "id": "UI-005",
+      "subject": "计分音高关系",
+      "value": "0.8+percent*0.2",
+      "source": "references/source/functions/common_events.lua:892",
+      "confidence": "高（参考源码）"
+    },
+    {
+      "id": "UI-006",
+      "subject": "逐牌计分画面抖动增量",
+      "value": 0.7,
+      "source": "references/source/functions/common_events.lua:895",
+      "confidence": "高（参考源码）"
+    },
+    {
+      "id": "VERSION-001",
+      "subject": "参考源码版本",
+      "value": "1.0.1o-FULL",
+      "source": "references/source/globals.lua:1-2",
+      "confidence": "高（文件自声明，尚无游戏内核验）"
+    },
+    {
+      "id": "RUN-001",
+      "subject": "一次选中/出牌上限",
+      "value": 5,
+      "source": "references/source/functions/button_callbacks.lua:2049",
+      "confidence": "高（参考源码）"
+    }
+  ]
+}
