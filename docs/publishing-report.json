@@ -3,8 +3,8 @@
   "project": "星筹夜航",
   "experimentTitle": "GPT 6.1 制作小游戏测试",
   "repository": "https://github.com/Linwei-Chen/gpt-game-night-voyage",
-  "playUrl": "https://linwei-chen.github.io/gpt-game-night-voyage/",
-  "status": "公开源码、在线试玩、下载发布、检查与本地废纸篓归档已完成；最终说明提交和运行编号见Release收据",
+  "playUrl": null,
+  "status": "仅公开GitHub仓库与下载版本；游戏Pages已关闭，与学术主页隔离",
   "localChecks": {
     "gameTests": {
       "passed": 1967,
@@ -23,14 +23,16 @@
   "publication": {
     "sourceUploaded": true,
     "githubChecksPassed": true,
-    "pagesDeployed": true,
-    "onlineVerified": true,
+    "pagesDeployed": false,
+    "onlineVerified": false,
     "repositoryCreated": true,
     "checkedCommit": "11f0155fc9b668aa671f253535385c976ff63d32",
     "finalReceiptUrl": "https://github.com/Linwei-Chen/gpt-game-night-voyage/releases/download/v0.1.0/publishing-receipt.json",
     "releasePublished": true,
     "releaseUrl": "https://github.com/Linwei-Chen/gpt-game-night-voyage/releases/tag/v0.1.0",
-    "publicDownloadHashMatched": true
+    "publicDownloadHashMatched": true,
+    "pagesWithdrawn": true,
+    "githubOnly": true
   },
   "localCleanup": {
     "method": "系统废纸篓，可恢复",
@@ -62,7 +64,7 @@
   "webArchive": {
     "file": "night-voyage-v0.1.0-web.zip",
     "bytes": 7727341,
-    "sha256": "7249d03505f0e0e0c31447f64b6b16eb0043949e9b264bef56f8b18a22516d1f"
+    "sha256": "0abac17a0b4dc06bcebd952b6a611e3a7cfa8a63574af90245f93499e7d85ac2"
   },
   "ci": {
     "runId": 38345418689,
@@ -83,12 +85,13 @@
     "reports": [
       "online-release-checks/summary.json",
       "online-assets-report.json"
-    ]
+    ],
+    "note": "先前线上验证，仅作历史记录；当前游戏站点已撤回"
   },
   "independentReleaseReview": {
     "checks": 128,
     "unresolvedIssues": [],
     "report": "public-release-review.md"
   },
-  "note": "此文件记录游戏受检提交11f0155的成功结果及实际清理；后续仅补交公开说明，最终说明提交和运行编号记于Release收据。"
+  "note": "按用户要求撤回学术主页同域下的游戏Pages，仅保留GitHub独立仓库与下载；游戏逻辑和运行资源沿用此前已通过验证的版本。"
 }

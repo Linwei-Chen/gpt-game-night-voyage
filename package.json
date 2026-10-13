@@ -27,7 +27,7 @@
   },
   "license": "MIT",
   "description": "星筹夜航：GPT 6.1 制作小游戏测试，内置详细教程的浏览器纸牌策略游戏",
-  "homepage": "https://linwei-chen.github.io/gpt-game-night-voyage/",
+  "homepage": "https://github.com/Linwei-Chen/gpt-game-night-voyage",
   "repository": {
     "type": "git",
     "url": "https://github.com/Linwei-Chen/gpt-game-night-voyage.git"

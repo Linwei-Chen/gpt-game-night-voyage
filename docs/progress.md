@@ -2,7 +2,13 @@
 
 更新：2026-10-13（香港时间）。当前为GitHub公开发布记录；本地公开副本与原独立开发工程均已移入系统废纸篓，可恢复。本文件由主代理维护，重启时先读本文件。
 
-## 当前任务：GitHub发布与本地归档
+## 当前发布范围：仅GitHub仓库与下载版本
+
+2026-10-13：用户明确要求不使用学术主页发布游戏。已关闭游戏仓库的Pages站点、停用并移除自动网页部署流程，清空仓库网站字段。README、玩法手册、制作说明、版本说明和网页包启动指引均改为GitHub下载及本地运行。游戏源码与教程保留；学术主页仓库仅只读核对。实际核验见 `docs/github-only-publication-report.json`。
+
+本地四个相关工程与临时证据仍位于系统废纸篓，可恢复。以下在线发布内容为历史记录，旧试玩入口已撤回，当前入口为 [GitHub仓库](https://github.com/Linwei-Chen/gpt-game-night-voyage) 与 [下载版本](https://github.com/Linwei-Chen/gpt-game-night-voyage/releases/tag/v0.1.0)。
+
+## 先前GitHub发布与本地归档记录
 
 项目已按用户确认以“GPT 6.1 制作小游戏测试”公开：
 

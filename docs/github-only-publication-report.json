@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "project": "星筹夜航",
+  "request": "仅上传GitHub，不使用学术主页域名发布游戏",
+  "startedAtUTC": "2026-10-13T05:41:17.576601+00:00",
+  "gameRepository": "Linwei-Chen/gpt-game-night-voyage",
+  "academicRepository": "Linwei-Chen/linwei-chen.github.io",
+  "academicBeforeCommit": "21b494042b2c81b7af9a643fd52459c4f9eab74e",
+  "academicBeforePages": {
+    "url": "https://api.github.com/repos/Linwei-Chen/linwei-chen.github.io/pages",
+    "status": "built",
+    "cname": null,
+    "custom_404": false,
+    "html_url": "https://linwei-chen.github.io/",
+    "build_type": "legacy",
+    "source": {
+      "branch": "master",
+      "path": "/"
+    },
+    "public": true,
+    "protected_domain_state": null,
+    "pending_domain_unverified_at": null,
+    "https_enforced": true
+  },
+  "gamePagesWorkflowDisabled": true,
+  "gamePagesDeleted": true,
+  "gameRepositoryHomepageCleared": true,
+  "verifiedAtUTC": "2026-10-13T05:44:51.638677+00:00",
+  "gamePagesApiStatus": 404,
+  "gamePagesWorkflowState": "disabled_manually",
+  "gameRepositoryHomepage": "",
+  "gameHttpStatus": 404,
+  "academicAfterCommit": "21b494042b2c81b7af9a643fd52459c4f9eab74e",
+  "academicCommitUnchanged": true,
+  "academicPagesConfigurationUnchanged": true,
+  "academicHttpStatus": 200,
+  "onlyGameRepositoryModified": true,
+  "publicScope": "GitHub仓库与下载版本",
+  "localDirectoriesRemainInTrash": true
+}

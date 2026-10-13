@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "generatedAtUTC": "2026-10-13T05:04:19.004891+00:00",
+  "generatedAtUTC": "2026-10-13T05:48:12.712645+00:00",
   "project": "星筹夜航",
   "experimentTitle": "GPT 6.1 制作小游戏测试",
   "implementationRoot": ".",
@@ -11,12 +11,11 @@
     ".github/ISSUE_TEMPLATE/config.yml": "84683607330ebca729f24d8311b0cfba6785358d081414a93f80cda724b724b2",
     ".github/ISSUE_TEMPLATE/seed.yml": "3bb51940ceac66c796b6dd9135a6cba57302f32530766da4cdc9ebde0140968d",
     ".github/pull_request_template.md": "9104fbb7dd89e38d27eb84b96bc838e5d1320cadf5c01d96c857338a1ef13f0d",
-    ".github/workflows/check.yml": "bb0eff253a03fdb4e24c353f299c8dc21c21eca134e29cac5b4910393f03cf79",
-    ".github/workflows/pages.yml": "83918e8d57d4d618df0baa34c55f56bdea9962933c7bce214a731f06ea145fec",
+    ".github/workflows/check.yml": "221dde3ad6268f5e79f60bcad3dbb129283cce0f9deb91dba3539fb380587d33",
     ".gitignore": "6c61c4de255d6795736d5065268b39982bdb300e9b32ea7a4e0b0bd419d396c0",
     "CONTRIBUTING.md": "a484764c90de42e42d9e4ce3e24e15d3b19b4f035005080eaf4b150bd991d874",
     "LICENSE": "6f46a7db9119fef4693b79444b9c0607086a80c9321df935ea09b79bda45cc91",
-    "README.md": "bebf4e2052afeadacbfaabbe394010ed3c0439d5e7f068a06085326149aabdb0",
+    "README.md": "73454505b6d8de7b47376f6df402962cdc83e3807e53d316cbbbe75621b55408",
     "THIRD_PARTY_NOTICES.md": "387e2260b7261cd73a2c59bda13c282efdaa42f661f3f5de813e887719ed7c98",
     "data/evidence-jokers.json": "452bec25e9676919cc954df29ac12718859681fb40cfd33ac27a5b6e4018d3aa",
     "data/evidence-run.json": "1ff3f4bc96b2ff8f522315de89c469af2e05c39d99272415bcaa475db27030e8",
@@ -33,7 +32,7 @@
     "docs/jokers-fact-assertions.json": "107e1cfd6b99926ee4d10ed5e8b1da27d9ac94c5dbb9eb1de774ed0d8c5b3b1b",
     "index.html": "72227e0dba62a11b8435cafdffee54e087ce7ef8eb989d31ee193824293649b8",
     "package-lock.json": "dfb63a000dfb0be514fe2e546ce18ad8714efa067d3fdc246b39428cf851d077",
-    "package.json": "37bc04a23b479ecb5a2392336d384bb1b9c6f84a385ba09e01a76f1880e2fe02",
+    "package.json": "5d68fde9557d9575a66ab6df062a7a79afe8a5b29dc2e848d7bd8cd5aa7c1e04",
     "public/.nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "public/LICENSE.txt": "6f46a7db9119fef4693b79444b9c0607086a80c9321df935ea09b79bda45cc91",
     "public/THIRD_PARTY_NOTICES.txt": "387e2260b7261cd73a2c59bda13c282efdaa42f661f3f5de813e887719ed7c98",
@@ -218,12 +217,12 @@
   ],
   "reports": {
     "docs/EXPERIMENT.md": {
-      "sha256": "ab429477eb7e6250eb8c89d1360d3677e8d9ff6099a9ce350dcbd864840d8c9f",
-      "bytes": 3671
+      "sha256": "9dd73ec5e6deed7ce6e0c573e0b6ba0af8002c0d8c818737cfd1dc9f1704f5f5",
+      "bytes": 3826
     },
     "docs/PLAYING.md": {
-      "sha256": "dd4b555cb1e96d3bbba0b31fa8b1b64fe0ebd6236305498679ce38b313396001",
-      "bytes": 5147
+      "sha256": "bbc6218f167236c892ee9415f20ba3d5b3382ff7fea8b96348055afb2ea1127f",
+      "bytes": 5296
     },
     "docs/assets.md": {
       "sha256": "5bfd693cdae2e0b000546713b5ba69070eea7ec4186ee95b679590e777410aaa",
@@ -258,8 +257,8 @@
       "bytes": 66706
     },
     "docs/decisions.md": {
-      "sha256": "e47777ade1a471629cecc24b9f3029e93f43742115428de61299e2e2633c6222",
-      "bytes": 2920
+      "sha256": "9e2e2a78ad254ae44d0c07995d949ba15aa55c87d2d34de8c7d6d2c785d0d3e4",
+      "bytes": 3542
     },
     "docs/design.md": {
       "sha256": "7db6d46b5624643713c74e529a4d2e7ab7d4fbca1d9089efa7cb70623d3af5ed",
@@ -300,6 +299,10 @@
     "docs/github-checks-report.json": {
       "sha256": "9cf5764188e9b496903c64ea4f6b61f170505eac170d7d2196458d1171d8bd6b",
       "bytes": 6437
+    },
+    "docs/github-only-publication-report.json": {
+      "sha256": "b68ba1236071e3b9ec48317eb5c0da2e1a332a0cac025fdf02f913bcbb92e0b8",
+      "bytes": 1418
     },
     "docs/independent-review.md": {
       "sha256": "038d1f2185955b49cee34ff7c02e9e5337006e9b633265c37c0a63e0a9e34192",
@@ -378,8 +381,8 @@
       "bytes": 1046
     },
     "docs/progress.md": {
-      "sha256": "beb20db0bd4e4a97b53b2efcdd57065870459466c734c31aaf97b17d6353c9f3",
-      "bytes": 8274
+      "sha256": "443593fdeba034929f198c4cf0c7ea93607c29636928bf8dff9a9a3a53a073b8",
+      "bytes": 9073
     },
     "docs/public-release-artifacts/README.md": {
       "sha256": "17d56534c33a2bed2a301024aecfad291f2e065947ac9bc1064c7955334ca9e3",
@@ -410,16 +413,16 @@
       "bytes": 20755
     },
     "docs/publishing-plan.md": {
-      "sha256": "e9daed9f2dcef8b3d287415ba55561ee645a7ae4cbcd76f383e0c7353ce47931",
-      "bytes": 2208
+      "sha256": "6420a315397f7cb0bbfdfea2f25a424c0f65cbf814675a0d7b1f01f8914c2e80",
+      "bytes": 2460
     },
     "docs/publishing-receipt.json": {
-      "sha256": "c2be469b8f95f801ac9ea26c523d6e949265fd2f238601d05843ee06ad6814a3",
-      "bytes": 4929
+      "sha256": "2e011ca44f72614fba5f7e2ea7b0d973d1f97b19656fda10d35ea44c5c59c8bd",
+      "bytes": 6918
     },
     "docs/publishing-report.json": {
-      "sha256": "0378e14271d89f731e00294f7f892fb518dad66c8830c3aaecc922ef5e464f97",
-      "bytes": 3229
+      "sha256": "f4e888677ebecdef8aabef788041f52504bfd87203a710eaf554efa816101a2c",
+      "bytes": 3271
     },
     "docs/release-preflight.json": {
       "sha256": "b37e7b2100d25099355122892b86129e85a7bf50035ecedf5a82cfd0273a377b",
@@ -857,7 +860,14 @@
       "docs/independent-review.md",
       "docs/tutorial-review.md"
     ],
-    "publicReleaseReview": "docs/public-release-review.md"
+    "publicReleaseReview": "docs/public-release-review.md",
+    "scopeCorrection": {
+      "type": "发布配置与说明修改",
+      "gameCoreSourceUnchanged": true,
+      "archiveRuntimeResourcesUnchanged": true,
+      "priorCheckedCommit": "8a67113f32aec20d8d477b4988efeda118f7c0f1",
+      "fullGameTestsRerun": false
+    }
   },
   "originalAcceptanceComplete": false,
   "unimplemented": [
@@ -880,5 +890,8 @@
     ".publish-venv/",
     "artifacts/"
   ],
-  "note": "当前公开树指纹与历史评审分别记录；指纹不是原版金标准。dist仅记录指纹，由Actions重建发布。发布状态与线上核验见publishing-report.json。"
+  "note": "游戏测试、构建与浏览器证据沿用8a67113；本次只修正发布配置、说明和首页元数据，不部署游戏网站。",
+  "publicationScope": "GitHub仓库与下载版本",
+  "pagesEnabled": false,
+  "scopeCorrectionReport": "docs/github-only-publication-report.json"
 }

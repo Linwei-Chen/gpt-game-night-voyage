@@ -2,7 +2,7 @@
 
 用一副纸牌，找到自己的航线。组合牌型，让筹码与倍率增长，带着奇妙伙伴穿过八段夜航。
 
-**[立即试玩](https://linwei-chen.github.io/gpt-game-night-voyage/) · [三分钟入门](docs/PLAYING.md) · [制作实验记录](docs/EXPERIMENT.md) · [下载版本](https://github.com/Linwei-Chen/gpt-game-night-voyage/releases/tag/v0.1.0)**
+**[下载游戏](https://github.com/Linwei-Chen/gpt-game-night-voyage/releases/tag/v0.1.0) · [三分钟入门](docs/PLAYING.md) · [制作实验记录](docs/EXPERIMENT.md)**
 
 [![自动检查](https://github.com/Linwei-Chen/gpt-game-night-voyage/actions/workflows/check.yml/badge.svg)](https://github.com/Linwei-Chen/gpt-game-night-voyage/actions/workflows/check.yml)
 
@@ -12,7 +12,7 @@
 
 ## 直接开始玩
 
-打开 **[在线试玩](https://linwei-chen.github.io/gpt-game-night-voyage/)**，首次进入会出现12章“新手航行课”。建议先练第四课“亲手选出一个对子”，再点“去开局”、选择最低难度并开始航行。手机和电脑均可游玩；随时点顶部“教程”复习。
+从 **[下载版本](https://github.com/Linwei-Chen/gpt-game-night-voyage/releases/tag/v0.1.0)** 获取 `night-voyage-v0.1.0-web.zip`，解压后按包内 `START_HERE.txt` 启动本地游戏。也可按下方“本地运行”从源码启动。第一次进入会出现12章“新手航行课”。建议先练第四课“亲手选出一个对子”，再点“去开局”、选择最低难度并开始航行。手机和电脑均可游玩；随时点顶部“教程”复习。
 
 每手选1～5张牌，组成对子、两对、顺子、同花等牌型。得分是最终筹码乘最终倍率，累加到本关总分。在出牌次数耗尽前达到目标就过关；缺关键牌时，用弃牌换牌。过关后去商店买伙伴、升级牌型和改造纸牌，再去下一关。
 
@@ -32,7 +32,9 @@
 
 ## 本地运行
 
-需要Node.js 22或兼容版本。
+下载网页成品并解压后，在解压目录运行 `python3 -m http.server 8080 --bind 127.0.0.1`，再打开 <http://127.0.0.1:8080/>。Windows已安装Python时可将 `python3` 换成 `python`。
+
+从源码运行需要Node.js 22或兼容版本。
 
 ```sh
 git clone https://github.com/Linwei-Chen/gpt-game-night-voyage.git
@@ -62,4 +64,4 @@ npm run verify:run
 
 欢迎完善玩法说明、改进手机操作、补充边界测试或分享有趣的种子。见 [贡献说明](CONTRIBUTING.md)。项目独立编写的代码与原创内容采用 [MIT许可](LICENSE)；Noto字体及其子集按OFL使用，依赖的许可见 [第三方记录](THIRD_PARTY_NOTICES.md)。
 
-**English:** Night Voyage is a playable browser card strategy game and a GPT 6.1 game development experiment. Play online, learn with the in-game tutorial, and share your seed and strategy. The interface and tutorial are in Chinese.
+**English:** Night Voyage is a playable browser card strategy game and a GPT 6.1 game development experiment. Download and play locally, learn with the in-game tutorial, and share your seed and strategy. The interface and tutorial are in Chinese.

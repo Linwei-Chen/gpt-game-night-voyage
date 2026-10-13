@@ -1,6 +1,6 @@
 # 怎样游玩星筹夜航
 
-**[打开游戏](https://linwei-chen.github.io/gpt-game-night-voyage/)**。第一次进入会自动显示教程。以后可点顶部“教程”，或在开局页点“新手教程”。教程里的练习使用独立牌桌，正式航程、金币、次数和存档保持原值。
+从 **[下载版本](https://github.com/Linwei-Chen/gpt-game-night-voyage/releases/tag/v0.1.0)** 获取网页包，解压后按 `START_HERE.txt` 启动；也可依照 [源码启动说明](../README.md#本地运行) 开始。第一次进入会自动显示教程。以后可点顶部“教程”，或在开局页点“新手教程”。教程里的练习使用独立牌桌，正式航程、金币、次数和存档保持原值。
 
 ## 第一局的步骤
 
