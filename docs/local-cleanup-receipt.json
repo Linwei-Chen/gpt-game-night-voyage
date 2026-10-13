@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "project": "星筹夜航",
+  "completed": true,
+  "completedAtUTC": "2026-10-13T05:02:21.396842+00:00",
+  "method": "系统废纸篓，同文件系统重命名，可恢复",
+  "items": [
+    {
+      "directory": "night-voyage-independent",
+      "trashLocation": "~/.Trash/night-voyage-independent-20261013-130221-20afdb5e",
+      "moved": true,
+      "recoverable": true,
+      "directoryIdentityPreserved": true
+    },
+    {
+      "directory": "balatro-rebuild",
+      "trashLocation": "~/.Trash/balatro-rebuild-20261013-130221-20afdb5e",
+      "moved": true,
+      "recoverable": true,
+      "directoryIdentityPreserved": true
+    },
+    {
+      "directory": "night-voyage-public",
+      "trashLocation": "~/.Trash/night-voyage-public-20261013-130221-20afdb5e",
+      "moved": true,
+      "recoverable": true,
+      "directoryIdentityPreserved": true
+    },
+    {
+      "directory": "night-voyage-remote-check",
+      "trashLocation": "~/.Trash/night-voyage-remote-check-20261013-130221-20afdb5e",
+      "moved": true,
+      "recoverable": true,
+      "directoryIdentityPreserved": true
+    }
+  ],
+  "originalDirectoriesRemaining": [],
+  "workspacePreserved": true,
+  "referenceMaterialsKeptLocalInTrash": true,
+  "previewServices": {
+    "generatedAtUTC": "2026-10-13T05:00:50.782083+00:00",
+    "stopped": [
+      {
+        "pid": 45723,
+        "directory": "balatro-rebuild",
+        "method": "SIGTERM",
+        "listeningAfterStop": false
+      },
+      {
+        "pid": 59392,
+        "directory": "night-voyage-independent",
+        "method": "SIGTERM",
+        "listeningAfterStop": false
+      },
+      {
+        "pid": 60121,
+        "directory": "balatro-rebuild",
+        "method": "SIGTERM",
+        "listeningAfterStop": false
+      },
+      {
+        "pid": 84085,
+        "directory": "balatro-rebuild",
+        "method": "SIGTERM",
+        "listeningAfterStop": false
+      }
+    ],
+    "relatedPreviewServicesStopped": true,
+    "previousIndependentReviewServerStopped": true
+  },
+  "publicSourceAndPlayVerifiedBeforeCleanup": true,
+  "publicDownloadVerifiedBeforeCleanup": {
+    "url": "https://github.com/Linwei-Chen/gpt-game-night-voyage/releases/download/v0.1.0/night-voyage-v0.1.0-web.zip",
+    "publicDownloadHashMatched": true,
+    "bytes": 7727341,
+    "sha256": "7249d03505f0e0e0c31447f64b6b16eb0043949e9b264bef56f8b18a22516d1f"
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "schema": 1,
+  "project": "星筹夜航",
+  "experimentTitle": "GPT 6.1 制作小游戏测试",
+  "generatedAtUTC": "2026-10-13T05:03:32.911365+00:00",
+  "repository": "https://github.com/Linwei-Chen/gpt-game-night-voyage",
+  "playUrl": "https://linwei-chen.github.io/gpt-game-night-voyage/",
+  "checkedCommit": "11f0155fc9b668aa671f253535385c976ff63d32",
+  "gameSourceEqualToVerifiedCommit": true,
+  "ci": {
+    "conclusion": "success",
+    "databaseId": 38345418689,
+    "headSha": "11f0155fc9b668aa671f253535385c976ff63d32",
+    "status": "completed",
+    "url": "https://github.com/Linwei-Chen/gpt-game-night-voyage/actions/runs/38345418689",
+    "workflowName": "游戏检查与浏览器验证"
+  },
+  "pages": {
+    "conclusion": "success",
+    "databaseId": 38346243705,
+    "headSha": "11f0155fc9b668aa671f253535385c976ff63d32",
+    "status": "completed",
+    "url": "https://github.com/Linwei-Chen/gpt-game-night-voyage/actions/runs/38346243705",
+    "workflowName": "发布在线试玩"
+  },
+  "release": {
+    "url": "https://github.com/Linwei-Chen/gpt-game-night-voyage/releases/tag/v0.1.0",
+    "tag": "v0.1.0",
+    "published": true,
+    "publishedAt": "2026-10-13T04:57:48Z",
+    "publicDownload": {
+      "url": "https://github.com/Linwei-Chen/gpt-game-night-voyage/releases/download/v0.1.0/night-voyage-v0.1.0-web.zip",
+      "publicDownloadHashMatched": true,
+      "bytes": 7727341,
+      "sha256": "7249d03505f0e0e0c31447f64b6b16eb0043949e9b264bef56f8b18a22516d1f"
+    }
+  },
+  "inheritedOnlineEvidence": {
+    "storedAtCommit": "11f0155fc9b668aa671f253535385c976ff63d32",
+    "method": "本次读取既有线上浏览器与生产资源证据，未重跑游戏",
+    "onlineEvidence": "docs/online-release-checks/summary.json",
+    "onlineAssetsEvidence": "docs/online-assets-report.json",
+    "productionResourcesMatched": 24,
+    "passed": true
+  },
+  "remoteRestore": {
+    "checkedCommit": "11f0155fc9b668aa671f253535385c976ff63d32",
+    "trackedFiles": 209,
+    "treeEqual": true,
+    "localAndRemoteWorkingTreesClean": true,
+    "gitObjectIntegrityPassed": true,
+    "passed": true,
+    "repository": "https://github.com/Linwei-Chen/gpt-game-night-voyage"
+  },
+  "localCleanup": {
+    "schema": 1,
+    "project": "星筹夜航",
+    "completed": true,
+    "completedAtUTC": "2026-10-13T05:02:21.396842+00:00",
+    "method": "系统废纸篓，同文件系统重命名，可恢复",
+    "items": [
+      {
+        "directory": "night-voyage-independent",
+        "trashLocation": "~/.Trash/night-voyage-independent-20261013-130221-20afdb5e",
+        "moved": true,
+        "recoverable": true,
+        "directoryIdentityPreserved": true
+      },
+      {
+        "directory": "balatro-rebuild",
+        "trashLocation": "~/.Trash/balatro-rebuild-20261013-130221-20afdb5e",
+        "moved": true,
+        "recoverable": true,
+        "directoryIdentityPreserved": true
+      },
+      {
+        "directory": "night-voyage-public",
+        "trashLocation": "~/.Trash/night-voyage-public-20261013-130221-20afdb5e",
+        "moved": true,
+        "recoverable": true,
+        "directoryIdentityPreserved": true
+      },
+      {
+        "directory": "night-voyage-remote-check",
+        "trashLocation": "~/.Trash/night-voyage-remote-check-20261013-130221-20afdb5e",
+        "moved": true,
+        "recoverable": true,
+        "directoryIdentityPreserved": true
+      }
+    ],
+    "originalDirectoriesRemaining": [],
+    "workspacePreserved": true,
+    "referenceMaterialsKeptLocalInTrash": true,
+    "previewServices": {
+      "generatedAtUTC": "2026-10-13T05:00:50.782083+00:00",
+      "stopped": [
+        {
+          "pid": 45723,
+          "directory": "balatro-rebuild",
+          "method": "SIGTERM",
+          "listeningAfterStop": false
+        },
+        {
+          "pid": 59392,
+          "directory": "night-voyage-independent",
+          "method": "SIGTERM",
+          "listeningAfterStop": false
+        },
+        {
+          "pid": 60121,
+          "directory": "balatro-rebuild",
+          "method": "SIGTERM",
+          "listeningAfterStop": false
+        },
+        {
+          "pid": 84085,
+          "directory": "balatro-rebuild",
+          "method": "SIGTERM",
+          "listeningAfterStop": false
+        }
+      ],
+      "relatedPreviewServicesStopped": true,
+      "previousIndependentReviewServerStopped": true
+    },
+    "publicSourceAndPlayVerifiedBeforeCleanup": true,
+    "publicDownloadVerifiedBeforeCleanup": {
+      "url": "https://github.com/Linwei-Chen/gpt-game-night-voyage/releases/download/v0.1.0/night-voyage-v0.1.0-web.zip",
+      "publicDownloadHashMatched": true,
+      "bytes": 7727341,
+      "sha256": "7249d03505f0e0e0c31447f64b6b16eb0043949e9b264bef56f8b18a22516d1f"
+    }
+  },
+  "originalAcceptanceComplete": false,
+  "finalDocumentationVerification": "后续仅更新说明与收据；最终说明提交、检查和恢复核验记录于Release附件。"
+}

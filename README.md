@@ -2,7 +2,7 @@
 
 用一副纸牌，找到自己的航线。组合牌型，让筹码与倍率增长，带着奇妙伙伴穿过八段夜航。
 
-**[立即试玩](https://linwei-chen.github.io/gpt-game-night-voyage/) · [三分钟入门](docs/PLAYING.md) · [制作实验记录](docs/EXPERIMENT.md)**
+**[立即试玩](https://linwei-chen.github.io/gpt-game-night-voyage/) · [三分钟入门](docs/PLAYING.md) · [制作实验记录](docs/EXPERIMENT.md) · [下载版本](https://github.com/Linwei-Chen/gpt-game-night-voyage/releases/tag/v0.1.0)**
 
 [![自动检查](https://github.com/Linwei-Chen/gpt-game-night-voyage/actions/workflows/check.yml/badge.svg)](https://github.com/Linwei-Chen/gpt-game-night-voyage/actions/workflows/check.yml)
 

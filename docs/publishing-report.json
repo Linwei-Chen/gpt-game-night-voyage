@@ -4,7 +4,7 @@
   "experimentTitle": "GPT 6.1 制作小游戏测试",
   "repository": "https://github.com/Linwei-Chen/gpt-game-night-voyage",
   "playUrl": "https://linwei-chen.github.io/gpt-game-night-voyage/",
-  "status": "公开源码、自动检查、在线部署、教程和完整实战已通过；最终发布及本地归档以Release收据为准",
+  "status": "公开源码、在线试玩、下载发布、检查与本地废纸篓归档已完成；最终说明提交和运行编号见Release收据",
   "localChecks": {
     "gameTests": {
       "passed": 1967,
@@ -26,19 +26,24 @@
     "pagesDeployed": true,
     "onlineVerified": true,
     "repositoryCreated": true,
-    "checkedCommit": "926201fba8c5c4ff7dd4f2062a50207c1352e688",
-    "finalReceiptUrl": "https://github.com/Linwei-Chen/gpt-game-night-voyage/releases/download/v0.1.0/publishing-receipt.json"
+    "checkedCommit": "11f0155fc9b668aa671f253535385c976ff63d32",
+    "finalReceiptUrl": "https://github.com/Linwei-Chen/gpt-game-night-voyage/releases/download/v0.1.0/publishing-receipt.json",
+    "releasePublished": true,
+    "releaseUrl": "https://github.com/Linwei-Chen/gpt-game-night-voyage/releases/tag/v0.1.0",
+    "publicDownloadHashMatched": true
   },
   "localCleanup": {
     "method": "系统废纸篓，可恢复",
-    "status": "实际执行结果记录于GitHub Release的local-cleanup-receipt.json",
+    "status": "四个相关目录已经移入系统废纸篓，原目录均不存在，完整文件与历史可恢复",
     "scope": [
       "night-voyage-independent",
       "balatro-rebuild",
       "night-voyage-public",
       "night-voyage-remote-check"
     ],
-    "receiptUrl": "https://github.com/Linwei-Chen/gpt-game-night-voyage/releases/download/v0.1.0/local-cleanup-receipt.json"
+    "receiptUrl": "https://github.com/Linwei-Chen/gpt-game-night-voyage/releases/download/v0.1.0/local-cleanup-receipt.json",
+    "completed": true,
+    "completedAtUTC": "2026-10-13T05:02:21.396842+00:00"
   },
   "originalAcceptanceComplete": false,
   "community": {
@@ -60,13 +65,13 @@
     "sha256": "7249d03505f0e0e0c31447f64b6b16eb0043949e9b264bef56f8b18a22516d1f"
   },
   "ci": {
-    "runId": 38343788669,
-    "url": "https://github.com/Linwei-Chen/gpt-game-night-voyage/actions/runs/38343788669",
+    "runId": 38345418689,
+    "url": "https://github.com/Linwei-Chen/gpt-game-night-voyage/actions/runs/38345418689",
     "conclusion": "success"
   },
   "pages": {
-    "runId": 38344357719,
-    "url": "https://github.com/Linwei-Chen/gpt-game-night-voyage/actions/runs/38344357719",
+    "runId": 38346243705,
+    "url": "https://github.com/Linwei-Chen/gpt-game-night-voyage/actions/runs/38346243705",
     "conclusion": "success"
   },
   "onlineChecks": {
@@ -85,5 +90,5 @@
     "unresolvedIssues": [],
     "report": "public-release-review.md"
   },
-  "note": "此记录收录首次已通过检查的提交与证据；随后补交的文档和检查工具由最新Actions重新检查，最终提交/运行编号/归档结果在Release收据中记录。"
+  "note": "此文件记录游戏受检提交11f0155的成功结果及实际清理；后续仅补交公开说明，最终说明提交和运行编号记于Release收据。"
 }
