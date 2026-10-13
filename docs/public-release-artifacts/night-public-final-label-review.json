@@ -1,0 +1,468 @@
+{
+  "started": "2026-10-13T03:46:40.485740+00:00",
+  "url": "http://127.0.0.1:50996/gpt-game-night-voyage/",
+  "hashes_before": {
+    ".github/ISSUE_TEMPLATE/bug.yml": "7eeab0cd41d6a9865059c464c212626935c34ab2b26fe004c063341674480706",
+    ".github/ISSUE_TEMPLATE/config.yml": "84683607330ebca729f24d8311b0cfba6785358d081414a93f80cda724b724b2",
+    ".github/ISSUE_TEMPLATE/seed.yml": "3bb51940ceac66c796b6dd9135a6cba57302f32530766da4cdc9ebde0140968d",
+    ".github/pull_request_template.md": "9104fbb7dd89e38d27eb84b96bc838e5d1320cadf5c01d96c857338a1ef13f0d",
+    ".github/workflows/check.yml": "bb0eff253a03fdb4e24c353f299c8dc21c21eca134e29cac5b4910393f03cf79",
+    ".github/workflows/pages.yml": "83918e8d57d4d618df0baa34c55f56bdea9962933c7bce214a731f06ea145fec",
+    ".gitignore": "6c61c4de255d6795736d5065268b39982bdb300e9b32ea7a4e0b0bd419d396c0",
+    "CONTRIBUTING.md": "a484764c90de42e42d9e4ce3e24e15d3b19b4f035005080eaf4b150bd991d874",
+    "LICENSE": "6f46a7db9119fef4693b79444b9c0607086a80c9321df935ea09b79bda45cc91",
+    "README.md": "567e7718a68d6878b02b00492b51b41176ad54c5ba4c485fdb7e9da01d815b55",
+    "THIRD_PARTY_NOTICES.md": "387e2260b7261cd73a2c59bda13c282efdaa42f661f3f5de813e887719ed7c98",
+    "data/evidence-jokers.json": "452bec25e9676919cc954df29ac12718859681fb40cfd33ac27a5b6e4018d3aa",
+    "data/evidence-run.json": "1ff3f4bc96b2ff8f522315de89c469af2e05c39d99272415bcaa475db27030e8",
+    "data/evidence-scoring.json": "d3bcb5a73a1a848169c2085a6e91f5b9e199c2b577d1531bd89320700a51a900",
+    "data/evidence-systems-verified.json": "eaebce077a77e4e0ebd658171ed668b7f01b8c2db0c4a78a64c5b326d508a68f",
+    "data/evidence-ui.json": "62aec6471e81b6ed45face724a464fc5b1d02d1210c4648b78d078a03460bde6",
+    "data/facts.json": "a81865b3ab74a3ef277c33241668e6e4dd22d01a3c8f30a5bd0c4f0b6aee615d",
+    "data/jokers.json": "52f9817de53e2c22b02043c3c206446af1ef25a31509c8b3eeacb8986c2f037f",
+    "data/system-mechanisms.json": "9846055ae2db719052639a5f777264f7cbaa315c03aae49db386518ccb83e791",
+    "data/systems-validation.json": "28fb39877a4a527eec1ef23082257cb85aae499ff6cb4e24c6712bc26e2db490",
+    "data/systems-verified.json": "ed28d1ffa43e52104e777fe6125c2efb0b64e911fa51bf11bbc5a9ffd61ef3b2",
+    "dist/.nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "dist/LICENSE.txt": "6f46a7db9119fef4693b79444b9c0607086a80c9321df935ea09b79bda45cc91",
+    "dist/THIRD_PARTY_NOTICES.txt": "387e2260b7261cd73a2c59bda13c282efdaa42f661f3f5de813e887719ed7c98",
+    "dist/assets/BatchableSprite-fU39kw5s.js": "e27029fb3a28131cb3f85eba1ecd21393fcd5b43264eb3d9d3f05d53218740e7",
+    "dist/assets/CanvasPool-BO8jmDmJ.js": "77b2bbc299d6cbd668bf33c5967625d46fa009e68c2ecaa145373c953565dde9",
+    "dist/assets/CanvasRenderer-Xm1Fqjwn.js": "6879714ce2781beb505667f29eb0d44b379c7384727e5eedfecd6551203a7611",
+    "dist/assets/Filter-D0hf7wn8.js": "e49cb36a174ff9342c7a75441468ab42aa8735fe9681da654462d2adf03522d6",
+    "dist/assets/Graphics-B0QO8SG-.js": "9a580777a34955c6f501ccdf2233ce472876d9945a4592947ecc07c7eee4cbc1",
+    "dist/assets/RenderTargetSystem-DiMrQnlB.js": "9f4bafdc89178700fdcbba8e61680dde3390936598fb5c7c5958509de3781521",
+    "dist/assets/WebGLRenderer-BCx5iX9f.js": "bac838b88b637320b7bc56b88649e722e1ee9f41cf68555a67c504bbdafe52f3",
+    "dist/assets/WebGPURenderer-Bq5qS-Sx.js": "8338b31d360a5d798c79c754646d4479a3104361510bd95584f8482508e5e21a",
+    "dist/assets/browserAll-G7Cu-Txx.js": "4015b38294e755d643cd92ee7d6aa7c3e4caa9fd21910a4d936a74c884d6870f",
+    "dist/assets/canvasUtils-DexliMHI.js": "ddbd30544a52aa969de391c5e73ae97afc4e646cbe1c2e5b88473a8d79966fcc",
+    "dist/assets/getPo2TextureFromSource-DbMhKVnc.js": "397073b5d065b09591aa3cf18deb0a08cd98fc5acaf287c802ba1d14cc33b4f3",
+    "dist/assets/getTexelRangeRects-DZY4NxT9.js": "55a914c97b03e24d2aa3504a748b371da1c8195395919b3e54d4824bac1ed42f",
+    "dist/assets/getTextureBatchBindGroup-CGITerI7.js": "f3d7fee52e287f0d244e564787eb4cf2ef30d0a22a473017688662ccba51f736",
+    "dist/assets/index-CctDqWRC.js": "b113054ddaca29fc30e33396ccb7cf8bf48e93a9e759c0d7d19303717321989b",
+    "dist/assets/index-DpWUwQS3.css": "1098e763b0fe764f170ed9b260245168e0db64b908a388bd0f02583b27d8034a",
+    "dist/assets/webworkerAll-CZXc1NV-.js": "deff5806d096c7a6617a1284524318c221fe25972b87346cbbf93a7a1d5a260d",
+    "dist/favicon.svg": "1ba4b89997df1d5874881240bef0393147797d62076ec4ebb8a3caa5df527c0e",
+    "dist/fonts/COPYRIGHT.txt": "eb115f50f8269394856f6813aef5b7e533b15359fa0d9522fab9d0d4f4e00216",
+    "dist/fonts/NightVoyageSC-Subset.woff2": "7ebe95f5ece66aad1da876fbad53375d3c2e9bc5b159d8cb8414fc58d11e88be",
+    "dist/fonts/NotoSansSC-Regular.otf": "faa6c9df652116dde789d351359f3d7e5d2285a2b2a1f04a2d7244df706d5ea9",
+    "dist/fonts/OFL.txt": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+    "dist/index.html": "1be170d1f718c982c059cf03d1db271952509d26ddeb4bc5f85ac780565cc675",
+    "docs/EXPERIMENT.md": "ab429477eb7e6250eb8c89d1360d3677e8d9ff6099a9ce350dcbd864840d8c9f",
+    "docs/PLAYING.md": "dd4b555cb1e96d3bbba0b31fa8b1b64fe0ebd6236305498679ce38b313396001",
+    "index.html": "72227e0dba62a11b8435cafdffee54e087ce7ef8eb989d31ee193824293649b8",
+    "package-lock.json": "dfb63a000dfb0be514fe2e546ce18ad8714efa067d3fdc246b39428cf851d077",
+    "package.json": "37bc04a23b479ecb5a2392336d384bb1b9c6f84a385ba09e01a76f1880e2fe02",
+    "public/.nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "public/LICENSE.txt": "6f46a7db9119fef4693b79444b9c0607086a80c9321df935ea09b79bda45cc91",
+    "public/THIRD_PARTY_NOTICES.txt": "387e2260b7261cd73a2c59bda13c282efdaa42f661f3f5de813e887719ed7c98",
+    "public/favicon.svg": "1ba4b89997df1d5874881240bef0393147797d62076ec4ebb8a3caa5df527c0e",
+    "public/fonts/COPYRIGHT.txt": "eb115f50f8269394856f6813aef5b7e533b15359fa0d9522fab9d0d4f4e00216",
+    "public/fonts/NightVoyageSC-Subset.woff2": "7ebe95f5ece66aad1da876fbad53375d3c2e9bc5b159d8cb8414fc58d11e88be",
+    "public/fonts/NotoSansSC-Regular.otf": "faa6c9df652116dde789d351359f3d7e5d2285a2b2a1f04a2d7244df706d5ea9",
+    "public/fonts/OFL.txt": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+    "scripts/browser_verify.py": "dd6b3c72585e1108998a36c89f39c43cad672351ad5482ed800f6c42352027e9",
+    "scripts/pages_verify.py": "c98d331ef6dbdf192878cde03411cedcb1268975e5e48bbd0919c126f03a11f3",
+    "scripts/subset-font.py": "b9cacbd0de1f15fedfcf9586097ba3e235f8fcd7bc8e7fef161f683ee0531367",
+    "scripts/tutorial_verify.py": "675dc59c78506ef0a72e65d1f72bb214ed37c3f67cf52b3bc0f1bd98115f3cfe",
+    "src/content/generated.ts": "6bf2dac2f918f38d54e0dfd9accfbbd295d1e37a5cc412433cb3004efe96e3c6",
+    "src/content/jokers.ts": "3207262cb3b3f64dbb6e79131ce5713dea4cf36c4906d6ac671d8be5b51194d2",
+    "src/content/systems-runtime.ts": "e9d2a17dd38e3497992276f9ec327c429d4a1b6f35c9f9ee811c8c2e06f84314",
+    "src/core/cards.ts": "0a5e21b987ed6bee4b87980ec8aa916ed342fc77be5bff9c4b08730a2ef5e36f",
+    "src/core/economy-runtime.ts": "38c267ecb46f1ce9a4affe4d559545807d5e1b9722299834db2f874a5deaa2ca",
+    "src/core/poker.ts": "e2f44b1288ac216cf8e7ec7950ce6630ec79e3d4b27ece10c47a540ffa24461f",
+    "src/core/rng.ts": "c5fe0e4b7e0b5b37d87c0f42e251ddb8ebb3ba668cec3b27345c0e72a7b8afb6",
+    "src/core/run-engine.ts": "c111d5dab1e116d778313e4232f8d58f7fb400954283b0aba29b6a3faa0f415a",
+    "src/core/scoring.ts": "6ca9d97092de7752854d70565bc0a096c640e61510adf964cea508d88831c26a",
+    "src/independent-main.ts": "5942de7b2321b21defb0c38758e5bd52777c77952ba71230030066433ed8e0d6",
+    "src/original-style.css": "09a87bf51bae9d2f92deed6691a58d5f1af6ac2648283ad2b9f0097b030edb8c",
+    "src/render/original-table.ts": "4fa9fd21f23e5ffbb423b13c145895e0665b83a987a8ad830a1a05202ca6a0c4",
+    "src/render/timing.ts": "1a17ba7bc3f3d40a4beab1d16a86cdfd4a29e81b64bf8cbd231f1dc20fa7bfb9",
+    "src/ui/tutorial-model.ts": "9073e7dd3077d98073275720ba156c771973103f8549c96175e0a51fe586a5c5",
+    "src/ui/tutorial.ts": "18acfbe63c23baff604f0027ad9e786282a08a23cce75e16cf6e24b3c17651d8",
+    "tools/browser-requirements.txt": "44c8121654922f51fbd7d7700c4300f1cf5f2ca942ddcf62cb081e4036630196",
+    "vite.config.ts": "8b7de9c3bd77a3b583276b5949ccd23e03b6645e3c0e2083c1fbfaac6ef0ecbc"
+  },
+  "title": "星筹夜航 · GPT 6.1 制作小游戏测试",
+  "viewports": [
+    {
+      "name": "desktop",
+      "checks": [
+        {
+          "passed": true,
+          "name": "最新生产页标题",
+          "data": "星筹夜航 · GPT 6.1 制作小游戏测试"
+        },
+        {
+          "passed": true,
+          "name": "首页链接仍保持项目子路径",
+          "data": null
+        },
+        {
+          "passed": true,
+          "name": "最新包仍有首次教程",
+          "data": null
+        },
+        {
+          "passed": true,
+          "name": "最新包继续载入WOFF2",
+          "data": null
+        },
+        {
+          "passed": true,
+          "name": "最新包对子附K仍56",
+          "data": null
+        },
+        {
+          "passed": true,
+          "name": "最终包仍可正常出牌",
+          "data": {
+            "score": 32,
+            "ranks": [
+              3,
+              3
+            ]
+          }
+        },
+        {
+          "passed": true,
+          "name": "最终许可资源 LICENSE.txt",
+          "data": null
+        },
+        {
+          "passed": true,
+          "name": "最终许可资源 THIRD_PARTY_NOTICES.txt",
+          "data": null
+        },
+        {
+          "passed": true,
+          "name": "最终许可资源 fonts/OFL.txt",
+          "data": null
+        },
+        {
+          "passed": true,
+          "name": "最终许可资源 fonts/COPYRIGHT.txt",
+          "data": null
+        },
+        {
+          "passed": true,
+          "name": "最终页无异常或404",
+          "data": []
+        }
+      ],
+      "errors": [],
+      "responses": [
+        {
+          "url": "http://127.0.0.1:50996/gpt-game-night-voyage/",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:50996/gpt-game-night-voyage/assets/index-DpWUwQS3.css",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:50996/gpt-game-night-voyage/assets/canvasUtils-DexliMHI.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:50996/gpt-game-night-voyage/assets/getPo2TextureFromSource-DbMhKVnc.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:50996/gpt-game-night-voyage/assets/BatchableSprite-fU39kw5s.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:50996/gpt-game-night-voyage/assets/CanvasPool-BO8jmDmJ.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:50996/gpt-game-night-voyage/assets/getTextureBatchBindGroup-CGITerI7.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:50996/gpt-game-night-voyage/assets/Graphics-B0QO8SG-.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:50996/gpt-game-night-voyage/assets/index-CctDqWRC.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:50996/gpt-game-night-voyage/fonts/NightVoyageSC-Subset.woff2",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:50996/gpt-game-night-voyage/assets/getTexelRangeRects-DZY4NxT9.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:50996/gpt-game-night-voyage/assets/WebGLRenderer-BCx5iX9f.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:50996/gpt-game-night-voyage/assets/Filter-D0hf7wn8.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:50996/gpt-game-night-voyage/assets/RenderTargetSystem-DiMrQnlB.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:50996/gpt-game-night-voyage/favicon.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:50996/gpt-game-night-voyage/assets/webworkerAll-CZXc1NV-.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:50996/gpt-game-night-voyage/assets/browserAll-G7Cu-Txx.js",
+          "status": 200
+        }
+      ],
+      "screenshots": [
+        "/tmp/night-public-desktop-first.png",
+        "/tmp/night-public-desktop-practice.png",
+        "/tmp/night-public-desktop-playing.png"
+      ],
+      "completed": true,
+      "passed": true
+    },
+    {
+      "name": "mobile",
+      "checks": [
+        {
+          "passed": true,
+          "name": "最新生产页标题",
+          "data": "星筹夜航 · GPT 6.1 制作小游戏测试"
+        },
+        {
+          "passed": true,
+          "name": "首页链接仍保持项目子路径",
+          "data": null
+        },
+        {
+          "passed": true,
+          "name": "最新包仍有首次教程",
+          "data": null
+        },
+        {
+          "passed": true,
+          "name": "最新包继续载入WOFF2",
+          "data": null
+        },
+        {
+          "passed": true,
+          "name": "最新包对子附K仍56",
+          "data": null
+        },
+        {
+          "passed": true,
+          "name": "最终包仍可正常出牌",
+          "data": {
+            "score": 32,
+            "ranks": [
+              3,
+              3
+            ]
+          }
+        },
+        {
+          "passed": true,
+          "name": "最终许可资源 LICENSE.txt",
+          "data": null
+        },
+        {
+          "passed": true,
+          "name": "最终许可资源 THIRD_PARTY_NOTICES.txt",
+          "data": null
+        },
+        {
+          "passed": true,
+          "name": "最终许可资源 fonts/OFL.txt",
+          "data": null
+        },
+        {
+          "passed": true,
+          "name": "最终许可资源 fonts/COPYRIGHT.txt",
+          "data": null
+        },
+        {
+          "passed": true,
+          "name": "最终页无异常或404",
+          "data": []
+        }
+      ],
+      "errors": [],
+      "responses": [
+        {
+          "url": "http://127.0.0.1:50996/gpt-game-night-voyage/",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:50996/gpt-game-night-voyage/assets/canvasUtils-DexliMHI.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:50996/gpt-game-night-voyage/assets/getPo2TextureFromSource-DbMhKVnc.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:50996/gpt-game-night-voyage/assets/BatchableSprite-fU39kw5s.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:50996/gpt-game-night-voyage/assets/CanvasPool-BO8jmDmJ.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:50996/gpt-game-night-voyage/assets/getTextureBatchBindGroup-CGITerI7.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:50996/gpt-game-night-voyage/assets/index-DpWUwQS3.css",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:50996/gpt-game-night-voyage/assets/index-CctDqWRC.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:50996/gpt-game-night-voyage/assets/Graphics-B0QO8SG-.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:50996/gpt-game-night-voyage/fonts/NightVoyageSC-Subset.woff2",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:50996/gpt-game-night-voyage/assets/getTexelRangeRects-DZY4NxT9.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:50996/gpt-game-night-voyage/assets/WebGLRenderer-BCx5iX9f.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:50996/gpt-game-night-voyage/assets/RenderTargetSystem-DiMrQnlB.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:50996/gpt-game-night-voyage/favicon.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:50996/gpt-game-night-voyage/assets/Filter-D0hf7wn8.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:50996/gpt-game-night-voyage/assets/browserAll-G7Cu-Txx.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:50996/gpt-game-night-voyage/assets/webworkerAll-CZXc1NV-.js",
+          "status": 200
+        }
+      ],
+      "screenshots": [
+        "/tmp/night-public-mobile-first.png",
+        "/tmp/night-public-mobile-practice.png",
+        "/tmp/night-public-mobile-playing.png"
+      ],
+      "completed": true,
+      "passed": true
+    }
+  ],
+  "changedSinceBrowserReview": [
+    "README.md",
+    "dist/index.html",
+    "docs/EXPERIMENT.md",
+    "index.html",
+    "package.json"
+  ],
+  "hashes_after": {
+    ".github/ISSUE_TEMPLATE/bug.yml": "7eeab0cd41d6a9865059c464c212626935c34ab2b26fe004c063341674480706",
+    ".github/ISSUE_TEMPLATE/config.yml": "84683607330ebca729f24d8311b0cfba6785358d081414a93f80cda724b724b2",
+    ".github/ISSUE_TEMPLATE/seed.yml": "3bb51940ceac66c796b6dd9135a6cba57302f32530766da4cdc9ebde0140968d",
+    ".github/pull_request_template.md": "9104fbb7dd89e38d27eb84b96bc838e5d1320cadf5c01d96c857338a1ef13f0d",
+    ".github/workflows/check.yml": "bb0eff253a03fdb4e24c353f299c8dc21c21eca134e29cac5b4910393f03cf79",
+    ".github/workflows/pages.yml": "83918e8d57d4d618df0baa34c55f56bdea9962933c7bce214a731f06ea145fec",
+    ".gitignore": "6c61c4de255d6795736d5065268b39982bdb300e9b32ea7a4e0b0bd419d396c0",
+    "CONTRIBUTING.md": "a484764c90de42e42d9e4ce3e24e15d3b19b4f035005080eaf4b150bd991d874",
+    "LICENSE": "6f46a7db9119fef4693b79444b9c0607086a80c9321df935ea09b79bda45cc91",
+    "README.md": "567e7718a68d6878b02b00492b51b41176ad54c5ba4c485fdb7e9da01d815b55",
+    "THIRD_PARTY_NOTICES.md": "387e2260b7261cd73a2c59bda13c282efdaa42f661f3f5de813e887719ed7c98",
+    "data/evidence-jokers.json": "452bec25e9676919cc954df29ac12718859681fb40cfd33ac27a5b6e4018d3aa",
+    "data/evidence-run.json": "1ff3f4bc96b2ff8f522315de89c469af2e05c39d99272415bcaa475db27030e8",
+    "data/evidence-scoring.json": "d3bcb5a73a1a848169c2085a6e91f5b9e199c2b577d1531bd89320700a51a900",
+    "data/evidence-systems-verified.json": "eaebce077a77e4e0ebd658171ed668b7f01b8c2db0c4a78a64c5b326d508a68f",
+    "data/evidence-ui.json": "62aec6471e81b6ed45face724a464fc5b1d02d1210c4648b78d078a03460bde6",
+    "data/facts.json": "a81865b3ab74a3ef277c33241668e6e4dd22d01a3c8f30a5bd0c4f0b6aee615d",
+    "data/jokers.json": "52f9817de53e2c22b02043c3c206446af1ef25a31509c8b3eeacb8986c2f037f",
+    "data/system-mechanisms.json": "9846055ae2db719052639a5f777264f7cbaa315c03aae49db386518ccb83e791",
+    "data/systems-validation.json": "28fb39877a4a527eec1ef23082257cb85aae499ff6cb4e24c6712bc26e2db490",
+    "data/systems-verified.json": "ed28d1ffa43e52104e777fe6125c2efb0b64e911fa51bf11bbc5a9ffd61ef3b2",
+    "dist/.nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "dist/LICENSE.txt": "6f46a7db9119fef4693b79444b9c0607086a80c9321df935ea09b79bda45cc91",
+    "dist/THIRD_PARTY_NOTICES.txt": "387e2260b7261cd73a2c59bda13c282efdaa42f661f3f5de813e887719ed7c98",
+    "dist/assets/BatchableSprite-fU39kw5s.js": "e27029fb3a28131cb3f85eba1ecd21393fcd5b43264eb3d9d3f05d53218740e7",
+    "dist/assets/CanvasPool-BO8jmDmJ.js": "77b2bbc299d6cbd668bf33c5967625d46fa009e68c2ecaa145373c953565dde9",
+    "dist/assets/CanvasRenderer-Xm1Fqjwn.js": "6879714ce2781beb505667f29eb0d44b379c7384727e5eedfecd6551203a7611",
+    "dist/assets/Filter-D0hf7wn8.js": "e49cb36a174ff9342c7a75441468ab42aa8735fe9681da654462d2adf03522d6",
+    "dist/assets/Graphics-B0QO8SG-.js": "9a580777a34955c6f501ccdf2233ce472876d9945a4592947ecc07c7eee4cbc1",
+    "dist/assets/RenderTargetSystem-DiMrQnlB.js": "9f4bafdc89178700fdcbba8e61680dde3390936598fb5c7c5958509de3781521",
+    "dist/assets/WebGLRenderer-BCx5iX9f.js": "bac838b88b637320b7bc56b88649e722e1ee9f41cf68555a67c504bbdafe52f3",
+    "dist/assets/WebGPURenderer-Bq5qS-Sx.js": "8338b31d360a5d798c79c754646d4479a3104361510bd95584f8482508e5e21a",
+    "dist/assets/browserAll-G7Cu-Txx.js": "4015b38294e755d643cd92ee7d6aa7c3e4caa9fd21910a4d936a74c884d6870f",
+    "dist/assets/canvasUtils-DexliMHI.js": "ddbd30544a52aa969de391c5e73ae97afc4e646cbe1c2e5b88473a8d79966fcc",
+    "dist/assets/getPo2TextureFromSource-DbMhKVnc.js": "397073b5d065b09591aa3cf18deb0a08cd98fc5acaf287c802ba1d14cc33b4f3",
+    "dist/assets/getTexelRangeRects-DZY4NxT9.js": "55a914c97b03e24d2aa3504a748b371da1c8195395919b3e54d4824bac1ed42f",
+    "dist/assets/getTextureBatchBindGroup-CGITerI7.js": "f3d7fee52e287f0d244e564787eb4cf2ef30d0a22a473017688662ccba51f736",
+    "dist/assets/index-CctDqWRC.js": "b113054ddaca29fc30e33396ccb7cf8bf48e93a9e759c0d7d19303717321989b",
+    "dist/assets/index-DpWUwQS3.css": "1098e763b0fe764f170ed9b260245168e0db64b908a388bd0f02583b27d8034a",
+    "dist/assets/webworkerAll-CZXc1NV-.js": "deff5806d096c7a6617a1284524318c221fe25972b87346cbbf93a7a1d5a260d",
+    "dist/favicon.svg": "1ba4b89997df1d5874881240bef0393147797d62076ec4ebb8a3caa5df527c0e",
+    "dist/fonts/COPYRIGHT.txt": "eb115f50f8269394856f6813aef5b7e533b15359fa0d9522fab9d0d4f4e00216",
+    "dist/fonts/NightVoyageSC-Subset.woff2": "7ebe95f5ece66aad1da876fbad53375d3c2e9bc5b159d8cb8414fc58d11e88be",
+    "dist/fonts/NotoSansSC-Regular.otf": "faa6c9df652116dde789d351359f3d7e5d2285a2b2a1f04a2d7244df706d5ea9",
+    "dist/fonts/OFL.txt": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+    "dist/index.html": "1be170d1f718c982c059cf03d1db271952509d26ddeb4bc5f85ac780565cc675",
+    "docs/EXPERIMENT.md": "ab429477eb7e6250eb8c89d1360d3677e8d9ff6099a9ce350dcbd864840d8c9f",
+    "docs/PLAYING.md": "dd4b555cb1e96d3bbba0b31fa8b1b64fe0ebd6236305498679ce38b313396001",
+    "index.html": "72227e0dba62a11b8435cafdffee54e087ce7ef8eb989d31ee193824293649b8",
+    "package-lock.json": "dfb63a000dfb0be514fe2e546ce18ad8714efa067d3fdc246b39428cf851d077",
+    "package.json": "37bc04a23b479ecb5a2392336d384bb1b9c6f84a385ba09e01a76f1880e2fe02",
+    "public/.nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "public/LICENSE.txt": "6f46a7db9119fef4693b79444b9c0607086a80c9321df935ea09b79bda45cc91",
+    "public/THIRD_PARTY_NOTICES.txt": "387e2260b7261cd73a2c59bda13c282efdaa42f661f3f5de813e887719ed7c98",
+    "public/favicon.svg": "1ba4b89997df1d5874881240bef0393147797d62076ec4ebb8a3caa5df527c0e",
+    "public/fonts/COPYRIGHT.txt": "eb115f50f8269394856f6813aef5b7e533b15359fa0d9522fab9d0d4f4e00216",
+    "public/fonts/NightVoyageSC-Subset.woff2": "7ebe95f5ece66aad1da876fbad53375d3c2e9bc5b159d8cb8414fc58d11e88be",
+    "public/fonts/NotoSansSC-Regular.otf": "faa6c9df652116dde789d351359f3d7e5d2285a2b2a1f04a2d7244df706d5ea9",
+    "public/fonts/OFL.txt": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+    "scripts/browser_verify.py": "dd6b3c72585e1108998a36c89f39c43cad672351ad5482ed800f6c42352027e9",
+    "scripts/pages_verify.py": "c98d331ef6dbdf192878cde03411cedcb1268975e5e48bbd0919c126f03a11f3",
+    "scripts/subset-font.py": "b9cacbd0de1f15fedfcf9586097ba3e235f8fcd7bc8e7fef161f683ee0531367",
+    "scripts/tutorial_verify.py": "675dc59c78506ef0a72e65d1f72bb214ed37c3f67cf52b3bc0f1bd98115f3cfe",
+    "src/content/generated.ts": "6bf2dac2f918f38d54e0dfd9accfbbd295d1e37a5cc412433cb3004efe96e3c6",
+    "src/content/jokers.ts": "3207262cb3b3f64dbb6e79131ce5713dea4cf36c4906d6ac671d8be5b51194d2",
+    "src/content/systems-runtime.ts": "e9d2a17dd38e3497992276f9ec327c429d4a1b6f35c9f9ee811c8c2e06f84314",
+    "src/core/cards.ts": "0a5e21b987ed6bee4b87980ec8aa916ed342fc77be5bff9c4b08730a2ef5e36f",
+    "src/core/economy-runtime.ts": "38c267ecb46f1ce9a4affe4d559545807d5e1b9722299834db2f874a5deaa2ca",
+    "src/core/poker.ts": "e2f44b1288ac216cf8e7ec7950ce6630ec79e3d4b27ece10c47a540ffa24461f",
+    "src/core/rng.ts": "c5fe0e4b7e0b5b37d87c0f42e251ddb8ebb3ba668cec3b27345c0e72a7b8afb6",
+    "src/core/run-engine.ts": "c111d5dab1e116d778313e4232f8d58f7fb400954283b0aba29b6a3faa0f415a",
+    "src/core/scoring.ts": "6ca9d97092de7752854d70565bc0a096c640e61510adf964cea508d88831c26a",
+    "src/independent-main.ts": "5942de7b2321b21defb0c38758e5bd52777c77952ba71230030066433ed8e0d6",
+    "src/original-style.css": "09a87bf51bae9d2f92deed6691a58d5f1af6ac2648283ad2b9f0097b030edb8c",
+    "src/render/original-table.ts": "4fa9fd21f23e5ffbb423b13c145895e0665b83a987a8ad830a1a05202ca6a0c4",
+    "src/render/timing.ts": "1a17ba7bc3f3d40a4beab1d16a86cdfd4a29e81b64bf8cbd231f1dc20fa7bfb9",
+    "src/ui/tutorial-model.ts": "9073e7dd3077d98073275720ba156c771973103f8549c96175e0a51fe586a5c5",
+    "src/ui/tutorial.ts": "18acfbe63c23baff604f0027ad9e786282a08a23cce75e16cf6e24b3c17651d8",
+    "tools/browser-requirements.txt": "44c8121654922f51fbd7d7700c4300f1cf5f2ca942ddcf62cb081e4036630196",
+    "vite.config.ts": "8b7de9c3bd77a3b583276b5949ccd23e03b6645e3c0e2083c1fbfaac6ef0ecbc"
+  },
+  "hashes_unchanged": true,
+  "finished": "2026-10-13T03:46:48.551561+00:00"
+}

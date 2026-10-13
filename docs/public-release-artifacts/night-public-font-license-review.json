@@ -1,0 +1,152 @@
+{
+  "time": "2026-10-13T03:49:06.995268+00:00",
+  "font": {
+    "source": "public/fonts/NotoSansSC-Regular.otf",
+    "subset": "public/fonts/NightVoyageSC-Subset.woff2",
+    "sourceSha256": "faa6c9df652116dde789d351359f3d7e5d2285a2b2a1f04a2d7244df706d5ea9",
+    "subsetSha256": "7ebe95f5ece66aad1da876fbad53375d3c2e9bc5b159d8cb8414fc58d11e88be",
+    "sourceBytes": 8331336,
+    "subsetBytes": 199996,
+    "requiredNonWhitespaceCharacters": 966,
+    "missingRequiredCharacters": [],
+    "unsupportedByOriginal": [
+      "U+2726"
+    ],
+    "licenseFieldsPreserved": {
+      "0": true,
+      "13": true,
+      "14": true
+    },
+    "nameFields": {
+      "0": [
+        "© 2014-2021 Adobe (http://www.adobe.com/)."
+      ],
+      "1": [
+        "Night Voyage SC Subset"
+      ],
+      "3": [
+        "2026-NightVoyageSCSubset-Regular"
+      ],
+      "4": [
+        "Night Voyage SC Subset Regular"
+      ],
+      "6": [
+        "NightVoyageSCSubset-Regular"
+      ],
+      "13": [
+        "This Font Software is licensed under the SIL Open Font License, Version 1.1. This Font Software is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the SIL Open Font License for the specific language, permissions and limitations governing your use of this Font Software."
+      ],
+      "14": [
+        "http://scripts.sil.org/OFL"
+      ],
+      "16": [],
+      "17": []
+    }
+  },
+  "licenses": {
+    "productionDependencyCount": 12,
+    "dependencies": [
+      {
+        "name": "@pixi/colord",
+        "version": "2.9.6",
+        "license": "MIT",
+        "listed": true,
+        "licenseFiles": 0,
+        "originalLicenseTextIncluded": true
+      },
+      {
+        "name": "@types/earcut",
+        "version": "3.0.0",
+        "license": "MIT",
+        "listed": true,
+        "licenseFiles": 1,
+        "originalLicenseTextIncluded": true
+      },
+      {
+        "name": "@webgpu/types",
+        "version": "0.1.74",
+        "license": "BSD-3-Clause",
+        "listed": true,
+        "licenseFiles": 1,
+        "originalLicenseTextIncluded": true
+      },
+      {
+        "name": "@xmldom/xmldom",
+        "version": "0.8.15",
+        "license": "MIT",
+        "listed": true,
+        "licenseFiles": 1,
+        "originalLicenseTextIncluded": true
+      },
+      {
+        "name": "earcut",
+        "version": "3.2.4",
+        "license": "ISC",
+        "listed": true,
+        "licenseFiles": 1,
+        "originalLicenseTextIncluded": true
+      },
+      {
+        "name": "eventemitter3",
+        "version": "5.0.4",
+        "license": "MIT",
+        "listed": true,
+        "licenseFiles": 1,
+        "originalLicenseTextIncluded": true
+      },
+      {
+        "name": "gifuct-js",
+        "version": "2.1.2",
+        "license": "MIT",
+        "listed": true,
+        "licenseFiles": 1,
+        "originalLicenseTextIncluded": true
+      },
+      {
+        "name": "ismobilejs",
+        "version": "1.1.1",
+        "license": "MIT",
+        "listed": true,
+        "licenseFiles": 1,
+        "originalLicenseTextIncluded": true
+      },
+      {
+        "name": "js-binary-schema-parser",
+        "version": "2.0.3",
+        "license": "MIT",
+        "listed": true,
+        "licenseFiles": 1,
+        "originalLicenseTextIncluded": true
+      },
+      {
+        "name": "parse-svg-path",
+        "version": "0.2.0",
+        "license": "MIT",
+        "listed": true,
+        "licenseFiles": 1,
+        "originalLicenseTextIncluded": true
+      },
+      {
+        "name": "pixi.js",
+        "version": "8.22.0",
+        "license": "MIT",
+        "listed": true,
+        "licenseFiles": 1,
+        "originalLicenseTextIncluded": true
+      },
+      {
+        "name": "tiny-lru",
+        "version": "11.4.7",
+        "license": "BSD-3-Clause",
+        "listed": true,
+        "licenseFiles": 1,
+        "originalLicenseTextIncluded": true
+      }
+    ],
+    "colordUpstreamBlob": "e437003733acd123c76c2a9df0c13a6f3b02b51e",
+    "colordComputedBlob": "e437003733acd123c76c2a9df0c13a6f3b02b51e",
+    "colordBlobMatches": true,
+    "rootLicenseMatchesPublic": true,
+    "rootNoticesMatchPublic": true
+  }
+}

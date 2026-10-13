@@ -1,0 +1,15 @@
+{
+  "url": "https://linwei-chen.github.io/gpt-game-night-voyage/",
+  "method": "与本地验证相同的真实控件脚本，在全新浏览器中访问公开站点；教程与203步八段实战分别记录，不覆盖本地证据。",
+  "checks": [
+    {
+      "script": "scripts/tutorial_verify.py",
+      "exitCode": 0
+    },
+    {
+      "script": "scripts/browser_verify.py",
+      "exitCode": 0
+    }
+  ],
+  "passed": true
+}

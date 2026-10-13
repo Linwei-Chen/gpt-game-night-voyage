@@ -4,7 +4,17 @@
 
 ## 当前任务：GitHub发布与本地归档
 
-用户已授权公开发布、补齐玩法与实验说明，上传确认后将本次游戏目录移到废纸篓。当前在night-voyage-public准备公开快照、许可、项目子路径验证和自动部署；详细清单见 [发布计划](publishing-plan.md)。已完成公开副本1967/1967测试、类型与生产构建、内容/事实审计、三种恢复重放、项目子路径11项教程与203步整局。WOFF2约200KB，第三方许可及私人路径处理已完成。用户确认公开介绍为“GPT 6.1 制作小游戏测试”，当前准备GitHub上传与自动检查。下方为公开副本保留的先前开发记录。
+项目已按用户确认以“GPT 6.1 制作小游戏测试”公开：
+
+- [在线试玩](https://linwei-chen.github.io/gpt-game-night-voyage/)与[GitHub仓库](https://github.com/Linwei-Chen/gpt-game-night-voyage)已可访问，首次检查与Pages部署成功。
+- 公开副本1967/1967测试、类型与构建、3642事实映射结构、三种恢复重放通过；项目子路径11教程流程与203步整局通过。
+- 公开站点已实际完成相同11教程流程和203步八段实战；24个非隐藏生产资源与本地构建逐字节一致，零页面/控制台错误。
+- 独立公开评审128项通过，私人路径R1与依赖许可R2关闭；四份JSON及六张截图已归档。字体WOFF2约200KB，原OFL及所有第三方声明随网页分发。
+- 从GitHub重克隆的172文件初始树与上传副本一致，Git对象完整性通过；最后补交文档和工具后再次核对远端。
+
+公开源码不含参考原件、原版资源、依赖或本地环境。本次只处理四个游戏目录及已确认的临时证据，采用系统废纸篓可恢复归档；最终执行结果及最后提交/CI编号记录在[发布收据](https://github.com/Linwei-Chen/gpt-game-night-voyage/releases/download/v0.1.0/publishing-receipt.json)和[清理收据](https://github.com/Linwei-Chen/gpt-game-night-voyage/releases/download/v0.1.0/local-cleanup-receipt.json)，具体发布过程见[publishing-report.json](publishing-report.json)。
+
+后续维护请从GitHub克隆继续，或从废纸篓恢复本地历史。下方为先前独立开发记录；原版1:1缺口保持如实列出。
 
 ## 新增任务：游戏内教程（已完成）
 

@@ -18,7 +18,7 @@ with sync_playwright() as p:
     def new_page(width,height):
         context=browser.new_context(viewport={'width':width,'height':height},device_scale_factor=1)
         page=context.new_page()
-        page.set_default_timeout(10000)
+        page.set_default_timeout(10000);page.set_default_navigation_timeout(45000)
         page.on('pageerror',lambda e:errors.append(str(e)))
         page.on('console',lambda m:console_errors.append(m.text) if m.type=='error' else None)
         page.goto(args.url);page.wait_for_load_state('networkidle');page.evaluate('document.fonts.ready')

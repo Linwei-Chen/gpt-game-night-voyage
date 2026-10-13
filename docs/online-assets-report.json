@@ -1,0 +1,199 @@
+{
+  "url": "https://linwei-chen.github.io/gpt-game-night-voyage/",
+  "method": "使用系统curl保留TLS证书验证，获取各非隐藏生产产物，解压HTTP传输编码后SHA256与本地构建逐字节核对。",
+  "resources": [
+    {
+      "path": "LICENSE.txt",
+      "url": "https://linwei-chen.github.io/gpt-game-night-voyage/LICENSE.txt",
+      "bytes": 1098,
+      "sha256": "6f46a7db9119fef4693b79444b9c0607086a80c9321df935ea09b79bda45cc91",
+      "expectedSha256": "6f46a7db9119fef4693b79444b9c0607086a80c9321df935ea09b79bda45cc91",
+      "passed": true
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.txt",
+      "url": "https://linwei-chen.github.io/gpt-game-night-voyage/THIRD_PARTY_NOTICES.txt",
+      "bytes": 15437,
+      "sha256": "387e2260b7261cd73a2c59bda13c282efdaa42f661f3f5de813e887719ed7c98",
+      "expectedSha256": "387e2260b7261cd73a2c59bda13c282efdaa42f661f3f5de813e887719ed7c98",
+      "passed": true
+    },
+    {
+      "path": "assets/BatchableSprite-fU39kw5s.js",
+      "url": "https://linwei-chen.github.io/gpt-game-night-voyage/assets/BatchableSprite-fU39kw5s.js",
+      "bytes": 26012,
+      "sha256": "e27029fb3a28131cb3f85eba1ecd21393fcd5b43264eb3d9d3f05d53218740e7",
+      "expectedSha256": "e27029fb3a28131cb3f85eba1ecd21393fcd5b43264eb3d9d3f05d53218740e7",
+      "passed": true
+    },
+    {
+      "path": "assets/CanvasPool-BO8jmDmJ.js",
+      "url": "https://linwei-chen.github.io/gpt-game-night-voyage/assets/CanvasPool-BO8jmDmJ.js",
+      "bytes": 113547,
+      "sha256": "77b2bbc299d6cbd668bf33c5967625d46fa009e68c2ecaa145373c953565dde9",
+      "expectedSha256": "77b2bbc299d6cbd668bf33c5967625d46fa009e68c2ecaa145373c953565dde9",
+      "passed": true
+    },
+    {
+      "path": "assets/CanvasRenderer-Xm1Fqjwn.js",
+      "url": "https://linwei-chen.github.io/gpt-game-night-voyage/assets/CanvasRenderer-Xm1Fqjwn.js",
+      "bytes": 18018,
+      "sha256": "6879714ce2781beb505667f29eb0d44b379c7384727e5eedfecd6551203a7611",
+      "expectedSha256": "6879714ce2781beb505667f29eb0d44b379c7384727e5eedfecd6551203a7611",
+      "passed": true
+    },
+    {
+      "path": "assets/Filter-D0hf7wn8.js",
+      "url": "https://linwei-chen.github.io/gpt-game-night-voyage/assets/Filter-D0hf7wn8.js",
+      "bytes": 909,
+      "sha256": "e49cb36a174ff9342c7a75441468ab42aa8735fe9681da654462d2adf03522d6",
+      "expectedSha256": "e49cb36a174ff9342c7a75441468ab42aa8735fe9681da654462d2adf03522d6",
+      "passed": true
+    },
+    {
+      "path": "assets/Graphics-B0QO8SG-.js",
+      "url": "https://linwei-chen.github.io/gpt-game-night-voyage/assets/Graphics-B0QO8SG-.js",
+      "bytes": 72599,
+      "sha256": "9a580777a34955c6f501ccdf2233ce472876d9945a4592947ecc07c7eee4cbc1",
+      "expectedSha256": "9a580777a34955c6f501ccdf2233ce472876d9945a4592947ecc07c7eee4cbc1",
+      "passed": true
+    },
+    {
+      "path": "assets/RenderTargetSystem-DiMrQnlB.js",
+      "url": "https://linwei-chen.github.io/gpt-game-night-voyage/assets/RenderTargetSystem-DiMrQnlB.js",
+      "bytes": 53503,
+      "sha256": "9f4bafdc89178700fdcbba8e61680dde3390936598fb5c7c5958509de3781521",
+      "expectedSha256": "9f4bafdc89178700fdcbba8e61680dde3390936598fb5c7c5958509de3781521",
+      "passed": true
+    },
+    {
+      "path": "assets/WebGLRenderer-BCx5iX9f.js",
+      "url": "https://linwei-chen.github.io/gpt-game-night-voyage/assets/WebGLRenderer-BCx5iX9f.js",
+      "bytes": 73671,
+      "sha256": "bac838b88b637320b7bc56b88649e722e1ee9f41cf68555a67c504bbdafe52f3",
+      "expectedSha256": "bac838b88b637320b7bc56b88649e722e1ee9f41cf68555a67c504bbdafe52f3",
+      "passed": true
+    },
+    {
+      "path": "assets/WebGPURenderer-Bq5qS-Sx.js",
+      "url": "https://linwei-chen.github.io/gpt-game-night-voyage/assets/WebGPURenderer-Bq5qS-Sx.js",
+      "bytes": 55964,
+      "sha256": "8338b31d360a5d798c79c754646d4479a3104361510bd95584f8482508e5e21a",
+      "expectedSha256": "8338b31d360a5d798c79c754646d4479a3104361510bd95584f8482508e5e21a",
+      "passed": true
+    },
+    {
+      "path": "assets/browserAll-G7Cu-Txx.js",
+      "url": "https://linwei-chen.github.io/gpt-game-night-voyage/assets/browserAll-G7Cu-Txx.js",
+      "bytes": 44013,
+      "sha256": "4015b38294e755d643cd92ee7d6aa7c3e4caa9fd21910a4d936a74c884d6870f",
+      "expectedSha256": "4015b38294e755d643cd92ee7d6aa7c3e4caa9fd21910a4d936a74c884d6870f",
+      "passed": true
+    },
+    {
+      "path": "assets/canvasUtils-DexliMHI.js",
+      "url": "https://linwei-chen.github.io/gpt-game-night-voyage/assets/canvasUtils-DexliMHI.js",
+      "bytes": 6040,
+      "sha256": "ddbd30544a52aa969de391c5e73ae97afc4e646cbe1c2e5b88473a8d79966fcc",
+      "expectedSha256": "ddbd30544a52aa969de391c5e73ae97afc4e646cbe1c2e5b88473a8d79966fcc",
+      "passed": true
+    },
+    {
+      "path": "assets/getPo2TextureFromSource-DbMhKVnc.js",
+      "url": "https://linwei-chen.github.io/gpt-game-night-voyage/assets/getPo2TextureFromSource-DbMhKVnc.js",
+      "bytes": 25529,
+      "sha256": "397073b5d065b09591aa3cf18deb0a08cd98fc5acaf287c802ba1d14cc33b4f3",
+      "expectedSha256": "397073b5d065b09591aa3cf18deb0a08cd98fc5acaf287c802ba1d14cc33b4f3",
+      "passed": true
+    },
+    {
+      "path": "assets/getTexelRangeRects-DZY4NxT9.js",
+      "url": "https://linwei-chen.github.io/gpt-game-night-voyage/assets/getTexelRangeRects-DZY4NxT9.js",
+      "bytes": 11451,
+      "sha256": "55a914c97b03e24d2aa3504a748b371da1c8195395919b3e54d4824bac1ed42f",
+      "expectedSha256": "55a914c97b03e24d2aa3504a748b371da1c8195395919b3e54d4824bac1ed42f",
+      "passed": true
+    },
+    {
+      "path": "assets/getTextureBatchBindGroup-CGITerI7.js",
+      "url": "https://linwei-chen.github.io/gpt-game-night-voyage/assets/getTextureBatchBindGroup-CGITerI7.js",
+      "bytes": 357,
+      "sha256": "f3d7fee52e287f0d244e564787eb4cf2ef30d0a22a473017688662ccba51f736",
+      "expectedSha256": "f3d7fee52e287f0d244e564787eb4cf2ef30d0a22a473017688662ccba51f736",
+      "passed": true
+    },
+    {
+      "path": "assets/index-CctDqWRC.js",
+      "url": "https://linwei-chen.github.io/gpt-game-night-voyage/assets/index-CctDqWRC.js",
+      "bytes": 1094145,
+      "sha256": "b113054ddaca29fc30e33396ccb7cf8bf48e93a9e759c0d7d19303717321989b",
+      "expectedSha256": "b113054ddaca29fc30e33396ccb7cf8bf48e93a9e759c0d7d19303717321989b",
+      "passed": true
+    },
+    {
+      "path": "assets/index-DpWUwQS3.css",
+      "url": "https://linwei-chen.github.io/gpt-game-night-voyage/assets/index-DpWUwQS3.css",
+      "bytes": 20360,
+      "sha256": "1098e763b0fe764f170ed9b260245168e0db64b908a388bd0f02583b27d8034a",
+      "expectedSha256": "1098e763b0fe764f170ed9b260245168e0db64b908a388bd0f02583b27d8034a",
+      "passed": true
+    },
+    {
+      "path": "assets/webworkerAll-CZXc1NV-.js",
+      "url": "https://linwei-chen.github.io/gpt-game-night-voyage/assets/webworkerAll-CZXc1NV-.js",
+      "bytes": 15111,
+      "sha256": "deff5806d096c7a6617a1284524318c221fe25972b87346cbbf93a7a1d5a260d",
+      "expectedSha256": "deff5806d096c7a6617a1284524318c221fe25972b87346cbbf93a7a1d5a260d",
+      "passed": true
+    },
+    {
+      "path": "favicon.svg",
+      "url": "https://linwei-chen.github.io/gpt-game-night-voyage/favicon.svg",
+      "bytes": 193,
+      "sha256": "1ba4b89997df1d5874881240bef0393147797d62076ec4ebb8a3caa5df527c0e",
+      "expectedSha256": "1ba4b89997df1d5874881240bef0393147797d62076ec4ebb8a3caa5df527c0e",
+      "passed": true
+    },
+    {
+      "path": "fonts/COPYRIGHT.txt",
+      "url": "https://linwei-chen.github.io/gpt-game-night-voyage/fonts/COPYRIGHT.txt",
+      "bytes": 405,
+      "sha256": "eb115f50f8269394856f6813aef5b7e533b15359fa0d9522fab9d0d4f4e00216",
+      "expectedSha256": "eb115f50f8269394856f6813aef5b7e533b15359fa0d9522fab9d0d4f4e00216",
+      "passed": true
+    },
+    {
+      "path": "fonts/NightVoyageSC-Subset.woff2",
+      "url": "https://linwei-chen.github.io/gpt-game-night-voyage/fonts/NightVoyageSC-Subset.woff2",
+      "bytes": 199996,
+      "sha256": "7ebe95f5ece66aad1da876fbad53375d3c2e9bc5b159d8cb8414fc58d11e88be",
+      "expectedSha256": "7ebe95f5ece66aad1da876fbad53375d3c2e9bc5b159d8cb8414fc58d11e88be",
+      "passed": true
+    },
+    {
+      "path": "fonts/NotoSansSC-Regular.otf",
+      "url": "https://linwei-chen.github.io/gpt-game-night-voyage/fonts/NotoSansSC-Regular.otf",
+      "bytes": 8331336,
+      "sha256": "faa6c9df652116dde789d351359f3d7e5d2285a2b2a1f04a2d7244df706d5ea9",
+      "expectedSha256": "faa6c9df652116dde789d351359f3d7e5d2285a2b2a1f04a2d7244df706d5ea9",
+      "passed": true
+    },
+    {
+      "path": "fonts/OFL.txt",
+      "url": "https://linwei-chen.github.io/gpt-game-night-voyage/fonts/OFL.txt",
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+      "expectedSha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+      "passed": true
+    },
+    {
+      "path": "index.html",
+      "url": "https://linwei-chen.github.io/gpt-game-night-voyage/index.html",
+      "bytes": 3981,
+      "sha256": "1be170d1f718c982c059cf03d1db271952509d26ddeb4bc5f85ac780565cc675",
+      "expectedSha256": "1be170d1f718c982c059cf03d1db271952509d26ddeb4bc5f85ac780565cc675",
+      "passed": true
+    }
+  ],
+  "passed": true
+}

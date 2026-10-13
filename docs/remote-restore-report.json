@@ -1,0 +1,10 @@
+{
+  "method": "从GitHub通过SSH重新克隆，HEAD和完整Git树与已提交公开副本一致，git fsck --full成功。",
+  "repository": "https://github.com/Linwei-Chen/gpt-game-night-voyage",
+  "checkedCommit": "926201fba8c5c4ff7dd4f2062a50207c1352e688",
+  "trackedFiles": 172,
+  "treeEqual": true,
+  "gitObjectIntegrityPassed": true,
+  "excludedDirectoryLeaks": [],
+  "passed": true
+}

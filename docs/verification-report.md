@@ -85,3 +85,9 @@ Ante | 小关目标 | 大关目标 | 守关目标 | 本次守关者
 - [ ] 文档与每条数值断言：事实全部可追溯和映射，仍有8条未覆盖、27条部分覆盖与1个平台TBD。
 
 未实现：持久解锁进度、挑战与成就。已实现无尽入口，但完整无尽实战、极大数、所有组合、全部随机分支、原版声音和逐帧时序仍未验收。源码自声明版本不等于已与实际游戏核验版本。
+
+## 公开发布补验
+
+公开GitHub Pages已完成11项桌面/手机教程流程及203步完整实战；24个非隐藏资源SHA256与本地构建一致。GitHub Linux/Chromium检查同样通过1967项测试、11教程流程、完整实战与三种恢复重放。公开独立评审106项交互及22项标题补验通过，R1/R2均关闭。详见[GitHub机器证据](github-checks-report.json)、[线上实际游玩](online-release-checks/summary.json)、[线上资源](online-assets-report.json)、[封版独立评审](public-release-review.md)和[归档证据](public-release-artifacts/README.md)。
+
+首次公网实战检查在开始动作前导航超过10秒；检查脚本将导航等待改为45秒后完整通过。初次Python资源检查在TLS握手失败，改用保留证书验证的系统curl后24项全部通过。失败原因分别保留在online-release-checks/before-navigation-retry.json与online-assets-before.json。封版后仅新增线上检查工具、调整两个浏览器脚本导航等待及补充发布文档；游戏源码、数值、字体和生产包保持已检版本。

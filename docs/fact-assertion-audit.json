@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-13T03:46:12.307Z",
+  "generatedAt": "2026-10-13T04:08:11.759Z",
   "referenceVersion": "1.0.1o-FULL",
   "purpose": "全量事实登记、断言定位、同源字段检查与层级审计；不执行行为测试，不替代原版运行时差分。",
   "command": "npx tsx scripts/verify-facts.ts",
@@ -370,15 +370,16 @@
     "scripts/audit.ts": "e8fe087d33756c5abaa4011c2cd219b39d6df0cd6f7151517ff7f61eff07bf00",
     "scripts/autoplay.ts": "b787894b2f794798bfce0eb2b14a38499c62a98c8db2fdde031352ff3eccdffc",
     "scripts/browser_probe.py": "bbec8389160f8caa3c566f622b680e17a0e3c7350132fa64b98f450e025a43cf",
-    "scripts/browser_verify.py": "dd6b3c72585e1108998a36c89f39c43cad672351ad5482ed800f6c42352027e9",
+    "scripts/browser_verify.py": "e576afdcf1bee00644235c53f289dd4acfe8adf37b9b17cfcbd7b1550c4a9203",
     "scripts/check-save.ts": "18c75fa0ad22aa9fc838a4bb6ec34b731e95c4c9b3c8ddeeaa81d25f9b9f2081",
     "scripts/gen-content.ts": "ef1e5d640dd04e505fafffc91c0f48f58bbfc2a49b171930340a069fdfc741d7",
     "scripts/gen-release-manifest.py": "0032937cd1323c7f4a4f702bf0358606c9916241e5c11c561ca4eebc959b280e",
     "scripts/gen-report.ts": "b922058502b9175e57d829d3d2e63faed070f071ee96a8e9d20c6659e7cc1363",
+    "scripts/online_verify.py": "b934f2a22181b002d51270ce602f205c0b4a1fed408d4d6048fc535d67d73e4e",
     "scripts/pages_verify.py": "c98d331ef6dbdf192878cde03411cedcb1268975e5e48bbd0919c126f03a11f3",
     "scripts/replay.ts": "8bb133505cc601c14a9b6dc10e20065896b02c46c0e884f32021e863889ef982",
     "scripts/subset-font.py": "b9cacbd0de1f15fedfcf9586097ba3e235f8fcd7bc8e7fef161f683ee0531367",
-    "scripts/tutorial_verify.py": "675dc59c78506ef0a72e65d1f72bb214ed37c3f67cf52b3bc0f1bd98115f3cfe",
+    "scripts/tutorial_verify.py": "e31ee34548551ecc104b04ec5c8d436304428f48a820dd58f9e7e5c7d03621a2",
     "scripts/verify-facts.ts": "a698e9db6fd8e0367dbc007ec654cde2ef5c97df0051c2d59d66f506e0e111e5",
     "src/content/generated.ts": "6bf2dac2f918f38d54e0dfd9accfbbd295d1e37a5cc412433cb3004efe96e3c6",
     "src/content/jokers.ts": "3207262cb3b3f64dbb6e79131ce5713dea4cf36c4906d6ac671d8be5b51194d2",
@@ -407,7 +408,7 @@
     "tsconfig.json": "d54ad28802d09ed42c75b473c4d91b311d15cdcbdb79c9d921d38fbedd9c348c",
     "vite.config.ts": "8b7de9c3bd77a3b583276b5949ccd23e03b6645e3c0e2083c1fbfaac6ef0ecbc"
   },
-  "currentTreeHashDigest": "d4cfbead97975a233df8240ee1f1adc28ae428f56cd071c7a0bf46590d3cf3c7",
+  "currentTreeHashDigest": "3d9c1fba1d53988697260cf5368504a51039a92cf1b896604315d74325806ec7",
   "historicalReferenceAssertionsSkipped": [
     {
       "factId": "rank.highTie",

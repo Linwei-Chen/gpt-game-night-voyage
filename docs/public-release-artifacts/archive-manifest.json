@@ -1,0 +1,60 @@
+{
+  "method": "独立代理封版后归档；JSON中的本机工程前缀转为仓库相对路径，结论及断言保留；图片逐字节复制。",
+  "reviewOriginalSha256": "f8d6fc4d5364411fbd3fc3b353c4ac920a832691e72c3a23a74867680c1b83a4",
+  "files": [
+    {
+      "source": "/tmp/night-public-static-audit.json",
+      "archive": "docs/public-release-artifacts/night-public-static-audit.json",
+      "originalSha256": "13fa4773f05ee37bb44a4b07eee65983100c6daa333790f665ada33963a1db82",
+      "sha256": "13fa4773f05ee37bb44a4b07eee65983100c6daa333790f665ada33963a1db82"
+    },
+    {
+      "source": "/tmp/night-public-browser-review.json",
+      "archive": "docs/public-release-artifacts/night-public-browser-review.json",
+      "originalSha256": "9b904f42d8d97a4c99751a086bac9c27429aaaad19575755f71a06e4345ef9ca",
+      "sha256": "9b904f42d8d97a4c99751a086bac9c27429aaaad19575755f71a06e4345ef9ca"
+    },
+    {
+      "source": "/tmp/night-public-final-label-review.json",
+      "archive": "docs/public-release-artifacts/night-public-final-label-review.json",
+      "originalSha256": "985c18ee5640effc0ec42950f785702dcf3e3a7ebd29b049860affea118981f7",
+      "sha256": "985c18ee5640effc0ec42950f785702dcf3e3a7ebd29b049860affea118981f7"
+    },
+    {
+      "source": "/tmp/night-public-font-license-review.json",
+      "archive": "docs/public-release-artifacts/night-public-font-license-review.json",
+      "originalSha256": "8e4eb23929f0b646cc85f36225b6de5e04b5d00187e1c4fb9e93f09bd5bd6c06",
+      "sha256": "8e4eb23929f0b646cc85f36225b6de5e04b5d00187e1c4fb9e93f09bd5bd6c06"
+    },
+    {
+      "source": "/tmp/night-public-desktop-first.png",
+      "archive": "docs/screenshots/public-release/review/night-public-desktop-first.png",
+      "sha256": "983beba73b979a647e7c00151565e3303fd860cae2626aeddae2e59342089ff1"
+    },
+    {
+      "source": "/tmp/night-public-desktop-practice.png",
+      "archive": "docs/screenshots/public-release/review/night-public-desktop-practice.png",
+      "sha256": "0b38e95cda6701c6d9c413775071571904b630fc7cac2b14542541e7c50e20a5"
+    },
+    {
+      "source": "/tmp/night-public-desktop-playing.png",
+      "archive": "docs/screenshots/public-release/review/night-public-desktop-playing.png",
+      "sha256": "eba2d42c2a561b68590588fad1e2aa9fc44d14e4967e2964d896fdd8cc7896f3"
+    },
+    {
+      "source": "/tmp/night-public-mobile-first.png",
+      "archive": "docs/screenshots/public-release/review/night-public-mobile-first.png",
+      "sha256": "a79409f25b4e632fb52635d34cbba8853ef2add43f50430d2819396c96304dfa"
+    },
+    {
+      "source": "/tmp/night-public-mobile-practice.png",
+      "archive": "docs/screenshots/public-release/review/night-public-mobile-practice.png",
+      "sha256": "b44b61dba5feb20d789bcb991f047eb900f719bbde1dbe5e63a5ad30605382f9"
+    },
+    {
+      "source": "/tmp/night-public-mobile-playing.png",
+      "archive": "docs/screenshots/public-release/review/night-public-mobile-playing.png",
+      "sha256": "c3ef788a13ea23a33f347b9fdf0ca8fc2c6bffe809adc02165a33e8a75b0807f"
+    }
+  ]
+}

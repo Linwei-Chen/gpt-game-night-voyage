@@ -1,0 +1,128 @@
+{
+  "method": "独立Chrome浏览器；只通过真实按钮、键盘、滑块操作；只读正式状态和存档，不注入游戏动作或改写localStorage。",
+  "url": "https://linwei-chen.github.io/gpt-game-night-voyage/",
+  "browser": "155.0.8059.40",
+  "errors": [],
+  "consoleErrors": [],
+  "checks": [
+    {
+      "name": "项目子路径返回首页保持当前试玩入口",
+      "passed": true
+    },
+    {
+      "name": "首次进入自动显示十二章教程",
+      "passed": true,
+      "geometry": {
+        "closeExitGap": 37,
+        "pageOverflow": false,
+        "dialogOverflow": false,
+        "articleOverflow": false,
+        "dialogInside": true,
+        "controls": [
+          {
+            "id": "close-modal",
+            "inside": true,
+            "hit": true
+          },
+          {
+            "id": "tutorial-exit",
+            "inside": true,
+            "hit": true
+          },
+          {
+            "id": "tutorial-prev",
+            "inside": true,
+            "hit": true
+          },
+          {
+            "id": "tutorial-next",
+            "inside": true,
+            "hit": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "键盘选牌、对子56、附带K仍56、单K15、重置",
+      "passed": true
+    },
+    {
+      "name": "实际伙伴两种顺序504与280，反复切换无累积",
+      "passed": true
+    },
+    {
+      "name": "利息滑块0→10→50，结果0→2→5",
+      "passed": true
+    },
+    {
+      "name": "十二章导航、全部牌型和详细内容",
+      "passed": true
+    },
+    {
+      "name": "开局页教程入口与返回保留开局选择",
+      "passed": true
+    },
+    {
+      "name": "正式出牌阶段教程与所有练习不改状态、RNG、金币、次数、选择和存档",
+      "passed": true
+    },
+    {
+      "name": "再次进入不重复自动引导、刷新恢复航程与阅读位置",
+      "passed": true
+    },
+    {
+      "name": "手机390×844选牌练习与触摸操作",
+      "passed": true,
+      "geometry": {
+        "closeExitGap": 23,
+        "pageOverflow": false,
+        "dialogOverflow": false,
+        "articleOverflow": false,
+        "dialogInside": true,
+        "controls": [
+          {
+            "id": "close-modal",
+            "inside": true,
+            "hit": true
+          },
+          {
+            "id": "tutorial-exit",
+            "inside": true,
+            "hit": true
+          },
+          {
+            "id": "tutorial-prev",
+            "inside": true,
+            "hit": true
+          },
+          {
+            "id": "tutorial-next",
+            "inside": true,
+            "hit": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "手机十二章下拉导航、末课返回、入口与阅读记忆",
+      "passed": true
+    }
+  ],
+  "sourceBefore": {
+    "src/ui/tutorial.ts": "18acfbe63c23baff604f0027ad9e786282a08a23cce75e16cf6e24b3c17651d8",
+    "src/ui/tutorial-model.ts": "9073e7dd3077d98073275720ba156c771973103f8549c96175e0a51fe586a5c5",
+    "src/independent-main.ts": "5942de7b2321b21defb0c38758e5bd52777c77952ba71230030066433ed8e0d6",
+    "src/original-style.css": "09a87bf51bae9d2f92deed6691a58d5f1af6ac2648283ad2b9f0097b030edb8c",
+    "src/core/run-engine.ts": "c111d5dab1e116d778313e4232f8d58f7fb400954283b0aba29b6a3faa0f415a",
+    "src/core/rng.ts": "c5fe0e4b7e0b5b37d87c0f42e251ddb8ebb3ba668cec3b27345c0e72a7b8afb6"
+  },
+  "sourceAfter": {
+    "src/ui/tutorial.ts": "18acfbe63c23baff604f0027ad9e786282a08a23cce75e16cf6e24b3c17651d8",
+    "src/ui/tutorial-model.ts": "9073e7dd3077d98073275720ba156c771973103f8549c96175e0a51fe586a5c5",
+    "src/independent-main.ts": "5942de7b2321b21defb0c38758e5bd52777c77952ba71230030066433ed8e0d6",
+    "src/original-style.css": "09a87bf51bae9d2f92deed6691a58d5f1af6ac2648283ad2b9f0097b030edb8c",
+    "src/core/run-engine.ts": "c111d5dab1e116d778313e4232f8d58f7fb400954283b0aba29b6a3faa0f415a",
+    "src/core/rng.ts": "c5fe0e4b7e0b5b37d87c0f42e251ddb8ebb3ba668cec3b27345c0e72a7b8afb6"
+  },
+  "sourceStable": true
+}

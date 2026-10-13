@@ -4,7 +4,7 @@
   "experimentTitle": "GPT 6.1 制作小游戏测试",
   "repository": "https://github.com/Linwei-Chen/gpt-game-night-voyage",
   "playUrl": "https://linwei-chen.github.io/gpt-game-night-voyage/",
-  "status": "本地公开副本验证通过，准备上传",
+  "status": "公开源码、自动检查、在线部署、教程和完整实战已通过；最终发布及本地归档以Release收据为准",
   "localChecks": {
     "gameTests": {
       "passed": 1967,
@@ -21,21 +21,24 @@
     "consoleErrors": []
   },
   "publication": {
-    "sourceUploaded": false,
-    "githubChecksPassed": false,
-    "pagesDeployed": false,
-    "onlineVerified": false,
-    "repositoryCreated": true
+    "sourceUploaded": true,
+    "githubChecksPassed": true,
+    "pagesDeployed": true,
+    "onlineVerified": true,
+    "repositoryCreated": true,
+    "checkedCommit": "926201fba8c5c4ff7dd4f2062a50207c1352e688",
+    "finalReceiptUrl": "https://github.com/Linwei-Chen/gpt-game-night-voyage/releases/download/v0.1.0/publishing-receipt.json"
   },
   "localCleanup": {
     "method": "系统废纸篓，可恢复",
-    "status": "等待远端和在线检查完成后执行",
+    "status": "实际执行结果记录于GitHub Release的local-cleanup-receipt.json",
     "scope": [
       "night-voyage-independent",
       "balatro-rebuild",
       "night-voyage-public",
-      "专用远端核验副本（如创建）"
-    ]
+      "night-voyage-remote-check"
+    ],
+    "receiptUrl": "https://github.com/Linwei-Chen/gpt-game-night-voyage/releases/download/v0.1.0/local-cleanup-receipt.json"
   },
   "originalAcceptanceComplete": false,
   "community": {
@@ -55,5 +58,32 @@
     "file": "night-voyage-v0.1.0-web.zip",
     "bytes": 7727341,
     "sha256": "7249d03505f0e0e0c31447f64b6b16eb0043949e9b264bef56f8b18a22516d1f"
-  }
+  },
+  "ci": {
+    "runId": 38343788669,
+    "url": "https://github.com/Linwei-Chen/gpt-game-night-voyage/actions/runs/38343788669",
+    "conclusion": "success"
+  },
+  "pages": {
+    "runId": 38344357719,
+    "url": "https://github.com/Linwei-Chen/gpt-game-night-voyage/actions/runs/38344357719",
+    "conclusion": "success"
+  },
+  "onlineChecks": {
+    "tutorialFlows": 11,
+    "normalRunActions": 203,
+    "productionResourcesMatched": 24,
+    "pageErrors": [],
+    "consoleErrors": [],
+    "reports": [
+      "online-release-checks/summary.json",
+      "online-assets-report.json"
+    ]
+  },
+  "independentReleaseReview": {
+    "checks": 128,
+    "unresolvedIssues": [],
+    "report": "public-release-review.md"
+  },
+  "note": "此记录收录首次已通过检查的提交与证据；随后补交的文档和检查工具由最新Actions重新检查，最终提交/运行编号/归档结果在Release收据中记录。"
 }

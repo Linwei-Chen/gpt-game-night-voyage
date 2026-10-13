@@ -1,0 +1,152 @@
+{
+  "url": "https://linwei-chen.github.io/gpt-game-night-voyage/",
+  "method": "公开站点HTTP获取各非隐藏生产产物，SHA256与已验证本地构建逐字节核对。",
+  "resources": [
+    {
+      "path": "LICENSE.txt",
+      "url": "https://linwei-chen.github.io/gpt-game-night-voyage/LICENSE.txt",
+      "passed": false,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.txt",
+      "url": "https://linwei-chen.github.io/gpt-game-night-voyage/THIRD_PARTY_NOTICES.txt",
+      "passed": false,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>"
+    },
+    {
+      "path": "assets/BatchableSprite-fU39kw5s.js",
+      "url": "https://linwei-chen.github.io/gpt-game-night-voyage/assets/BatchableSprite-fU39kw5s.js",
+      "passed": false,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>"
+    },
+    {
+      "path": "assets/CanvasPool-BO8jmDmJ.js",
+      "url": "https://linwei-chen.github.io/gpt-game-night-voyage/assets/CanvasPool-BO8jmDmJ.js",
+      "passed": false,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>"
+    },
+    {
+      "path": "assets/CanvasRenderer-Xm1Fqjwn.js",
+      "url": "https://linwei-chen.github.io/gpt-game-night-voyage/assets/CanvasRenderer-Xm1Fqjwn.js",
+      "passed": false,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>"
+    },
+    {
+      "path": "assets/Filter-D0hf7wn8.js",
+      "url": "https://linwei-chen.github.io/gpt-game-night-voyage/assets/Filter-D0hf7wn8.js",
+      "passed": false,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>"
+    },
+    {
+      "path": "assets/Graphics-B0QO8SG-.js",
+      "url": "https://linwei-chen.github.io/gpt-game-night-voyage/assets/Graphics-B0QO8SG-.js",
+      "passed": false,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>"
+    },
+    {
+      "path": "assets/RenderTargetSystem-DiMrQnlB.js",
+      "url": "https://linwei-chen.github.io/gpt-game-night-voyage/assets/RenderTargetSystem-DiMrQnlB.js",
+      "passed": false,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>"
+    },
+    {
+      "path": "assets/WebGLRenderer-BCx5iX9f.js",
+      "url": "https://linwei-chen.github.io/gpt-game-night-voyage/assets/WebGLRenderer-BCx5iX9f.js",
+      "passed": false,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>"
+    },
+    {
+      "path": "assets/WebGPURenderer-Bq5qS-Sx.js",
+      "url": "https://linwei-chen.github.io/gpt-game-night-voyage/assets/WebGPURenderer-Bq5qS-Sx.js",
+      "passed": false,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>"
+    },
+    {
+      "path": "assets/browserAll-G7Cu-Txx.js",
+      "url": "https://linwei-chen.github.io/gpt-game-night-voyage/assets/browserAll-G7Cu-Txx.js",
+      "passed": false,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>"
+    },
+    {
+      "path": "assets/canvasUtils-DexliMHI.js",
+      "url": "https://linwei-chen.github.io/gpt-game-night-voyage/assets/canvasUtils-DexliMHI.js",
+      "passed": false,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>"
+    },
+    {
+      "path": "assets/getPo2TextureFromSource-DbMhKVnc.js",
+      "url": "https://linwei-chen.github.io/gpt-game-night-voyage/assets/getPo2TextureFromSource-DbMhKVnc.js",
+      "passed": false,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>"
+    },
+    {
+      "path": "assets/getTexelRangeRects-DZY4NxT9.js",
+      "url": "https://linwei-chen.github.io/gpt-game-night-voyage/assets/getTexelRangeRects-DZY4NxT9.js",
+      "passed": false,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>"
+    },
+    {
+      "path": "assets/getTextureBatchBindGroup-CGITerI7.js",
+      "url": "https://linwei-chen.github.io/gpt-game-night-voyage/assets/getTextureBatchBindGroup-CGITerI7.js",
+      "passed": false,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>"
+    },
+    {
+      "path": "assets/index-CctDqWRC.js",
+      "url": "https://linwei-chen.github.io/gpt-game-night-voyage/assets/index-CctDqWRC.js",
+      "passed": false,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>"
+    },
+    {
+      "path": "assets/index-DpWUwQS3.css",
+      "url": "https://linwei-chen.github.io/gpt-game-night-voyage/assets/index-DpWUwQS3.css",
+      "passed": false,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>"
+    },
+    {
+      "path": "assets/webworkerAll-CZXc1NV-.js",
+      "url": "https://linwei-chen.github.io/gpt-game-night-voyage/assets/webworkerAll-CZXc1NV-.js",
+      "passed": false,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>"
+    },
+    {
+      "path": "favicon.svg",
+      "url": "https://linwei-chen.github.io/gpt-game-night-voyage/favicon.svg",
+      "passed": false,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>"
+    },
+    {
+      "path": "fonts/COPYRIGHT.txt",
+      "url": "https://linwei-chen.github.io/gpt-game-night-voyage/fonts/COPYRIGHT.txt",
+      "passed": false,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>"
+    },
+    {
+      "path": "fonts/NightVoyageSC-Subset.woff2",
+      "url": "https://linwei-chen.github.io/gpt-game-night-voyage/fonts/NightVoyageSC-Subset.woff2",
+      "passed": false,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>"
+    },
+    {
+      "path": "fonts/NotoSansSC-Regular.otf",
+      "url": "https://linwei-chen.github.io/gpt-game-night-voyage/fonts/NotoSansSC-Regular.otf",
+      "passed": false,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>"
+    },
+    {
+      "path": "fonts/OFL.txt",
+      "url": "https://linwei-chen.github.io/gpt-game-night-voyage/fonts/OFL.txt",
+      "passed": false,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>"
+    },
+    {
+      "path": "index.html",
+      "url": "https://linwei-chen.github.io/gpt-game-night-voyage/index.html",
+      "passed": false,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>"
+    }
+  ],
+  "passed": false,
+  "failureReason": "本机Python证书库缺少本地签发链，资源抓取在TLS握手时失败；改用保留证书验证的系统curl检查。"
+}

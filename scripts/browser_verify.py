@@ -9,7 +9,7 @@ run=json.loads((root/'docs/full-run.json').read_text())
 with sync_playwright() as p:
     browser=p.chromium.launch(**({'executable_path':'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'} if Path('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome').exists() else {}),headless=True,args=['--disable-gpu-sandbox'])
     page=browser.new_page(viewport={'width':1440,'height':1000},device_scale_factor=1)
-    page.set_default_timeout(10000)
+    page.set_default_timeout(10000);page.set_default_navigation_timeout(45000)
     errors=[];console_errors=[];checks=[]
     page.on('pageerror',lambda e:errors.append(str(e)))
     page.on('console',lambda m:console_errors.append(m.text) if m.type=='error' else None)
